@@ -11,7 +11,7 @@ const sans = Geist({ variable: "--font-sans", subsets: ["latin"] });
 const mono = Geist_Mono({ variable: "--font-mono", subsets: ["latin"] });
 
 export const metadata: Metadata = {
-  title: "The Wave Atlas · Wildcat Skills",
+  title: "Shoggoth Wave Atlas · Wildcat Skills",
   description: "A complete index of Wildcat Skills delivery waves and their member issues.",
 };
 

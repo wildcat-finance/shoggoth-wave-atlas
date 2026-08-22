@@ -135,7 +135,7 @@ export function WaveAtlas({ waves }: { waves: WaveRecord[] }) {
         <div className="eyebrow">WILDCAT SKILLS · LIVE MILESTONE INDEX</div>
         <div className="title-row">
           <div>
-            <h1>The Wave Atlas</h1>
+            <h1>Shoggoth Wave Atlas</h1>
             <p className="lede">
               Every delivery wave, its members, and its current state. α and β
               are shown as separate families so identical wave numbers never
@@ -203,6 +203,11 @@ export function WaveAtlas({ waves }: { waves: WaveRecord[] }) {
               </a>
             ))}
           </div>
+          <a className="api-link" href="/api/job" target="_blank" rel="noreferrer">
+            <span>PUBLIC API</span>
+            <code>GET /api/job</code>
+            <small>Add ?all=true for every eligible job</small>
+          </a>
         </div>
 
         <div className="ready-grid">
