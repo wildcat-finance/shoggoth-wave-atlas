@@ -1,7 +1,7 @@
-import { eligibleJobs, fiatPrompt } from "../../job";
+import { fiatPrompt, randomEligibleJob } from "../../job";
 
 export function GET() {
-  const job = eligibleJobs().jobs[0];
+  const job = randomEligibleJob();
   if (!job) {
     return Response.json(
       { error: "No dependency-clear job is available." },
@@ -11,5 +11,8 @@ export function GET() {
 
   const destination = new URL("https://claude.ai/new");
   destination.searchParams.set("q", fiatPrompt(job));
-  return Response.redirect(destination, 307);
+  return new Response(null, {
+    status: 307,
+    headers: { Location: destination.toString(), "Cache-Control": "no-store" },
+  });
 }

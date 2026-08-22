@@ -70,18 +70,7 @@ export function WaveAtlas({ waves }: { waves: WaveRecord[] }) {
       }
     }
 
-    const frontierWaves = ["alpha", "beta", "other"]
-      .map((name) =>
-        waves.find(
-          (wave) =>
-            familyOf(wave.title) === name &&
-            wave.open > 0 &&
-            wave.members.some((issue) => issue.state === "open"),
-        ),
-      )
-      .filter((wave): wave is WaveRecord => Boolean(wave));
-
-    const frontierIssues = frontierWaves.flatMap((wave) =>
+    const graphIssues = waves.flatMap((wave) =>
       wave.members
         .filter((issue) => issue.state === "open")
         .map((issue) => ({
@@ -93,11 +82,13 @@ export function WaveAtlas({ waves }: { waves: WaveRecord[] }) {
           ),
         })),
     );
+    const ready = graphIssues.filter((issue) => issue.ready);
+    const readyWaveNumbers = new Set(ready.map((issue) => issue.wave.number));
 
     return {
-      frontierWaves,
-      frontierIssues,
-      ready: frontierIssues.filter((issue) => issue.ready),
+      readyWaves: waves.filter((wave) => readyWaveNumbers.has(wave.number)),
+      graphIssues,
+      ready,
     };
   }, [waves]);
 
@@ -192,12 +183,13 @@ export function WaveAtlas({ waves }: { waves: WaveRecord[] }) {
           <div className="eyebrow">PICK-UP DESK</div>
           <h2 id="starter-heading">Aye, here you go.</h2>
           <p>
-            These are open jobs in the current frontier wave whose recorded
-            hard dependencies are closed. Milestone order is still sequencing
-            advice; it is not silently promoted into a hard edge.
+            These are every open job across the Atlas whose recorded hard
+            dependencies are closed. The public API draws one at random so a
+            crowd is spread across the ready pool. Wave order remains
+            sequencing advice; it is not silently promoted into a hard edge.
           </p>
           <div className="frontier-tags">
-            {dependencyDesk.frontierWaves.map((wave) => (
+            {dependencyDesk.readyWaves.map((wave) => (
               <a href={wave.url} target="_blank" rel="noreferrer" key={wave.number}>
                 {wave.title}
               </a>
@@ -206,7 +198,7 @@ export function WaveAtlas({ waves }: { waves: WaveRecord[] }) {
           <a className="api-link" href="/api/job" target="_blank" rel="noreferrer">
             <span>PUBLIC API</span>
             <code>GET /api/job</code>
-            <small>Add ?all=true for every eligible job</small>
+            <small>Random by default · add ?all=true for the complete pool</small>
           </a>
         </div>
 
@@ -225,14 +217,14 @@ export function WaveAtlas({ waves }: { waves: WaveRecord[] }) {
           ))}
           {dependencyDesk.ready.length === 0 && (
             <div className="no-ready">
-              Nothing is dependency-clear yet. The graph below names what is
-              holding the current frontier.
+              Nothing is dependency-clear yet. The graph below names every
+              recorded open dependency.
             </div>
           )}
         </div>
 
-        <div className="dependency-lanes" aria-label="Current dependency graph">
-          {dependencyDesk.frontierIssues.map((issue) => (
+        <div className="dependency-lanes" aria-label="Recorded dependency graph">
+          {dependencyDesk.graphIssues.map((issue) => (
             <div className={`dependency-node ${issue.ready ? "ready" : "blocked"}`} key={issue.number}>
               <div>
                 <a href={issue.url} target="_blank" rel="noreferrer">#{issue.number}</a>
