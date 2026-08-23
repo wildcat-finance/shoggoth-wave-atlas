@@ -42,6 +42,9 @@ export async function GET(request: Request) {
       generated_at: loaded.generatedAt,
       cache_seconds: cacheSeconds,
       ...(loaded.readError ? { read_error: loaded.readError } : {}),
+      ...(loaded.credentialPresent === undefined
+        ? {}
+        : { credential_present: loaded.credentialPresent }),
       eligible_count: jobs.length,
       open_issues_without_a_wave: loaded.droppedWithoutWave,
       ...(all

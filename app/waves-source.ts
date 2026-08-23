@@ -21,6 +21,8 @@ export type LoadedWaves = {
   // say why is indistinguishable from a fresh read of a quiet backlog, and the
   // caller is the one who needs to tell those apart.
   readError?: string;
+  // True when a GITHUB_TOKEN binding was found for this request.
+  credentialPresent?: boolean;
 };
 
 // The Cloudflare binding, read the way db/index.ts reads its own. Route
@@ -28,15 +30,30 @@ export type LoadedWaves = {
 // it from a handler argument would have left the token permanently unread and
 // every request unauthenticated.
 async function bindingToken(): Promise<string | undefined> {
+  // Two places a host can put a secret, tried in order. `cloudflare:workers`
+  // is how db/index.ts reads its own binding, so it is first; a platform that
+  // injects into the process environment instead is the other real case. Route
+  // handlers are not consulted, because vinext follows the App Router
+  // signature and never passes `env` to one.
   try {
     const { env } = (await import("cloudflare:workers")) as {
       env?: Record<string, string | undefined>;
     };
-    return env?.GITHUB_TOKEN;
+    if (env?.GITHUB_TOKEN) return env.GITHUB_TOKEN;
   } catch {
-    // Not running on Workers, so there is no binding to read.
-    return undefined;
+    // Not running on Workers, so there is no binding of this kind to read.
   }
+
+  try {
+    const fromProcess = (
+      globalThis as { process?: { env?: Record<string, string | undefined> } }
+    ).process?.env?.GITHUB_TOKEN;
+    if (fromProcess) return fromProcess;
+  } catch {
+    // No process environment either.
+  }
+
+  return undefined;
 }
 
 function snapshot(readError?: string): LoadedWaves {
@@ -67,7 +84,27 @@ async function githubPages(path: string, token?: string) {
       signal: AbortSignal.timeout(FETCH_TIMEOUT_MS),
     });
     if (!response.ok) {
-      throw new Error(`GitHub ${path} page ${page} returned ${response.status}`);
+      // Say which failure this is. A 403 from an unauthenticated request and a
+      // 403 from an exhausted quota are the same status with different causes,
+      // and the response already distinguishes them: the per-hour limit is 60
+      // without a credential and 5000 with one. GitHub's own message is
+      // carried through; the token never is.
+      const limit = response.headers.get("x-ratelimit-limit") ?? "unknown";
+      const remaining = response.headers.get("x-ratelimit-remaining") ?? "unknown";
+      let detail = "";
+      try {
+        const payload = (await response.json()) as { message?: string };
+        if (typeof payload.message === "string") {
+          detail = `: ${payload.message.slice(0, 160)}`;
+        }
+      } catch {
+        // A body that will not parse is not worth failing differently over.
+      }
+      throw new Error(
+        `GitHub ${path} page ${page} returned ${response.status}` +
+          ` (hourly limit ${limit}, remaining ${remaining}, ` +
+          `credential ${token ? "sent" : "absent"})${detail}`,
+      );
     }
     const body = (await response.json()) as unknown[];
     if (!Array.isArray(body)) {
@@ -124,13 +161,21 @@ export async function loadWaves(ctx?: {
     }
   }
 
+  const token = await bindingToken();
   let loaded: LoadedWaves;
   try {
-    loaded = await readLive(await bindingToken());
+    loaded = await readLive(token);
   } catch (error) {
     // The message is ours, built from a status and a path, so it carries no
     // credential and no response body.
-    return snapshot(error instanceof Error ? error.message : "unknown read failure");
+    const reason =
+      error instanceof Error ? error.message : "unknown read failure";
+    return {
+      ...snapshot(reason),
+      // Whether a credential was found at all, never its value. Without this a
+      // reader cannot tell a missing binding from a rejected one.
+      credentialPresent: Boolean(token),
+    };
   }
 
   if (cache) {
