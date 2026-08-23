@@ -46,9 +46,18 @@ test("job API returns the selected issue and the complete contribution prompt", 
   assert.equal(typeof body.job.number, "number");
   assert.match(body.job.url, new RegExp(`/issues/${body.job.number}$`));
   assert.match(body.job.prompt, new RegExp(`issue #${body.job.number}`));
-  assert.match(body.job.prompt, /for as little or as long as I want/);
-  assert.match(body.job.prompt, /stop cleanly at any checkpoint/);
-  assert.match(body.job.prompt, /very explicit whenever each checkpoint stage is reached/);
+  assert.match(body.job.prompt, /Fiat does not yet support checkpointing/);
+  assert.match(body.job.prompt, /Work is actively ongoing to complete it/);
+  assert.match(body.job.prompt, /https:\/\/github\.com\/wildcat-finance\/skills\/pull\/479/);
+  assert.match(body.job.prompt, /complete the entire Fiat run locally/);
+  assert.match(body.job.prompt, /unfinished work may be lost/);
+  assert.match(body.job.prompt, /Do not assume another contributor or session can resume an incomplete run/);
+  assert.ok(
+    body.job.prompt.indexOf(`issue #${body.job.number}`) <
+      body.job.prompt.indexOf("Fiat does not yet support checkpointing"),
+  );
+  assert.doesNotMatch(body.job.prompt, /for as little or as long as I want/);
+  assert.doesNotMatch(body.job.prompt, /stop cleanly at any checkpoint/);
 });
 
 test("complete job pool spans every dependency-clear wave", async () => {
