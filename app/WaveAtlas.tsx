@@ -27,15 +27,9 @@ export type WaveRecord = {
   members: IssueRecord[];
 };
 
-type Family = "all" | "active";
-
-// Still used for the per-wave colour mark in the table. The α and β filters
-// are gone; the visual distinction between families is not.
-function familyOf(title: string) {
-  if (title.includes("α")) return "alpha";
-  if (title.includes("β")) return "beta";
-  return "other";
-}
+// Waves are a single numbered sequence now. The α and β families are retired,
+// so nothing here sorts, filters or colours by one.
+type View = "all" | "active";
 
 function compactPurpose(description: string) {
   if (!description) return "No milestone description has been recorded.";
@@ -45,7 +39,7 @@ function compactPurpose(description: string) {
 
 export function WaveAtlas({ waves }: { waves: WaveRecord[] }) {
   const [query, setQuery] = useState("");
-  const [family, setFamily] = useState<Family>("all");
+  const [view, setView] = useState<View>("all");
   const [deskWave, setDeskWave] = useState<number | null>(null);
   const [expanded, setExpanded] = useState<Set<number>>(new Set());
 
@@ -103,7 +97,7 @@ export function WaveAtlas({ waves }: { waves: WaveRecord[] }) {
   const visible = useMemo(() => {
     const needle = query.trim().toLowerCase();
     return waves.filter((wave) => {
-      if (family === "active" && wave.open === 0) return false;
+      if (view === "active" && wave.open === 0) return false;
       if (!needle) return true;
       return (
         wave.title.toLowerCase().includes(needle) ||
@@ -115,7 +109,7 @@ export function WaveAtlas({ waves }: { waves: WaveRecord[] }) {
         )
       );
     });
-  }, [family, query, waves]);
+  }, [query, view, waves]);
 
   function toggle(number: number) {
     setExpanded((current) => {
@@ -134,9 +128,9 @@ export function WaveAtlas({ waves }: { waves: WaveRecord[] }) {
           <div>
             <h1>Shoggoth Wave Atlas</h1>
             <p className="lede">
-              Every delivery wave, its members, and its current state. Wave
-              numbers repeat across families, so each wave is listed under its
-              own full title rather than folded into a shared queue.
+              Every delivery wave, its members, and its current state. One
+              numbered sequence, ordered by wave number, with the waves that
+              still hold open work marked.
             </p>
           </div>
           <a
@@ -165,7 +159,7 @@ export function WaveAtlas({ waves }: { waves: WaveRecord[] }) {
             placeholder="Wave, issue number, skill or phrase"
           />
         </label>
-        <div className="segmented" role="group" aria-label="Wave family">
+        <div className="segmented" role="group" aria-label="Wave view">
           {([
             ["all", "All waves"],
             ["active", "Open work"],
@@ -173,8 +167,8 @@ export function WaveAtlas({ waves }: { waves: WaveRecord[] }) {
             <button
               key={value}
               type="button"
-              className={family === value ? "active" : ""}
-              onClick={() => setFamily(value)}
+              className={view === value ? "active" : ""}
+              onClick={() => setView(value)}
             >
               {label}
             </button>
@@ -293,7 +287,10 @@ export function WaveAtlas({ waves }: { waves: WaveRecord[] }) {
                 aria-expanded={isExpanded}
               >
                 <span className="wave-name">
-                  <span className={`family-mark ${familyOf(wave.title)}`} />
+                  <span
+                    className={`wave-mark ${wave.open > 0 ? "live" : "done"}`}
+                    aria-hidden="true"
+                  />
                   <span><strong>{wave.title}</strong><small>Milestone {wave.number}</small></span>
                 </span>
                 <span className="purpose">{compactPurpose(wave.description)}</span>

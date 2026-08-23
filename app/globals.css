@@ -88,9 +88,9 @@ h1 { margin: 0; font: 600 clamp(54px, 8vw, 112px)/.86 var(--font-display), serif
 .wave-name { display: flex; align-items: center; gap: 13px; min-width: 0; }
 .wave-name strong { display: block; font: 600 20px/1.05 var(--font-display), serif; overflow: hidden; text-overflow: ellipsis; }
 .wave-name small, .progress-copy small { display: block; color: var(--muted); margin-top: 6px; font: 500 9px/1 var(--font-mono), monospace; letter-spacing: .08em; text-transform: uppercase; }
-.family-mark { width: 4px; height: 39px; flex: 0 0 auto; background: #555; }
-.family-mark.alpha { background: var(--gold); }
-.family-mark.beta { background: #8b90cb; }
+.wave-mark { width: 4px; height: 39px; flex: 0 0 auto; background: #555; }
+.wave-mark.live { background: var(--gold); }
+.wave-mark.done { background: #3f4a41; }
 .purpose { color: #aeb5af; font-size: 12px; line-height: 1.45; display: -webkit-box; -webkit-line-clamp: 2; -webkit-box-orient: vertical; overflow: hidden; }
 .progress-cell { display: grid; grid-template-columns: 58px 1fr; align-items: center; gap: 11px; }
 .progress-copy strong { font: 600 17px/1 var(--font-display), serif; }

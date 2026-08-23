@@ -44,7 +44,7 @@ function snapshot(readError?: string): LoadedWaves {
     waves: snapshotWaves as WaveRecord[],
     generatedAt: snapshotMeta.generated_at,
     source: "snapshot",
-    droppedWithoutWave: [],
+    droppedWithoutWave: snapshotMeta.dropped ?? [],
     ...(readError ? { readError } : {}),
   };
 }

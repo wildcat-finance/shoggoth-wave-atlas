@@ -8,13 +8,14 @@
 // Nothing here performs I/O. Callers supply raw GitHub milestone and issue
 // payloads and receive the records the app renders.
 
+// Waves sort by their number. A lettered subdivision ("Wave 5b") sorts after
+// the wave it subdivides. The α and β families are retired, so nothing here
+// reads a family suffix; a title that does not parse sorts last, by title.
 export function waveKey(title) {
-  const match = title.match(/^Wave\s+(\d+)([^\s]*)/i);
-  if (!match) return [999, title];
-  const suffix = match[2].toLowerCase();
-  const family = suffix.includes("α") ? 0 : suffix.includes("β") ? 1 : 2;
-  const subdivision = suffix.includes("b") ? 1 : 0;
-  return [Number(match[1]) * 10 + family * 2 + subdivision, title];
+  const match = title.match(/^Wave\s+(\d+)([a-z]*)/i);
+  if (!match) return [Number.MAX_SAFE_INTEGER, title];
+  const subdivision = match[2] ? 1 : 0;
+  return [Number(match[1]) * 2 + subdivision, title];
 }
 
 export function scoreFor(description, issueNumber) {
@@ -82,21 +83,36 @@ function dependencyMap(allIssues) {
 
 // Build the wave records, and report what was left out.
 //
-// `dropped` names every OPEN issue carrying no milestone. Those issues are
-// invisible to the Atlas by design, because a wave is a milestone, but the
-// exclusion used to be silent: an issue could sit open and unreachable with
-// nothing anywhere saying so.
+// `dropped` names every OPEN issue the Atlas cannot offer: one carrying no
+// milestone at all, and one carrying a milestone that is not a wave. Both are
+// invisible by design, since the Atlas offers waves, but the exclusion used to
+// be silent, and a milestone like `Handover` hides work just as effectively as
+// no milestone does.
 export function buildWaves({ milestones, issues: rawIssues }) {
   const allIssues = rawIssues.filter((issue) => !issue.pull_request);
-  const issues = allIssues.filter((issue) => issue.milestone);
+  const waveMilestones = new Set(
+    milestones
+      .filter((milestone) => milestone.title.startsWith("Wave "))
+      .map((milestone) => milestone.number),
+  );
+  const issues = allIssues.filter(
+    (issue) => issue.milestone && waveMilestones.has(issue.milestone.number),
+  );
   const dropped = allIssues
-    .filter((issue) => !issue.milestone && issue.state === "open")
+    .filter(
+      (issue) =>
+        issue.state === "open" &&
+        (!issue.milestone || !waveMilestones.has(issue.milestone.number)),
+    )
     .map((issue) => ({
       number: issue.number,
       title: issue.title,
       url:
         issue.html_url ??
         `https://github.com/wildcat-finance/skills/issues/${issue.number}`,
+      reason: issue.milestone
+        ? `milestone "${issue.milestone.title}" is not a wave`
+        : "no milestone",
     }))
     .sort((a, b) => a.number - b.number);
 

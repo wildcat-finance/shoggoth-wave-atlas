@@ -1,7 +1,7 @@
 import assert from "node:assert/strict";
 import test from "node:test";
 
-import { buildWaves } from "../app/waves-transform.mjs";
+import { buildWaves, waveKey } from "../app/waves-transform.mjs";
 
 const milestone = {
   number: 1,
@@ -151,6 +151,32 @@ test("an open issue with no wave is reported rather than dropped in silence", ()
     [20, 22],
   );
   assert.equal(dropped[0].url, "https://github.com/wildcat-finance/skills/issues/20");
+  assert.equal(dropped[0].reason, "no milestone");
+});
+
+test("an open issue in a milestone that is not a wave is reported too", () => {
+  const handover = {
+    number: 9,
+    title: "Handover",
+    description: "",
+    state: "open",
+    open_issues: 1,
+    closed_issues: 0,
+    html_url: "https://github.com/wildcat-finance/skills/milestone/9",
+  };
+  const { waves, dropped } = buildWaves({
+    milestones: [milestone, handover],
+    issues: [issue(10), issue(40, { milestone: handover })],
+  });
+
+  assert.deepEqual(
+    waves.map((wave) => wave.title),
+    ["Wave 0\u03b2 — controller safety"],
+  );
+  assert.deepEqual(
+    dropped.map((entry) => [entry.number, entry.reason]),
+    [[40, 'milestone "Handover" is not a wave']],
+  );
 });
 
 test("a milestone that is not a wave is ignored", () => {
@@ -164,4 +190,31 @@ test("a milestone that is not a wave is ignored", () => {
     waves.map((wave) => wave.title),
     ["Wave 0β — controller safety"],
   );
+});
+
+test("waves sort by number, with a lettered subdivision after its wave", () => {
+  const titles = [
+    "Wave 11 — maintenance",
+    "Wave 2 — orientation",
+    "Wave 5b — a subdivision",
+    "Wave 5 — hooks",
+    "Handover",
+  ];
+  const sorted = [...titles].sort((a, b) => {
+    const [aOrder, aTitle] = waveKey(a);
+    const [bOrder, bTitle] = waveKey(b);
+    return aOrder - bOrder || aTitle.localeCompare(bTitle);
+  });
+
+  assert.deepEqual(sorted, [
+    "Wave 2 — orientation",
+    "Wave 5 — hooks",
+    "Wave 5b — a subdivision",
+    "Wave 11 — maintenance",
+    "Handover",
+  ]);
+});
+
+test("a retired family suffix no longer changes the order", () => {
+  assert.deepEqual(waveKey("Wave 3 — off-chain safety")[0], waveKey("Wave 3")[0]);
 });
