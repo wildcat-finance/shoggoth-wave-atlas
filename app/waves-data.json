@@ -4,14 +4,14 @@
     "title": "Wave 0β — controller safety and readable evidence",
     "description": "#439 (97): Moves every Fiat run into an isolated worktree, first because observed checkout interference threatens every later delivery.\n#446 (96): Adds a receipted amendment path so baseline discoveries can correct a study without erasing history or halting the run.\n#327 (91): Carries Elenchus guard verdicts into audit rounds and must land before the schema and guard-injection chain can consume them.\n#429 (96): Makes audit rounds structured, timestamped and synopsis-backed, cutting the measured 88,000-token read while preserving the preceding guard verdict.\n#369 (94): Points Protasis at the checked synopsis once generated so studies retain findings without spending most context on append-only prose.\n#453 (95): Requires known failures to exist as red-parent guards before production edits, using the preceding verdict, schema and synopsis chain.\n#363 (91): Binds delegated task identity to the current issue, step and role after guard injection makes stale reuse safely testable.",
     "state": "open",
-    "open": 7,
-    "closed": 0,
+    "open": 4,
+    "closed": 3,
     "url": "https://github.com/wildcat-finance/skills/milestone/39",
     "members": [
       {
         "number": 439,
         "title": "fiat-wish — run in a dedicated worktree, created before preflight",
-        "state": "open",
+        "state": "closed",
         "url": "https://github.com/wildcat-finance/skills/issues/439",
         "score": 97,
         "dependencies": []
@@ -19,7 +19,7 @@
       {
         "number": 446,
         "title": "fiat-wish: a receipted study cannot take the amendment protasis requires",
-        "state": "open",
+        "state": "closed",
         "url": "https://github.com/wildcat-finance/skills/issues/446",
         "score": 96,
         "dependencies": []
@@ -27,7 +27,7 @@
       {
         "number": 327,
         "title": "elenchus-2 — feed the guard verdict into fiat's audit round",
-        "state": "open",
+        "state": "closed",
         "url": "https://github.com/wildcat-finance/skills/issues/327",
         "score": 91,
         "dependencies": []
@@ -42,7 +42,7 @@
           {
             "number": 327,
             "title": "elenchus-2 — feed the guard verdict into fiat's audit round",
-            "state": "open",
+            "state": "closed",
             "url": "https://github.com/wildcat-finance/skills/issues/327"
           }
         ]
@@ -57,7 +57,7 @@
           {
             "number": 327,
             "title": "elenchus-2 — feed the guard verdict into fiat's audit round",
-            "state": "open",
+            "state": "closed",
             "url": "https://github.com/wildcat-finance/skills/issues/327"
           },
           {
@@ -78,7 +78,7 @@
           {
             "number": 327,
             "title": "elenchus-2 — feed the guard verdict into fiat's audit round",
-            "state": "open",
+            "state": "closed",
             "url": "https://github.com/wildcat-finance/skills/issues/327"
           },
           {
@@ -367,8 +367,8 @@
     "title": "Wave 3β — off-chain guards and phase handoffs",
     "description": "#323 (93): Packages hostile-input fixtures once for Alexandria, Lazarus and Tabularium before their ingestion paths expand.\n#325 (94): Closes Phylax's observable argv-secret gap on the subprocess surface its checker already parses.\n#324 (88): Makes the existing never-unpickle rule mechanical beside the argv rule while the same Python visitor is under change.\n#412 (74): Gives on-call questions and their signal map a durable home before unresolved failures and field measurements write into it.\n#413 (72): Turns an unresolved Elenchus result into an Ephoros instrumentation handoff using the durable signal record.\n#414 (79): Defines how Ephoros histograms become comparable Metron baselines after the recorder and signal map exist.",
     "state": "open",
-    "open": 6,
-    "closed": 0,
+    "open": 4,
+    "closed": 2,
     "url": "https://github.com/wildcat-finance/skills/milestone/42",
     "members": [
       {
@@ -382,7 +382,7 @@
       {
         "number": 325,
         "title": "phylax-3 — flag credentials passed into subprocess argument lists",
-        "state": "open",
+        "state": "closed",
         "url": "https://github.com/wildcat-finance/skills/issues/325",
         "score": 94,
         "dependencies": []
@@ -390,7 +390,7 @@
       {
         "number": 324,
         "title": "phylax-2 — add an unsafe-deserialization rule to the mechanical subset",
-        "state": "open",
+        "state": "closed",
         "url": "https://github.com/wildcat-finance/skills/issues/324",
         "score": 88,
         "dependencies": []
