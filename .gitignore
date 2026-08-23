@@ -13,9 +13,16 @@
 # testing
 /coverage
 
+# local caches
+/.cache/
+/.turbo/
+/.vite/
+*.tsbuildinfo
+
 # next.js
 /.next/
 /.vinext/
+/.output/
 /out/
 
 # misc
