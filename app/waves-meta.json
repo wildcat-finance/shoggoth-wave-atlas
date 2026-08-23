@@ -1,29 +1,4 @@
 {
-  "generated_at": "2026-08-23T15:20:18.836Z",
-  "dropped": [
-    {
-      "number": 434,
-      "title": "framework-introspection-1 — define the observable run record",
-      "url": "https://github.com/wildcat-finance/skills/issues/434",
-      "reason": "milestone \"Handover\" is not a wave"
-    },
-    {
-      "number": 435,
-      "title": "framework-introspection-2 — redact and bound run-observation data",
-      "url": "https://github.com/wildcat-finance/skills/issues/435",
-      "reason": "milestone \"Handover\" is not a wave"
-    },
-    {
-      "number": 436,
-      "title": "framework-introspection-3 — bind companion run observations to Fiat receipts",
-      "url": "https://github.com/wildcat-finance/skills/issues/436",
-      "reason": "milestone \"Handover\" is not a wave"
-    },
-    {
-      "number": 437,
-      "title": "framework-introspection-4 — establish a report-only dead-code baseline",
-      "url": "https://github.com/wildcat-finance/skills/issues/437",
-      "reason": "milestone \"Handover\" is not a wave"
-    }
-  ]
+  "generated_at": "2026-08-23T15:24:38.583Z",
+  "dropped": []
 }

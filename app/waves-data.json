@@ -4,7 +4,7 @@
     "title": "Wave 0 — live control and truthful gates",
     "description": "#495 (100): Replaces GraphQL-bound receipt reads with REST and separates transport failure from an unverified verdict; a live Fiat run was otherwise complete but unreceiptable.\n#505 (98): Repairs the contributor front door after the deployed Atlas hid newer issues; PR #506 is active but does not yet make the source live.\n#504 (97): Stops Pandects claiming every catalogue law was searched when some laws were structurally unexercised, before #381 widens the record to more engines.\n#429 (96): Finishes the active structured, timestamped audit synopsis work that unblocks #369 and the guard chain behind #453.\n#502 (96): Makes three shipped Phylax rules follow bounded single-assignment locals so a clean result stops overstating what was inspected.\n#503 (95): Makes Imprimatur read source-language comments instead of returning false-clean on indented NatSpec, docstrings, and JSDoc.\n#497 (92): Consolidates amendment-block validation into Protasis after #446 shipped the controller path, then closes the stale frontier honestly.\n#500 (86): Teaches H003 to distinguish quoted specimens from live runbook pointers so append-only audit evidence can remain lintable.",
     "state": "open",
-    "open": 8,
+    "open": 12,
     "closed": 2,
     "url": "https://github.com/wildcat-finance/skills/milestone/51",
     "members": [
@@ -97,6 +97,58 @@
         "title": "elenchus-2 — feed the guard verdict into fiat's audit round",
         "state": "closed",
         "url": "https://github.com/wildcat-finance/skills/issues/327",
+        "score": null,
+        "dependencies": []
+      },
+      {
+        "number": 434,
+        "title": "framework-introspection-1 — define the observable run record",
+        "state": "open",
+        "url": "https://github.com/wildcat-finance/skills/issues/434",
+        "score": null,
+        "dependencies": []
+      },
+      {
+        "number": 435,
+        "title": "framework-introspection-2 — redact and bound run-observation data",
+        "state": "open",
+        "url": "https://github.com/wildcat-finance/skills/issues/435",
+        "score": null,
+        "dependencies": [
+          {
+            "number": 434,
+            "title": "framework-introspection-1 — define the observable run record",
+            "state": "open",
+            "url": "https://github.com/wildcat-finance/skills/issues/434"
+          }
+        ]
+      },
+      {
+        "number": 436,
+        "title": "framework-introspection-3 — bind companion run observations to Fiat receipts",
+        "state": "open",
+        "url": "https://github.com/wildcat-finance/skills/issues/436",
+        "score": null,
+        "dependencies": [
+          {
+            "number": 434,
+            "title": "framework-introspection-1 — define the observable run record",
+            "state": "open",
+            "url": "https://github.com/wildcat-finance/skills/issues/434"
+          },
+          {
+            "number": 435,
+            "title": "framework-introspection-2 — redact and bound run-observation data",
+            "state": "open",
+            "url": "https://github.com/wildcat-finance/skills/issues/435"
+          }
+        ]
+      },
+      {
+        "number": 437,
+        "title": "framework-introspection-4 — establish a report-only dead-code baseline",
+        "state": "open",
+        "url": "https://github.com/wildcat-finance/skills/issues/437",
         "score": null,
         "dependencies": []
       },
