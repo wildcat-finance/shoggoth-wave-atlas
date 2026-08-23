@@ -21,11 +21,8 @@ function publicJob(issue: ReturnType<typeof eligibleJobs>[number]) {
   };
 }
 
-export async function GET(
-  request: Request,
-  context?: { env?: { GITHUB_TOKEN?: string }; ctx?: { waitUntil?: (promise: Promise<unknown>) => void } },
-) {
-  const loaded = await loadWaves(context?.env, context?.ctx);
+export async function GET(request: Request) {
+  const loaded = await loadWaves();
   const jobs = eligibleJobs(loaded.waves);
   const all = new URL(request.url).searchParams.get("all") === "true";
   const selected = all ? null : randomEligibleJob(loaded.waves);

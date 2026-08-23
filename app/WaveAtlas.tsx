@@ -27,8 +27,10 @@ export type WaveRecord = {
   members: IssueRecord[];
 };
 
-type Family = "all" | "alpha" | "beta" | "active";
+type Family = "all" | "active";
 
+// Still used for the per-wave colour mark in the table. The α and β filters
+// are gone; the visual distinction between families is not.
 function familyOf(title: string) {
   if (title.includes("α")) return "alpha";
   if (title.includes("β")) return "beta";
@@ -44,6 +46,7 @@ function compactPurpose(description: string) {
 export function WaveAtlas({ waves }: { waves: WaveRecord[] }) {
   const [query, setQuery] = useState("");
   const [family, setFamily] = useState<Family>("all");
+  const [deskWave, setDeskWave] = useState<number | null>(null);
   const [expanded, setExpanded] = useState<Set<number>>(new Set());
 
   const totals = useMemo(() => {
@@ -84,19 +87,22 @@ export function WaveAtlas({ waves }: { waves: WaveRecord[] }) {
     );
     const ready = graphIssues.filter((issue) => issue.ready);
     const readyWaveNumbers = new Set(ready.map((issue) => issue.wave.number));
+    const inWave = (issue: { wave: WaveRecord }) =>
+      deskWave === null || issue.wave.number === deskWave;
 
     return {
+      // The tag row always offers every ready wave, so a chosen filter can be
+      // swapped for another without clearing it first.
       readyWaves: waves.filter((wave) => readyWaveNumbers.has(wave.number)),
-      graphIssues,
-      ready,
+      graphIssues: graphIssues.filter(inWave),
+      ready: ready.filter(inWave),
+      readyTotal: ready.length,
     };
-  }, [waves]);
+  }, [deskWave, waves]);
 
   const visible = useMemo(() => {
     const needle = query.trim().toLowerCase();
     return waves.filter((wave) => {
-      if (family === "alpha" && familyOf(wave.title) !== "alpha") return false;
-      if (family === "beta" && familyOf(wave.title) !== "beta") return false;
       if (family === "active" && wave.open === 0) return false;
       if (!needle) return true;
       return (
@@ -128,9 +134,9 @@ export function WaveAtlas({ waves }: { waves: WaveRecord[] }) {
           <div>
             <h1>Shoggoth Wave Atlas</h1>
             <p className="lede">
-              Every delivery wave, its members, and its current state. α and β
-              are shown as separate families so identical wave numbers never
-              collapse into one queue.
+              Every delivery wave, its members, and its current state. Wave
+              numbers repeat across families, so each wave is listed under its
+              own full title rather than folded into a shared queue.
             </p>
           </div>
           <a
@@ -162,8 +168,6 @@ export function WaveAtlas({ waves }: { waves: WaveRecord[] }) {
         <div className="segmented" role="group" aria-label="Wave family">
           {([
             ["all", "All waves"],
-            ["alpha", "α family"],
-            ["beta", "β family"],
             ["active", "Open work"],
           ] as const).map(([value, label]) => (
             <button
@@ -188,11 +192,40 @@ export function WaveAtlas({ waves }: { waves: WaveRecord[] }) {
             crowd is spread across the ready pool. Wave order remains
             sequencing advice; it is not silently promoted into a hard edge.
           </p>
-          <div className="frontier-tags">
+          <div className="frontier-tags" role="group" aria-label="Filter the ready pool by wave">
+            {deskWave !== null && (
+              <button
+                type="button"
+                className="frontier-clear"
+                onClick={() => setDeskWave(null)}
+              >
+                Show all {dependencyDesk.readyTotal} ready
+              </button>
+            )}
             {dependencyDesk.readyWaves.map((wave) => (
-              <a href={wave.url} target="_blank" rel="noreferrer" key={wave.number}>
-                {wave.title}
-              </a>
+              <span
+                className={`frontier-tag ${deskWave === wave.number ? "active" : ""}`}
+                key={wave.number}
+              >
+                <button
+                  type="button"
+                  aria-pressed={deskWave === wave.number}
+                  onClick={() =>
+                    setDeskWave(deskWave === wave.number ? null : wave.number)
+                  }
+                >
+                  {wave.title}
+                </button>
+                <a
+                  href={wave.url}
+                  target="_blank"
+                  rel="noreferrer"
+                  aria-label={`Open the ${wave.title} milestone on GitHub`}
+                  title="Open the milestone on GitHub"
+                >
+                  ↗
+                </a>
+              </span>
             ))}
           </div>
           <a className="api-link" href="/api/job" target="_blank" rel="noreferrer">

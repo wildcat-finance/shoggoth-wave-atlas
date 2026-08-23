@@ -149,3 +149,15 @@ footer { display: flex; justify-content: space-between; gap: 20px; padding-top: 
   footer span { display: block; margin-bottom: 8px; }
 }
 @media (prefers-reduced-motion: reduce) { * { scroll-behavior: auto !important; } }
+
+/* Wave tags in the pick-up desk filter the pool; the arrow beside each one
+   still opens the milestone, so the two actions stay separable. */
+.frontier-tag { display: inline-flex; align-items: stretch; border: 1px solid #4a412b; }
+.frontier-tag button { border: 0; background: transparent; color: var(--gold); padding: 6px 8px; cursor: pointer; font: 500 9px/1 var(--font-mono), monospace; }
+.frontier-tag a { border-left: 1px solid #4a412b; color: #8a7c50; text-decoration: none; padding: 6px 7px; font: 500 9px/1 var(--font-mono), monospace; }
+.frontier-tag:hover { border-color: var(--gold-soft); }
+.frontier-tag a:hover { color: var(--gold); background: #191812; }
+.frontier-tag.active { border-color: var(--gold-soft); background: #191812; }
+.frontier-tag.active button { color: var(--paper); }
+.frontier-clear { border: 1px dashed #4a412b; background: transparent; color: var(--muted); padding: 6px 9px; cursor: pointer; font: 500 9px/1 var(--font-mono), monospace; }
+.frontier-clear:hover { color: var(--paper); border-color: var(--gold-soft); }

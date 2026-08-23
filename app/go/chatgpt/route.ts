@@ -1,11 +1,8 @@
 import { fiatPrompt, randomEligibleJob } from "../../job";
 import { loadWaves } from "../../waves-source";
 
-export async function GET(
-  request: Request,
-  context?: { env?: { GITHUB_TOKEN?: string }; ctx?: { waitUntil?: (promise: Promise<unknown>) => void } },
-) {
-  const { waves } = await loadWaves(context?.env, context?.ctx);
+export async function GET() {
+  const { waves } = await loadWaves();
   const job = randomEligibleJob(waves);
   if (!job) {
     return Response.json(

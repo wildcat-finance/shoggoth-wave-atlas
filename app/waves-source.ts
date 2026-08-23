@@ -23,7 +23,21 @@ export type LoadedWaves = {
   readError?: string;
 };
 
-type Env = { GITHUB_TOKEN?: string };
+// The Cloudflare binding, read the way db/index.ts reads its own. Route
+// handlers follow the App Router signature and never receive `env`, so taking
+// it from a handler argument would have left the token permanently unread and
+// every request unauthenticated.
+async function bindingToken(): Promise<string | undefined> {
+  try {
+    const { env } = (await import("cloudflare:workers")) as {
+      env?: Record<string, string | undefined>;
+    };
+    return env?.GITHUB_TOKEN;
+  } catch {
+    // Not running on Workers, so there is no binding to read.
+    return undefined;
+  }
+}
 
 function snapshot(readError?: string): LoadedWaves {
   return {
@@ -93,10 +107,9 @@ async function readLive(token?: string): Promise<LoadedWaves> {
 // snapshot. The snapshot is the floor rather than the source, so a rate limit
 // or an outage degrades the answer's freshness instead of the site. Whichever
 // path answered is reported to the caller, so nobody has to infer it.
-export async function loadWaves(
-  env: Env | undefined,
-  ctx?: { waitUntil?: (promise: Promise<unknown>) => void },
-): Promise<LoadedWaves> {
+export async function loadWaves(ctx?: {
+  waitUntil?: (promise: Promise<unknown>) => void;
+}): Promise<LoadedWaves> {
   const cache = typeof caches === "undefined" ? undefined : await caches.open("waves");
 
   if (cache) {
@@ -113,7 +126,7 @@ export async function loadWaves(
 
   let loaded: LoadedWaves;
   try {
-    loaded = await readLive(env?.GITHUB_TOKEN);
+    loaded = await readLive(await bindingToken());
   } catch (error) {
     // The message is ours, built from a status and a path, so it carries no
     // credential and no response body.
