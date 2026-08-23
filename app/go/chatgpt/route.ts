@@ -1,7 +1,9 @@
 import { fiatPrompt, randomEligibleJob } from "../../job";
+import { loadWaves } from "../../waves-source";
 
-export function GET() {
-  const job = randomEligibleJob();
+export async function GET() {
+  const { waves } = await loadWaves();
+  const job = randomEligibleJob(waves);
   if (!job) {
     return Response.json(
       { error: "No dependency-clear job is available." },

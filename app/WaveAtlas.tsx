@@ -27,13 +27,9 @@ export type WaveRecord = {
   members: IssueRecord[];
 };
 
-type Family = "all" | "alpha" | "beta" | "active";
-
-function familyOf(title: string) {
-  if (title.includes("α")) return "alpha";
-  if (title.includes("β")) return "beta";
-  return "other";
-}
+// Waves are a single numbered sequence now. The α and β families are retired,
+// so nothing here sorts, filters or colours by one.
+type View = "all" | "active";
 
 function compactPurpose(description: string) {
   if (!description) return "No milestone description has been recorded.";
@@ -43,7 +39,8 @@ function compactPurpose(description: string) {
 
 export function WaveAtlas({ waves }: { waves: WaveRecord[] }) {
   const [query, setQuery] = useState("");
-  const [family, setFamily] = useState<Family>("all");
+  const [view, setView] = useState<View>("all");
+  const [deskWave, setDeskWave] = useState<number | null>(null);
   const [expanded, setExpanded] = useState<Set<number>>(new Set());
 
   const totals = useMemo(() => {
@@ -84,20 +81,23 @@ export function WaveAtlas({ waves }: { waves: WaveRecord[] }) {
     );
     const ready = graphIssues.filter((issue) => issue.ready);
     const readyWaveNumbers = new Set(ready.map((issue) => issue.wave.number));
+    const inWave = (issue: { wave: WaveRecord }) =>
+      deskWave === null || issue.wave.number === deskWave;
 
     return {
+      // The tag row always offers every ready wave, so a chosen filter can be
+      // swapped for another without clearing it first.
       readyWaves: waves.filter((wave) => readyWaveNumbers.has(wave.number)),
-      graphIssues,
-      ready,
+      graphIssues: graphIssues.filter(inWave),
+      ready: ready.filter(inWave),
+      readyTotal: ready.length,
     };
-  }, [waves]);
+  }, [deskWave, waves]);
 
   const visible = useMemo(() => {
     const needle = query.trim().toLowerCase();
     return waves.filter((wave) => {
-      if (family === "alpha" && familyOf(wave.title) !== "alpha") return false;
-      if (family === "beta" && familyOf(wave.title) !== "beta") return false;
-      if (family === "active" && wave.open === 0) return false;
+      if (view === "active" && wave.open === 0) return false;
       if (!needle) return true;
       return (
         wave.title.toLowerCase().includes(needle) ||
@@ -109,7 +109,7 @@ export function WaveAtlas({ waves }: { waves: WaveRecord[] }) {
         )
       );
     });
-  }, [family, query, waves]);
+  }, [query, view, waves]);
 
   function toggle(number: number) {
     setExpanded((current) => {
@@ -128,9 +128,9 @@ export function WaveAtlas({ waves }: { waves: WaveRecord[] }) {
           <div>
             <h1>Shoggoth Wave Atlas</h1>
             <p className="lede">
-              Every delivery wave, its members, and its current state. α and β
-              are shown as separate families so identical wave numbers never
-              collapse into one queue.
+              Every delivery wave, its members, and its current state. One
+              numbered sequence, ordered by wave number, with the waves that
+              still hold open work marked.
             </p>
           </div>
           <a
@@ -159,18 +159,16 @@ export function WaveAtlas({ waves }: { waves: WaveRecord[] }) {
             placeholder="Wave, issue number, skill or phrase"
           />
         </label>
-        <div className="segmented" role="group" aria-label="Wave family">
+        <div className="segmented" role="group" aria-label="Wave view">
           {([
             ["all", "All waves"],
-            ["alpha", "α family"],
-            ["beta", "β family"],
             ["active", "Open work"],
           ] as const).map(([value, label]) => (
             <button
               key={value}
               type="button"
-              className={family === value ? "active" : ""}
-              onClick={() => setFamily(value)}
+              className={view === value ? "active" : ""}
+              onClick={() => setView(value)}
             >
               {label}
             </button>
@@ -188,11 +186,40 @@ export function WaveAtlas({ waves }: { waves: WaveRecord[] }) {
             crowd is spread across the ready pool. Wave order remains
             sequencing advice; it is not silently promoted into a hard edge.
           </p>
-          <div className="frontier-tags">
+          <div className="frontier-tags" role="group" aria-label="Filter the ready pool by wave">
+            {deskWave !== null && (
+              <button
+                type="button"
+                className="frontier-clear"
+                onClick={() => setDeskWave(null)}
+              >
+                Show all {dependencyDesk.readyTotal} ready
+              </button>
+            )}
             {dependencyDesk.readyWaves.map((wave) => (
-              <a href={wave.url} target="_blank" rel="noreferrer" key={wave.number}>
-                {wave.title}
-              </a>
+              <span
+                className={`frontier-tag ${deskWave === wave.number ? "active" : ""}`}
+                key={wave.number}
+              >
+                <button
+                  type="button"
+                  aria-pressed={deskWave === wave.number}
+                  onClick={() =>
+                    setDeskWave(deskWave === wave.number ? null : wave.number)
+                  }
+                >
+                  {wave.title}
+                </button>
+                <a
+                  href={wave.url}
+                  target="_blank"
+                  rel="noreferrer"
+                  aria-label={`Open the ${wave.title} milestone on GitHub`}
+                  title="Open the milestone on GitHub"
+                >
+                  ↗
+                </a>
+              </span>
             ))}
           </div>
           <a className="api-link" href="/api/job" target="_blank" rel="noreferrer">
@@ -260,7 +287,10 @@ export function WaveAtlas({ waves }: { waves: WaveRecord[] }) {
                 aria-expanded={isExpanded}
               >
                 <span className="wave-name">
-                  <span className={`family-mark ${familyOf(wave.title)}`} />
+                  <span
+                    className={`wave-mark ${wave.open > 0 ? "live" : "done"}`}
+                    aria-hidden="true"
+                  />
                   <span><strong>{wave.title}</strong><small>Milestone {wave.number}</small></span>
                 </span>
                 <span className="purpose">{compactPurpose(wave.description)}</span>

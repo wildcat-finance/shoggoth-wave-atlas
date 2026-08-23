@@ -1,11 +1,10 @@
-import wavesData from "./waves-data.json";
+import snapshotWaves from "./waves-data.json";
 import type { WaveRecord } from "./WaveAtlas";
 
 export const jobRule =
   "random open issue from any wave whose recorded hard dependencies are all closed";
 
-export function eligibleJobs() {
-  const waves = wavesData as WaveRecord[];
+export function eligibleJobs(waves: WaveRecord[] = snapshotWaves as WaveRecord[]) {
   const jobs = waves.flatMap((wave) =>
     wave.members
       .filter(
@@ -19,8 +18,10 @@ export function eligibleJobs() {
   return jobs;
 }
 
-export function randomEligibleJob() {
-  const jobs = eligibleJobs();
+export function randomEligibleJob(
+  waves: WaveRecord[] = snapshotWaves as WaveRecord[],
+) {
+  const jobs = eligibleJobs(waves);
   if (jobs.length === 0) return null;
   return jobs[Math.floor(Math.random() * jobs.length)];
 }

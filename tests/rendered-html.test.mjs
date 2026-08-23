@@ -36,7 +36,11 @@ test("job API returns the selected issue and the complete contribution prompt", 
   assert.equal(response.headers.get("cache-control"), "no-store");
 
   const body = await response.json();
-  assert.equal(body.schema, "wildcat-wave-job/v1");
+  assert.equal(body.schema, "wildcat-wave-job/v2");
+  assert.ok(["live", "cache", "snapshot"].includes(body.read_from));
+  assert.ok(Number.isFinite(Date.parse(body.generated_at)));
+  assert.equal(body.cache_seconds, 600);
+  assert.ok(Array.isArray(body.open_issues_without_a_wave));
   assert.equal(body.selection, "random");
   assert.ok(body.eligible_count > 20);
   assert.equal(typeof body.job.number, "number");
