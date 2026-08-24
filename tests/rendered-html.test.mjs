@@ -46,18 +46,31 @@ test("job API returns the selected issue and the complete contribution prompt", 
   assert.equal(typeof body.job.number, "number");
   assert.match(body.job.url, new RegExp(`/issues/${body.job.number}$`));
   assert.match(body.job.prompt, new RegExp(`issue #${body.job.number}`));
+  assert.match(body.job.prompt, /I am an external contributor, not the Shoggoth/);
+  assert.match(body.job.prompt, /use my own valid signing identity/);
+  assert.match(body.job.prompt, /publish through my GitHub account/);
+  assert.match(body.job.prompt, /Never ask me for or configure the Shoggoth signing key or GitHub account/);
   assert.match(body.job.prompt, /Fiat does not yet support checkpointing/);
   assert.match(body.job.prompt, /Work is actively ongoing to complete it/);
-  assert.match(body.job.prompt, /https:\/\/github\.com\/wildcat-finance\/skills\/pull\/479/);
-  assert.match(body.job.prompt, /complete the entire Fiat run locally/);
-  assert.match(body.job.prompt, /unfinished work may be lost/);
+  assert.doesNotMatch(body.job.prompt, /pull\/479|issues\/479|#479/);
+  assert.match(body.job.prompt, /Before hexctl init/);
+  assert.match(body.job.prompt, /stop before init/);
+  assert.match(body.job.prompt, /Do not start the run here or request or transfer Shoggoth credentials/);
+  assert.match(body.job.prompt, /finish the same run in the same environment/);
+  assert.match(body.job.prompt, /unfinished run can lose the work/);
+  assert.match(body.job.prompt, /carry the complete Fiat workflow through rather than only telling me/);
   assert.match(body.job.prompt, /Do not assume another contributor or session can resume an incomplete run/);
   assert.ok(
     body.job.prompt.indexOf(`issue #${body.job.number}`) <
       body.job.prompt.indexOf("Fiat does not yet support checkpointing"),
   );
+  assert.ok(
+    body.job.prompt.indexOf("Fiat does not yet support checkpointing") <
+      body.job.prompt.indexOf("Before hexctl init"),
+  );
   assert.doesNotMatch(body.job.prompt, /for as little or as long as I want/);
   assert.doesNotMatch(body.job.prompt, /stop cleanly at any checkpoint/);
+  assert.doesNotMatch(body.job.prompt, /tell me exactly what I need to do/);
 });
 
 test("complete job pool spans every dependency-clear wave", async () => {

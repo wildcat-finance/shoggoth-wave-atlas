@@ -4,9 +4,6 @@ import type { WaveRecord } from "./WaveAtlas";
 export const jobRule =
   "random open issue from any wave whose recorded hard dependencies are all closed";
 
-export const checkpointWorkUrl =
-  "https://github.com/wildcat-finance/skills/pull/479";
-
 export function eligibleJobs(waves: WaveRecord[] = snapshotWaves as WaveRecord[]) {
   const jobs = waves.flatMap((wave) =>
     wave.members
@@ -32,12 +29,16 @@ export function randomEligibleJob(
 export function fiatPrompt(job: { number: number; url: string }) {
   return [
     "I'd like to help build the Shoggoth, a collective of specialist assistants for crypto and financial development, created and maintained by Wildcat Labs.",
-    "Please help me install the wildcat-finance/skills package and get ready to contribute",
-    `to issue #${job.number}: ${job.url}`,
-    `Fiat does not yet support checkpointing. Work is actively ongoing to complete it: ${checkpointWorkUrl}`,
-    "Until checkpointing is ready, I must complete the entire Fiat run locally once it starts, or unfinished work may be lost.",
-    "Read the repository instructions first, then tell me exactly what I need to do to start and complete its Fiat run locally.",
+    "I am an external contributor, not the Shoggoth.",
+    "Keep my Git authorship, use my own valid signing identity, and publish through my GitHub account. Never ask me for or configure the Shoggoth signing key or GitHub account.",
+    "Please use this coding environment to install the wildcat-finance/skills package and take",
+    `issue #${job.number} through a complete Fiat run: ${job.url}`,
+    "Fiat does not yet support checkpointing. Work is actively ongoing to complete it.",
+    "Before hexctl init, confirm this environment can clone and edit the repository, run its commands, use my signing identity, and publish through my authenticated GitHub account.",
+    "If it cannot, stop before init and tell me to continue in a suitable local coding harness. Do not start the run here or request or transfer Shoggoth credentials.",
+    "Once Fiat starts, I must finish the same run in the same environment. Closing or abandoning an unfinished run can lose the work.",
+    "Read the repository instructions first, then carry the complete Fiat workflow through rather than only telling me which commands to run.",
     "Tell me plainly when each Fiat phase is complete and what evidence or receipt now exists. Do not assume another contributor or session can resume an incomplete run.",
-    "If you need access or setup from me, ask before making changes.",
+    "If you need access or setup for my own account, ask before making changes.",
   ].join(" ");
 }
