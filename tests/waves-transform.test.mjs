@@ -40,6 +40,14 @@ test("a wave carries its members in milestone-description order", () => {
   assert.equal(waves[0].members[1].score, 91);
 });
 
+test("literal newline escapes in generated milestone prose render as line breaks", () => {
+  const escaped = { ...milestone, description: "#10 (97): first.\\n#11 (91): second." };
+  const { waves } = buildWaves({ milestones: [escaped], issues: [issue(10), issue(11)] });
+
+  assert.equal(waves[0].description.includes("\\n"), false);
+  assert.match(waves[0].description, /first\.\n#11/);
+});
+
 test("a pull request is never a wave member", () => {
   const { waves } = buildWaves({
     milestones: [milestone],

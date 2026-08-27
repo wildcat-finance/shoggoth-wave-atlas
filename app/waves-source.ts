@@ -4,7 +4,9 @@ import snapshotWaves from "./waves-data.json";
 import snapshotMeta from "./waves-meta.json";
 
 const REPOSITORY = "wildcat-finance/skills";
-const CACHE_KEY = "https://wave-atlas.internal/waves-v1";
+// Version the cache schema. A v1 entry lacks sourceRevision and would make a
+// fresh deployment report incomplete provenance until its old TTL elapsed.
+const CACHE_KEY = "https://wave-atlas.internal/waves-v2";
 const CACHE_SECONDS = 600;
 const PAGE_SIZE = 100;
 const MAX_PAGES = 10;
@@ -15,6 +17,10 @@ export type WavesSource = "live" | "cache" | "snapshot";
 export type LoadedWaves = {
   waves: WaveRecord[];
   generatedAt: string;
+  // The Skills commit observed while this response was assembled. GitHub's
+  // metadata APIs are not an atomic snapshot, so this is provenance, not a
+  // claim that every issue was read at that exact commit.
+  sourceRevision: string;
   source: WavesSource;
   droppedWithoutWave: Array<{ number: number; title: string; url: string }>;
   // Why the live read did not answer, when it did not. A fallback that cannot
@@ -24,6 +30,69 @@ export type LoadedWaves = {
   // True when a GITHUB_TOKEN binding was found for this request.
   credentialPresent?: boolean;
 };
+
+function isDependency(value: unknown): boolean {
+  if (!value || typeof value !== "object") return false;
+  const dependency = value as Record<string, unknown>;
+  return (
+    Number.isInteger(dependency.number) &&
+    typeof dependency.title === "string" &&
+    ["open", "closed", "unknown"].includes(String(dependency.state)) &&
+    typeof dependency.url === "string"
+  );
+}
+
+function isIssue(value: unknown): boolean {
+  if (!value || typeof value !== "object") return false;
+  const issue = value as Record<string, unknown>;
+  return (
+    Number.isInteger(issue.number) &&
+    typeof issue.title === "string" &&
+    ["open", "closed"].includes(String(issue.state)) &&
+    typeof issue.url === "string" &&
+    (typeof issue.score === "number" || issue.score === null) &&
+    Array.isArray(issue.dependencies) &&
+    issue.dependencies.every(isDependency)
+  );
+}
+
+function isWave(value: unknown): boolean {
+  if (!value || typeof value !== "object") return false;
+  const wave = value as Record<string, unknown>;
+  return (
+    Number.isInteger(wave.number) &&
+    typeof wave.title === "string" &&
+    typeof wave.description === "string" &&
+    ["open", "closed"].includes(String(wave.state)) &&
+    Number.isInteger(wave.open) &&
+    Number.isInteger(wave.closed) &&
+    typeof wave.url === "string" &&
+    Array.isArray(wave.members) &&
+    wave.members.every(isIssue)
+  );
+}
+
+function isDroppedIssue(value: unknown): boolean {
+  if (!value || typeof value !== "object") return false;
+  const issue = value as Record<string, unknown>;
+  return Number.isInteger(issue.number) && typeof issue.title === "string" && typeof issue.url === "string";
+}
+
+function isLoadedWaves(value: unknown): value is LoadedWaves {
+  if (!value || typeof value !== "object") return false;
+  const candidate = value as Partial<LoadedWaves>;
+  return (
+    Array.isArray(candidate.waves) &&
+    candidate.waves.length > 0 &&
+    candidate.waves.every(isWave) &&
+    Array.isArray(candidate.droppedWithoutWave) &&
+    candidate.droppedWithoutWave.every(isDroppedIssue) &&
+    typeof candidate.generatedAt === "string" &&
+    Number.isFinite(Date.parse(candidate.generatedAt)) &&
+    typeof candidate.sourceRevision === "string" &&
+    /^[0-9a-f]{40}$/i.test(candidate.sourceRevision)
+  );
+}
 
 // The Cloudflare binding, read the way db/index.ts reads its own. Route
 // handlers follow the App Router signature and never receive `env`, so taking
@@ -60,6 +129,7 @@ function snapshot(readError?: string): LoadedWaves {
   return {
     waves: snapshotWaves as WaveRecord[],
     generatedAt: snapshotMeta.generated_at,
+    sourceRevision: snapshotMeta.source_revision,
     source: "snapshot",
     droppedWithoutWave: snapshotMeta.dropped ?? [],
     ...(readError ? { readError } : {}),
@@ -118,10 +188,31 @@ async function githubPages(path: string, token?: string) {
   throw new Error(`GitHub ${path} exceeded ${MAX_PAGES} pages`);
 }
 
+async function githubRevision(token?: string): Promise<string> {
+  const headers: Record<string, string> = {
+    Accept: "application/vnd.github+json",
+    "X-GitHub-Api-Version": "2022-11-28",
+    "User-Agent": "shoggoth-wave-atlas",
+  };
+  if (token) headers.Authorization = `Bearer ${token}`;
+
+  const response = await fetch(`https://api.github.com/repos/${REPOSITORY}/commits/main`, {
+    headers,
+    signal: AbortSignal.timeout(FETCH_TIMEOUT_MS),
+  });
+  if (!response.ok) throw new Error(`GitHub commits/main returned ${response.status}`);
+  const body = (await response.json()) as { sha?: unknown };
+  if (typeof body.sha !== "string" || !/^[0-9a-f]{40}$/i.test(body.sha)) {
+    throw new Error("GitHub commits/main returned an invalid SHA");
+  }
+  return body.sha;
+}
+
 async function readLive(token?: string): Promise<LoadedWaves> {
-  const [milestones, issues] = await Promise.all([
+  const [milestones, issues, sourceRevision] = await Promise.all([
     githubPages("milestones", token),
     githubPages("issues", token),
+    githubRevision(token),
   ]);
   const { waves, dropped } = buildWaves({
     milestones: milestones as never[],
@@ -133,6 +224,7 @@ async function readLive(token?: string): Promise<LoadedWaves> {
   return {
     waves: waves as WaveRecord[],
     generatedAt: new Date().toISOString(),
+    sourceRevision,
     source: "live",
     droppedWithoutWave: dropped,
   };
@@ -147,14 +239,23 @@ async function readLive(token?: string): Promise<LoadedWaves> {
 export async function loadWaves(ctx?: {
   waitUntil?: (promise: Promise<unknown>) => void;
 }): Promise<LoadedWaves> {
-  const cache = typeof caches === "undefined" ? undefined : await caches.open("waves");
+  let cache: Cache | undefined;
+  if (typeof caches !== "undefined") {
+    try {
+      cache = await caches.open("waves");
+    } catch {
+      // Cache is an optimization. A binding outage must still reach GitHub or
+      // the checked-in fallback rather than converting into a 500 response.
+    }
+  }
 
   if (cache) {
     try {
       const hit = await cache.match(CACHE_KEY);
       if (hit) {
-        const cached = (await hit.json()) as LoadedWaves;
-        return { ...cached, source: "cache" };
+        const cached = (await hit.json()) as unknown;
+        if (isLoadedWaves(cached)) return { ...cached, source: "cache" };
+        await cache.delete(CACHE_KEY);
       }
     } catch {
       // A damaged cache entry is not a reason to refuse the request.

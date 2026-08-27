@@ -2,16 +2,16 @@
   {
     "number": 51,
     "title": "Wave 0 — live control and truthful gates",
-    "description": "#495 (100): Replaces GraphQL-bound receipt reads with REST and separates transport failure from an unverified verdict; a live Fiat run was otherwise complete but unreceiptable.\n#505 (98): Repairs the contributor front door after the deployed Atlas hid newer issues; PR #506 is active but does not yet make the source live.\n#504 (97): Stops Pandects claiming every catalogue law was searched when some laws were structurally unexercised, before #381 widens the record to more engines.\n#429 (96): Finishes the active structured, timestamped audit synopsis work that unblocks #369 and the guard chain behind #453.\n#502 (96): Makes three shipped Phylax rules follow bounded single-assignment locals so a clean result stops overstating what was inspected.\n#503 (95): Makes Imprimatur read source-language comments instead of returning false-clean on indented NatSpec, docstrings, and JSDoc.\n#497 (92): Consolidates amendment-block validation into Protasis after #446 shipped the controller path, then closes the stale frontier honestly.\n#500 (86): Teaches H003 to distinguish quoted specimens from live runbook pointers so append-only audit evidence can remain lintable.",
+    "description": "#495 (100): Replaces GraphQL-bound receipt reads with REST and separates transport failure from an unverified verdict; a live Fiat run was otherwise complete but unreceiptable.\n#505 (98): Repairs the contributor front door after the deployed Atlas hid newer issues; PR #506 is active but does not yet make the source live.\n#504 (97): Stops Pandects claiming every catalogue law was searched when some laws were structurally unexercised, before #381 widens the record to more engines.\n#429 (96): Finishes the active structured, timestamped audit synopsis work that unblocks #369 and the guard chain behind #453.\n#502 (96): Makes three shipped Phylax rules follow bounded single-assignment locals so a clean result stops overstating what was inspected.\n#503 (95): Makes Imprimatur read source-language comments instead of returning false-clean on indented NatSpec, docstrings, and JSDoc.\n#497 (92): Consolidates amendment-block validation into Protasis after #446 shipped the controller path, then closes the stale frontier honestly.\n#500 (86): Teaches H003 to distinguish quoted specimens from live runbook pointers so append-only audit evidence can remain lintable.\n\n2026-08-25 additions:\n#608 (99): Active Fiat delivery fixes the sync-receipt key mismatch that leaves a merged run unable to complete its final integration receipt.\n#622 (98): Active Fiat delivery makes changed scope select every applicable check; its current stack also carries the #621 prerequisite.\n#621 (97): Disposable Git fixtures inherit contributor signing and can stall major suites before their assertions run.\n#556 (96): Active stacked Fiat delivery replaces stale literal target versions with source-bound relations resolved at integration.\n#587 (91): The documented integrate order can delete the run ref before the terminal receipt reads it.",
     "state": "open",
-    "open": 12,
-    "closed": 2,
+    "open": 9,
+    "closed": 19,
     "url": "https://github.com/wildcat-finance/skills/milestone/51",
     "members": [
       {
         "number": 495,
         "title": "fiat-wish — route every GitHub receipt read over REST and diagnose transport failure apart from an unverified verdict",
-        "state": "open",
+        "state": "closed",
         "url": "https://github.com/wildcat-finance/skills/issues/495",
         "score": 100,
         "dependencies": []
@@ -35,7 +35,7 @@
       {
         "number": 429,
         "title": "fiat-wish — give the audit record a schema, a timestamp and a synopsis",
-        "state": "open",
+        "state": "closed",
         "url": "https://github.com/wildcat-finance/skills/issues/429",
         "score": 96,
         "dependencies": [
@@ -58,7 +58,7 @@
       {
         "number": 503,
         "title": "imprimatur-1 — read comment spans in source files instead of answering clean on input it never read",
-        "state": "open",
+        "state": "closed",
         "url": "https://github.com/wildcat-finance/skills/issues/503",
         "score": 95,
         "dependencies": []
@@ -73,13 +73,13 @@
           {
             "number": 369,
             "title": "protasis-wish — read the audit synopsis rather than the whole log",
-            "state": "open",
+            "state": "closed",
             "url": "https://github.com/wildcat-finance/skills/issues/369"
           },
           {
             "number": 429,
             "title": "fiat-wish — give the audit record a schema, a timestamp and a synopsis",
-            "state": "open",
+            "state": "closed",
             "url": "https://github.com/wildcat-finance/skills/issues/429"
           }
         ]
@@ -87,9 +87,57 @@
       {
         "number": 500,
         "title": "hypomnema-1 — H003 must tell a quoted specimen from a live runbook pointer",
-        "state": "open",
+        "state": "closed",
         "url": "https://github.com/wildcat-finance/skills/issues/500",
         "score": 86,
+        "dependencies": []
+      },
+      {
+        "number": 608,
+        "title": "fiat-wish — integrate reads base_commit from a sync receipt that stores base_head",
+        "state": "closed",
+        "url": "https://github.com/wildcat-finance/skills/issues/608",
+        "score": 99,
+        "dependencies": []
+      },
+      {
+        "number": 622,
+        "title": "framework-20: make the changed scope choose the tests instead of running every skill",
+        "state": "open",
+        "url": "https://github.com/wildcat-finance/skills/issues/622",
+        "score": 98,
+        "dependencies": []
+      },
+      {
+        "number": 621,
+        "title": "framework-19: disposable Git fixtures inherit contributor signing and stall on pinentry",
+        "state": "open",
+        "url": "https://github.com/wildcat-finance/skills/issues/621",
+        "score": 97,
+        "dependencies": []
+      },
+      {
+        "number": 556,
+        "title": "fiat-wish — resolve a runbook's target version at integrate time instead of pinning a literal",
+        "state": "open",
+        "url": "https://github.com/wildcat-finance/skills/issues/556",
+        "score": 96,
+        "dependencies": []
+      },
+      {
+        "number": 587,
+        "title": "framework-24 — the integration receipt reads a branch the documented order already deleted",
+        "state": "open",
+        "url": "https://github.com/wildcat-finance/skills/issues/587",
+        "score": 91,
+        "dependencies": []
+      },
+      {
+        "number": 43,
+        "title": "Make stale hexctl lock takeover atomic",
+        "state": "closed",
+        "url": "https://github.com/wildcat-finance/skills/issues/43",
+        "score": null,
         "dependencies": []
       },
       {
@@ -101,9 +149,33 @@
         "dependencies": []
       },
       {
+        "number": 366,
+        "title": "Derive an AUDIT_SYNOPSIS.md so a study reads the leads, not the whole log",
+        "state": "closed",
+        "url": "https://github.com/wildcat-finance/skills/issues/366",
+        "score": null,
+        "dependencies": []
+      },
+      {
+        "number": 368,
+        "title": "fiat-wish — derive an AUDIT_SYNOPSIS.md beside every audit log",
+        "state": "closed",
+        "url": "https://github.com/wildcat-finance/skills/issues/368",
+        "score": null,
+        "dependencies": []
+      },
+      {
+        "number": 428,
+        "title": "fiat-wish — timestamp audit rounds instead of dating them",
+        "state": "closed",
+        "url": "https://github.com/wildcat-finance/skills/issues/428",
+        "score": null,
+        "dependencies": []
+      },
+      {
         "number": 434,
         "title": "framework-introspection-1 — define the observable run record",
-        "state": "open",
+        "state": "closed",
         "url": "https://github.com/wildcat-finance/skills/issues/434",
         "score": null,
         "dependencies": []
@@ -111,14 +183,14 @@
       {
         "number": 435,
         "title": "framework-introspection-2 — redact and bound run-observation data",
-        "state": "open",
+        "state": "closed",
         "url": "https://github.com/wildcat-finance/skills/issues/435",
         "score": null,
         "dependencies": [
           {
             "number": 434,
             "title": "framework-introspection-1 — define the observable run record",
-            "state": "open",
+            "state": "closed",
             "url": "https://github.com/wildcat-finance/skills/issues/434"
           }
         ]
@@ -126,27 +198,27 @@
       {
         "number": 436,
         "title": "framework-introspection-3 — bind companion run observations to Fiat receipts",
-        "state": "open",
+        "state": "closed",
         "url": "https://github.com/wildcat-finance/skills/issues/436",
         "score": null,
         "dependencies": [
           {
             "number": 434,
             "title": "framework-introspection-1 — define the observable run record",
-            "state": "open",
+            "state": "closed",
             "url": "https://github.com/wildcat-finance/skills/issues/434"
           },
           {
             "number": 435,
             "title": "framework-introspection-2 — redact and bound run-observation data",
-            "state": "open",
+            "state": "closed",
             "url": "https://github.com/wildcat-finance/skills/issues/435"
           }
         ]
       },
       {
         "number": 437,
-        "title": "framework-introspection-4 — establish a report-only dead-code baseline",
+        "title": "framework-21 — establish a report-only dead-code baseline",
         "state": "open",
         "url": "https://github.com/wildcat-finance/skills/issues/437",
         "score": null,
@@ -159,22 +231,62 @@
         "url": "https://github.com/wildcat-finance/skills/issues/439",
         "score": null,
         "dependencies": []
+      },
+      {
+        "number": 443,
+        "title": "fiat-wish — the integrate ledger gate reads only table history rows while the evolution suite accepts both shapes",
+        "state": "closed",
+        "url": "https://github.com/wildcat-finance/skills/issues/443",
+        "score": null,
+        "dependencies": []
+      },
+      {
+        "number": 540,
+        "title": "framework-14 — GitHub's stacked pull requests re-sign the commits a run is about to receipt",
+        "state": "closed",
+        "url": "https://github.com/wildcat-finance/skills/issues/540",
+        "score": null,
+        "dependencies": []
+      },
+      {
+        "number": 555,
+        "title": "fiat-wish — refuse a step branch merged anywhere but the run branch",
+        "state": "closed",
+        "url": "https://github.com/wildcat-finance/skills/issues/555",
+        "score": null,
+        "dependencies": []
+      },
+      {
+        "number": 574,
+        "title": "The capture-profile receipt binding fails the root suite in every other Fiat worktree",
+        "state": "closed",
+        "url": "https://github.com/wildcat-finance/skills/issues/574",
+        "score": null,
+        "dependencies": []
+      },
+      {
+        "number": 594,
+        "title": "fiat-wish — bind a step merge to the pull request the directive names",
+        "state": "closed",
+        "url": "https://github.com/wildcat-finance/skills/issues/594",
+        "score": null,
+        "dependencies": []
       }
     ]
   },
   {
     "number": 52,
     "title": "Wave 1 — controller continuity and reading foundations",
-    "description": "#377 (100): Fixes Horos excluding its own classifier source before any downstream boundary or orientation output is trusted.\n#369 (94): Reads the checked audit synopsis after #429 instead of reopening the full append-only audit log.\n#453 (95): Injects known-failure guards only after the verdict and synopsis chain can name and preserve them.\n#363 (91): Binds reused Fiat delegation handles to the current issue, step, and role; this is the current Fiat held frontier.\n#462 (90): Gives Kronos scoreboard and parks a durable home so ephemeral runners cannot silently release a standing park.\n#461 (88): Makes the study-to-standing-record bridge mechanical, closing a judgement-only receipt gate.\n#372 (88): Protects digests, Git SHAs, and selectors before evidence-heavy outputs pass through structural compression.\n#373 (81): Emits Brevitas diagnostics in a machine-readable form after evidence tokens are protected.",
+    "description": "#377 (100): Fixes Horos excluding its own classifier source before any downstream boundary or orientation output is trusted.\n#369 (94): Reads the checked audit synopsis after #429 instead of reopening the full append-only audit log.\n#453 (95): Injects known-failure guards only after the verdict and synopsis chain can name and preserve them.\n#363 (91): Binds reused Fiat delegation handles to the current issue, step, and role; this is the current Fiat held frontier.\n#462 (90): Gives Kronos scoreboard and parks a durable home so ephemeral runners cannot silently release a standing park.\n#461 (88): Makes the study-to-standing-record bridge mechanical, closing a judgement-only receipt gate.\n#372 (88): Protects digests, Git SHAs, and selectors before evidence-heavy outputs pass through structural compression.\n#373 (81): Emits Brevitas diagnostics in a machine-readable form after evidence tokens are protected.\n\n2026-08-25 additions:\n#553 (88): Adds an evidence-preserving recovery for prematurely merged stacked pull requests without importing a wrong-base merge.\n#551 (84): Detects a step merged into the step below before the retained stack becomes unreceiptable; bundle with #553.\n#547 (82): Makes the no-green-no-commit gate survive a fresh clone instead of disappearing with one checkout.",
     "state": "open",
     "open": 8,
-    "closed": 1,
+    "closed": 13,
     "url": "https://github.com/wildcat-finance/skills/milestone/52",
     "members": [
       {
         "number": 377,
         "title": "horos-next — stop the marker rule excluding the classifier's own source",
-        "state": "open",
+        "state": "closed",
         "url": "https://github.com/wildcat-finance/skills/issues/377",
         "score": 100,
         "dependencies": []
@@ -182,23 +294,10 @@
       {
         "number": 369,
         "title": "protasis-wish — read the audit synopsis rather than the whole log",
-        "state": "open",
+        "state": "closed",
         "url": "https://github.com/wildcat-finance/skills/issues/369",
         "score": 94,
-        "dependencies": [
-          {
-            "number": 327,
-            "title": "elenchus-2 — feed the guard verdict into fiat's audit round",
-            "state": "closed",
-            "url": "https://github.com/wildcat-finance/skills/issues/327"
-          },
-          {
-            "number": 429,
-            "title": "fiat-wish — give the audit record a schema, a timestamp and a synopsis",
-            "state": "open",
-            "url": "https://github.com/wildcat-finance/skills/issues/429"
-          }
-        ]
+        "dependencies": []
       },
       {
         "number": 453,
@@ -216,20 +315,20 @@
           {
             "number": 369,
             "title": "protasis-wish — read the audit synopsis rather than the whole log",
-            "state": "open",
+            "state": "closed",
             "url": "https://github.com/wildcat-finance/skills/issues/369"
           },
           {
             "number": 429,
             "title": "fiat-wish — give the audit record a schema, a timestamp and a synopsis",
-            "state": "open",
+            "state": "closed",
             "url": "https://github.com/wildcat-finance/skills/issues/429"
           }
         ]
       },
       {
         "number": 363,
-        "title": "fiat-wish — bind delegated task identity to the current issue, step and role",
+        "title": "fiat-next — bind delegated task identity to the current issue, step and role",
         "state": "open",
         "url": "https://github.com/wildcat-finance/skills/issues/363",
         "score": 91,
@@ -245,7 +344,7 @@
       {
         "number": 462,
         "title": "kronos-4 — give the scoreboard and parked lane a durable home across ephemeral runners",
-        "state": "open",
+        "state": "closed",
         "url": "https://github.com/wildcat-finance/skills/issues/462",
         "score": 90,
         "dependencies": []
@@ -275,10 +374,106 @@
         "dependencies": []
       },
       {
+        "number": 553,
+        "title": "fiat-wish — reconcile prematurely merged stacked pull requests",
+        "state": "open",
+        "url": "https://github.com/wildcat-finance/skills/issues/553",
+        "score": 88,
+        "dependencies": []
+      },
+      {
+        "number": 551,
+        "title": "framework-23 — a step merged into the step below leaves issue 429's stack unreceiptable",
+        "state": "open",
+        "url": "https://github.com/wildcat-finance/skills/issues/551",
+        "score": 84,
+        "dependencies": []
+      },
+      {
+        "number": 547,
+        "title": "framework-16 — the commit gate lives in one clone and dies with it",
+        "state": "open",
+        "url": "https://github.com/wildcat-finance/skills/issues/547",
+        "score": 82,
+        "dependencies": []
+      },
+      {
+        "number": 49,
+        "title": "Allow issue-free Fiat runs and recycle completed controller state",
+        "state": "closed",
+        "url": "https://github.com/wildcat-finance/skills/issues/49",
+        "score": null,
+        "dependencies": []
+      },
+      {
+        "number": 74,
+        "title": "Refactor Hexaemeron subsidiary frontiers and add governed skill version histories",
+        "state": "closed",
+        "url": "https://github.com/wildcat-finance/skills/issues/74",
+        "score": null,
+        "dependencies": []
+      },
+      {
+        "number": 315,
+        "title": "protasis-next — check the risk-register block the study contract now fixes",
+        "state": "closed",
+        "url": "https://github.com/wildcat-finance/skills/issues/315",
+        "score": null,
+        "dependencies": []
+      },
+      {
+        "number": 316,
+        "title": "hypomnema-next — lint the shape of the decision records under docs/decisions/",
+        "state": "closed",
+        "url": "https://github.com/wildcat-finance/skills/issues/316",
+        "score": null,
+        "dependencies": []
+      },
+      {
+        "number": 317,
+        "title": "hypomnema-3 — resolve ADR references made from code comments, not just markdown",
+        "state": "closed",
+        "url": "https://github.com/wildcat-finance/skills/issues/317",
+        "score": null,
+        "dependencies": []
+      },
+      {
         "number": 446,
         "title": "fiat-wish: a receipted study cannot take the amendment protasis requires",
         "state": "closed",
         "url": "https://github.com/wildcat-finance/skills/issues/446",
+        "score": null,
+        "dependencies": []
+      },
+      {
+        "number": 541,
+        "title": "framework-15 — only decision-record numbers are guarded against concurrent collision",
+        "state": "closed",
+        "url": "https://github.com/wildcat-finance/skills/issues/541",
+        "score": null,
+        "dependencies": []
+      },
+      {
+        "number": 546,
+        "title": "fiat-wish — preserve product evidence across integration-base drift",
+        "state": "closed",
+        "url": "https://github.com/wildcat-finance/skills/issues/546",
+        "score": null,
+        "dependencies": []
+      },
+      {
+        "number": 554,
+        "title": "fiat-wish — amend a runbook the way a study can already be amended",
+        "state": "closed",
+        "url": "https://github.com/wildcat-finance/skills/issues/554",
+        "score": null,
+        "dependencies": []
+      },
+      {
+        "number": 576,
+        "title": "fiat-wish — give each run its own audit log so a moved base owes no check on the record",
+        "state": "closed",
+        "url": "https://github.com/wildcat-finance/skills/issues/576",
         "score": null,
         "dependencies": []
       }
@@ -287,10 +482,10 @@
   {
     "number": 53,
     "title": "Wave 2 — orientation, routing and contributor intent",
-    "description": "#378 (94): Adds a repository directory map after Horos self-exclusion is fixed.\n#380 (93): Produces a verified exclusion stream so downstream readers do not trust stale boundary JSON.\n#499 (93): Measures Promise Machine route selection over hard sibling boundaries instead of proving only that selected routes resolve.\n#447 (88): Defines explicit Wave, frontier, and maintenance volunteer intent plus a recoverable public claim signal.\n#466 (86): Preserves external contributor authorship through Fiat integration without weakening signing or review.\n#374 (76): Forward-tests Brevitas after its evidence-token and diagnostic result surfaces are corrected.\n#379 (74): Adds checked promotion of evidenced Horos candidates after the classifier and exclusion stream are trustworthy.",
+    "description": "#378 (94): Adds a repository directory map after Horos self-exclusion is fixed.\n#380 (93): Produces a verified exclusion stream so downstream readers do not trust stale boundary JSON.\n#499 (93): Measures Promise Machine route selection over hard sibling boundaries instead of proving only that selected routes resolve.\n#447 (88): Defines explicit Wave, frontier, and maintenance volunteer intent plus a recoverable public claim signal.\n#466 (86): Preserves external contributor authorship through Fiat integration without weakening signing or review.\n#374 (76): Forward-tests Brevitas after its evidence-token and diagnostic result surfaces are corrected.\n#379 (74): Adds checked promotion of evidenced Horos candidates after the classifier and exclusion stream are trustworthy.\n\n2026-08-25 additions:\n#617 (93): Runtime-host attribution defaults collide with five contributor-identity gates and can refuse an otherwise ordinary governed delivery.\n#530 (74): Tests the remaining Atlas-to-harness hand-offs before contributor launch buttons claim support.",
     "state": "open",
-    "open": 7,
-    "closed": 0,
+    "open": 6,
+    "closed": 21,
     "url": "https://github.com/wildcat-finance/skills/milestone/53",
     "members": [
       {
@@ -318,9 +513,17 @@
         "dependencies": []
       },
       {
+        "number": 44,
+        "title": "Gate private mascot references for Wildcat image generation",
+        "state": "closed",
+        "url": "https://github.com/wildcat-finance/skills/issues/44",
+        "score": null,
+        "dependencies": []
+      },
+      {
         "number": 447,
         "title": "framework-5 — distinguish Wave, frontier and maintenance volunteer intent",
-        "state": "open",
+        "state": "closed",
         "url": "https://github.com/wildcat-finance/skills/issues/447",
         "score": 88,
         "dependencies": []
@@ -328,7 +531,7 @@
       {
         "number": 466,
         "title": "framework-7 — preserve external contributor attribution through Fiat integration",
-        "state": "open",
+        "state": "closed",
         "url": "https://github.com/wildcat-finance/skills/issues/466",
         "score": 86,
         "dependencies": []
@@ -348,6 +551,165 @@
         "url": "https://github.com/wildcat-finance/skills/issues/379",
         "score": 74,
         "dependencies": []
+      },
+      {
+        "number": 617,
+        "title": "framework-18 — the runtime host reinstates the byline the host-identity gates refuse",
+        "state": "closed",
+        "url": "https://github.com/wildcat-finance/skills/issues/617",
+        "score": 93,
+        "dependencies": []
+      },
+      {
+        "number": 530,
+        "title": "framework-13: test the remaining Atlas hand-offs before adding README buttons",
+        "state": "open",
+        "url": "https://github.com/wildcat-finance/skills/issues/530",
+        "score": 74,
+        "dependencies": []
+      },
+      {
+        "number": 1,
+        "title": "Package the skills repository as a Codex plugin",
+        "state": "closed",
+        "url": "https://github.com/wildcat-finance/skills/issues/1",
+        "score": null,
+        "dependencies": []
+      },
+      {
+        "number": 2,
+        "title": "Add Claude Code packaging for Hermes",
+        "state": "closed",
+        "url": "https://github.com/wildcat-finance/skills/issues/2",
+        "score": null,
+        "dependencies": []
+      },
+      {
+        "number": 8,
+        "title": "Add hexaemeron: one-shot delivery loop plugin (Claude Code + Codex)",
+        "state": "closed",
+        "url": "https://github.com/wildcat-finance/skills/issues/8",
+        "score": null,
+        "dependencies": []
+      },
+      {
+        "number": 18,
+        "title": "Rename hermes-gas-optimiser to hermes",
+        "state": "closed",
+        "url": "https://github.com/wildcat-finance/skills/issues/18",
+        "score": null,
+        "dependencies": []
+      },
+      {
+        "number": 25,
+        "title": "Make Hermes and Hexaemeron legible to local agentic models",
+        "state": "closed",
+        "url": "https://github.com/wildcat-finance/skills/issues/25",
+        "score": null,
+        "dependencies": []
+      },
+      {
+        "number": 29,
+        "title": "Add Probitas to the top-level skill ranking",
+        "state": "closed",
+        "url": "https://github.com/wildcat-finance/skills/issues/29",
+        "score": null,
+        "dependencies": []
+      },
+      {
+        "number": 33,
+        "title": "Introduce the Wildcat Commons in the public README",
+        "state": "closed",
+        "url": "https://github.com/wildcat-finance/skills/issues/33",
+        "score": null,
+        "dependencies": []
+      },
+      {
+        "number": 35,
+        "title": "Make Fiat aware of the wider Wildcat Labs marketplace",
+        "state": "closed",
+        "url": "https://github.com/wildcat-finance/skills/issues/35",
+        "score": null,
+        "dependencies": []
+      },
+      {
+        "number": 47,
+        "title": "Stamp Fiat deliveries with Shoggoth provenance",
+        "state": "closed",
+        "url": "https://github.com/wildcat-finance/skills/issues/47",
+        "score": null,
+        "dependencies": []
+      },
+      {
+        "number": 318,
+        "title": "hypomnema-2 — check runbook files carry the three-line shape ephoros hands off to",
+        "state": "closed",
+        "url": "https://github.com/wildcat-finance/skills/issues/318",
+        "score": null,
+        "dependencies": []
+      },
+      {
+        "number": 319,
+        "title": "ephoros-1 — require alert rules to carry a resolving runbook annotation",
+        "state": "closed",
+        "url": "https://github.com/wildcat-finance/skills/issues/319",
+        "score": null,
+        "dependencies": []
+      },
+      {
+        "number": 320,
+        "title": "fiat-1 — emit a delegation packet for every directive, covering all four agents",
+        "state": "closed",
+        "url": "https://github.com/wildcat-finance/skills/issues/320",
+        "score": null,
+        "dependencies": []
+      },
+      {
+        "number": 321,
+        "title": "fiat-next — validate the shape of the state load_state returns",
+        "state": "closed",
+        "url": "https://github.com/wildcat-finance/skills/issues/321",
+        "score": null,
+        "dependencies": []
+      },
+      {
+        "number": 322,
+        "title": "ephoros-next — catch telemetry keyed by wallet address across Python and TypeScript",
+        "state": "closed",
+        "url": "https://github.com/wildcat-finance/skills/issues/322",
+        "score": null,
+        "dependencies": []
+      },
+      {
+        "number": 370,
+        "title": "framework-1 — give the issues a run spins off a title convention",
+        "state": "closed",
+        "url": "https://github.com/wildcat-finance/skills/issues/370",
+        "score": null,
+        "dependencies": []
+      },
+      {
+        "number": 438,
+        "title": "fiat-wish — carry the task issue number in run and step branch names",
+        "state": "closed",
+        "url": "https://github.com/wildcat-finance/skills/issues/438",
+        "score": null,
+        "dependencies": []
+      },
+      {
+        "number": 515,
+        "title": "framework-12 — publish the ranked human contributor list the README already promises",
+        "state": "closed",
+        "url": "https://github.com/wildcat-finance/skills/issues/515",
+        "score": null,
+        "dependencies": [
+          {
+            "number": 466,
+            "title": "framework-7 — preserve external contributor attribution through Fiat integration",
+            "state": "closed",
+            "url": "https://github.com/wildcat-finance/skills/issues/466"
+          }
+        ]
       }
     ]
   },
@@ -439,14 +801,14 @@
     "title": "Wave 4 — historical fixtures and replay",
     "description": "#383 (98): Proves recorded receipts against receiptsRoot before later fixture consumers rely on their evidence class.\n#385 (89): Records bounded live test traffic into a draft capture plan before endpoints disappear.\n#384 (84): Adds the checked Foundry replay profile required by the Elenchus fixture handoff.\n#387 (88): Pins RPC-boundary failures into Lazarus fixtures after capture and replay exist.\n#386 (75): Records multi-provider chain anchors without upgrading them beyond their evidence.\n#406 (70): Allows deployment confirmation to cite a proof-checked Lazarus fixture under a distinct Ariadne claim.\n#417 (77): Exercises one-state Pandects laws against materialised historical state after fixture semantics are settled.",
     "state": "open",
-    "open": 7,
-    "closed": 0,
+    "open": 4,
+    "closed": 5,
     "url": "https://github.com/wildcat-finance/skills/milestone/55",
     "members": [
       {
         "number": 383,
         "title": "lazarus-next — prove receipts against the captured header's receiptsRoot",
-        "state": "open",
+        "state": "closed",
         "url": "https://github.com/wildcat-finance/skills/issues/383",
         "score": 98,
         "dependencies": []
@@ -470,7 +832,7 @@
       {
         "number": 387,
         "title": "elenchus-1 — pin RPC-boundary failures into lazarus fixtures",
-        "state": "open",
+        "state": "closed",
         "url": "https://github.com/wildcat-finance/skills/issues/387",
         "score": 88,
         "dependencies": []
@@ -478,7 +840,7 @@
       {
         "number": 386,
         "title": "lazarus-3 — record a structured multi-provider chain anchor",
-        "state": "open",
+        "state": "closed",
         "url": "https://github.com/wildcat-finance/skills/issues/386",
         "score": 75,
         "dependencies": []
@@ -498,6 +860,22 @@
         "url": "https://github.com/wildcat-finance/skills/issues/417",
         "score": 77,
         "dependencies": []
+      },
+      {
+        "number": 58,
+        "title": "Add audited Lazarus and cold-read repository prose",
+        "state": "closed",
+        "url": "https://github.com/wildcat-finance/skills/issues/58",
+        "score": null,
+        "dependencies": []
+      },
+      {
+        "number": 68,
+        "title": "Complete Compound III preservation Phase 0",
+        "state": "closed",
+        "url": "https://github.com/wildcat-finance/skills/issues/68",
+        "score": null,
+        "dependencies": []
       }
     ]
   },
@@ -507,7 +885,7 @@
     "description": "#329 (97): Makes Janus gates consume the permitted effects declared by the manifest.\n#330 (95): Checks that the named host adapter actually implements the manifest threshold.\n#381 (82): Widens campaign records to Echidna and Medusa only after #504 makes per-law exercise truthful.\n#382 (89): Makes per-integration law applicability executable after campaign records are honest.\n#416 (87): Adds delinquency and penalty-accrual laws once applicability is machine-readable.\n#335 (74): Adds a second callback model after the manifest and adapter checks make host neutrality testable.\n#334 (80): Emits a run-bound conformance record after the corrected multi-adapter harness exists.",
     "state": "open",
     "open": 7,
-    "closed": 0,
+    "closed": 1,
     "url": "https://github.com/wildcat-finance/skills/milestone/56",
     "members": [
       {
@@ -565,6 +943,14 @@
         "url": "https://github.com/wildcat-finance/skills/issues/334",
         "score": 80,
         "dependencies": []
+      },
+      {
+        "number": 51,
+        "title": "Publish Pandects from the skills incubator",
+        "state": "closed",
+        "url": "https://github.com/wildcat-finance/skills/issues/51",
+        "score": null,
+        "dependencies": []
       }
     ]
   },
@@ -574,7 +960,7 @@
     "description": "#388 (77): Completes ABI validation for return types and mutability before the Foundry front door grows the accepted corpus.\n#389 (87): Builds pinned solc standard JSON from Foundry projects against the completed callable-surface validator.\n#375 (76): Adds true globstar semantics and a resolved-file echo so incomplete corpora fail visibly.\n#390 (93): Adds fail-closed Morpho Midnight maturity coverage before combined collection and re-diligence.\n#391 (86): Combines live and archive collection after the venue adapter while preserving source class.\n#392 (76): Diffs fully sourced evidence files after collection is unified.\n#394 (83): Completes Hermes rule-to-class coverage before later gas experiment shapes expand.",
     "state": "open",
     "open": 7,
-    "closed": 0,
+    "closed": 3,
     "url": "https://github.com/wildcat-finance/skills/milestone/57",
     "members": [
       {
@@ -632,6 +1018,30 @@
         "url": "https://github.com/wildcat-finance/skills/issues/394",
         "score": 83,
         "dependencies": []
+      },
+      {
+        "number": 27,
+        "title": "Add probitas: sourced counterparty dossier plugin",
+        "state": "closed",
+        "url": "https://github.com/wildcat-finance/skills/issues/27",
+        "score": null,
+        "dependencies": []
+      },
+      {
+        "number": 30,
+        "title": "Add the Lemma plugin",
+        "state": "closed",
+        "url": "https://github.com/wildcat-finance/skills/issues/30",
+        "score": null,
+        "dependencies": []
+      },
+      {
+        "number": 57,
+        "title": "Add Euler v1 and v2 data coverage to Probitas and Tabularium",
+        "state": "closed",
+        "url": "https://github.com/wildcat-finance/skills/issues/57",
+        "score": null,
+        "dependencies": []
       }
     ]
   },
@@ -641,9 +1051,17 @@
     "description": "#395 (99): Builds the resumable Alexandria USDC collector that Tabularium Phase 1 and release controls consume.\n#396 (87): Enforces redistribution through digest-bound subset exports and explicit withheld gaps.\n#397 (93): Makes proof-backed-state earned by Lazarus verification before releases rely on the class.\n#398 (98): Ships canonical Compound v3 Phase 1 after collector and evidence classes are stable.\n#399 (90): Reconciles Alexandria and Tabularium interpretations after both owning adapters and gaps exist.\n#393 (90): Records and gates deployed bytecode size before compiler experiments can change it invisibly.\n#400 (72): Adds compiler-settings experiments after size gates and complete rule selection exist.",
     "state": "open",
     "open": 7,
-    "closed": 0,
+    "closed": 6,
     "url": "https://github.com/wildcat-finance/skills/milestone/58",
     "members": [
+      {
+        "number": 39,
+        "title": "Implement tabularium",
+        "state": "closed",
+        "url": "https://github.com/wildcat-finance/skills/issues/39",
+        "score": null,
+        "dependencies": []
+      },
       {
         "number": 395,
         "title": "alexandria-next — build the resumable Ethereum USDC interval collector",
@@ -693,11 +1111,51 @@
         "dependencies": []
       },
       {
+        "number": 4,
+        "title": "Publish the Hermes v2.1.0 live demo",
+        "state": "closed",
+        "url": "https://github.com/wildcat-finance/skills/issues/4",
+        "score": null,
+        "dependencies": []
+      },
+      {
         "number": 400,
         "title": "hermes-2 — add a compiler-settings experiment class",
         "state": "open",
         "url": "https://github.com/wildcat-finance/skills/issues/400",
         "score": 72,
+        "dependencies": []
+      },
+      {
+        "number": 6,
+        "title": "Support Foundry invariant rows in Hermes snapshots",
+        "state": "closed",
+        "url": "https://github.com/wildcat-finance/skills/issues/6",
+        "score": null,
+        "dependencies": []
+      },
+      {
+        "number": 21,
+        "title": "hermes: ignore compiler-local AST IDs in storage-layout comparison",
+        "state": "closed",
+        "url": "https://github.com/wildcat-finance/skills/issues/21",
+        "score": null,
+        "dependencies": []
+      },
+      {
+        "number": 55,
+        "title": "Specify Compound III preservation for Tabularium",
+        "state": "closed",
+        "url": "https://github.com/wildcat-finance/skills/issues/55",
+        "score": null,
+        "dependencies": []
+      },
+      {
+        "number": 61,
+        "title": "Publish the Alexandria lending-data archive skill",
+        "state": "closed",
+        "url": "https://github.com/wildcat-finance/skills/issues/61",
+        "score": null,
         "dependencies": []
       }
     ]
@@ -707,8 +1165,8 @@
     "title": "Wave 8 — predicate and grading foundations",
     "description": "#401 (84): Opens checked out-of-tree predicate discovery before new producers multiply core forks.\n#402 (95): Implements the grounded-agent predicate as a conforming module after discovery exists.\n#403 (85): Ingests real Forge, Hermes, and Pandects records after the claim grammar stabilises.\n#331 (96): Binds user-supplied sentences to question spans before a real release is graded.\n#332 (78): Maps corpus refreshes to broken citations so migrations remain reviewable.\n#333 (89): Imports external answers into graders after sentence and corpus bindings are trustworthy.\n#376 (86): Verifies release supersession across directories before those relationships become portable statements.",
     "state": "open",
-    "open": 7,
-    "closed": 0,
+    "open": 6,
+    "closed": 1,
     "url": "https://github.com/wildcat-finance/skills/milestone/59",
     "members": [
       {
@@ -738,7 +1196,7 @@
       {
         "number": 331,
         "title": "berean-1 — bind user_supplied sentences to the recorded question",
-        "state": "open",
+        "state": "closed",
         "url": "https://github.com/wildcat-finance/skills/issues/331",
         "score": 96,
         "dependencies": []
@@ -772,10 +1230,10 @@
   {
     "number": 60,
     "title": "Wave 9 — comparative assurance and first statements",
-    "description": "#498 (94): Adds diff-scoped Solidity mutation adequacy before broad gas and protocol changes rely on green tests alone.\n#458 (90): Builds the approved Homologia design for evidence-classed numeric agreement without claiming either implementation is correct.\n#449 (84): Performs bounded cross-run diagnosis after the Handover observation schema, redaction, and receipt binding are available.\n#405 (93): Exports Fiat receipt trails as durable delivery records after Ariadne foundations and handover bindings are stable.\n#408 (82): Emits Tabularium release evidence through the dataset predicate.\n#407 (81): Emits Alexandria subjects, coverage, and explicit gaps through Ariadne.\n#404 (78): Shapes accepted Hermes runs as Ariadne claims and command entries.",
+    "description": "#498 (94): Adds diff-scoped Solidity mutation adequacy before broad gas and protocol changes rely on green tests alone.\n#458 (90): Builds the approved Homologia design for evidence-classed numeric agreement without claiming either implementation is correct.\n#449 (84): Performs bounded cross-run diagnosis after the Handover observation schema, redaction, and receipt binding are available.\n#405 (93): Exports Fiat receipt trails as durable delivery records after Ariadne foundations and handover bindings are stable.\n#408 (82): Emits Tabularium release evidence through the dataset predicate.\n#407 (81): Emits Alexandria subjects, coverage, and explicit gaps through Ariadne.\n#404 (78): Shapes accepted Hermes runs as Ariadne claims and command entries.\n\n2026-08-25 additions:\n#510 (82): Reuses source-bound X-Ray preparation across audit rounds while retaining the complete current audit scope.",
     "state": "open",
-    "open": 7,
-    "closed": 0,
+    "open": 6,
+    "closed": 2,
     "url": "https://github.com/wildcat-finance/skills/milestone/60",
     "members": [
       {
@@ -796,7 +1254,7 @@
       },
       {
         "number": 449,
-        "title": "framework-introspection-5 — create Synkrisis for bounded cross-run diagnosis",
+        "title": "framework-22 — create Synkrisis for bounded cross-run diagnosis",
         "state": "open",
         "url": "https://github.com/wildcat-finance/skills/issues/449",
         "score": 84,
@@ -821,7 +1279,7 @@
       {
         "number": 407,
         "title": "alexandria-1 — emit an Ariadne-ready release statement",
-        "state": "open",
+        "state": "closed",
         "url": "https://github.com/wildcat-finance/skills/issues/407",
         "score": 81,
         "dependencies": []
@@ -833,6 +1291,14 @@
         "url": "https://github.com/wildcat-finance/skills/issues/404",
         "score": 78,
         "dependencies": []
+      },
+      {
+        "number": 510,
+        "title": "framework-11 — reuse source-bound X-Ray analysis across Fiat audit rounds",
+        "state": "closed",
+        "url": "https://github.com/wildcat-finance/skills/issues/510",
+        "score": 82,
+        "dependencies": []
       }
     ]
   },
@@ -842,7 +1308,7 @@
     "description": "#411 (94): Ships the first Wildcat-grounded Berean release after grading and statement foundations are ready.\n#410 (90): Binds Probitas dossiers to their exact evidence files and gates.\n#409 (69): Makes Lemma corpora a dataset-predicate consumer after deterministic input selection.\n#418 (74): Publishes the held cross-model AuDHD corpus before changing interaction rules.\n#419 (80): Defines a canonical compaction-safe working-state block after the corpus.\n#420 (78): Defines Brevitas and Sapheneia coexistence against that state grammar.\n#421 (80): Ships the executable pre-send checker after the grammar and carve-out are settled.",
     "state": "open",
     "open": 7,
-    "closed": 0,
+    "closed": 1,
     "url": "https://github.com/wildcat-finance/skills/milestone/61",
     "members": [
       {
@@ -900,16 +1366,24 @@
         "url": "https://github.com/wildcat-finance/skills/issues/421",
         "score": 80,
         "dependencies": []
+      },
+      {
+        "number": 72,
+        "title": "Mirror repository changes to private skills marketplace",
+        "state": "closed",
+        "url": "https://github.com/wildcat-finance/skills/issues/72",
+        "score": null,
+        "dependencies": []
       }
     ]
   },
   {
     "number": 62,
     "title": "Wave 11 — maintenance and prose evaluation",
-    "description": "#501 (84): Protects identifiers and host structure in a code-adjacent Vulgate register before broader parity evaluation.\n#415 (75): Routes Sapheneia rule-9 circuit breaking into Elenchus after working state can preserve the handoff.\n#427 (73): Defines the honest suite-wide Brevitas enforcement boundary after the corpus evidence exists.\n#422 (67): Builds fresh blind Imprimatur annotations after current false-clean source parsing is fixed.\n#423 (65): Runs Vulgate content-parity evaluation after the code-adjacent protected-span rules exist.\n#328 (64): Gives Metron attempt history a canonical home after the recorder exists.",
+    "description": "#501 (84): Protects identifiers and host structure in a code-adjacent Vulgate register before broader parity evaluation.\n#415 (75): Routes Sapheneia rule-9 circuit breaking into Elenchus after working state can preserve the handoff.\n#427 (73): Defines the honest suite-wide Brevitas enforcement boundary after the corpus evidence exists.\n#422 (67): Builds fresh blind Imprimatur annotations after current false-clean source parsing is fixed.\n#423 (65): Runs Vulgate content-parity evaluation after the code-adjacent protected-span rules exist.\n#328 (64): Gives Metron attempt history a canonical home after the recorder exists.\n\n2026-08-25 additions:\n#573 (70): Applies the ready, narrow H003 left-boundary repair after #500 landed; it removes a false positive without widening path grammar.",
     "state": "open",
-    "open": 6,
-    "closed": 0,
+    "open": 7,
+    "closed": 9,
     "url": "https://github.com/wildcat-finance/skills/milestone/62",
     "members": [
       {
@@ -958,6 +1432,392 @@
         "state": "open",
         "url": "https://github.com/wildcat-finance/skills/issues/328",
         "score": 64,
+        "dependencies": []
+      },
+      {
+        "number": 573,
+        "title": "hypomnema-wish — bound the left edge of H003's runbook keyword",
+        "state": "open",
+        "url": "https://github.com/wildcat-finance/skills/issues/573",
+        "score": 70,
+        "dependencies": [
+          {
+            "number": 500,
+            "title": "hypomnema-1 — H003 must tell a quoted specimen from a live runbook pointer",
+            "state": "closed",
+            "url": "https://github.com/wildcat-finance/skills/issues/500"
+          }
+        ]
+      },
+      {
+        "number": 10,
+        "title": "Rewrite the top-level README for a two-plugin repository",
+        "state": "closed",
+        "url": "https://github.com/wildcat-finance/skills/issues/10",
+        "score": null,
+        "dependencies": []
+      },
+      {
+        "number": 12,
+        "title": "Replace Code findings with per-role suitability scores and worked examples",
+        "state": "closed",
+        "url": "https://github.com/wildcat-finance/skills/issues/12",
+        "score": null,
+        "dependencies": []
+      },
+      {
+        "number": 14,
+        "title": "Carry the day-to-day examples into each plugin's entry skill",
+        "state": "closed",
+        "url": "https://github.com/wildcat-finance/skills/issues/14",
+        "score": null,
+        "dependencies": []
+      },
+      {
+        "number": 16,
+        "title": "Drop the gate exposition from the top-level README",
+        "state": "closed",
+        "url": "https://github.com/wildcat-finance/skills/issues/16",
+        "score": null,
+        "dependencies": []
+      },
+      {
+        "number": 20,
+        "title": "Remove tracked bytecode and add a root .gitignore",
+        "state": "closed",
+        "url": "https://github.com/wildcat-finance/skills/issues/20",
+        "score": null,
+        "dependencies": []
+      },
+      {
+        "number": 23,
+        "title": "hermes: remove incomplete protocol finding example",
+        "state": "closed",
+        "url": "https://github.com/wildcat-finance/skills/issues/23",
+        "score": null,
+        "dependencies": []
+      },
+      {
+        "number": 53,
+        "title": "Resolve repository cold-read findings",
+        "state": "closed",
+        "url": "https://github.com/wildcat-finance/skills/issues/53",
+        "score": null,
+        "dependencies": []
+      },
+      {
+        "number": 63,
+        "title": "Rewrite and synchronise marketplace prose across all plugins",
+        "state": "closed",
+        "url": "https://github.com/wildcat-finance/skills/issues/63",
+        "score": null,
+        "dependencies": []
+      },
+      {
+        "number": 76,
+        "title": "Obsolete tracking issue",
+        "state": "closed",
+        "url": "https://github.com/wildcat-finance/skills/issues/76",
+        "score": null,
+        "dependencies": []
+      }
+    ]
+  },
+  {
+    "number": 64,
+    "title": "Wave Δ — distributed Fiat checkpoints",
+    "description": "Epic #558; programme PR #569. Portable, content-addressed Fiat state for contributor handover: immutable run anchors, cumulative archives, locked authority, required publication fences, explicit fork resolution, recovery, and Atlas routing. Distributed computing, booooo.\n\n2026-08-25 additions:\n#508 (98): Binds cumulative audit carryover, absolute delegated-write confinement and executable runbook gates for durable hand-off.\n#557 (97): Makes the Fiat ledger survive clone loss, a direct prerequisite for portable distributed checkpoints.",
+    "state": "open",
+    "open": 12,
+    "closed": 1,
+    "url": "https://github.com/wildcat-finance/skills/milestone/64",
+    "members": [
+      {
+        "number": 558,
+        "title": "fiat-wish — make one receipted transition portable between contributors [epic]",
+        "state": "open",
+        "url": "https://github.com/wildcat-finance/skills/issues/558",
+        "score": null,
+        "dependencies": [
+          {
+            "number": 567,
+            "title": "fiat-wish — prove checkpoint reconciliation, revocation, and disaster recovery",
+            "state": "open",
+            "url": "https://github.com/wildcat-finance/skills/issues/567"
+          },
+          {
+            "number": 568,
+            "title": "fiat-wish — route contributors to resume, redraw, or start from accepted Fiat state",
+            "state": "open",
+            "url": "https://github.com/wildcat-finance/skills/issues/568"
+          }
+        ]
+      },
+      {
+        "number": 508,
+        "title": "fiat-wish — bind exhausted-audit carryover, delegated writes, and runbook gates",
+        "state": "open",
+        "url": "https://github.com/wildcat-finance/skills/issues/508",
+        "score": 98,
+        "dependencies": []
+      },
+      {
+        "number": 557,
+        "title": "framework-17 — a Fiat run's ledger lives in one clone and dies with it",
+        "state": "open",
+        "url": "https://github.com/wildcat-finance/skills/issues/557",
+        "score": 97,
+        "dependencies": []
+      },
+      {
+        "number": 559,
+        "title": "fiat-wish — replace the stale checkpoint draft with the current handover contract",
+        "state": "closed",
+        "url": "https://github.com/wildcat-finance/skills/issues/559",
+        "score": null,
+        "dependencies": [
+          {
+            "number": 434,
+            "title": "framework-introspection-1 — define the observable run record",
+            "state": "closed",
+            "url": "https://github.com/wildcat-finance/skills/issues/434"
+          },
+          {
+            "number": 439,
+            "title": "fiat-wish — run in a dedicated worktree, created before preflight",
+            "state": "closed",
+            "url": "https://github.com/wildcat-finance/skills/issues/439"
+          },
+          {
+            "number": 539,
+            "title": "Unknown issue",
+            "state": "unknown",
+            "url": "https://github.com/wildcat-finance/skills/issues/539"
+          }
+        ]
+      },
+      {
+        "number": 560,
+        "title": "fiat-wish — bind portable runs to an immutable base and checkpoint identity",
+        "state": "open",
+        "url": "https://github.com/wildcat-finance/skills/issues/560",
+        "score": null,
+        "dependencies": [
+          {
+            "number": 559,
+            "title": "fiat-wish — replace the stale checkpoint draft with the current handover contract",
+            "state": "closed",
+            "url": "https://github.com/wildcat-finance/skills/issues/559"
+          }
+        ]
+      },
+      {
+        "number": 561,
+        "title": "fiat-wish — export and restore cumulative Fiat checkpoints",
+        "state": "open",
+        "url": "https://github.com/wildcat-finance/skills/issues/561",
+        "score": null,
+        "dependencies": [
+          {
+            "number": 435,
+            "title": "framework-introspection-2 — redact and bound run-observation data",
+            "state": "closed",
+            "url": "https://github.com/wildcat-finance/skills/issues/435"
+          },
+          {
+            "number": 436,
+            "title": "framework-introspection-3 — bind companion run observations to Fiat receipts",
+            "state": "closed",
+            "url": "https://github.com/wildcat-finance/skills/issues/436"
+          },
+          {
+            "number": 547,
+            "title": "framework-16 — the commit gate lives in one clone and dies with it",
+            "state": "open",
+            "url": "https://github.com/wildcat-finance/skills/issues/547"
+          },
+          {
+            "number": 560,
+            "title": "fiat-wish — bind portable runs to an immutable base and checkpoint identity",
+            "state": "open",
+            "url": "https://github.com/wildcat-finance/skills/issues/560"
+          }
+        ]
+      },
+      {
+        "number": 563,
+        "title": "fiat-wish — build the checkpoint intake, validation, and publication state machine",
+        "state": "open",
+        "url": "https://github.com/wildcat-finance/skills/issues/563",
+        "score": null,
+        "dependencies": [
+          {
+            "number": 561,
+            "title": "fiat-wish — export and restore cumulative Fiat checkpoints",
+            "state": "open",
+            "url": "https://github.com/wildcat-finance/skills/issues/561"
+          }
+        ]
+      },
+      {
+        "number": 564,
+        "title": "fiat-wish — deploy the locked checkpoint authority and signed receipt path",
+        "state": "open",
+        "url": "https://github.com/wildcat-finance/skills/issues/564",
+        "score": null,
+        "dependencies": [
+          {
+            "number": 563,
+            "title": "fiat-wish — build the checkpoint intake, validation, and publication state machine",
+            "state": "open",
+            "url": "https://github.com/wildcat-finance/skills/issues/563"
+          }
+        ]
+      },
+      {
+        "number": 565,
+        "title": "fiat-wish — fence external-run transitions on accepted checkpoints",
+        "state": "open",
+        "url": "https://github.com/wildcat-finance/skills/issues/565",
+        "score": null,
+        "dependencies": [
+          {
+            "number": 561,
+            "title": "fiat-wish — export and restore cumulative Fiat checkpoints",
+            "state": "open",
+            "url": "https://github.com/wildcat-finance/skills/issues/561"
+          },
+          {
+            "number": 563,
+            "title": "fiat-wish — build the checkpoint intake, validation, and publication state machine",
+            "state": "open",
+            "url": "https://github.com/wildcat-finance/skills/issues/563"
+          },
+          {
+            "number": 564,
+            "title": "fiat-wish — deploy the locked checkpoint authority and signed receipt path",
+            "state": "open",
+            "url": "https://github.com/wildcat-finance/skills/issues/564"
+          }
+        ]
+      },
+      {
+        "number": 566,
+        "title": "fiat-wish — represent and resolve concurrent checkpoint descendants",
+        "state": "open",
+        "url": "https://github.com/wildcat-finance/skills/issues/566",
+        "score": null,
+        "dependencies": [
+          {
+            "number": 560,
+            "title": "fiat-wish — bind portable runs to an immutable base and checkpoint identity",
+            "state": "open",
+            "url": "https://github.com/wildcat-finance/skills/issues/560"
+          },
+          {
+            "number": 563,
+            "title": "fiat-wish — build the checkpoint intake, validation, and publication state machine",
+            "state": "open",
+            "url": "https://github.com/wildcat-finance/skills/issues/563"
+          },
+          {
+            "number": 564,
+            "title": "fiat-wish — deploy the locked checkpoint authority and signed receipt path",
+            "state": "open",
+            "url": "https://github.com/wildcat-finance/skills/issues/564"
+          },
+          {
+            "number": 565,
+            "title": "fiat-wish — fence external-run transitions on accepted checkpoints",
+            "state": "open",
+            "url": "https://github.com/wildcat-finance/skills/issues/565"
+          }
+        ]
+      },
+      {
+        "number": 567,
+        "title": "fiat-wish — prove checkpoint reconciliation, revocation, and disaster recovery",
+        "state": "open",
+        "url": "https://github.com/wildcat-finance/skills/issues/567",
+        "score": null,
+        "dependencies": [
+          {
+            "number": 561,
+            "title": "fiat-wish — export and restore cumulative Fiat checkpoints",
+            "state": "open",
+            "url": "https://github.com/wildcat-finance/skills/issues/561"
+          },
+          {
+            "number": 563,
+            "title": "fiat-wish — build the checkpoint intake, validation, and publication state machine",
+            "state": "open",
+            "url": "https://github.com/wildcat-finance/skills/issues/563"
+          },
+          {
+            "number": 564,
+            "title": "fiat-wish — deploy the locked checkpoint authority and signed receipt path",
+            "state": "open",
+            "url": "https://github.com/wildcat-finance/skills/issues/564"
+          },
+          {
+            "number": 565,
+            "title": "fiat-wish — fence external-run transitions on accepted checkpoints",
+            "state": "open",
+            "url": "https://github.com/wildcat-finance/skills/issues/565"
+          },
+          {
+            "number": 566,
+            "title": "fiat-wish — represent and resolve concurrent checkpoint descendants",
+            "state": "open",
+            "url": "https://github.com/wildcat-finance/skills/issues/566"
+          }
+        ]
+      },
+      {
+        "number": 568,
+        "title": "fiat-wish — route contributors to resume, redraw, or start from accepted Fiat state",
+        "state": "open",
+        "url": "https://github.com/wildcat-finance/skills/issues/568",
+        "score": null,
+        "dependencies": [
+          {
+            "number": 505,
+            "title": "framework-10 — the Atlas payload cannot date its own snapshot, and the sync drops milestone-less issues in silence",
+            "state": "open",
+            "url": "https://github.com/wildcat-finance/skills/issues/505"
+          },
+          {
+            "number": 530,
+            "title": "framework-13: test the remaining Atlas hand-offs before adding README buttons",
+            "state": "open",
+            "url": "https://github.com/wildcat-finance/skills/issues/530"
+          },
+          {
+            "number": 565,
+            "title": "fiat-wish — fence external-run transitions on accepted checkpoints",
+            "state": "open",
+            "url": "https://github.com/wildcat-finance/skills/issues/565"
+          },
+          {
+            "number": 566,
+            "title": "fiat-wish — represent and resolve concurrent checkpoint descendants",
+            "state": "open",
+            "url": "https://github.com/wildcat-finance/skills/issues/566"
+          },
+          {
+            "number": 567,
+            "title": "fiat-wish — prove checkpoint reconciliation, revocation, and disaster recovery",
+            "state": "open",
+            "url": "https://github.com/wildcat-finance/skills/issues/567"
+          }
+        ]
+      },
+      {
+        "number": 682,
+        "title": "framework-28 — make every Fiat mutation prove the Promise that authorises it",
+        "state": "open",
+        "url": "https://github.com/wildcat-finance/skills/issues/682",
+        "score": null,
         "dependencies": []
       }
     ]

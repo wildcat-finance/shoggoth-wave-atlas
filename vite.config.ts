@@ -1,7 +1,20 @@
 import { sites } from "@openai/sites-vite-plugin";
+import { execFileSync } from "node:child_process";
 import vinext from "vinext";
 import { defineConfig } from "vite";
 import hostingConfig from "./.openai/hosting.json";
+
+function resolveBuildRevision() {
+  const revision = process.env.GITHUB_SHA ?? execFileSync("git", ["rev-parse", "HEAD"], {
+    encoding: "utf8",
+  }).trim();
+  if (!/^[0-9a-f]{40}$/i.test(revision)) {
+    throw new Error("Atlas build revision is unavailable; set GITHUB_SHA to a full commit SHA.");
+  }
+  return revision;
+}
+
+const buildRevision = resolveBuildRevision();
 
 const SITE_CREATOR_PLACEHOLDER_DATABASE_ID =
   "00000000-0000-4000-8000-000000000000";
@@ -44,6 +57,9 @@ export default defineConfig(async () => {
   const { cloudflare } = await import("@cloudflare/vite-plugin");
 
   return {
+    define: {
+      __ATLAS_BUILD_REVISION__: JSON.stringify(buildRevision),
+    },
     server: isCodexSeatbeltSandbox
       ? { watch: { useFsEvents: false, usePolling: true } }
       : undefined,

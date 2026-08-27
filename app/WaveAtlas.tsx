@@ -37,7 +37,21 @@ function compactPurpose(description: string) {
   return firstLine.replace(/^#\d+\s*\(\d+\):\s*/, "");
 }
 
-export function WaveAtlas({ waves }: { waves: WaveRecord[] }) {
+type Provenance = {
+  source: "live" | "cache" | "snapshot";
+  generatedAt: string;
+  sourceRevision: string;
+  buildRevision: string;
+  readError?: string;
+};
+
+export function WaveAtlas({
+  waves,
+  provenance,
+}: {
+  waves: WaveRecord[];
+  provenance: Provenance;
+}) {
   const [query, setQuery] = useState("");
   const [view, setView] = useState<View>("all");
   const [deskWave, setDeskWave] = useState<number | null>(null);
@@ -337,7 +351,24 @@ export function WaveAtlas({ waves }: { waves: WaveRecord[] }) {
 
       <footer>
         <span>Source: wildcat-finance/skills GitHub milestones</span>
-        <span>Data captured when this deployment was built</span>
+        <span>Data: {provenance.source} · observed {provenance.generatedAt}</span>
+        <a
+          href={`https://github.com/wildcat-finance/skills/commit/${provenance.sourceRevision}`}
+          target="_blank"
+          rel="noreferrer"
+        >
+          Skills revision {provenance.sourceRevision.slice(0, 12)}
+        </a>
+        <a
+          href={`https://github.com/wildcat-finance/shoggoth-wave-atlas/commit/${provenance.buildRevision}`}
+          target="_blank"
+          rel="noreferrer"
+        >
+          Atlas build {provenance.buildRevision.slice(0, 12)}
+        </a>
+        {provenance.source === "snapshot" && (
+          <span>Live GitHub read failed; this is a snapshot fallback.</span>
+        )}
       </footer>
     </main>
   );
