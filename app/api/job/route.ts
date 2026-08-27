@@ -1,4 +1,5 @@
 import { eligibleJobs, fiatPrompt, jobRule, randomEligibleJob } from "../../job";
+import { buildRevision } from "../../build-info";
 import { cacheSeconds, loadWaves } from "../../waves-source";
 
 const headers = {
@@ -40,6 +41,8 @@ export async function GET(request: Request) {
       // backlog from a stale file.
       read_from: loaded.source,
       generated_at: loaded.generatedAt,
+      source_revision: loaded.sourceRevision,
+      build_revision: buildRevision,
       cache_seconds: cacheSeconds,
       ...(loaded.readError ? { read_error: loaded.readError } : {}),
       ...(loaded.credentialPresent === undefined

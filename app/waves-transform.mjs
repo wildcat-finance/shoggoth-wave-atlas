@@ -8,6 +8,13 @@
 // Nothing here performs I/O. Callers supply raw GitHub milestone and issue
 // payloads and receive the records the app renders.
 
+// Some generated milestone prose arrives through GitHub with literal `\\n`
+// sequences. Preserve real line breaks and decode only that escaped form so
+// the snapshot fallback renders the same useful first line as live data.
+function normalizedDescription(description) {
+  return description.replaceAll("\\n", "\n");
+}
+
 // Waves sort by their number. A lettered subdivision ("Wave 5b") sorts after
 // the wave it subdivides. The α and β families are retired, so nothing here
 // reads a family suffix; a title that does not parse sorts last, by title.
@@ -133,7 +140,7 @@ export function buildWaves({ milestones, issues: rawIssues }) {
       return aOrder - bOrder || aTitle.localeCompare(bTitle);
     })
     .map((milestone) => {
-      const description = milestone.description?.trim() ?? "";
+      const description = normalizedDescription(milestone.description?.trim() || "");
       const members = (byMilestone.get(milestone.number) ?? [])
         .sort((a, b) => {
           const order =

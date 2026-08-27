@@ -28,6 +28,10 @@ test("server-renders the Shoggoth Wave Atlas", async () => {
   const html = await response.text();
   assert.match(html, /<title>Shoggoth Wave Atlas · Wildcat Skills<\/title>/i);
   assert.doesNotMatch(html, /codex-preview/);
+  assert.match(html, /Data:/);
+  assert.match(html, /observed/);
+  assert.match(html, /Skills revision/);
+  assert.match(html, /Atlas build/);
 });
 
 test("job API returns the selected issue and the complete contribution prompt", async () => {
@@ -39,6 +43,8 @@ test("job API returns the selected issue and the complete contribution prompt", 
   assert.equal(body.schema, "wildcat-wave-job/v2");
   assert.ok(["live", "cache", "snapshot"].includes(body.read_from));
   assert.ok(Number.isFinite(Date.parse(body.generated_at)));
+  assert.match(body.source_revision, /^[0-9a-f]{40}$/i);
+  assert.match(body.build_revision, /^[0-9a-f]{40}$/i);
   assert.equal(body.cache_seconds, 600);
   assert.ok(Array.isArray(body.open_issues_without_a_wave));
   assert.equal(body.selection, "random");

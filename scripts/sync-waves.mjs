@@ -31,6 +31,14 @@ function gh(path) {
 
 const milestones = gh("repos/wildcat-finance/skills/milestones");
 const issues = gh("repos/wildcat-finance/skills/issues");
+const sourceRevision = execFileSync(
+  "gh",
+  ["api", "repos/wildcat-finance/skills/commits/main", "--jq", ".sha"],
+  { encoding: "utf8" },
+).trim();
+if (!/^[0-9a-f]{40}$/i.test(sourceRevision)) {
+  throw new Error("GitHub did not return a full Skills source revision");
+}
 
 const { waves, dropped } = buildWaves({ milestones, issues });
 const generatedAt = new Date().toISOString();
@@ -44,7 +52,7 @@ writeFileSync(
 // "this read cannot say".
 writeFileSync(
   resolve("app/waves-meta.json"),
-  `${JSON.stringify({ generated_at: generatedAt, dropped }, null, 2)}\n`,
+  `${JSON.stringify({ generated_at: generatedAt, source_revision: sourceRevision, dropped }, null, 2)}\n`,
 );
 
 const memberCount = waves.flatMap((wave) => wave.members).length;
