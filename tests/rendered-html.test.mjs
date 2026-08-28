@@ -32,6 +32,9 @@ test("server-renders the Shoggoth Wave Atlas", async () => {
   assert.match(html, /observed/);
   assert.match(html, /Skills revision/);
   assert.match(html, /Atlas build/);
+  assert.match(html, /ATLAS MAINTENANCE/);
+  assert.match(html, /Work on the map itself\./);
+  assert.match(html, /never offered by/);
 });
 
 test("job API returns the selected issue and the complete contribution prompt", async () => {
@@ -86,6 +89,11 @@ test("complete job pool spans every dependency-clear wave", async () => {
   assert.equal(body.jobs.length, body.eligible_count);
   assert.ok(new Set(body.jobs.map((job) => job.wave.milestone_number)).size > 10);
   assert.ok(body.jobs.every((job) => job.prompt.includes(`issue #${job.number}`)));
+  assert.ok(
+    body.jobs.every((job) =>
+      job.url.startsWith("https://github.com/wildcat-finance/skills/issues/"),
+    ),
+  );
 });
 
 for (const [provider, expectedOrigin] of [

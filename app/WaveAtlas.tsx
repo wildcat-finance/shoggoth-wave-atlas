@@ -16,6 +16,14 @@ type IssueRecord = {
   }>;
 };
 
+export type AtlasIssueRecord = {
+  number: number;
+  title: string;
+  url: string;
+  updatedAt: string;
+  labels: string[];
+};
+
 export type WaveRecord = {
   number: number;
   title: string;
@@ -45,12 +53,22 @@ type Provenance = {
   readError?: string;
 };
 
+type MaintenanceProvenance = {
+  source: "live" | "cache" | "unavailable";
+  generatedAt: string;
+  readError?: string;
+};
+
 export function WaveAtlas({
   waves,
+  atlasIssues,
   provenance,
+  maintenanceProvenance,
 }: {
   waves: WaveRecord[];
+  atlasIssues: AtlasIssueRecord[];
   provenance: Provenance;
+  maintenanceProvenance: MaintenanceProvenance;
 }) {
   const [query, setQuery] = useState("");
   const [view, setView] = useState<View>("all");
@@ -144,7 +162,8 @@ export function WaveAtlas({
             <p className="lede">
               Every delivery wave, its members, and its current state. One
               numbered sequence, ordered by wave number, with the waves that
-              still hold open work marked.
+              still hold open work marked. Work on the Atlas itself sits in a
+              separate maintenance category below.
             </p>
           </div>
           <a
@@ -163,6 +182,69 @@ export function WaveAtlas({
           <div><strong>{totals.closed}</strong><span>closed</span></div>
         </div>
       </header>
+
+      <section className="atlas-maintenance" aria-labelledby="atlas-maintenance-heading">
+        <div className="maintenance-intro">
+          <div className="eyebrow">ATLAS MAINTENANCE · SEPARATE CATEGORY</div>
+          <h2 id="atlas-maintenance-heading">Work on the map itself.</h2>
+          <p>
+            Open issues from the Wave Atlas repository live here. They are not
+            Wildcat Skills waves, do not change the wave totals below, and are
+            never offered by <code>GET /api/job</code>.
+          </p>
+        </div>
+        <div className="maintenance-summary" aria-label="Atlas maintenance status">
+          <strong>
+            {maintenanceProvenance.source === "unavailable"
+              ? "—"
+              : atlasIssues.length}
+          </strong>
+          <span>open Atlas issues</span>
+          <small>
+            Data: {maintenanceProvenance.source} · observed{" "}
+            {maintenanceProvenance.generatedAt}
+          </small>
+          <a
+            href="https://github.com/wildcat-finance/shoggoth-wave-atlas/issues"
+            target="_blank"
+            rel="noreferrer"
+          >
+            Open maintenance queue ↗
+          </a>
+        </div>
+        <div className="maintenance-grid">
+          {atlasIssues.map((issue) => (
+            <a
+              className="maintenance-card"
+              href={issue.url}
+              target="_blank"
+              rel="noreferrer"
+              key={issue.number}
+            >
+              <span className="maintenance-card-top">
+                <span>ATLAS</span>
+                <strong>#{issue.number}</strong>
+              </span>
+              <b>{issue.title}</b>
+              <span className="maintenance-labels">
+                {issue.labels.length > 0
+                  ? issue.labels.map((label) => <span key={label}>{label}</span>)
+                  : <span>unlabelled</span>}
+              </span>
+              <small>Updated {issue.updatedAt.slice(0, 10)}</small>
+            </a>
+          ))}
+          {maintenanceProvenance.source === "unavailable" && (
+            <div className="maintenance-empty">
+              The Atlas maintenance queue could not be read. Skills waves
+              remain available below.
+            </div>
+          )}
+          {maintenanceProvenance.source !== "unavailable" && atlasIssues.length === 0 && (
+            <div className="maintenance-empty">No open Atlas maintenance issues.</div>
+          )}
+        </div>
+      </section>
 
       <section className="controls" aria-label="Wave filters">
         <label className="search-wrap">
@@ -350,8 +432,12 @@ export function WaveAtlas({
       </section>
 
       <footer>
-        <span>Source: wildcat-finance/skills GitHub milestones</span>
+        <span>Sources: Skills milestones · Wave Atlas issues</span>
         <span>Data: {provenance.source} · observed {provenance.generatedAt}</span>
+        <span>
+          Atlas issues: {maintenanceProvenance.source} · observed{" "}
+          {maintenanceProvenance.generatedAt}
+        </span>
         <a
           href={`https://github.com/wildcat-finance/skills/commit/${provenance.sourceRevision}`}
           target="_blank"

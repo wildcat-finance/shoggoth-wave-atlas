@@ -1,12 +1,15 @@
+import { buildAtlasIssues } from "./atlas-issues-transform.mjs";
 import { buildWaves } from "./waves-transform.mjs";
-import type { WaveRecord } from "./WaveAtlas";
+import type { AtlasIssueRecord, WaveRecord } from "./WaveAtlas";
 import snapshotWaves from "./waves-data.json";
 import snapshotMeta from "./waves-meta.json";
 
-const REPOSITORY = "wildcat-finance/skills";
+const SKILLS_REPOSITORY = "wildcat-finance/skills";
+const ATLAS_REPOSITORY = "wildcat-finance/shoggoth-wave-atlas";
 // Version the cache schema. A v1 entry lacks sourceRevision and would make a
 // fresh deployment report incomplete provenance until its old TTL elapsed.
 const CACHE_KEY = "https://wave-atlas.internal/waves-v2";
+const ATLAS_CACHE_KEY = "https://wave-atlas.internal/atlas-issues-v1";
 const CACHE_SECONDS = 600;
 const PAGE_SIZE = 100;
 const MAX_PAGES = 10;
@@ -136,7 +139,12 @@ function snapshot(readError?: string): LoadedWaves {
   };
 }
 
-async function githubPages(path: string, token?: string) {
+async function githubPages(
+  repository: string,
+  path: string,
+  token?: string,
+  state = "all",
+) {
   const headers: Record<string, string> = {
     Accept: "application/vnd.github+json",
     "X-GitHub-Api-Version": "2022-11-28",
@@ -148,7 +156,7 @@ async function githubPages(path: string, token?: string) {
 
   const collected: unknown[] = [];
   for (let page = 1; page <= MAX_PAGES; page += 1) {
-    const url = `https://api.github.com/repos/${REPOSITORY}/${path}?state=all&per_page=${PAGE_SIZE}&page=${page}`;
+    const url = `https://api.github.com/repos/${repository}/${path}?state=${state}&per_page=${PAGE_SIZE}&page=${page}`;
     const response = await fetch(url, {
       headers,
       signal: AbortSignal.timeout(FETCH_TIMEOUT_MS),
@@ -171,24 +179,24 @@ async function githubPages(path: string, token?: string) {
         // A body that will not parse is not worth failing differently over.
       }
       throw new Error(
-        `GitHub ${path} page ${page} returned ${response.status}` +
+        `GitHub ${repository}/${path} page ${page} returned ${response.status}` +
           ` (hourly limit ${limit}, remaining ${remaining}, ` +
           `credential ${token ? "sent" : "absent"})${detail}`,
       );
     }
     const body = (await response.json()) as unknown[];
     if (!Array.isArray(body)) {
-      throw new Error(`GitHub ${path} page ${page} was not an array`);
+      throw new Error(`GitHub ${repository}/${path} page ${page} was not an array`);
     }
     collected.push(...body);
     if (body.length < PAGE_SIZE) return collected;
   }
   // A truncated read would silently shrink the eligible set, so refuse it
   // rather than serve a partial answer that looks complete.
-  throw new Error(`GitHub ${path} exceeded ${MAX_PAGES} pages`);
+  throw new Error(`GitHub ${repository}/${path} exceeded ${MAX_PAGES} pages`);
 }
 
-async function githubRevision(token?: string): Promise<string> {
+async function githubRevision(repository: string, token?: string): Promise<string> {
   const headers: Record<string, string> = {
     Accept: "application/vnd.github+json",
     "X-GitHub-Api-Version": "2022-11-28",
@@ -196,23 +204,25 @@ async function githubRevision(token?: string): Promise<string> {
   };
   if (token) headers.Authorization = `Bearer ${token}`;
 
-  const response = await fetch(`https://api.github.com/repos/${REPOSITORY}/commits/main`, {
+  const response = await fetch(`https://api.github.com/repos/${repository}/commits/main`, {
     headers,
     signal: AbortSignal.timeout(FETCH_TIMEOUT_MS),
   });
-  if (!response.ok) throw new Error(`GitHub commits/main returned ${response.status}`);
+  if (!response.ok) {
+    throw new Error(`GitHub ${repository}/commits/main returned ${response.status}`);
+  }
   const body = (await response.json()) as { sha?: unknown };
   if (typeof body.sha !== "string" || !/^[0-9a-f]{40}$/i.test(body.sha)) {
-    throw new Error("GitHub commits/main returned an invalid SHA");
+    throw new Error(`GitHub ${repository}/commits/main returned an invalid SHA`);
   }
   return body.sha;
 }
 
 async function readLive(token?: string): Promise<LoadedWaves> {
   const [milestones, issues, sourceRevision] = await Promise.all([
-    githubPages("milestones", token),
-    githubPages("issues", token),
-    githubRevision(token),
+    githubPages(SKILLS_REPOSITORY, "milestones", token),
+    githubPages(SKILLS_REPOSITORY, "issues", token),
+    githubRevision(SKILLS_REPOSITORY, token),
   ]);
   const { waves, dropped } = buildWaves({
     milestones: milestones as never[],
@@ -297,3 +307,112 @@ export async function loadWaves(ctx?: {
 }
 
 export const cacheSeconds = CACHE_SECONDS;
+
+export type AtlasIssuesSource = "live" | "cache" | "unavailable";
+
+export type LoadedAtlasIssues = {
+  issues: AtlasIssueRecord[];
+  generatedAt: string;
+  source: AtlasIssuesSource;
+  readError?: string;
+  credentialPresent?: boolean;
+};
+
+function isAtlasIssue(value: unknown): value is AtlasIssueRecord {
+  if (!value || typeof value !== "object") return false;
+  const issue = value as Partial<AtlasIssueRecord>;
+  return (
+    Number.isInteger(issue.number) &&
+    typeof issue.title === "string" &&
+    typeof issue.url === "string" &&
+    typeof issue.updatedAt === "string" &&
+    Number.isFinite(Date.parse(issue.updatedAt)) &&
+    Array.isArray(issue.labels) &&
+    issue.labels.every((label) => typeof label === "string")
+  );
+}
+
+function isLoadedAtlasIssues(value: unknown): value is LoadedAtlasIssues {
+  if (!value || typeof value !== "object") return false;
+  const candidate = value as Partial<LoadedAtlasIssues>;
+  return (
+    Array.isArray(candidate.issues) &&
+    candidate.issues.every(isAtlasIssue) &&
+    typeof candidate.generatedAt === "string" &&
+    Number.isFinite(Date.parse(candidate.generatedAt))
+  );
+}
+
+async function readAtlasIssuesLive(token?: string): Promise<LoadedAtlasIssues> {
+  const rawIssues = await githubPages(
+    ATLAS_REPOSITORY,
+    "issues",
+    token,
+    "open",
+  );
+  return {
+    issues: buildAtlasIssues(rawIssues) as AtlasIssueRecord[],
+    generatedAt: new Date().toISOString(),
+    source: "live",
+  };
+}
+
+export async function loadAtlasIssues(ctx?: {
+  waitUntil?: (promise: Promise<unknown>) => void;
+}): Promise<LoadedAtlasIssues> {
+  let cache: Cache | undefined;
+  if (typeof caches !== "undefined") {
+    try {
+      cache = await caches.open("atlas-issues");
+    } catch {
+      // The category can still read GitHub without the cache.
+    }
+  }
+
+  if (cache) {
+    try {
+      const hit = await cache.match(ATLAS_CACHE_KEY);
+      if (hit) {
+        const cached = (await hit.json()) as unknown;
+        if (isLoadedAtlasIssues(cached)) {
+          return { ...cached, source: "cache" };
+        }
+        await cache.delete(ATLAS_CACHE_KEY);
+      }
+    } catch {
+      // A malformed or unavailable cache must not hide a successful live read.
+    }
+  }
+
+  const token = await bindingToken();
+  let loaded: LoadedAtlasIssues;
+  try {
+    loaded = await readAtlasIssuesLive(token);
+  } catch (error) {
+    const reason =
+      error instanceof Error ? error.message : "unknown Atlas issue read failure";
+    return {
+      issues: [],
+      generatedAt: new Date().toISOString(),
+      source: "unavailable",
+      readError: reason,
+      credentialPresent: Boolean(token),
+    };
+  }
+
+  if (cache) {
+    const store = cache.put(
+      ATLAS_CACHE_KEY,
+      new Response(JSON.stringify(loaded), {
+        headers: {
+          "Content-Type": "application/json",
+          "Cache-Control": `max-age=${CACHE_SECONDS}`,
+        },
+      }),
+    );
+    if (ctx?.waitUntil) ctx.waitUntil(store);
+    else await store.catch(() => {});
+  }
+
+  return loaded;
+}

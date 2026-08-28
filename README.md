@@ -5,6 +5,12 @@ open issue whose recorded hard dependencies are closed. It reads GitHub live
 behind a ten-minute cache. The checked-in `app/waves-data.json` is a fallback,
 not the ordinary source. `scripts/sync-waves.mjs` refreshes that fallback.
 
+The page also reads open issues from `wildcat-finance/shoggoth-wave-atlas` and
+shows them in a separate **Atlas maintenance** category. Those issues describe
+work on the map itself. They are excluded from Skills wave totals, dependency
+logic, filters, and `/api/job`; the Atlas never invents a Skills milestone for
+its own repository work.
+
 ## `/api/job`
 
 `GET /api/job` returns this JSON shape:

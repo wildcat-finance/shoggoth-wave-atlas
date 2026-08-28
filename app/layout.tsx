@@ -11,8 +11,30 @@ const sans = Geist({ variable: "--font-sans", subsets: ["latin"] });
 const mono = Geist_Mono({ variable: "--font-mono", subsets: ["latin"] });
 
 export const metadata: Metadata = {
+  metadataBase: new URL("https://shoggoth-wave-atlas.functi0nzer0.chatgpt.site"),
   title: "Shoggoth Wave Atlas · Wildcat Skills",
-  description: "A complete index of Wildcat Skills delivery waves and their member issues.",
+  description:
+    "A live index of Wildcat Skills delivery waves, plus the Wave Atlas maintenance queue kept in its own category.",
+  openGraph: {
+    title: "Shoggoth Wave Atlas · Wildcat Skills",
+    description:
+      "A live index of Wildcat Skills delivery waves, plus the Wave Atlas maintenance queue kept in its own category.",
+    images: [
+      {
+        url: "/og.png",
+        width: 1200,
+        height: 630,
+        alt: "Shoggoth Wave Atlas — Wildcat Skills waves and Atlas maintenance",
+      },
+    ],
+  },
+  twitter: {
+    card: "summary_large_image",
+    title: "Shoggoth Wave Atlas · Wildcat Skills",
+    description:
+      "A live index of Wildcat Skills delivery waves, plus the Wave Atlas maintenance queue kept in its own category.",
+    images: ["/og.png"],
+  },
 };
 
 export default function RootLayout({ children }: Readonly<{ children: React.ReactNode }>) {
