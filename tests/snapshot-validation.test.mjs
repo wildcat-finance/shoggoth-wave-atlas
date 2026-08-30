@@ -78,19 +78,69 @@ test("a wave that lost its members array is refused", () => {
 });
 
 test("a member with a broken dependency is refused, and every problem is reported", () => {
-  const damaged = clone(waves);
-  const carrier = damaged.find((wave) =>
-    wave.members.some((member) => member.dependencies.length > 0),
-  );
-  assert.ok(carrier, "the fixture no longer records any dependency");
-  const member = carrier.members.find((candidate) => candidate.dependencies.length > 0);
-  member.dependencies[0].state = "maybe";
-  member.title = 12;
+  // A hand-built fixture, not the committed snapshot. What Skills happens to
+  // record today is not this validator's business, and a unit test that reads
+  // live data fails for reasons that have nothing to do with the unit.
+  const damaged = [
+    {
+      number: 1,
+      title: "Wave 1",
+      description: "",
+      state: "open",
+      open: 1,
+      closed: 0,
+      url: "https://github.com/wildcat-finance/skills/milestone/1",
+      members: [
+        {
+          number: 7,
+          title: 12,
+          state: "open",
+          url: "https://github.com/wildcat-finance/skills/issues/7",
+          score: null,
+          dependencies: [
+            {
+              number: 6,
+              title: "Earlier",
+              state: "maybe",
+              url: "https://github.com/wildcat-finance/skills/issues/6",
+            },
+          ],
+        },
+      ],
+    },
+  ];
 
   const report = inspectSnapshot({ waves: damaged, meta });
   assert.equal(report.ok, false);
   assert.ok(report.problems.some((problem) => /\.state is not open, closed, or unknown/.test(problem)));
   assert.ok(report.problems.some((problem) => /\.title is not a string/.test(problem)));
+});
+
+test("waves carrying no issues at all are refused", () => {
+  // The failure this check was added for: a read that returned milestones and
+  // no issues produced a structurally perfect snapshot of nothing, and every
+  // other check here passed it.
+  const hollow = waves.map((wave) => ({ ...wave, members: [] }));
+  const report = inspectSnapshot({ waves: hollow, meta });
+  assert.equal(report.ok, false);
+  assert.equal(report.waveCount, waves.length);
+  assert.equal(report.memberCount, 0);
+  assert.ok(report.problems.some((problem) => /no issues at all/.test(problem)));
+});
+
+test("a collapse against the baseline is refused, ordinary movement is not", () => {
+  const trimmed = (keep) =>
+    waves.map((wave) => ({ ...wave, members: wave.members.slice(0, keep) }));
+
+  // Losing most of the backlog between two runs is a bad read, not a quiet week.
+  const collapsed = inspectSnapshot({ waves: trimmed(1), meta, baseline: waves });
+  assert.equal(collapsed.ok, false);
+  assert.ok(collapsed.problems.some((problem) => /would fall from/.test(problem)));
+
+  // The same data with no baseline to compare against is structurally fine.
+  assert.equal(inspectSnapshot({ waves: trimmed(1), meta }).ok, true);
+  // And an unchanged snapshot is never a collapse.
+  assert.equal(inspectSnapshot({ waves, meta, baseline: waves }).ok, true);
 });
 
 // The scripts the refresh workflow runs, exercised the way the workflow runs
