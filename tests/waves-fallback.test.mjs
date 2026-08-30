@@ -21,8 +21,16 @@ const snapshotMeta = JSON.parse(
 // exercise the live path.
 const realFetch = globalThis.fetch;
 globalThis.fetch = async (input, init) => {
-  const url = typeof input === "string" ? input : input.url;
-  if (url.includes("api.github.com")) {
+  // Match on the parsed host rather than a substring of the URL. A substring
+  // test also matches api.github.com.example.invalid and misses nothing about
+  // that being a different server.
+  let host;
+  try {
+    host = new URL(typeof input === "string" ? input : input.url).hostname;
+  } catch {
+    host = undefined;
+  }
+  if (host === "api.github.com") {
     throw new Error("simulated GitHub outage");
   }
   return realFetch(input, init);
