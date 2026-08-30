@@ -1,0 +1,177 @@
+name: Release verification
+
+# What this workflow is, precisely: it packages an accepted main revision and
+# then proves what is actually being served. It does not publish. OpenAI Sites
+# exposes no supported non-interactive publisher for GitHub Actions today, and
+# an invented private endpoint or a long-lived personal token would be a worse
+# answer than saying so. Publication is performed by the authorised Sites
+# publisher on the Codex account that owns the project; see docs/RELEASE.md.
+#
+# Calling this "deploy" would be a lie. It is the gate around the deploy: the
+# artifact it packages is the one to publish, and the deployment record it
+# writes says whether the live origin ever caught up.
+
+on:
+  push:
+    branches: [main]
+  workflow_dispatch:
+    inputs:
+      revision:
+        description: Full 40-character main revision to package and verify
+        required: true
+        type: string
+      allow_rollback:
+        description: Permit a revision older than the currently verified release
+        required: false
+        default: false
+        type: boolean
+
+permissions: {}
+
+# One release at a time, in the order they arrive. Cancelling an in-flight run
+# would leave a deployment record open with nothing to close it.
+concurrency:
+  group: atlas-release
+  cancel-in-progress: false
+
+env:
+  DEPLOY_URL: https://shoggoth-wave-atlas.functi0nzer0.chatgpt.site
+  EXPECTED_SITES_PROJECT: appgprj_6a895aa2e35c8191b3cbf5733f7866ee
+
+jobs:
+  package:
+    runs-on: ubuntu-latest
+    permissions:
+      contents: read
+    outputs:
+      revision: ${{ steps.revision.outputs.revision }}
+    steps:
+      - name: Resolve the accepted revision
+        id: revision
+        env:
+          REQUESTED: ${{ inputs.revision || github.sha }}
+        run: |
+          if ! printf '%s' "$REQUESTED" | grep -Eq '^[0-9a-f]{40}$'; then
+            echo "Expected a full 40-character revision, got '$REQUESTED'." >&2
+            exit 1
+          fi
+          echo "revision=$REQUESTED" >> "$GITHUB_OUTPUT"
+
+      - uses: actions/checkout@v4
+        with:
+          ref: ${{ steps.revision.outputs.revision }}
+          persist-credentials: false
+
+      - uses: actions/setup-node@v4
+        with:
+          node-version-file: package.json
+          cache: npm
+
+      - run: npm ci
+
+      - run: npm test
+        env:
+          GITHUB_SHA: ${{ steps.revision.outputs.revision }}
+
+      - run: npm run lint
+
+      - name: Build the exact accepted revision
+        env:
+          GITHUB_SHA: ${{ steps.revision.outputs.revision }}
+        run: npm run build
+
+      - name: Refuse an artifact built from mutated source
+        # A release publishes committed bytes. A snapshot refresh or any other
+        # generated change that appeared during the build would mean the live
+        # site does not match the revision this release names.
+        run: |
+          changed="$(git status --porcelain)"
+          if [ -n "$changed" ]; then
+            echo "The build modified tracked source:" >&2
+            echo "$changed" >&2
+            exit 1
+          fi
+
+      - name: Check the artifact
+        env:
+          EXPECTED_BUILD_REVISION: ${{ steps.revision.outputs.revision }}
+        run: node scripts/check-package.mjs
+
+      - uses: actions/upload-artifact@v4
+        with:
+          name: atlas-${{ steps.revision.outputs.revision }}
+          path: dist
+          retention-days: 30
+          if-no-files-found: error
+
+  verify:
+    needs: package
+    runs-on: ubuntu-latest
+    permissions:
+      contents: read
+      deployments: write
+    steps:
+      - uses: actions/checkout@v4
+        with:
+          ref: ${{ needs.package.outputs.revision }}
+          persist-credentials: false
+
+      - uses: actions/setup-node@v4
+        with:
+          node-version-file: package.json
+
+      - name: Open the release record
+        id: record
+        env:
+          GITHUB_TOKEN: ${{ github.token }}
+          RELEASE_LOG_URL: ${{ github.server_url }}/${{ github.repository }}/actions/runs/${{ github.run_id }}
+        run: |
+          node scripts/release-status.mjs start \
+            --revision "${{ needs.package.outputs.revision }}" \
+            ${{ inputs.allow_rollback && '--allow-rollback' || '' }}
+
+      - name: Wait for the live origin to serve this revision
+        id: verify
+        env:
+          EXPECTED_BUILD_REVISION: ${{ needs.package.outputs.revision }}
+          ATTEMPTS: ${{ vars.RELEASE_VERIFY_ATTEMPTS || '20' }}
+          INTERVAL: ${{ vars.RELEASE_VERIFY_INTERVAL_SECONDS || '30' }}
+        # The verifier is the whole test: HTTPS, no redirects, a fifteen-second
+        # ceiling, a build_revision equal to the accepted commit, a full source
+        # revision, and a read mode this application actually produces.
+        run: |
+          for attempt in $(seq 1 "$ATTEMPTS"); do
+            if node scripts/verify-deployment.mjs; then
+              exit 0
+            fi
+            echo "Attempt $attempt of $ATTEMPTS did not match; waiting ${INTERVAL}s."
+            sleep "$INTERVAL"
+          done
+          echo "The live origin never served $EXPECTED_BUILD_REVISION." >&2
+          echo "Publish this revision through the authorised Sites publisher, or roll back." >&2
+          exit 1
+
+      - name: Record the outcome
+        if: always()
+        env:
+          GITHUB_TOKEN: ${{ github.token }}
+          RELEASE_LOG_URL: ${{ github.server_url }}/${{ github.repository }}/actions/runs/${{ github.run_id }}
+        run: |
+          node scripts/release-status.mjs finish \
+            --deployment "${{ steps.record.outputs.deployment_id }}" \
+            --revision "${{ needs.package.outputs.revision }}" \
+            --state "${{ steps.verify.outcome == 'success' && 'success' || 'failure' }}"
+
+      - name: Summarise
+        if: always()
+        run: |
+          {
+            echo "### Atlas release ${{ needs.package.outputs.revision }}"
+            echo
+            echo "- Artifact: \`atlas-${{ needs.package.outputs.revision }}\`"
+            echo "- Live URL: $DEPLOY_URL"
+            echo "- Verifier: ${{ steps.verify.outcome }}"
+            echo "- Previously verified: \`${{ steps.record.outputs.previous_verified_revision }}\`"
+            echo
+            echo "Publication is performed by the authorised Sites publisher; see docs/RELEASE.md."
+          } >> "$GITHUB_STEP_SUMMARY"
