@@ -1,30 +1,5 @@
 {
-  "generated_at": "2026-08-27T20:17:11.704Z",
-  "source_revision": "0d4403e6f430ed46098f81a3577d32965185fb17",
-  "dropped": [
-    {
-      "number": 643,
-      "title": "elenchus-wish",
-      "url": "https://github.com/wildcat-finance/skills/issues/643",
-      "reason": "no milestone"
-    },
-    {
-      "number": 654,
-      "title": "framework-25: make Aave a reproducible research and development target",
-      "url": "https://github.com/wildcat-finance/skills/issues/654",
-      "reason": "no milestone"
-    },
-    {
-      "number": 655,
-      "title": "framework-26: make Morpho a reproducible research and development target",
-      "url": "https://github.com/wildcat-finance/skills/issues/655",
-      "reason": "no milestone"
-    },
-    {
-      "number": 657,
-      "title": "framework-27 — token spend is only knowable by scraping the session logs the record forbids",
-      "url": "https://github.com/wildcat-finance/skills/issues/657",
-      "reason": "no milestone"
-    }
-  ]
+  "generated_at": "2026-08-30T00:09:57.814Z",
+  "source_revision": "48b063c597ebf6aa1978c3c7048ba928d27e7fb5",
+  "dropped": []
 }
