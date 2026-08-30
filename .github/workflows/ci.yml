@@ -1,0 +1,46 @@
+name: CI
+
+# Pull-request checks. This workflow builds, tests, and lints. It never
+# packages a Sites version, never creates a deployment, and holds no
+# publication credential: read access is all it is granted.
+
+on:
+  pull_request:
+  merge_group:
+
+permissions:
+  contents: read
+
+concurrency:
+  group: ci-${{ github.workflow }}-${{ github.ref }}
+  cancel-in-progress: true
+
+jobs:
+  check:
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v4
+        with:
+          persist-credentials: false
+          # The whitespace check below compares against the base commit, which
+          # a depth-1 checkout does not have.
+          fetch-depth: 0
+
+      - uses: actions/setup-node@v4
+        with:
+          node-version-file: package.json
+          cache: npm
+
+      - run: npm ci
+
+      # `npm test` builds first, so this covers the build as well. The build
+      # refuses to run without a full revision to embed, and GITHUB_SHA is one.
+      - run: npm test
+
+      - run: npm run lint
+
+      - name: Check the diff for whitespace damage
+        run: git diff --check ${{ github.event.pull_request.base.sha || github.event.merge_group.base_sha }} HEAD
+
+      - name: Prove the checked-in fallback is still publishable
+        run: node scripts/validate-waves-snapshot.mjs

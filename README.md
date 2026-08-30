@@ -107,6 +107,11 @@ thing that is broken.
 This maintains the fallback only. The runtime GitHub read and its 600-second
 cache remain the ordinary source.
 
+## Continuous integration
+
+`.github/workflows/ci.yml` runs build, test, and lint on every pull request. It
+holds read access only and publishes nothing.
+
 ## Release verification
 
 The build embeds the Atlas commit SHA. After deploying, prove that the serving
@@ -118,6 +123,14 @@ EXPECTED_BUILD_REVISION="$GITHUB_SHA" DEPLOY_URL=https://atlas.example node scri
 
 The script reads `/api/job?all=true` from the deployed origin and fails unless
 its `build_revision` equals the immutable Atlas revision supplied by the release
-pipeline. It also rejects redirects, non-HTTPS URLs, and responses that exceed
-the fifteen-second timeout. It prints the Skills source mode, observed time,
-and observed source revision. It does not deploy anything.
+pipeline, its `source_revision` is a full 40-character SHA, and its `read_from`
+is one of `live`, `cache`, or `snapshot`. It also rejects redirects, non-HTTPS
+URLs, and responses that exceed the fifteen-second timeout. It prints the Skills
+source mode, observed time, and observed source revision. It does not deploy
+anything.
+
+`.github/workflows/release-verification.yml` packages each accepted `main`
+revision, records a `production` deployment, and runs that verifier against the
+live origin. Publication itself is performed by the authorised Sites publisher
+on the account that owns the project; see [docs/RELEASE.md](docs/RELEASE.md) for
+the normal release, manual recovery, rollback, and credential handling.
