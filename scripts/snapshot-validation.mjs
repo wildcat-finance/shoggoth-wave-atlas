@@ -84,25 +84,65 @@ function checkDropped(problems, where, value) {
   if (typeof issue.url !== "string") fail(problems, `${where}.url is not a string`);
 }
 
+function membersOf(waves) {
+  return (Array.isArray(waves) ? waves : []).reduce(
+    (total, wave) => total + (Array.isArray(wave?.members) ? wave.members.length : 0),
+    0,
+  );
+}
+
+// How far the issue count may fall in one refresh before the result is treated
+// as a bad read rather than a quiet week. Skills closes issues continuously;
+// it does not lose half its backlog between two runs.
+const COLLAPSE_RATIO = 0.5;
+
 // Inspect one generated fallback pair. Returns every problem found rather than
 // the first, because a run that fails validation is going to be read by a
 // person and one message per run is a slow way to learn what is wrong.
-export function inspectSnapshot({ waves, meta }) {
+//
+// `baseline` is the wave list this one would replace, when there is one. A
+// snapshot can be perfectly well-formed and still be wrong: the failure that
+// prompted this argument produced fourteen valid waves containing no issues at
+// all, which every structural check below happily accepted.
+export function inspectSnapshot({ waves, meta, baseline }) {
   const problems = [];
 
   if (!Array.isArray(waves)) {
     fail(problems, "waves-data.json is not an array");
   } else if (waves.length === 0) {
-    // An empty wave set is the failure this whole check exists for: it is what
-    // a silently truncated or unauthenticated read looks like on disk.
+    // An empty wave set is one failure this check exists for: it is what a
+    // silently truncated or narrowed read looks like on disk.
     fail(problems, "waves-data.json contains no waves");
   } else {
     waves.forEach((wave, index) => checkWave(problems, `waves[${index}]`, wave));
   }
 
+  const memberCount = membersOf(waves);
+  if (Array.isArray(waves) && waves.length > 0 && memberCount === 0) {
+    // Waves without issues is the other shape of the same failure, and the
+    // more dangerous one: it looks like a snapshot, validates like a snapshot,
+    // and leaves the Atlas with nothing to offer when the live read is down.
+    fail(problems, "waves-data.json contains no issues at all");
+  }
+
+  const baselineCount = membersOf(baseline);
+  if (baselineCount > 0 && memberCount < baselineCount * COLLAPSE_RATIO) {
+    fail(
+      problems,
+      `waves-data.json would fall from ${baselineCount} issues to ${memberCount}; ` +
+        "refusing a collapse this large without a human deciding it is real",
+    );
+  }
+
   if (!meta || typeof meta !== "object") {
     fail(problems, "waves-meta.json is not an object");
-    return { ok: problems.length === 0, problems, waveCount: 0, memberCount: 0, droppedCount: 0 };
+    return {
+      ok: false,
+      problems,
+      waveCount: Array.isArray(waves) ? waves.length : 0,
+      memberCount,
+      droppedCount: 0,
+    };
   }
 
   if (typeof meta.source_revision !== "string" || !SHA_PATTERN.test(meta.source_revision)) {
@@ -120,15 +160,11 @@ export function inspectSnapshot({ waves, meta }) {
     meta.dropped.forEach((issue, index) => checkDropped(problems, `dropped[${index}]`, issue));
   }
 
-  const waveList = Array.isArray(waves) ? waves : [];
   return {
     ok: problems.length === 0,
     problems,
-    waveCount: waveList.length,
-    memberCount: waveList.reduce(
-      (total, wave) => total + (Array.isArray(wave?.members) ? wave.members.length : 0),
-      0,
-    ),
+    waveCount: Array.isArray(waves) ? waves.length : 0,
+    memberCount,
     droppedCount: Array.isArray(meta.dropped) ? meta.dropped.length : 0,
   };
 }

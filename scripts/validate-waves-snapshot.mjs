@@ -5,6 +5,12 @@ import { inspectSnapshot } from "./snapshot-validation.mjs";
 
 // Gate between generation and publication. `scripts/sync-waves.mjs` writes the
 // fallback; this refuses to let a bad one travel any further.
+//
+// Pass `--baseline <path>` with the wave list this run would replace — the
+// committed one, `git show HEAD:app/waves-data.json` — and a collapse in the
+// issue count is refused as well. Structural validity is not enough: a read
+// that returns milestones and no issues produces a perfectly well-formed
+// snapshot of nothing.
 
 function readJson(path) {
   try {
@@ -15,9 +21,16 @@ function readJson(path) {
   }
 }
 
+function argument(name) {
+  const index = process.argv.indexOf(`--${name}`);
+  return index === -1 ? undefined : process.argv[index + 1];
+}
+
 const waves = readJson("app/waves-data.json");
 const meta = readJson("app/waves-meta.json");
-const report = inspectSnapshot({ waves, meta });
+const baselinePath = argument("baseline");
+const baseline = baselinePath ? readJson(baselinePath) : undefined;
+const report = inspectSnapshot({ waves, meta, baseline });
 
 if (!report.ok) {
   console.error("The generated fallback snapshot is not publishable:");
