@@ -31,7 +31,7 @@ const [owner, repo] = repository.split("/");
 // Every message this script prints is built here from statuses and paths. A
 // response body is never echoed, so a credential cannot travel into the log
 // through an error path.
-async function rest(method, path, body) {
+async function rest(method, path, body, tolerate = []) {
   const response = await fetch(`https://api.github.com/repos/${repository}${path}`, {
     method,
     headers: {
@@ -44,6 +44,7 @@ async function rest(method, path, body) {
     ...(body ? { body: JSON.stringify(body) } : {}),
   });
   if (response.status === 404) return { status: 404, body: null };
+  if (tolerate.includes(response.status)) return { status: response.status, body: null };
   if (!response.ok) {
     throw new Error(`GitHub ${method} ${path} returned ${response.status}`);
   }
@@ -152,12 +153,36 @@ const open = await rest(
 const openPulls = Array.isArray(open.body) ? open.body : [];
 
 if (openPulls.length === 0) {
-  const created = await rest("POST", "/pulls", {
-    title: "chore: refresh the checked-in fallback snapshot",
-    head: REFRESH_BRANCH,
-    base: BASE_BRANCH,
-    body: prBody,
-  });
+  const created = await rest(
+    "POST",
+    "/pulls",
+    {
+      title: "chore: refresh the checked-in fallback snapshot",
+      head: REFRESH_BRANCH,
+      base: BASE_BRANCH,
+      body: prBody,
+    },
+    // A 403 here is not a broken credential. GITHUB_TOKEN may hold
+    // `pull-requests: write` and still be refused, because opening a pull
+    // request from Actions is additionally gated by a repository setting.
+    // The refresh commit is already on the branch either way, so say what is
+    // missing and where the work is rather than dying on a bare status code.
+    [403],
+  );
+  if (created.status === 403) {
+    console.error(
+      `The refreshed snapshot is committed to ${REFRESH_BRANCH}, but this workflow ` +
+        "may not open the pull request for it.",
+    );
+    console.error(
+      "Enable Settings > Actions > General > \"Allow GitHub Actions to create and " +
+        "approve pull requests\" (the organisation may gate it too), or open it by hand:",
+    );
+    console.error(
+      `  https://github.com/${repository}/compare/${BASE_BRANCH}...${REFRESH_BRANCH}?expand=1`,
+    );
+    process.exit(1);
+  }
   console.log(`Opened ${repo} pull request #${created.body.number}.`);
 } else {
   // One branch, one pull request. Overlapping runs are already serialised by
