@@ -20,40 +20,34 @@ would have quietly become a snapshot-driven site again, which it is not.
 `appgprj_6a895aa2e35c8191b3cbf5733f7866ee`, served at
 <https://shoggoth-wave-atlas.functi0nzer0.chatgpt.site>.
 
-That hostname is the resolution of the "project not visible" question. The
-slug's second label is the owning account's handle, so the project belongs to
-the personal Codex account behind `functi0nZer0`, not to a Wildcat organisation
-workspace. A different workspace connected to this repository will not list the
-project, which is what was observed; it is an ownership boundary, not a stale
-mapping and not a lost project.
+The Sites record confirms that this project id serves that hostname, and names
+an individual as its owner rather than an organisation workspace. The Sites API
+does not expose the owning workspace's label, so there is no workspace name to
+record here. That is the resolution of the "project not visible" question: a
+different workspace connected to this repository will not list the project. It
+is an ownership boundary, not a stale mapping and not a lost project.
 
 **This has a consequence for migration.** The public hostname is derived from
 the owning account. Recreating the project under another account or workspace
 produces a different origin, and every consumer of `/api/job` is pointed at the
-current one. Do not create a replacement project to "move" it. The supported
-options are:
+current one. Do not create a replacement project to "move" it.
 
-1. **Publish from the owning account.** Sign in to Codex as the account that
-   owns the project and publish from there. This keeps the project id, the
-   hostname, and this repository's `hosting.json` mapping all correct, and it
-   is what the release path below assumes.
-2. **Ask OpenAI to transfer the project** to the target workspace, keeping the
-   id and slug. Whether Sites supports such a transfer is not established from
-   inside this repository; treat it as a support request, not a self-serve
-   action, and do not begin it by creating a second project.
-
-Until a transfer completes, option 1 is the release mechanism. Changing
-`.openai/hosting.json` to a new project id is a deliberate migration with a URL
-change, not a fix, and it should not be merged as one.
+No transfer operation is exposed: the Sites connector has no move or transfer
+call, and none is documented. Treat an identity-preserving transfer to an
+organisation workspace as unavailable rather than merely unattempted. If one
+appears later it must keep both the project id and the hostname to be worth
+taking. Changing `.openai/hosting.json` to a new project id is a deliberate
+migration with a URL change, not a fix, and it should not be merged as one.
 
 ## Why nothing here publishes
 
-Sites publication happens through the Codex/Sites interface using the owning
-account's session. There is no supported non-interactive publisher for GitHub
-Actions, and this repository will not invent a private endpoint or hold a
-long-lived personal token to fake one. So the release workflow is named for
-what it does — it packages and verifies — and the publish step is performed by
-the authorised publisher on the owning account.
+Publication is a Sites connector call from an authenticated Codex session on
+the owning account. There is no Sites CLI, no public deployment API, no service
+credential, and no GitHub App: nothing a workflow could hold. The organisation
+Projects API is an API-management surface and carries no version or deployment
+operations. This repository will not invent a private endpoint or hold a
+long-lived personal token to fake one, so the release workflow is named for
+what it does — it packages and verifies — and a person performs the publish.
 
 `@openai/sites-vite-plugin` packages `.openai/hosting.json` (and `drizzle/**`,
 when present) into `dist/.openai/`. The artifact this workflow uploads is
@@ -70,14 +64,30 @@ therefore exactly what a Sites version is saved from.
      `appgprj_6a895aa2e35c8191b3cbf5733f7866ee`,
    - uploads `atlas-<sha>` as the artifact to publish,
    - opens a `production` deployment record marked *in progress*.
-3. Publish that revision from the owning Codex account, saving a Sites version
-   from the accepted source bytes.
+3. Publish that revision from the owning Codex account. In a Codex session with
+   this repository, on a clean checkout of that exact commit:
+
+   ```bash
+   GITHUB_SHA=<sha> npm run build
+   EXPECTED_BUILD_REVISION=<sha> \
+   EXPECTED_SITES_PROJECT=appgprj_6a895aa2e35c8191b3cbf5733f7866ee \
+   node scripts/check-package.mjs
+   ```
+
+   Then, through the Sites connector: `sites_save_site_version` with the
+   project id, the commit SHA, and an archive of `dist`; `sites_deploy_site_version`
+   with the saved version id it returns; `sites_get_deployment_status` to
+   confirm. Sites keeps its own internal source branch and may need it
+   fast-forwarded to the commit being published before the save succeeds; that
+   happens inside Sites and never touches this repository's GitHub remote.
 4. The workflow polls `/api/job?all=true` until `build_revision` equals the
    accepted SHA, then marks the deployment `success`. If the origin never
    catches up within the polling window it marks the deployment `failure`.
 
 Runs are serialised by the `atlas-release` concurrency group, so two merges
-cannot verify out of order.
+cannot verify out of order. A merge that is superseded before anyone publishes
+it records a failed deployment, which is accurate: that revision was never
+served. Publish the newer one.
 
 ## Manual recovery
 
@@ -104,9 +114,13 @@ A failed build changes nothing: no artifact is uploaded, no version is saved,
 and production keeps serving whatever it was serving.
 
 A failed verification means the live origin is not the revision that was
-accepted. Restore the last verified version — the deployment records in the
-`production` environment name it, and the Sites version history holds it — by
-republishing that version from the owning account. Then confirm:
+accepted. Restore the last verified version rather than rebuilding it: every
+saved Sites version stays listed and redeployable, keyed by an id of the shape
+`appgprj_…~appgver_…`, and each one records the commit SHA it was built from.
+List them through the Sites connector (`list_site_versions`), find the last
+version whose SHA matches a `success` deployment record in the `production`
+environment, and redeploy that id with `sites_deploy_site_version`. Nothing is
+rebuilt, so the bytes that go back are the bytes that were verified. Confirm:
 
 ```bash
 EXPECTED_BUILD_REVISION=<last-verified-sha> \
@@ -126,10 +140,14 @@ the currently verified one is refused unless `allow_rollback` is checked.
 - No workflow persists a credential in a Git remote or in `.git/config`; every
   checkout sets `persist-credentials: false`, and every write to GitHub goes
   through the API with the token passed in the environment.
-- The Sites publication credential is the owning account's Codex session. It is
-  not stored in this repository and must not be added to it. Rotate it by
-  signing out of and back into that account; nothing here needs updating when
-  it changes.
+- The Sites publication credential is the owning account's authenticated Codex
+  connector session. It is not stored in this repository and must not be added
+  to it. Rotate it by re-authenticating that account; nothing here needs
+  updating when it changes.
+- A publish may mint a short-lived credential for Sites' own internal source
+  repository. It is scoped to that repository, cannot save or deploy versions
+  on its own, and expires; a later publish obtains a fresh one through the
+  connector. Do not persist it, and do not put it in a workflow.
 - If a Sites publisher credential is ever added as an Actions secret, rotate it
   by replacing the secret and re-running the release for the current `main`;
   never print it, and never write it into a file inside the artifact.

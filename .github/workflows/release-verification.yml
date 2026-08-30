@@ -1,11 +1,12 @@
 name: Release verification
 
 # What this workflow is, precisely: it packages an accepted main revision and
-# then proves what is actually being served. It does not publish. OpenAI Sites
-# exposes no supported non-interactive publisher for GitHub Actions today, and
-# an invented private endpoint or a long-lived personal token would be a worse
-# answer than saying so. Publication is performed by the authorised Sites
-# publisher on the Codex account that owns the project; see docs/RELEASE.md.
+# then proves what is actually being served. It does not publish. Publication
+# is a Sites connector call from an authenticated Codex session on the account
+# that owns the project: there is no Sites CLI, deployment API, service
+# credential, or GitHub App for a workflow to hold, and an invented private
+# endpoint or a long-lived personal token would be a worse answer than saying
+# so. See docs/RELEASE.md for the publish and rollback procedures.
 #
 # Calling this "deploy" would be a lie. It is the gate around the deploy: the
 # artifact it packages is the one to publish, and the deployment record it
