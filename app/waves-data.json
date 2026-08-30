@@ -5,7 +5,7 @@
     "description": "Full open-issue census: 30 August 2026; skills@48b063c597eb. Scores are impact/40 + urgency/25 + readiness/20 + unblocking/15; dependencies, active work, and programme order can override numeric order.\n\n#855 (100): The GitHub App is the visible delivery route, but App-opened pull requests receive no checks; #851 reached main through this zero-check path.\n#906 (100): A three-way push test isolates committer identity as the variable in GH013; the accepted route keeps Shoggoth authorship but requires a human committer and signing identity.\n#437 (99): Two live Fiat pull requests (#849 and #850) are already working the report-only dead-code baseline; keep the active stack visible and remeasure against the current plugin graph.\n#891 (99): A clean sync merge can discard correct work without a conflict, so the integration receipt can bless a semantic loss.\n#893 (99): Verified commit signatures do not constrain authorship and protected merges require no approval, leaving identity and acceptance as separate unchecked claims.\n#504 (98): PR #725 is active and fixes the false claim that every catalogue law was exercised; land it before #381 widens the record to more engines.\n#889 (98): Most plugin suites still have no CI lane, and the App delivery path can merge with zero checks; current main adds another plugin to that uncovered surface.\n#854 (97): Portable sync and Horos scan can agree on a stale tracked universe, and the portable check does not establish import closure; current main still carries both boundaries.\n#912 (97): The coverage selector check still reads Python and Solidity through the 256 KiB Markdown-law reader; #905 bought headroom but explicitly left this accidental source-size cap intact.\n#502 (96): Makes three shipped Phylax rules follow bounded single-assignment locals so a clean result stops overstating what was inspected.\n#844 (96): Ariadne credential scrubbing leaks on a multi-at authority and pair parsing is last-wins; both are concrete unsafe input behaviours on current main.\n#898 (96): done integrate reports an attribution failure when the merge commit is merely unfetched, hiding a recoverable transport state behind the wrong diagnosis.\n#497 (95): Protasis still holds the amendment-block check; no fixture yet proves a dated amendment carries all four required fields.\n#869 (95): Elenchus rejects a valid unittest report with multiple failing subtests as malformed, converting observed failure evidence into an inconclusive result.\n#903 (95): This framework issue records the blocked delivery path; #906 now carries the narrower three-way evidence that the committer identity, not the signing key, controls acceptance.\n#897 (94): The root suite can scan untracked Fiat controller state and fail on an active run, coupling product verification to local orchestration debris.\n#884 (93): Promise Machine obligations still exist only in prose where no gate evaluates them; enumerate the live gap before another transition relies on it.\n#892 (92): Hexctl changes can break two other subsystems without naming their checks, leaving the controller's affected-scope gate incomplete.\n#842 (91): Horos can validate a boundary against a different tracked tree inside a run worktree; make the read boundary name the universe it actually checked.",
     "state": "open",
     "open": 19,
-    "closed": 25,
+    "closed": 26,
     "url": "https://github.com/wildcat-finance/skills/milestone/51",
     "members": [
       {
@@ -317,6 +317,14 @@
         "title": "framework-10 — the Atlas payload cannot date its own snapshot, and the sync drops milestone-less issues in silence",
         "state": "closed",
         "url": "https://github.com/wildcat-finance/skills/issues/505",
+        "score": null,
+        "dependencies": []
+      },
+      {
+        "number": 833,
+        "title": "framework-43: test_hexctl.py is 144 bytes from the bounded-read ceiling",
+        "state": "closed",
+        "url": "https://github.com/wildcat-finance/skills/issues/833",
         "score": null,
         "dependencies": []
       },
@@ -1771,7 +1779,7 @@
     "description": "Full open-issue census: 30 August 2026; skills@48b063c597eb. Scores are impact/40 + urgency/25 + readiness/20 + unblocking/15; dependencies, active work, and programme order can override numeric order. Wave Δ is one checkpoint bundle; service and deployment work require separate authority.\n\n#859 (100): Programme epic for portable, content-addressed Fiat continuation; keep the packet order explicit and do not infer service or deployment authority.\n#860 (99): The active #784/#814 stack is implementing immutable run and checkpoint identities; finish this foundation before archive or service work.\n#508 (98): The live checkpoint stack (#784 and #814) implements immutable run and checkpoint identity; keep the residual carryover and delegated-write boundaries bound to that programme.\n#900 (98): PR #905 landed #902 at current main and explicitly left both macOS checkpoint failures unchanged; restore that local evidence lane before more checkpoint work.\n#899 (97): checkpoint export reads the next directive before deciding the current boundary is acceptable; refuse or export before advancing controller state.\n#861 (96): A cumulative, path-safe export and clean restore remain the next portable-state boundary after immutable identity.\n#901 (94): Version-1 and version-2 integration readers describe the same delta differently, so checkpoint compatibility lacks one canonical interpretation.\n#864 (90): External transitions must be fenced on independently accepted checkpoints after archive, service, and authority exist.\n#862 (85): The intake and publication state machine remains valid after #861, but implementation needs separate repository authority.\n#865 (80): Concurrent checkpoint descendants need an append-only graph and explicit resolution after identity and publication fences.\n#866 (78): Recovery and revocation rehearsal remains necessary only after the checkpoint service exists.\n#863 (75): Locked storage and signed acceptance receipts remain deployment work, with provider and recovery choices deliberately unresolved.\n#867 (72): Atlas routing for resume, redraw, or restart belongs after checkpoint service, fork, and recovery contracts are usable.",
     "state": "open",
     "open": 13,
-    "closed": 12,
+    "closed": 14,
     "url": "https://github.com/wildcat-finance/skills/milestone/64",
     "members": [
       {
@@ -2042,6 +2050,22 @@
             "url": "https://github.com/wildcat-finance/skills/issues/866"
           }
         ]
+      },
+      {
+        "number": 839,
+        "title": "framework-49: two delta readers bypass the hardened path reader that claims them",
+        "state": "closed",
+        "url": "https://github.com/wildcat-finance/skills/issues/839",
+        "score": null,
+        "dependencies": []
+      },
+      {
+        "number": 848,
+        "title": "fiat-wish: two checkpoint tests are red on main and no workflow reports them",
+        "state": "closed",
+        "url": "https://github.com/wildcat-finance/skills/issues/848",
+        "score": null,
+        "dependencies": []
       }
     ]
   },
