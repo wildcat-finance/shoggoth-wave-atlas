@@ -1,13 +1,7 @@
 {
-  "generated_at": "2026-08-30T04:35:52.900Z",
-  "source_revision": "7e97b5195d5b0e43146b4200f26cd41b89003413",
+  "generated_at": "2026-08-31T01:07:50.054Z",
+  "source_revision": "c79d6781e2278642d1653d50671acdabb5867ef8",
   "dropped": [
-    {
-      "number": 923,
-      "title": "framework-55: a step branch extended after its push receipt is refused as a rewrite",
-      "url": "https://github.com/wildcat-finance/skills/issues/923",
-      "reason": "no milestone"
-    },
     {
       "number": 925,
       "title": "framework-56: the App token can publish without the issue-publication gates",
@@ -33,9 +27,75 @@
       "reason": "no milestone"
     },
     {
-      "number": 936,
-      "title": "framework-58: the dead-code baseline check fails CI on ordinary work",
-      "url": "https://github.com/wildcat-finance/skills/issues/936",
+      "number": 939,
+      "title": "framework-59: a capability entry names a promise that does not exist",
+      "url": "https://github.com/wildcat-finance/skills/issues/939",
+      "reason": "no milestone"
+    },
+    {
+      "number": 941,
+      "title": "Give every issue a wave when it is filed, or a standing catch-all",
+      "url": "https://github.com/wildcat-finance/skills/issues/941",
+      "reason": "no milestone"
+    },
+    {
+      "number": 942,
+      "title": "framework-61: prototype Noema as a model-native sliced instruction IR",
+      "url": "https://github.com/wildcat-finance/skills/issues/942",
+      "reason": "no milestone"
+    },
+    {
+      "number": 949,
+      "title": "framework-63: move the generated skills.sh payload into its own repository",
+      "url": "https://github.com/wildcat-finance/skills/issues/949",
+      "reason": "no milestone"
+    },
+    {
+      "number": 950,
+      "title": "framework-64: a shared schema anchor gives two answers depending on the engine",
+      "url": "https://github.com/wildcat-finance/skills/issues/950",
+      "reason": "no milestone"
+    },
+    {
+      "number": 962,
+      "title": "framework-65: no command validates the suppressions file at the checkout",
+      "url": "https://github.com/wildcat-finance/skills/issues/962",
+      "reason": "no milestone"
+    },
+    {
+      "number": 971,
+      "title": "framework-64: the generator-aggregate registry names a prefix that no longer exists",
+      "url": "https://github.com/wildcat-finance/skills/issues/971",
+      "reason": "no milestone"
+    },
+    {
+      "number": 972,
+      "title": "framework-65: a step that removes a generated tree cannot reach its prose phase",
+      "url": "https://github.com/wildcat-finance/skills/issues/972",
+      "reason": "no milestone"
+    },
+    {
+      "number": 973,
+      "title": "The primer's deterministic rebuild fails on macOS while CI is green",
+      "url": "https://github.com/wildcat-finance/skills/issues/973",
+      "reason": "no milestone"
+    },
+    {
+      "number": 976,
+      "title": "framework-67: a study's links are only checked after its receipt has frozen them",
+      "url": "https://github.com/wildcat-finance/skills/issues/976",
+      "reason": "no milestone"
+    },
+    {
+      "number": 978,
+      "title": "framework-68: a blank line strands the co-author trailer and both gates miss it",
+      "url": "https://github.com/wildcat-finance/skills/issues/978",
+      "reason": "no milestone"
+    },
+    {
+      "number": 992,
+      "title": "framework-69: the complete plugin gate costs half an hour and is disabled [epic]",
+      "url": "https://github.com/wildcat-finance/skills/issues/992",
       "reason": "no milestone"
     }
   ]
