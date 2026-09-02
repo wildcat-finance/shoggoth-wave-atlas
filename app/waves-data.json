@@ -4,8 +4,8 @@
     "title": "Wave 0 — live control and truthful gates",
     "description": "Full open-issue census: 30 August 2026; skills@48b063c597eb. Scores are impact/40 + urgency/25 + readiness/20 + unblocking/15; dependencies, active work, and programme order can override numeric order.\n\n#855 (100): The GitHub App is the visible delivery route, but App-opened pull requests receive no checks; #851 reached main through this zero-check path.\n#906 (100): A three-way push test isolates committer identity as the variable in GH013; the accepted route keeps Shoggoth authorship but requires a human committer and signing identity.\n#437 (99): Two live Fiat pull requests (#849 and #850) are already working the report-only dead-code baseline; keep the active stack visible and remeasure against the current plugin graph.\n#891 (99): A clean sync merge can discard correct work without a conflict, so the integration receipt can bless a semantic loss.\n#893 (99): Verified commit signatures do not constrain authorship and protected merges require no approval, leaving identity and acceptance as separate unchecked claims.\n#504 (98): PR #725 is active and fixes the false claim that every catalogue law was exercised; land it before #381 widens the record to more engines.\n#889 (98): Most plugin suites still have no CI lane, and the App delivery path can merge with zero checks; current main adds another plugin to that uncovered surface.\n#854 (97): Portable sync and Horos scan can agree on a stale tracked universe, and the portable check does not establish import closure; current main still carries both boundaries.\n#912 (97): The coverage selector check still reads Python and Solidity through the 256 KiB Markdown-law reader; #905 bought headroom but explicitly left this accidental source-size cap intact.\n#502 (96): Makes three shipped Phylax rules follow bounded single-assignment locals so a clean result stops overstating what was inspected.\n#844 (96): Ariadne credential scrubbing leaks on a multi-at authority and pair parsing is last-wins; both are concrete unsafe input behaviours on current main.\n#898 (96): done integrate reports an attribution failure when the merge commit is merely unfetched, hiding a recoverable transport state behind the wrong diagnosis.\n#497 (95): Protasis still holds the amendment-block check; no fixture yet proves a dated amendment carries all four required fields.\n#869 (95): Elenchus rejects a valid unittest report with multiple failing subtests as malformed, converting observed failure evidence into an inconclusive result.\n#903 (95): This framework issue records the blocked delivery path; #906 now carries the narrower three-way evidence that the committer identity, not the signing key, controls acceptance.\n#897 (94): The root suite can scan untracked Fiat controller state and fail on an active run, coupling product verification to local orchestration debris.\n#884 (93): Promise Machine obligations still exist only in prose where no gate evaluates them; enumerate the live gap before another transition relies on it.\n#892 (92): Hexctl changes can break two other subsystems without naming their checks, leaving the controller's affected-scope gate incomplete.\n#842 (91): Horos can validate a boundary against a different tracked tree inside a run worktree; make the read boundary name the universe it actually checked.",
     "state": "open",
-    "open": 10,
-    "closed": 35,
+    "open": 9,
+    "closed": 36,
     "url": "https://github.com/wildcat-finance/skills/milestone/51",
     "members": [
       {
@@ -59,7 +59,7 @@
       {
         "number": 504,
         "title": "pandects-4 — report per-law exercise in the search record, not a catalogue count",
-        "state": "open",
+        "state": "closed",
         "url": "https://github.com/wildcat-finance/skills/issues/504",
         "score": 98,
         "dependencies": []
@@ -343,8 +343,8 @@
     "title": "Wave 1 — controller continuity and reading foundations",
     "description": "Full open-issue census: 30 August 2026; skills@48b063c597eb. Scores are impact/40 + urgency/25 + readiness/20 + unblocking/15; dependencies, active work, and programme order can override numeric order.\n\n#871 (99): A prior run advanced beyond an exhausted controller without an authorising Promise; make every Fiat mutation prove the exact transition it consumes.\n#890 (98): A case-only mismatch between runbook and steps.json can strand a Fiat run with no controller repair path.\n#885 (97): Fiat's loop claims exceed the state carried by the controller, so resume and recovery can depend on facts the machine cannot verify.\n#363 (96): Fiat v5.37.1 still holds delegated task identity as its current gap; reused collaboration handles can expose the wrong issue across resume and compaction.\n#868 (96): The terminal integration receipt still depends on a run ref the documented order can delete; choose an authoritative record before another run strands itself.\n#453 (95): Injects known-failure guards only after the verdict and synopsis chain can name and preserve them.\n#847 (95): The Fiat generator-aggregate fixture pins an unreachable commit, making a claimed compatibility path impossible to reproduce from a clone.\n#461 (94): Hypomnema still holds the mechanical design-bridge check from a shipped study to exactly one standing record.\n#838 (94): Carried-forward findings still have no machine-checkable disposition, so a later run can silently lose or duplicate an obligation.\n#834 (93): The evolution contract still pins two Fiat history rows by position, so every new Fiat generation creates unrelated test churn and a shared-line collision.\n#372 (88): Protects digests, Git SHAs, and selectors before evidence-heavy outputs pass through structural compression.\n#553 (88): Adds an evidence-preserving recovery for prematurely merged stacked pull requests without importing a wrong-base merge.\n#857 (88): The no-green-no-commit guard remains local to one checkout, so a fresh clone does not inherit the delivery rule.\n#837 (86): Append-only amendments can leave the controlling body contradicting its accepted tail; settle the authoritative read before more receipted studies accumulate.\n#887 (85): Reissue the #429 recovery evidence under capability schemas so reusable records no longer depend on one issue identifier.\n#373 (81): Emits Brevitas diagnostics in a machine-readable form after evidence tokens are protected.\n#858 (30): This is incident evidence superseded by #553, not a second implementation target; retain it in the same bundle until the issue owner closes it.",
     "state": "open",
-    "open": 16,
-    "closed": 16,
+    "open": 15,
+    "closed": 18,
     "url": "https://github.com/wildcat-finance/skills/milestone/52",
     "members": [
       {
@@ -424,7 +424,7 @@
       {
         "number": 847,
         "title": "fiat-wish: the generator-aggregate fixture pins a commit no clone can reach",
-        "state": "open",
+        "state": "closed",
         "url": "https://github.com/wildcat-finance/skills/issues/847",
         "score": 95,
         "dependencies": []
@@ -432,7 +432,7 @@
       {
         "number": 461,
         "title": "hypomnema-next — ship the design-bridge check the ledger has held since v4.2.0",
-        "state": "open",
+        "state": "closed",
         "url": "https://github.com/wildcat-finance/skills/issues/461",
         "score": 94,
         "dependencies": []
@@ -580,6 +580,14 @@
         "url": "https://github.com/wildcat-finance/skills/issues/462",
         "score": null,
         "dependencies": []
+      },
+      {
+        "number": 1117,
+        "title": "framework-74: nothing compares a committed copy of a receipted artefact against its receipt",
+        "state": "open",
+        "url": "https://github.com/wildcat-finance/skills/issues/1117",
+        "score": null,
+        "dependencies": []
       }
     ]
   },
@@ -588,8 +596,8 @@
     "title": "Wave 2 — orientation, routing and contributor intent",
     "description": "Full open-issue census: 30 August 2026; skills@48b063c597eb. Scores are impact/40 + urgency/25 + readiness/20 + unblocking/15; dependencies, active work, and programme order can override numeric order.\n\n#904 (97): Adding Homologia at current main required a broad router-fixture rewrite; no repeatable process can add the next plugin without manually regrading selection.\n#836 (96): Current main added Homologia and changed both marketplaces and the portable mirror, but no gate proves those distributed views remain current.\n#896 (92): Horos mixes file and directory entries without declaring their semantics, so a reader cannot tell what the boundary covers.\n#895 (88): Claude plugin update can report success without re-pinning changed plugin content, leaving host routing on stale bytes.\n#380 (75): A verified exclusion stream remains useful, but it follows Horos's content-addressed-object and outline work.\n#856 (75): The Atlas hand-off question remains useful, but every client and authentication measurement must be repeated before any contributor button is added.\n#909 (72): A compact instruction language could reduce the 2,310,966-byte agent-facing corpus, but it needs a defined semantic domain and parity evidence before any migration.\n#378 (70): The directory map remains useful, but Horos now holds content-addressed objects and a Markdown outline extractor ahead of this orientation work.\n#379 (60): Checked promotion remains optional until Horos finishes its two held reading-boundary jobs.",
     "state": "open",
-    "open": 8,
-    "closed": 25,
+    "open": 9,
+    "closed": 26,
     "url": "https://github.com/wildcat-finance/skills/milestone/53",
     "members": [
       {
@@ -651,7 +659,7 @@
       {
         "number": 909,
         "title": "framework-54: give agents a compact lossless instruction language",
-        "state": "open",
+        "state": "closed",
         "url": "https://github.com/wildcat-finance/skills/issues/909",
         "score": 72,
         "dependencies": []
@@ -839,6 +847,22 @@
         "url": "https://github.com/wildcat-finance/skills/issues/617",
         "score": null,
         "dependencies": []
+      },
+      {
+        "number": 1057,
+        "title": "framework-73: an open issue's root post goes stale against main and only the comment thread says so",
+        "state": "open",
+        "url": "https://github.com/wildcat-finance/skills/issues/1057",
+        "score": null,
+        "dependencies": []
+      },
+      {
+        "number": 1118,
+        "title": "framework-75: the Atlas dependency extractor must skip the issue status block",
+        "state": "open",
+        "url": "https://github.com/wildcat-finance/skills/issues/1118",
+        "score": null,
+        "dependencies": []
       }
     ]
   },
@@ -946,14 +970,14 @@
     "title": "Wave 4 — historical fixtures and replay",
     "description": "Full open-issue census: 30 August 2026; skills@48b063c597eb. Scores are impact/40 + urgency/25 + readiness/20 + unblocking/15; dependencies, active work, and programme order can override numeric order.\n\n#881 (92): The Goldfinch fixture generator has an active branch but still needs a portable macOS path before the historical witness is reproducible here.\n#417 (77): Exercises one-state Pandects laws against materialised historical state after fixture semantics are settled.\n#385 (68): Live-test capture remains useful generation work behind Lazarus's current empty-block receipt-witness frontier.\n#384 (65): The Foundry replay profile remains useful generation work behind Lazarus's current empty-block receipt-witness frontier.\n#406 (55): Ariadne is mature; accepting a Lazarus fixture as deployment confirmation is optional generation work after the current Lazarus frontier.",
     "state": "open",
-    "open": 5,
-    "closed": 5,
+    "open": 4,
+    "closed": 6,
     "url": "https://github.com/wildcat-finance/skills/milestone/55",
     "members": [
       {
         "number": 881,
         "title": "lazarus-wish: make Goldfinch fixture generation work on macOS",
-        "state": "open",
+        "state": "closed",
         "url": "https://github.com/wildcat-finance/skills/issues/881",
         "score": 92,
         "dependencies": []
@@ -1243,8 +1267,8 @@
     "title": "Wave 7 — credit releases and gas experiments",
     "description": "Full open-issue census: 30 August 2026; skills@48b063c597eb. Scores are impact/40 + urgency/25 + readiness/20 + unblocking/15; dependencies, active work, and programme order can override numeric order.\n\n#395 (99): Alexandria still holds the resumable Ethereum USDC interval collector consumed by Tabularium Phase 1 and later releases.\n#398 (98): Tabularium still holds canonical Compound v3 Phase 1 and its offline Ethereum USDC specimen.\n#397 (93): Makes proof-backed-state earned by Lazarus verification before releases rely on the class.\n#393 (90): Records and gates deployed bytecode size before compiler experiments can change it invisibly.\n#399 (90): Reconciles Alexandria and Tabularium interpretations after both owning adapters and gaps exist.\n#396 (87): Enforces redistribution through digest-bound subset exports and explicit withheld gaps.\n#400 (72): Adds compiler-settings experiments after size gates and complete rule selection exist.",
     "state": "open",
-    "open": 7,
-    "closed": 6,
+    "open": 6,
+    "closed": 7,
     "url": "https://github.com/wildcat-finance/skills/milestone/58",
     "members": [
       {
@@ -1258,7 +1282,7 @@
       {
         "number": 395,
         "title": "alexandria-next — build the resumable Ethereum USDC interval collector",
-        "state": "open",
+        "state": "closed",
         "url": "https://github.com/wildcat-finance/skills/issues/395",
         "score": 99,
         "dependencies": []
@@ -1425,14 +1449,14 @@
     "title": "Wave 9 — comparative assurance and first statements",
     "description": "Full open-issue census: 30 August 2026; skills@48b063c597eb. Scores are impact/40 + urgency/25 + readiness/20 + unblocking/15; dependencies, active work, and programme order can override numeric order.\n\n#458 (99): PR #851 landed the Homologia scaffold at current main; the new ledger still holds first-parity-verdict because no manifest, mirror execution, or agreement verdict exists yet.\n#498 (94): Adds diff-scoped Solidity mutation adequacy before broad gas and protocol changes rely on green tests alone.\n#405 (93): Exports Fiat receipt trails as durable delivery records after Ariadne foundations and handover bindings are stable.\n#840 (91): Synkrisis reads Darwin peak RSS in the wrong unit, corrupting a cross-run comparison input on the platform used for this census.\n#408 (82): Emits Tabularium release evidence through the dataset predicate.\n#404 (78): Shapes accepted Hermes runs as Ariadne claims and command entries.",
     "state": "open",
-    "open": 6,
-    "closed": 3,
+    "open": 5,
+    "closed": 4,
     "url": "https://github.com/wildcat-finance/skills/milestone/60",
     "members": [
       {
         "number": 458,
         "title": "framework-6 — create Homologia for cross-implementation numeric agreement",
-        "state": "open",
+        "state": "closed",
         "url": "https://github.com/wildcat-finance/skills/issues/458",
         "score": 99,
         "dependencies": []
@@ -1508,8 +1532,8 @@
     "title": "Wave 10 — portable releases and accessible state",
     "description": "Full open-issue census: 30 August 2026; skills@48b063c597eb. Scores are impact/40 + urgency/25 + readiness/20 + unblocking/15; dependencies, active work, and programme order can override numeric order.\n\n#411 (96): Berean still holds the first release grounded in captured Wildcat documentation and market reads.\n#845 (96): Berean validation crashes on a list-typed reference, so a malformed release can stop the verifier instead of producing a bounded refusal.\n#410 (90): Binds Probitas dossiers to their exact evidence files and gates.\n#418 (90): Sapheneia still holds the published cross-model AuDHD task corpus as its current frontier.\n#655 (88): Morpho is now partly represented on main, while the requested cross-skill target still depends on current Probitas attribution and the same release foundations as #654.\n#654 (86): A reproducible Aave target is valuable, but it spans several unfinished frontiers and must follow the evidence, fixture, grading, and release foundations it names.\n#419 (80): Defines a canonical compaction-safe working-state block after the corpus.\n#421 (80): Ships the executable pre-send checker after the grammar and carve-out are settled.\n#420 (78): Defines Brevitas and Sapheneia coexistence against that state grammar.",
     "state": "open",
-    "open": 9,
-    "closed": 2,
+    "open": 8,
+    "closed": 3,
     "url": "https://github.com/wildcat-finance/skills/milestone/61",
     "members": [
       {
@@ -1531,7 +1555,7 @@
       {
         "number": 410,
         "title": "probitas-1 — bind dossier and evidence with an Ariadne statement",
-        "state": "open",
+        "state": "closed",
         "url": "https://github.com/wildcat-finance/skills/issues/410",
         "score": 90,
         "dependencies": []
@@ -1778,8 +1802,8 @@
     "title": "Wave Δ — distributed Fiat checkpoints",
     "description": "Full open-issue census: 30 August 2026; skills@48b063c597eb. Scores are impact/40 + urgency/25 + readiness/20 + unblocking/15; dependencies, active work, and programme order can override numeric order. Wave Δ is one checkpoint bundle; service and deployment work require separate authority.\n\n#859 (100): Programme epic for portable, content-addressed Fiat continuation; keep the packet order explicit and do not infer service or deployment authority.\n#860 (99): The active #784/#814 stack is implementing immutable run and checkpoint identities; finish this foundation before archive or service work.\n#508 (98): The live checkpoint stack (#784 and #814) implements immutable run and checkpoint identity; keep the residual carryover and delegated-write boundaries bound to that programme.\n#900 (98): PR #905 landed #902 at current main and explicitly left both macOS checkpoint failures unchanged; restore that local evidence lane before more checkpoint work.\n#899 (97): checkpoint export reads the next directive before deciding the current boundary is acceptable; refuse or export before advancing controller state.\n#861 (96): A cumulative, path-safe export and clean restore remain the next portable-state boundary after immutable identity.\n#901 (94): Version-1 and version-2 integration readers describe the same delta differently, so checkpoint compatibility lacks one canonical interpretation.\n#864 (90): External transitions must be fenced on independently accepted checkpoints after archive, service, and authority exist.\n#862 (85): The intake and publication state machine remains valid after #861, but implementation needs separate repository authority.\n#865 (80): Concurrent checkpoint descendants need an append-only graph and explicit resolution after identity and publication fences.\n#866 (78): Recovery and revocation rehearsal remains necessary only after the checkpoint service exists.\n#863 (75): Locked storage and signed acceptance receipts remain deployment work, with provider and recovery choices deliberately unresolved.\n#867 (72): Atlas routing for resume, redraw, or restart belongs after checkpoint service, fork, and recovery contracts are usable.",
     "state": "open",
-    "open": 13,
-    "closed": 14,
+    "open": 12,
+    "closed": 15,
     "url": "https://github.com/wildcat-finance/skills/milestone/64",
     "members": [
       {
@@ -1829,7 +1853,7 @@
       {
         "number": 900,
         "title": "Two checkpoint guards cannot pass on macOS",
-        "state": "open",
+        "state": "closed",
         "url": "https://github.com/wildcat-finance/skills/issues/900",
         "score": 98,
         "dependencies": []
