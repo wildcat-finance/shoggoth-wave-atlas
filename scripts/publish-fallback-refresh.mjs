@@ -1,4 +1,4 @@
-import { readFileSync } from "node:fs";
+import { appendFileSync, readFileSync } from "node:fs";
 import { resolve } from "node:path";
 
 import { inspectSnapshot } from "./snapshot-validation.mjs";
@@ -22,6 +22,14 @@ const token = process.env.GITHUB_TOKEN ?? process.env.GH_TOKEN;
 if (!token) {
   throw new Error("Set GITHUB_TOKEN to a token that may update the refresh branch.");
 }
+// Opening a pull request from Actions is gated by a setting this organisation
+// cannot reach: it is pinned above the org, so `GITHUB_TOKEN` is refused no
+// matter what the workflow's `permissions:` block says. The gate applies to
+// the Actions token, not to a user token, so PR_TOKEN — a fine-grained token
+// with `pull-requests: write` on this repository — opens the pull request when
+// one is configured. Without it the refresh still runs and still commits; the
+// pull request is the only part a person has to do.
+const prToken = process.env.PR_TOKEN || token;
 const repository = process.env.GITHUB_REPOSITORY;
 if (!repository || !/^[^/]+\/[^/]+$/.test(repository)) {
   throw new Error("Set GITHUB_REPOSITORY to owner/repo.");
@@ -31,14 +39,14 @@ const [owner, repo] = repository.split("/");
 // Every message this script prints is built here from statuses and paths. A
 // response body is never echoed, so a credential cannot travel into the log
 // through an error path.
-async function rest(method, path, body, tolerate = []) {
+async function rest(method, path, body, tolerate = [], as = token) {
   const response = await fetch(`https://api.github.com/repos/${repository}${path}`, {
     method,
     headers: {
       Accept: "application/vnd.github+json",
       "X-GitHub-Api-Version": "2022-11-28",
       "User-Agent": "shoggoth-wave-atlas-fallback-refresh",
-      Authorization: `Bearer ${token}`,
+      Authorization: `Bearer ${as}`,
       ...(body ? { "Content-Type": "application/json" } : {}),
     },
     ...(body ? { body: JSON.stringify(body) } : {}),
@@ -162,33 +170,57 @@ if (openPulls.length === 0) {
       base: BASE_BRANCH,
       body: prBody,
     },
-    // A 403 here is not a broken credential. GITHUB_TOKEN may hold
-    // `pull-requests: write` and still be refused, because opening a pull
-    // request from Actions is additionally gated by a repository setting.
-    // The refresh commit is already on the branch either way, so say what is
-    // missing and where the work is rather than dying on a bare status code.
+    // A 403 here is not a broken credential, and it is not this run's fault.
+    // Opening a pull request from Actions is gated separately from token
+    // permissions, and in this organisation that gate is pinned above the org,
+    // so no workflow change can satisfy it.
     [403],
+    prToken,
   );
   if (created.status === 403) {
-    console.error(
-      `The refreshed snapshot is committed to ${REFRESH_BRANCH}, but this workflow ` +
-        "may not open the pull request for it.",
+    // The refresh itself succeeded: the snapshot was read, validated, tested,
+    // and committed to the branch as a signed commit. Only the pull request is
+    // missing, and nobody with access here can make it possible. Failing the
+    // run for that would paint every six-hourly run red for a condition no one
+    // can clear, and a permanently red job is one nobody reads. So warn
+    // loudly and exit clean: the branch is the deliverable, the pull request
+    // is a click.
+    const compare =
+      `https://github.com/${repository}/compare/${BASE_BRANCH}...${REFRESH_BRANCH}?expand=1`;
+    console.log(
+      "::warning title=Refreshed snapshot needs a pull request::" +
+        `The snapshot is committed to ${REFRESH_BRANCH}. Actions may not open the ` +
+        `pull request in this organisation. Open it at ${compare}`,
     );
-    console.error(
-      "Enable Settings > Actions > General > \"Allow GitHub Actions to create and " +
-        "approve pull requests\" (the organisation may gate it too), or open it by hand:",
-    );
-    console.error(
-      `  https://github.com/${repository}/compare/${BASE_BRANCH}...${REFRESH_BRANCH}?expand=1`,
-    );
-    process.exit(1);
+    if (process.env.GITHUB_STEP_SUMMARY) {
+      appendFileSync(
+        process.env.GITHUB_STEP_SUMMARY,
+        [
+          "### Refreshed snapshot needs a pull request",
+          "",
+          `\`${REFRESH_BRANCH}\` carries a signed commit with the refreshed snapshot: ` +
+            `${report.waveCount} waves, ${report.memberCount} issues, ` +
+            `${report.droppedCount} open issue(s) without a milestone.`,
+          "",
+          `[Open the pull request](${compare})`,
+          "",
+          "GitHub Actions may not open it here: the setting that permits it is pinned",
+          "above this organisation, so no workflow change can satisfy it. Set a",
+          "`PR_TOKEN` secret — a fine-grained token with `pull-requests: write` on this",
+          "repository — to have the refresh open it unaided.",
+          "",
+        ].join("\n"),
+      );
+    }
+    console.log(`Open the pull request at ${compare}`);
+    process.exit(0);
   }
   console.log(`Opened ${repo} pull request #${created.body.number}.`);
 } else {
   // One branch, one pull request. Overlapping runs are already serialised by
   // the workflow's concurrency group; this is the second belt.
   const [pull] = openPulls;
-  await rest("PATCH", `/pulls/${pull.number}`, { body: prBody });
+  await rest("PATCH", `/pulls/${pull.number}`, { body: prBody }, [], prToken);
   console.log(`Updated ${repo} pull request #${pull.number}.`);
   for (const extra of openPulls.slice(1)) {
     console.log(`Warning: pull request #${extra.number} also targets ${REFRESH_BRANCH}.`);

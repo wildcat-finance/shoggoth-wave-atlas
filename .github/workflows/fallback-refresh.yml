@@ -94,4 +94,11 @@ jobs:
         if: steps.detect.outputs.changed == 'true'
         env:
           GITHUB_TOKEN: ${{ github.token }}
+          # Optional. Opening a pull request from Actions is gated by a setting
+          # pinned above this organisation, so github.token is refused however
+          # the permissions block is written. A fine-grained token with
+          # `pull-requests: write` on this repository is not subject to that
+          # gate. Without it the refresh still commits to the branch and warns
+          # that the pull request needs opening by hand.
+          PR_TOKEN: ${{ secrets.PR_TOKEN }}
         run: node scripts/publish-fallback-refresh.mjs

@@ -109,6 +109,16 @@ The Skills read sends no credential. Skills is public, and the workflow's own
 fourteen milestones and zero issues, where an unauthenticated read of the same
 endpoints in the same minute returned the whole backlog.
 
+Opening the pull request is the one step the workflow cannot always finish.
+GitHub gates pull-request creation from Actions behind a setting separate from
+token permissions, and in this organisation that setting is pinned above the
+org: `GITHUB_TOKEN` is refused however the `permissions:` block is written. When
+that happens the refresh still reads, validates, tests, and commits the snapshot
+to the branch, then warns with a compare link and exits successfully — a job
+that is permanently red for a condition nobody can clear is a job nobody reads.
+Set a `PR_TOKEN` secret, a fine-grained token with `pull-requests: write` on
+this repository, and the refresh opens the pull request unaided.
+
 The commit is made through GitHub's API rather than `git push`, so it is signed
 and no credential is written into a Git remote or config. A failed read, parse,
 transform, or validation leaves the branch and the pull request untouched and
