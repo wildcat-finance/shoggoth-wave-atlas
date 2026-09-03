@@ -4,7 +4,7 @@
     "title": "Wave 0 — live control and truthful gates",
     "description": "Full open-issue census: 30 August 2026; skills@48b063c597eb. Scores are impact/40 + urgency/25 + readiness/20 + unblocking/15; dependencies, active work, and programme order can override numeric order.\n\n#855 (100): The GitHub App is the visible delivery route, but App-opened pull requests receive no checks; #851 reached main through this zero-check path.\n#906 (100): A three-way push test isolates committer identity as the variable in GH013; the accepted route keeps Shoggoth authorship but requires a human committer and signing identity.\n#437 (99): Two live Fiat pull requests (#849 and #850) are already working the report-only dead-code baseline; keep the active stack visible and remeasure against the current plugin graph.\n#891 (99): A clean sync merge can discard correct work without a conflict, so the integration receipt can bless a semantic loss.\n#893 (99): Verified commit signatures do not constrain authorship and protected merges require no approval, leaving identity and acceptance as separate unchecked claims.\n#504 (98): PR #725 is active and fixes the false claim that every catalogue law was exercised; land it before #381 widens the record to more engines.\n#889 (98): Most plugin suites still have no CI lane, and the App delivery path can merge with zero checks; current main adds another plugin to that uncovered surface.\n#854 (97): Portable sync and Horos scan can agree on a stale tracked universe, and the portable check does not establish import closure; current main still carries both boundaries.\n#912 (97): The coverage selector check still reads Python and Solidity through the 256 KiB Markdown-law reader; #905 bought headroom but explicitly left this accidental source-size cap intact.\n#502 (96): Makes three shipped Phylax rules follow bounded single-assignment locals so a clean result stops overstating what was inspected.\n#844 (96): Ariadne credential scrubbing leaks on a multi-at authority and pair parsing is last-wins; both are concrete unsafe input behaviours on current main.\n#898 (96): done integrate reports an attribution failure when the merge commit is merely unfetched, hiding a recoverable transport state behind the wrong diagnosis.\n#497 (95): Protasis still holds the amendment-block check; no fixture yet proves a dated amendment carries all four required fields.\n#869 (95): Elenchus rejects a valid unittest report with multiple failing subtests as malformed, converting observed failure evidence into an inconclusive result.\n#903 (95): This framework issue records the blocked delivery path; #906 now carries the narrower three-way evidence that the committer identity, not the signing key, controls acceptance.\n#897 (94): The root suite can scan untracked Fiat controller state and fail on an active run, coupling product verification to local orchestration debris.\n#884 (93): Promise Machine obligations still exist only in prose where no gate evaluates them; enumerate the live gap before another transition relies on it.\n#892 (92): Hexctl changes can break two other subsystems without naming their checks, leaving the controller's affected-scope gate incomplete.\n#842 (91): Horos can validate a boundary against a different tracked tree inside a run worktree; make the read boundary name the universe it actually checked.",
     "state": "open",
-    "open": 9,
+    "open": 10,
     "closed": 36,
     "url": "https://github.com/wildcat-finance/skills/milestone/51",
     "members": [
@@ -335,6 +335,14 @@
         "url": "https://github.com/wildcat-finance/skills/issues/902",
         "score": null,
         "dependencies": []
+      },
+      {
+        "number": 1127,
+        "title": "framework-76: test_agent_instruction fails non-deterministically off the CI runner, and needs the model port both answered and silent",
+        "state": "open",
+        "url": "https://github.com/wildcat-finance/skills/issues/1127",
+        "score": null,
+        "dependencies": []
       }
     ]
   },
@@ -597,7 +605,7 @@
     "description": "Full open-issue census: 30 August 2026; skills@48b063c597eb. Scores are impact/40 + urgency/25 + readiness/20 + unblocking/15; dependencies, active work, and programme order can override numeric order.\n\n#904 (97): Adding Homologia at current main required a broad router-fixture rewrite; no repeatable process can add the next plugin without manually regrading selection.\n#836 (96): Current main added Homologia and changed both marketplaces and the portable mirror, but no gate proves those distributed views remain current.\n#896 (92): Horos mixes file and directory entries without declaring their semantics, so a reader cannot tell what the boundary covers.\n#895 (88): Claude plugin update can report success without re-pinning changed plugin content, leaving host routing on stale bytes.\n#380 (75): A verified exclusion stream remains useful, but it follows Horos's content-addressed-object and outline work.\n#856 (75): The Atlas hand-off question remains useful, but every client and authentication measurement must be repeated before any contributor button is added.\n#909 (72): A compact instruction language could reduce the 2,310,966-byte agent-facing corpus, but it needs a defined semantic domain and parity evidence before any migration.\n#378 (70): The directory map remains useful, but Horos now holds content-addressed objects and a Markdown outline extractor ahead of this orientation work.\n#379 (60): Checked promotion remains optional until Horos finishes its two held reading-boundary jobs.",
     "state": "open",
     "open": 9,
-    "closed": 26,
+    "closed": 27,
     "url": "https://github.com/wildcat-finance/skills/milestone/53",
     "members": [
       {
@@ -851,7 +859,7 @@
       {
         "number": 1057,
         "title": "framework-73: an open issue's root post goes stale against main and only the comment thread says so",
-        "state": "open",
+        "state": "closed",
         "url": "https://github.com/wildcat-finance/skills/issues/1057",
         "score": null,
         "dependencies": []
@@ -861,6 +869,14 @@
         "title": "framework-75: the Atlas dependency extractor must skip the issue status block",
         "state": "open",
         "url": "https://github.com/wildcat-finance/skills/issues/1118",
+        "score": null,
+        "dependencies": []
+      },
+      {
+        "number": 1130,
+        "title": "framework-77: .horos/candidates.json is tracked, written by the scanner and checked by nothing",
+        "state": "open",
+        "url": "https://github.com/wildcat-finance/skills/issues/1130",
         "score": null,
         "dependencies": []
       }
@@ -1061,7 +1077,7 @@
     "title": "Wave 5 — hooks and executable credit laws",
     "description": "Full open-issue census: 30 August 2026; skills@48b063c597eb. Scores are impact/40 + urgency/25 + readiness/20 + unblocking/15; dependencies, active work, and programme order can override numeric order.\n\n#330 (95): Checks that the named host adapter actually implements the manifest threshold.\n#846 (92): Janus exposes three disagreeing version surfaces with no governing source, undermining manifest and adapter conformance evidence.\n#335 (91): Janus still holds second-host-adapter as its current frontier; settle #852's counterparty contract and then prove the manifest on a different callback model.\n#381 (90): Pandects still holds Echidna and Medusa search-record coverage; active #725/#504 must make per-law exercise truthful first.\n#382 (89): Makes per-integration law applicability executable after campaign records are honest.\n#416 (87): Adds delinquency and penalty-accrual laws once applicability is machine-readable.\n#852 (85): Janus must decide whether counterparties are behavioural claims or interface declarations before a second host adapter hardens the wrong contract.\n#334 (80): Emits a run-bound conformance record after the corrected multi-adapter harness exists.",
     "state": "open",
-    "open": 8,
+    "open": 9,
     "closed": 2,
     "url": "https://github.com/wildcat-finance/skills/milestone/56",
     "members": [
@@ -1142,6 +1158,14 @@
         "title": "janus-1 — resolve the manifest's permitted effects into the gate inputs",
         "state": "closed",
         "url": "https://github.com/wildcat-finance/skills/issues/329",
+        "score": null,
+        "dependencies": []
+      },
+      {
+        "number": 1166,
+        "title": "janus-wish: a manifest names its host as a free string and binds to no source",
+        "state": "open",
+        "url": "https://github.com/wildcat-finance/skills/issues/1166",
         "score": null,
         "dependencies": []
       }
@@ -1532,8 +1556,8 @@
     "title": "Wave 10 — portable releases and accessible state",
     "description": "Full open-issue census: 30 August 2026; skills@48b063c597eb. Scores are impact/40 + urgency/25 + readiness/20 + unblocking/15; dependencies, active work, and programme order can override numeric order.\n\n#411 (96): Berean still holds the first release grounded in captured Wildcat documentation and market reads.\n#845 (96): Berean validation crashes on a list-typed reference, so a malformed release can stop the verifier instead of producing a bounded refusal.\n#410 (90): Binds Probitas dossiers to their exact evidence files and gates.\n#418 (90): Sapheneia still holds the published cross-model AuDHD task corpus as its current frontier.\n#655 (88): Morpho is now partly represented on main, while the requested cross-skill target still depends on current Probitas attribution and the same release foundations as #654.\n#654 (86): A reproducible Aave target is valuable, but it spans several unfinished frontiers and must follow the evidence, fixture, grading, and release foundations it names.\n#419 (80): Defines a canonical compaction-safe working-state block after the corpus.\n#421 (80): Ships the executable pre-send checker after the grammar and carve-out are settled.\n#420 (78): Defines Brevitas and Sapheneia coexistence against that state grammar.",
     "state": "open",
-    "open": 8,
-    "closed": 3,
+    "open": 6,
+    "closed": 5,
     "url": "https://github.com/wildcat-finance/skills/milestone/61",
     "members": [
       {
@@ -1571,7 +1595,7 @@
       {
         "number": 655,
         "title": "framework-26: make Morpho a reproducible research and development target",
-        "state": "open",
+        "state": "closed",
         "url": "https://github.com/wildcat-finance/skills/issues/655",
         "score": 88,
         "dependencies": []
@@ -1579,7 +1603,7 @@
       {
         "number": 654,
         "title": "framework-25: make Aave a reproducible research and development target",
-        "state": "open",
+        "state": "closed",
         "url": "https://github.com/wildcat-finance/skills/issues/654",
         "score": 86,
         "dependencies": []
@@ -2164,6 +2188,113 @@
         "state": "open",
         "url": "https://github.com/wildcat-finance/skills/issues/877",
         "score": 82,
+        "dependencies": []
+      }
+    ]
+  },
+  {
+    "number": 66,
+    "title": "Wave Π — protocol targets",
+    "description": "One reproducible research and development target per lending protocol. Each member pins a version, joins the research and developer packets into one versioned subject, and keeps every omitted surface a named gap. Filed on the premise that the underlying protocol data is to hand, so what is being built is the packet rather than the collection. Sorts after the numbered waves; the Atlas reads any milestone whose title starts with \"Wave \".",
+    "state": "open",
+    "open": 12,
+    "closed": 0,
+    "url": "https://github.com/wildcat-finance/skills/milestone/66",
+    "members": [
+      {
+        "number": 1139,
+        "title": "framework-80: make Aave a reproducible research and development target",
+        "state": "open",
+        "url": "https://github.com/wildcat-finance/skills/issues/1139",
+        "score": null,
+        "dependencies": []
+      },
+      {
+        "number": 1140,
+        "title": "framework-81: make Compound a reproducible research and development target",
+        "state": "open",
+        "url": "https://github.com/wildcat-finance/skills/issues/1140",
+        "score": null,
+        "dependencies": []
+      },
+      {
+        "number": 1141,
+        "title": "framework-82: make Clearpool a reproducible research and development target",
+        "state": "open",
+        "url": "https://github.com/wildcat-finance/skills/issues/1141",
+        "score": null,
+        "dependencies": []
+      },
+      {
+        "number": 1142,
+        "title": "framework-83: make Euler a reproducible research and development target",
+        "state": "open",
+        "url": "https://github.com/wildcat-finance/skills/issues/1142",
+        "score": null,
+        "dependencies": []
+      },
+      {
+        "number": 1143,
+        "title": "framework-84: make Maple a reproducible research and development target",
+        "state": "open",
+        "url": "https://github.com/wildcat-finance/skills/issues/1143",
+        "score": null,
+        "dependencies": []
+      },
+      {
+        "number": 1144,
+        "title": "framework-85: make Wildcat a reproducible research and development target",
+        "state": "open",
+        "url": "https://github.com/wildcat-finance/skills/issues/1144",
+        "score": null,
+        "dependencies": []
+      },
+      {
+        "number": 1145,
+        "title": "framework-86: make SparkLend a reproducible research and development target",
+        "state": "open",
+        "url": "https://github.com/wildcat-finance/skills/issues/1145",
+        "score": null,
+        "dependencies": []
+      },
+      {
+        "number": 1146,
+        "title": "framework-87: make Morpho a reproducible research and development target",
+        "state": "open",
+        "url": "https://github.com/wildcat-finance/skills/issues/1146",
+        "score": null,
+        "dependencies": []
+      },
+      {
+        "number": 1147,
+        "title": "framework-88: make Maker and Sky a reproducible research and development target",
+        "state": "open",
+        "url": "https://github.com/wildcat-finance/skills/issues/1147",
+        "score": null,
+        "dependencies": []
+      },
+      {
+        "number": 1148,
+        "title": "framework-89: make Centrifuge a reproducible research and development target",
+        "state": "open",
+        "url": "https://github.com/wildcat-finance/skills/issues/1148",
+        "score": null,
+        "dependencies": []
+      },
+      {
+        "number": 1149,
+        "title": "framework-90: make TrueFi a reproducible research and development target",
+        "state": "open",
+        "url": "https://github.com/wildcat-finance/skills/issues/1149",
+        "score": null,
+        "dependencies": []
+      },
+      {
+        "number": 1150,
+        "title": "framework-91: make Liquity a reproducible research and development target",
+        "state": "open",
+        "url": "https://github.com/wildcat-finance/skills/issues/1150",
+        "score": null,
         "dependencies": []
       }
     ]
