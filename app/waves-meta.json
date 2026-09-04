@@ -1,5 +1,36 @@
 {
-  "generated_at": "2026-09-04T08:27:09.652Z",
-  "source_revision": "0a0995e2ce3b84265d3c5a5d50d624d5520d3835",
-  "dropped": []
+  "generated_at": "2026-09-04T18:31:48.914Z",
+  "source_revision": "54730d3a2fe08fa0d0d93f8fa9bcc6d6c3cee27b",
+  "dropped": [
+    {
+      "number": 1192,
+      "title": "Make a before-span edit reconcile: store model binding offsets relative to the reviewed span",
+      "url": "https://github.com/wildcat-finance/skills/issues/1192",
+      "reason": "no milestone"
+    },
+    {
+      "number": 1198,
+      "title": "An audit round's Elenchus verdict turns on which file a digest rebind names",
+      "url": "https://github.com/wildcat-finance/skills/issues/1198",
+      "reason": "no milestone"
+    },
+    {
+      "number": 1199,
+      "title": "Two measurement-record guards compare a value to itself",
+      "url": "https://github.com/wildcat-finance/skills/issues/1199",
+      "reason": "no milestone"
+    },
+    {
+      "number": 1200,
+      "title": "A design report cannot express a refusal, and one criterion names no subject",
+      "url": "https://github.com/wildcat-finance/skills/issues/1200",
+      "reason": "no milestone"
+    },
+    {
+      "number": 1204,
+      "title": "Define the Shoggoth issue renumbering map in one durable record",
+      "url": "https://github.com/wildcat-finance/skills/issues/1204",
+      "reason": "no milestone"
+    }
+  ]
 }

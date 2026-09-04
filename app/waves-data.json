@@ -1056,8 +1056,8 @@
     "title": "Wave 6 — instruction architecture and token cost",
     "description": "Full open-issue census: 4 September 2026; `skills@0a0995e2ce3b84265d3c5a5d50d624d5520d3835`. Scores are impact/40 + urgency/25 + readiness/20 + work unblocked/15; dependency and bundle order can override numeric order.\n\n#942 (97): Tests Noema as a typed, sliced instruction representation beside the architecture comparison that must decide whether it should progress.\n\n#1046 (96): Selects an implementation-ready governed-instruction architecture before Noema, WAI1, or cache work can become production authority.\n\n#1155 (95): Selects a cache-native prompt construction design beside the instruction architecture study, using telemetry rather than assuming caching behaviour.\n\n#1066 (92): Umbrella for measured Fiat instruction-read cost; delivered reductions narrow it to the remaining repeated-byte surfaces and telemetry.\n\n#1122 (94): Assigns explicit phase readers to the large sibling-skill block carried by Fiat, retaining the valid residual split from #1066.\n\n#1098 (96): Removes the single-workstation dependency from three bound instruction documents by making tokenizer acquisition and reconciliation portable.\n\n#1030 (93): Provides a deterministic reconciliation command for instruction fixtures invalidated by routine Fiat version changes.",
     "state": "open",
-    "open": 7,
-    "closed": 5,
+    "open": 6,
+    "closed": 6,
     "url": "https://github.com/wildcat-finance/skills/milestone/57",
     "members": [
       {
@@ -1103,7 +1103,7 @@
       {
         "number": 1098,
         "title": "framework-75: three bound instruction documents can only be edited on one machine, and nothing says so",
-        "state": "open",
+        "state": "closed",
         "url": "https://github.com/wildcat-finance/skills/issues/1098",
         "score": 96,
         "dependencies": []
@@ -1800,8 +1800,8 @@
     "title": "Wave 14 — credit releases and reconciliation",
     "description": "Full open-issue census: 4 September 2026; `skills@0a0995e2ce3b84265d3c5a5d50d624d5520d3835`. Scores are impact/40 + urgency/25 + readiness/20 + work unblocked/15; dependency and bundle order can override numeric order.\n\n#398 (98): Tabularium still holds canonical Compound v3 Phase 1 and its offline Ethereum USDC specimen.\n\n#397 (93): Makes proof-backed-state earned by Lazarus verification before releases rely on the class.\n\n#399 (90): Reconciles Alexandria and Tabularium interpretations after both owning adapters and gaps exist.\n\n#396 (87): Enforces redistribution through digest-bound subset exports and explicit withheld gaps.\n\n#392 (76): Diffs fully sourced evidence files after collection is unified.\n\n#882 (70): Triage and either integrate or retire the remaining #391 unified-collection artefacts before starting another collection stack.\n\n#883 (71): Triage the abandoned #390 Midnight branches against the now-shipped Probitas coverage and retain only still-unmerged evidence.",
     "state": "open",
-    "open": 7,
-    "closed": 0,
+    "open": 6,
+    "closed": 1,
     "url": "https://github.com/wildcat-finance/skills/milestone/76",
     "members": [
       {
@@ -1815,7 +1815,7 @@
       {
         "number": 397,
         "title": "alexandria-3 — make proof-backed-state an earned class",
-        "state": "open",
+        "state": "closed",
         "url": "https://github.com/wildcat-finance/skills/issues/397",
         "score": 93,
         "dependencies": []
