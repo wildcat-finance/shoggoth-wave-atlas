@@ -1,6 +1,6 @@
 {
-  "generated_at": "2026-09-02T03:30:55.746Z",
-  "source_revision": "ff47f3070c8dce05c767b6c0dad65234c56870de",
+  "generated_at": "2026-09-03T18:35:26.969Z",
+  "source_revision": "01a17bed45058a1fc20875bb19765fdf91cb293a",
   "dropped": [
     {
       "number": 925,
@@ -138,6 +138,30 @@
       "number": 1112,
       "title": "RS-40 has not been regraded across two rewrites of Dokimasia's description",
       "url": "https://github.com/wildcat-finance/skills/issues/1112",
+      "reason": "no milestone"
+    },
+    {
+      "number": 1122,
+      "title": "fiat-wish: the controller carries 120,246 bytes of sibling skills and nothing says who reads them",
+      "url": "https://github.com/wildcat-finance/skills/issues/1122",
+      "reason": "no milestone"
+    },
+    {
+      "number": 1132,
+      "title": "framework-78: the instruction fixture's only tokenizer host has been withdrawn, and nothing records it",
+      "url": "https://github.com/wildcat-finance/skills/issues/1132",
+      "reason": "no milestone"
+    },
+    {
+      "number": 1135,
+      "title": "framework-79: retire the mandatory Shoggoth co-signature and the runtime-host authorship ban",
+      "url": "https://github.com/wildcat-finance/skills/issues/1135",
+      "reason": "no milestone"
+    },
+    {
+      "number": 1155,
+      "title": "framework-92: select a cache-native prompt-construction architecture",
+      "url": "https://github.com/wildcat-finance/skills/issues/1155",
       "reason": "no milestone"
     }
   ]
