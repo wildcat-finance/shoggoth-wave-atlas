@@ -2,7 +2,7 @@
   {
     "number": 51,
     "title": "Wave 0 — publication and test truth",
-    "description": "Full open-issue census: 4 September 2026; `skills@0a0995e2ce3b84265d3c5a5d50d624d5520d3835`. Scores are impact/40 + urgency/25 + readiness/20 + work unblocked/15; dependency and bundle order can override numeric order.\n\n#925 (100): Closes the fail-open App publication path by making the required prose and evidence gates unavoidable before a GitHub write.\n\n#855 (100): The GitHub App is the visible delivery route, but App-opened pull requests receive no checks; #851 reached main through this zero-check path.\n\n#992 (95): Restores a complete, affordable plugin gate without reactivating a required context that cannot report, making later repository-wide changes safer.\n\n#1175 (96): Makes the adapter-timeout tests deterministic under repository load; the current suite passed here, but the seven recorded flakes remain valid evidence.\n\n#912 (97): The coverage selector check still reads Python and Solidity through the 256 KiB Markdown-law reader; #905 bought headroom but explicitly left this accidental source-size cap intact.\n\n#897 (94): The root suite can scan untracked Fiat controller state and fail on an active run, coupling product verification to local orchestration debris.\n\n#892 (92): Hexctl changes can break two other subsystems without naming their checks, leaving the controller's affected-scope gate incomplete.",
+    "description": "Full open-issue census: 5 September 2026; `skills@4592e4c97989fb483d47295f673498076907d019`. Scores are impact/40 + urgency/25 + readiness/20 + work unblocked/15; dependency and bundle order can override numeric order.\n\n#925 (100): Closes the fail-open App publication path by making the required prose and evidence gates unavoidable before a GitHub write.\n\n#855 (100): The GitHub App is the visible delivery route, but App-opened pull requests receive no checks; #851 reached main through this zero-check path.\n\n#992 (95): Restores a complete, affordable plugin gate without reactivating a required context that cannot report, making later repository-wide changes safer.\n\n#1175 (96): Makes the adapter-timeout tests deterministic under repository load; the current suite passed here, but the seven recorded flakes remain valid evidence.\n\n#912 (97): The coverage selector check still reads Python and Solidity through the 256 KiB Markdown-law reader; #905 bought headroom but explicitly left this accidental source-size cap intact.\n\n#897 (94): The root suite can scan untracked Fiat controller state and fail on an active run, coupling product verification to local orchestration debris.\n\n#892 (92): Hexctl changes can break two other subsystems without naming their checks, leaving the controller's affected-scope gate incomplete.",
     "state": "open",
     "open": 7,
     "closed": 36,
@@ -325,7 +325,7 @@
   {
     "number": 52,
     "title": "Wave 1 — promise and controller truth",
-    "description": "Full open-issue census: 4 September 2026; `skills@0a0995e2ce3b84265d3c5a5d50d624d5520d3835`. Scores are impact/40 + urgency/25 + readiness/20 + work unblocked/15; dependency and bundle order can override numeric order.\n\n#939 (96): Repairs the dead-code capability row whose promise identifier has no governing declaration, ahead of further obligation automation.\n\n#884 (93): Promise Machine obligations still exist only in prose where no gate evaluates them; enumerate the live gap before another transition relies on it.\n\n#871 (99): A prior run advanced beyond an exhausted controller without an authorising Promise; make every Fiat mutation prove the exact transition it consumes.\n\n#1170 (98): Stops Kronos from treating a Fiat currency refusal as a clean result before any ranked loop relies on stale controller state.\n\n#898 (96): done integrate reports an attribution failure when the merge commit is merely unfetched, hiding a recoverable transport state behind the wrong diagnosis.\n\n#842 (91): Horos can validate a boundary against a different tracked tree inside a run worktree; make the read boundary name the universe it actually checked.\n\n#844 (96): Ariadne credential scrubbing leaks on a multi-at authority and pair parsing is last-wins; both are concrete unsafe input behaviours on current main.",
+    "description": "Full open-issue census: 5 September 2026; `skills@4592e4c97989fb483d47295f673498076907d019`. Scores are impact/40 + urgency/25 + readiness/20 + work unblocked/15; dependency and bundle order can override numeric order.\n\n#939 (96): Repairs the dead-code capability row whose promise identifier has no governing declaration, ahead of further obligation automation.\n\n#884 (93): Promise Machine obligations still exist only in prose where no gate evaluates them; enumerate the live gap before another transition relies on it.\n\n#871 (99): A prior run advanced beyond an exhausted controller without an authorising Promise; make every Fiat mutation prove the exact transition it consumes.\n\n#1170 (98): Stops Kronos from treating a Fiat currency refusal as a clean result before any ranked loop relies on stale controller state.\n\n#898 (96): done integrate reports an attribution failure when the merge commit is merely unfetched, hiding a recoverable transport state behind the wrong diagnosis.\n\n#842 (91): Horos can validate a boundary against a different tracked tree inside a run worktree; make the read boundary name the universe it actually checked.\n\n#844 (96): Ariadne credential scrubbing leaks on a multi-at authority and pair parsing is last-wins; both are concrete unsafe input behaviours on current main.",
     "state": "open",
     "open": 7,
     "closed": 18,
@@ -488,7 +488,7 @@
   {
     "number": 53,
     "title": "Wave 2 — receipt and prerequisite continuity",
-    "description": "Full open-issue census: 4 September 2026; `skills@0a0995e2ce3b84265d3c5a5d50d624d5520d3835`. Scores are impact/40 + urgency/25 + readiness/20 + work unblocked/15; dependency and bundle order can override numeric order.\n\n#890 (98): A case-only mismatch between runbook and steps.json can strand a Fiat run with no controller repair path.\n\n#885 (97): Fiat's loop claims exceed the state carried by the controller, so resume and recovery can depend on facts the machine cannot verify.\n\n#363 (96): Fiat v5.37.1 still holds delegated task identity as its current gap; reused collaboration handles can expose the wrong issue across resume and compaction.\n\n#868 (96): The terminal integration receipt still depends on a run ref the documented order can delete; choose an authoritative record before another run strands itself.\n\n#933 (88): Adds receipted task-prerequisite checks before Fiat creates delivery state, after the controller truth foundations it depends on.\n\n#976 (96): Moves link validation before study and runbook receipts freeze broken references, paired with the controller-level enforcement in #1086.\n\n#1086 (97): Runs Hypomnema link checks before `done study` and `done runbook` create immutable receipts, implementing the recurring failure seen in #976.",
+    "description": "Full open-issue census: 5 September 2026; `skills@4592e4c97989fb483d47295f673498076907d019`. Scores are impact/40 + urgency/25 + readiness/20 + work unblocked/15; dependency and bundle order can override numeric order.\n\n#890 (98): A case-only mismatch between runbook and steps.json can strand a Fiat run with no controller repair path.\n\n#885 (97): Fiat's loop claims exceed the state carried by the controller, so resume and recovery can depend on facts the machine cannot verify.\n\n#363 (96): Fiat v5.37.1 still holds delegated task identity as its current gap; reused collaboration handles can expose the wrong issue across resume and compaction.\n\n#868 (96): The terminal integration receipt still depends on a run ref the documented order can delete; choose an authoritative record before another run strands itself.\n\n#933 (88): Adds receipted task-prerequisite checks before Fiat creates delivery state, after the required controller-truth foundations are in place.\n\n#976 (96): Moves link validation before study and runbook receipts freeze broken references, paired with the controller-level enforcement in #1086.\n\n#1086 (97): Runs Hypomnema link checks before `done study` and `done runbook` create immutable receipts, implementing the recurring failure seen in #976.",
     "state": "open",
     "open": 7,
     "closed": 27,
@@ -762,7 +762,7 @@
   {
     "number": 54,
     "title": "Wave 3 — recovery and carryover",
-    "description": "Full open-issue census: 4 September 2026; `skills@0a0995e2ce3b84265d3c5a5d50d624d5520d3835`. Scores are impact/40 + urgency/25 + readiness/20 + work unblocked/15; dependency and bundle order can override numeric order.\n\n#1117 (95): Compares committed design artefacts with the bytes their receipts bind, closing a provenance gap before recovery relies on either copy.\n\n#838 (94): Carried-forward findings still have no machine-checkable disposition, so a later run can silently lose or duplicate an obligation.\n\n#834 (93): The evolution contract still pins two Fiat history rows by position, so every new Fiat generation creates unrelated test churn and a shared-line collision.\n\n#553 (88): Adds an evidence-preserving recovery for prematurely merged stacked pull requests without importing a wrong-base merge.\n\n#1106 (91): Adds a safe controller transition for an adopted early merge that landed below the run branch, completing the partial recovery path.\n\n#857 (88): The no-green-no-commit guard remains local to one checkout, so a fresh clone does not inherit the delivery rule.\n\n#837 (86): Append-only amendments can leave the controlling body contradicting its accepted tail; settle the authoritative read before more receipted studies accumulate.",
+    "description": "Full open-issue census: 5 September 2026; `skills@4592e4c97989fb483d47295f673498076907d019`. Scores are impact/40 + urgency/25 + readiness/20 + work unblocked/15; dependency and bundle order can override numeric order.\n\n#1117 (95): Compares committed design artefacts with the bytes their receipts bind, closing a provenance gap before recovery relies on either copy.\n\n#1215 (95): Makes a correct digest refusal recoverable by storing receipted study and runbook bytes and exposing explicit restore and amend exits.\n\n#838 (94): Carried-forward findings still have no machine-checkable disposition, so a later run can silently lose or duplicate an obligation.\n\n#834 (93): The evolution contract still pins two Fiat history rows by position, so every new Fiat generation creates unrelated test churn and a shared-line collision.\n\n#553 (88): Adds an evidence-preserving recovery for prematurely merged stacked pull requests without importing a wrong-base merge.\n\n#1106 (91): Adds a safe controller transition for an adopted early merge that landed below the run branch, completing the partial recovery path.\n\n#837 (86): Append-only amendments can leave the controlling body contradicting its accepted tail; settle the authoritative read before more receipted studies accumulate.",
     "state": "open",
     "open": 7,
     "closed": 2,
@@ -773,6 +773,14 @@
         "title": "framework-74: nothing compares a committed copy of a receipted artefact against its receipt",
         "state": "open",
         "url": "https://github.com/wildcat-finance/skills/issues/1117",
+        "score": 95,
+        "dependencies": []
+      },
+      {
+        "number": 1215,
+        "title": "fiat-wish: the digest refusal names a restore that no command performs and no stored copy allows",
+        "state": "open",
+        "url": "https://github.com/wildcat-finance/skills/issues/1215",
         "score": 95,
         "dependencies": []
       },
@@ -809,14 +817,6 @@
         "dependencies": []
       },
       {
-        "number": 857,
-        "title": "framework-16 — the commit gate lives in one clone and dies with it",
-        "state": "open",
-        "url": "https://github.com/wildcat-finance/skills/issues/857",
-        "score": 88,
-        "dependencies": []
-      },
-      {
         "number": 837,
         "title": "framework-47: append-only amendments leave a document's body contradicting its tail",
         "state": "open",
@@ -845,9 +845,9 @@
   {
     "number": 55,
     "title": "Wave 4 — evidence protection and incident cleanup",
-    "description": "Full open-issue census: 4 September 2026; `skills@0a0995e2ce3b84265d3c5a5d50d624d5520d3835`. Scores are impact/40 + urgency/25 + readiness/20 + work unblocked/15; dependency and bundle order can override numeric order.\n\n#978 (98): Makes provenance trailers structurally parseable and closes a gap missed by both commit gates, beside the other publication evidence controls.\n\n#887 (85): Reissue the #429 recovery evidence under capability schemas so reusable records no longer depend on one issue identifier.\n\n#453 (95): Injects known-failure guards only after the verdict and synopsis chain can name and preserve them.\n\n#373 (81): Emits Brevitas diagnostics in a machine-readable form after evidence tokens are protected.\n\n#858 (30): This is incident evidence superseded by #553, not a second implementation target; retain it in the same bundle until the issue owner closes it.\n\n#1118 (92): Keeps the Atlas dependency parser out of the bounded status block, paired with the standing issue-status and wave rules.",
+    "description": "Full open-issue census: 5 September 2026; `skills@4592e4c97989fb483d47295f673498076907d019`. Scores are impact/40 + urgency/25 + readiness/20 + work unblocked/15; dependency and bundle order can override numeric order.\n\n#978 (98): Makes provenance trailers structurally parseable and closes a gap missed by both commit gates, beside the other publication evidence controls.\n\n#1212 (90): Moves closed audit prose behind digest-addressed history, adds bounded indexes and separates evidence from leads; #880 preserves corpus cases before that cleanup.\n\n#880 (90): Retains cleanup-derived evaluation cases before #1212 removes bulk audit prose, keeping the evidence corpus and history migration in one run.\n\n#887 (85): Reissue the #429 recovery evidence under capability schemas so reusable records no longer depend on one issue identifier.\n\n#453 (95): Injects known-failure guards only after the verdict and synopsis chain can name and preserve them.\n\n#373 (81): Emits Brevitas diagnostics in a machine-readable form after evidence tokens are protected.\n\n#858 (30): This is incident evidence superseded by #553, not a second implementation target; retain it in the same bundle until the issue owner closes it.",
     "state": "open",
-    "open": 6,
+    "open": 7,
     "closed": 6,
     "url": "https://github.com/wildcat-finance/skills/milestone/55",
     "members": [
@@ -857,6 +857,22 @@
         "state": "open",
         "url": "https://github.com/wildcat-finance/skills/issues/978",
         "score": 98,
+        "dependencies": []
+      },
+      {
+        "number": 1212,
+        "title": "Move closed audit history off the tree, keep it by digest, and give Warden an evidence field",
+        "state": "open",
+        "url": "https://github.com/wildcat-finance/skills/issues/1212",
+        "score": 90,
+        "dependencies": []
+      },
+      {
+        "number": 880,
+        "title": "brevitas-wish: retain cleanup-derived corpus cases before removing bulk audit records",
+        "state": "open",
+        "url": "https://github.com/wildcat-finance/skills/issues/880",
+        "score": 90,
         "dependencies": []
       },
       {
@@ -908,14 +924,6 @@
         "state": "open",
         "url": "https://github.com/wildcat-finance/skills/issues/858",
         "score": 30,
-        "dependencies": []
-      },
-      {
-        "number": 1118,
-        "title": "framework-75: the Atlas dependency extractor must skip the issue status block",
-        "state": "open",
-        "url": "https://github.com/wildcat-finance/skills/issues/1118",
-        "score": 92,
         "dependencies": []
       },
       {
@@ -971,7 +979,7 @@
   {
     "number": 56,
     "title": "Wave 5 — distribution and currency",
-    "description": "Full open-issue census: 4 September 2026; `skills@0a0995e2ce3b84265d3c5a5d50d624d5520d3835`. Scores are impact/40 + urgency/25 + readiness/20 + work unblocked/15; dependency and bundle order can override numeric order.\n\n#1171 (97): Replaces branch-head currency with subtree-relevant evidence so one unrelated commit does not mark every installed plugin behind.\n\n#836 (96): Current main added Homologia and changed both marketplaces and the portable mirror, but no gate proves those distributed views remain current.\n\n#895 (88): Claude plugin update can report success without re-pinning changed plugin content, leaving host routing on stale bytes.\n\n#1052 (93): Distinguishes a missing canonical workflow from ordinary drift so the external package rebuild reports a truthful failure.\n\n#1053 (94): Establishes why the advertised hourly skills-runtime rebuild never fires and restores observable scheduled execution.\n\n#971 (90): Repairs the aggregate registry after its corrected residual became real when the generated runtime moved out of this repository.\n\n#856 (75): The Atlas hand-off question remains useful, but every client and authentication measurement must be repeated before any contributor button is added.",
+    "description": "Full open-issue census: 5 September 2026; `skills@4592e4c97989fb483d47295f673498076907d019`. Scores are impact/40 + urgency/25 + readiness/20 + work unblocked/15; dependency and bundle order can override numeric order.\n\n#1171 (97): Replaces branch-head currency with subtree-relevant evidence so one unrelated commit does not mark every installed plugin behind.\n\n#836 (96): Current main added Homologia and changed both marketplaces and the portable mirror, but no gate proves those distributed views remain current.\n\n#895 (88): Claude plugin update can report success without re-pinning changed plugin content, leaving host routing on stale bytes.\n\n#1052 (93): Distinguishes a missing canonical workflow from ordinary drift so the external package rebuild reports a truthful failure.\n\n#1053 (94): Establishes why the advertised hourly skills-runtime rebuild never fires and restores observable scheduled execution.\n\n#971 (90): Repairs the aggregate registry after its corrected residual became real when the generated runtime moved out of this repository.\n\n#856 (75): The Atlas hand-off question remains useful, but every client and authentication measurement must be repeated before any contributor button is added.",
     "state": "open",
     "open": 7,
     "closed": 2,
@@ -1054,10 +1062,10 @@
   {
     "number": 57,
     "title": "Wave 6 — instruction architecture and token cost",
-    "description": "Full open-issue census: 4 September 2026; `skills@0a0995e2ce3b84265d3c5a5d50d624d5520d3835`. Scores are impact/40 + urgency/25 + readiness/20 + work unblocked/15; dependency and bundle order can override numeric order.\n\n#942 (97): Tests Noema as a typed, sliced instruction representation beside the architecture comparison that must decide whether it should progress.\n\n#1046 (96): Selects an implementation-ready governed-instruction architecture before Noema, WAI1, or cache work can become production authority.\n\n#1155 (95): Selects a cache-native prompt construction design beside the instruction architecture study, using telemetry rather than assuming caching behaviour.\n\n#1066 (92): Umbrella for measured Fiat instruction-read cost; delivered reductions narrow it to the remaining repeated-byte surfaces and telemetry.\n\n#1122 (94): Assigns explicit phase readers to the large sibling-skill block carried by Fiat, retaining the valid residual split from #1066.\n\n#1098 (96): Removes the single-workstation dependency from three bound instruction documents by making tokenizer acquisition and reconciliation portable.\n\n#1030 (93): Provides a deterministic reconciliation command for instruction fixtures invalidated by routine Fiat version changes.",
+    "description": "Full open-issue census: 5 September 2026; `skills@4592e4c97989fb483d47295f673498076907d019`. Scores are impact/40 + urgency/25 + readiness/20 + work unblocked/15; dependency and bundle order can override numeric order.\n\n#942 (97): Tests Noema as a typed, sliced instruction representation beside the architecture comparison that must decide whether it should progress.\n\n#1046 (96): Selects an implementation-ready governed-instruction architecture before Noema, WAI1, or cache work can become production authority.\n\n#1155 (95): Selects a cache-native prompt construction design beside the instruction architecture study, using telemetry rather than assuming caching behaviour.\n\n#1122 (94): Assigns explicit phase readers to the large sibling-skill block; #1098 removed the former reconciliation blocker, so the residual is ready now.\n\n#1199 (87): Replaces two self-comparisons in measurement evidence with independently derived checks; it precedes #1192 where both touch the recorded measurement contract.\n\n#1192 (91): Stores binding offsets relative to the reviewed span so before-span edits can reconcile without the pinned tokenizer; it shares the measurement-schema work with #1199.",
     "state": "open",
-    "open": 7,
-    "closed": 5,
+    "open": 6,
+    "closed": 8,
     "url": "https://github.com/wildcat-finance/skills/milestone/57",
     "members": [
       {
@@ -1085,14 +1093,6 @@
         "dependencies": []
       },
       {
-        "number": 1066,
-        "title": "fiat-wish: an average run pays for the same unchanged instruction bytes on every audit round",
-        "state": "open",
-        "url": "https://github.com/wildcat-finance/skills/issues/1066",
-        "score": 92,
-        "dependencies": []
-      },
-      {
         "number": 1122,
         "title": "fiat-wish: the controller carries 120,246 bytes of sibling skills and nothing says who reads them",
         "state": "open",
@@ -1103,17 +1103,25 @@
       {
         "number": 1098,
         "title": "framework-75: three bound instruction documents can only be edited on one machine, and nothing says so",
-        "state": "open",
+        "state": "closed",
         "url": "https://github.com/wildcat-finance/skills/issues/1098",
-        "score": 96,
+        "score": null,
         "dependencies": []
       },
       {
-        "number": 1030,
-        "title": "framework-72: a Fiat version bump invalidates the agent-instruction fixture and has no reconciliation command",
+        "number": 1199,
+        "title": "Two measurement-record guards compare a value to itself",
         "state": "open",
-        "url": "https://github.com/wildcat-finance/skills/issues/1030",
-        "score": 93,
+        "url": "https://github.com/wildcat-finance/skills/issues/1199",
+        "score": 87,
+        "dependencies": []
+      },
+      {
+        "number": 1192,
+        "title": "Make a before-span edit reconcile: store model binding offsets relative to the reviewed span",
+        "state": "open",
+        "url": "https://github.com/wildcat-finance/skills/issues/1192",
+        "score": 91,
         "dependencies": []
       },
       {
@@ -1155,13 +1163,29 @@
         "url": "https://github.com/wildcat-finance/skills/issues/391",
         "score": null,
         "dependencies": []
+      },
+      {
+        "number": 1030,
+        "title": "framework-72: a Fiat version bump invalidates the agent-instruction fixture and has no reconciliation command",
+        "state": "closed",
+        "url": "https://github.com/wildcat-finance/skills/issues/1030",
+        "score": null,
+        "dependencies": []
+      },
+      {
+        "number": 1066,
+        "title": "fiat-wish: an average run pays for the same unchanged instruction bytes on every audit round",
+        "state": "closed",
+        "url": "https://github.com/wildcat-finance/skills/issues/1066",
+        "score": null,
+        "dependencies": []
       }
     ]
   },
   {
     "number": 58,
     "title": "Wave 7 — instruction evidence and router grading",
-    "description": "Full open-issue census: 4 September 2026; `skills@0a0995e2ce3b84265d3c5a5d50d624d5520d3835`. Scores are impact/40 + urgency/25 + readiness/20 + work unblocked/15; dependency and bundle order can override numeric order.\n\n#1132 (90): Records and replaces the withdrawn tokenizer host so measured instruction fixtures can be reproduced without one private machine.\n\n#1127 (93): Makes model-adapter tests deterministic under load and covers both responsive and silent ports before instruction evaluation expands.\n\n#1036 (72): Regrades RS-33 and corrects its stale explanation; the failure is expected and intermittent evidence lowers urgency.\n\n#1112 (84): Regrades Dokimasia RS-40 against its two rewritten descriptions so routing evidence matches the words currently shipped.\n\n#870 (83): Run cost remains unknowable from the permitted observation record; add a source-bound producer without weakening the no-session-log boundary.\n\n#841 (96): Without a unittest-json-v1 producer, Elenchus cannot reach a conclusive verdict for that runner class; this blocks truthful failure handling.\n\n#869 (95): Elenchus rejects a valid unittest report with multiple failing subtests as malformed, converting observed failure evidence into an inconclusive result.",
+    "description": "Full open-issue census: 5 September 2026; `skills@4592e4c97989fb483d47295f673498076907d019`. Scores are impact/40 + urgency/25 + readiness/20 + work unblocked/15; dependency and bundle order can override numeric order.\n\n#1132 (90): Records and replaces the withdrawn tokenizer host so measured instruction fixtures can be reproduced without one private machine.\n\n#1127 (93): Makes model-adapter tests deterministic under load and covers both responsive and silent ports before instruction evaluation expands.\n\n#1036 (72): Regrades RS-33 and corrects its stale explanation; the failure is expected and intermittent evidence lowers urgency.\n\n#1112 (84): Regrades Dokimasia RS-40 against its two rewritten descriptions so routing evidence matches the words currently shipped.\n\n#870 (83): Run cost remains unknowable from the permitted observation record; add a source-bound producer without weakening the no-session-log boundary.\n\n#841 (96): Without a unittest-json-v1 producer, Elenchus cannot reach a conclusive verdict for that runner class; this blocks truthful failure handling.\n\n#869 (95): Elenchus rejects a valid unittest report with multiple failing subtests as malformed, converting observed failure evidence into an inconclusive result.",
     "state": "open",
     "open": 7,
     "closed": 7,
@@ -1284,7 +1308,7 @@
   {
     "number": 59,
     "title": "Wave 8 — issue visibility and reading boundaries",
-    "description": "Full open-issue census: 4 September 2026; `skills@0a0995e2ce3b84265d3c5a5d50d624d5520d3835`. Scores are impact/40 + urgency/25 + readiness/20 + work unblocked/15; dependency and bundle order can override numeric order.\n\n#1130 (91): Governs `.horos/candidates.json` as either checked derived state or untracked output before boundary scans can silently rewrite it.\n\n#896 (92): Horos mixes file and directory entries without declaring their semantics, so a reader cannot tell what the boundary covers.\n\n#378 (70): The directory map remains useful, but Horos now holds content-addressed objects and a Markdown outline extractor ahead of this orientation work.\n\n#379 (60): Checked promotion remains optional until Horos finishes its two held reading-boundary jobs.\n\n#380 (75): A verified exclusion stream remains useful, but it follows Horos's content-addressed-object and outline work.\n\n#941 (92): Makes every new open issue reachable by the Atlas through assignment or a visible catch-all; this census clears the present backlog but not the standing rule.\n\n#950 (70): Aligns shared schema anchors across ECMA-262 and Python validators before a newline-bearing value becomes a live interoperability fault.",
+    "description": "Full open-issue census: 5 September 2026; `skills@4592e4c97989fb483d47295f673498076907d019`. Scores are impact/40 + urgency/25 + readiness/20 + work unblocked/15; dependency and bundle order can override numeric order.\n\n#1130 (91): Governs `.horos/candidates.json` as either checked derived state or untracked output before boundary scans can silently rewrite it.\n\n#896 (92): Horos mixes file and directory entries without declaring their semantics, so a reader cannot tell what the boundary covers.\n\n#378 (70): The directory map remains useful, but Horos now holds content-addressed objects and a Markdown outline extractor ahead of this orientation work.\n\n#380 (75): A verified exclusion stream remains useful, but it follows Horos's content-addressed-object and outline work.\n\n#941 (92): Makes every new open issue reachable by the Atlas through assignment or a visible catch-all; this census clears the present backlog but not the standing rule.\n\n#1118 (92): Keeps Atlas dependency extraction out of bounded issue-status prose, alongside the issue visibility and parsing rules that govern the same surface.\n\n#1204 (69): Creates one durable old-to-new issue-number map and decides how dead references are guarded, after the standing issue-visibility rules in the same wave.",
     "state": "open",
     "open": 7,
     "closed": 2,
@@ -1315,14 +1339,6 @@
         "dependencies": []
       },
       {
-        "number": 379,
-        "title": "horos-2 — add a promote verb for candidate entries",
-        "state": "open",
-        "url": "https://github.com/wildcat-finance/skills/issues/379",
-        "score": 60,
-        "dependencies": []
-      },
-      {
         "number": 380,
         "title": "horos-3 — print a verified exclusion list for downstream consumers",
         "state": "open",
@@ -1339,11 +1355,19 @@
         "dependencies": []
       },
       {
-        "number": 950,
-        "title": "framework-64: a shared schema anchor gives two answers depending on the engine",
+        "number": 1118,
+        "title": "framework-75: the Atlas dependency extractor must skip the issue status block",
         "state": "open",
-        "url": "https://github.com/wildcat-finance/skills/issues/950",
-        "score": 70,
+        "url": "https://github.com/wildcat-finance/skills/issues/1118",
+        "score": 92,
+        "dependencies": []
+      },
+      {
+        "number": 1204,
+        "title": "Define the Shoggoth issue renumbering map in one durable record",
+        "state": "open",
+        "url": "https://github.com/wildcat-finance/skills/issues/1204",
+        "score": 69,
         "dependencies": []
       },
       {
@@ -1367,9 +1391,9 @@
   {
     "number": 60,
     "title": "Wave 9 — failure and operational evidence",
-    "description": "Full open-issue census: 4 September 2026; `skills@0a0995e2ce3b84265d3c5a5d50d624d5520d3835`. Scores are impact/40 + urgency/25 + readiness/20 + work unblocked/15; dependency and bundle order can override numeric order.\n\n#371 (92): Metron still holds the recorder that produces the timed run and spread consumed by its existing budget check.\n\n#496 (91): Defines the on-chain event surface Ephoros must cover, including the bounded exception to its address rule.\n\n#412 (74): Gives on-call questions and their signal map one durable home.\n\n#326 (75): Checks correlation continuity over sampled output beside the common operational records.\n\n#414 (79): Converts Ephoros histograms into comparable Metron baselines after the recorder and signal map exist.",
+    "description": "Full open-issue census: 5 September 2026; `skills@4592e4c97989fb483d47295f673498076907d019`. Scores are impact/40 + urgency/25 + readiness/20 + work unblocked/15; dependency and bundle order can override numeric order.\n\n#371 (92): Metron still holds the recorder that produces the timed run and spread consumed by its existing budget check.\n\n#496 (91): Defines the on-chain event surface Ephoros must cover, including the bounded exception to its address rule.\n\n#1198 (87): Stops digest-only rebinds from manufacturing an Elenchus guarded verdict, sharing classifier fixtures with #869 while preserving genuine parent-red evidence.\n\n#412 (74): Gives on-call questions and their signal map one durable home.\n\n#326 (75): Checks correlation continuity over sampled output beside the common operational records.\n\n#414 (79): Converts Ephoros histograms into comparable Metron baselines after the recorder and signal map exist.\n\n#379 (60): Adds an explicit promotion operation from observed Horos candidates to checked boundary entries, completing the operational-evidence command group.",
     "state": "open",
-    "open": 5,
+    "open": 7,
     "closed": 4,
     "url": "https://github.com/wildcat-finance/skills/milestone/60",
     "members": [
@@ -1387,6 +1411,14 @@
         "state": "open",
         "url": "https://github.com/wildcat-finance/skills/issues/496",
         "score": 91,
+        "dependencies": []
+      },
+      {
+        "number": 1198,
+        "title": "An audit round's Elenchus verdict turns on which file a digest rebind names",
+        "state": "open",
+        "url": "https://github.com/wildcat-finance/skills/issues/1198",
+        "score": 87,
         "dependencies": []
       },
       {
@@ -1411,6 +1443,14 @@
         "state": "open",
         "url": "https://github.com/wildcat-finance/skills/issues/414",
         "score": 79,
+        "dependencies": []
+      },
+      {
+        "number": 379,
+        "title": "horos-2 — add a promote verb for candidate entries",
+        "state": "open",
+        "url": "https://github.com/wildcat-finance/skills/issues/379",
+        "score": 60,
         "dependencies": []
       },
       {
@@ -1450,9 +1490,9 @@
   {
     "number": 61,
     "title": "Wave 10 — historical replay and operational handoffs",
-    "description": "Full open-issue census: 4 September 2026; `skills@0a0995e2ce3b84265d3c5a5d50d624d5520d3835`. Scores are impact/40 + urgency/25 + readiness/20 + work unblocked/15; dependency and bundle order can override numeric order.\n\n#413 (60): Elenchus is mature; an unresolved-failure hand-off to Ephoros remains optional generation work.\n\n#323 (65): Phylax is mature and this hostile-input harness remains optional generation work; it must not silently reopen the governed frontier.\n\n#384 (65): The Foundry replay profile remains useful generation work behind Lazarus's current empty-block receipt-witness frontier.\n\n#385 (68): Live-test capture remains useful generation work behind Lazarus's current empty-block receipt-witness frontier.\n\n#406 (55): Ariadne is mature; accepting a Lazarus fixture as deployment confirmation is optional generation work after the current Lazarus frontier.",
+    "description": "Full open-issue census: 5 September 2026; `skills@4592e4c97989fb483d47295f673498076907d019`. Scores are impact/40 + urgency/25 + readiness/20 + work unblocked/15; dependency and bundle order can override numeric order.\n\n#413 (60): Elenchus is mature; an unresolved-failure hand-off to Ephoros remains optional generation work.\n\n#323 (65): Phylax is mature and this hostile-input harness remains optional generation work; it must not silently reopen the governed frontier.\n\n#384 (65): The Foundry replay profile remains useful generation work behind Lazarus's current empty-block receipt-witness frontier.\n\n#385 (68): Live-test capture remains useful generation work behind Lazarus's current empty-block receipt-witness frontier.\n\n#406 (55): Ariadne is mature; accepting a Lazarus fixture as deployment confirmation is optional generation work after the current Lazarus frontier.\n\n#857 (88): Makes the commit gate survive clone and handoff boundaries, placed with the replay and portability work that consumes that durable state.\n\n#1222 (87): Emits structured Fiat audit findings that Anamnesis can preserve; it follows #1212 because that prerequisite changes the record grammar and history layout.",
     "state": "open",
-    "open": 5,
+    "open": 7,
     "closed": 5,
     "url": "https://github.com/wildcat-finance/skills/milestone/61",
     "members": [
@@ -1494,6 +1534,22 @@
         "state": "open",
         "url": "https://github.com/wildcat-finance/skills/issues/406",
         "score": 55,
+        "dependencies": []
+      },
+      {
+        "number": 857,
+        "title": "framework-16 — the commit gate lives in one clone and dies with it",
+        "state": "open",
+        "url": "https://github.com/wildcat-finance/skills/issues/857",
+        "score": 88,
+        "dependencies": []
+      },
+      {
+        "number": 1222,
+        "title": "fiat-wish: an audit round writes findings as prose, and Anamnesis cannot read them",
+        "state": "open",
+        "url": "https://github.com/wildcat-finance/skills/issues/1222",
+        "score": 87,
         "dependencies": []
       },
       {
@@ -1541,7 +1597,7 @@
   {
     "number": 62,
     "title": "Wave 11 — hook contracts and host binding",
-    "description": "Full open-issue census: 4 September 2026; `skills@0a0995e2ce3b84265d3c5a5d50d624d5520d3835`. Scores are impact/40 + urgency/25 + readiness/20 + work unblocked/15; dependency and bundle order can override numeric order.\n\n#852 (85): Janus must decide whether counterparties are behavioural claims or interface declarations before a second host adapter hardens the wrong contract.\n\n#1166 (94): Binds a Janus manifest host to source and version evidence before multi-adapter conformance records can be trusted.\n\n#846 (92): Janus exposes three disagreeing version surfaces with no governing source, undermining manifest and adapter conformance evidence.\n\n#330 (95): Checks that the named host adapter actually implements the manifest threshold.\n\n#335 (91): Janus still holds second-host-adapter as its current frontier; settle #852's counterparty contract and then prove the manifest on a different callback model.\n\n#334 (80): Emits a run-bound conformance record after the corrected multi-adapter harness exists.",
+    "description": "Full open-issue census: 5 September 2026; `skills@4592e4c97989fb483d47295f673498076907d019`. Scores are impact/40 + urgency/25 + readiness/20 + work unblocked/15; dependency and bundle order can override numeric order.\n\n#852 (85): Janus must decide whether counterparties are behavioural claims or interface declarations before a second host adapter hardens the wrong contract.\n\n#1166 (94): Binds a Janus manifest host to source and version evidence before multi-adapter conformance records can be trusted.\n\n#846 (92): Janus exposes three disagreeing version surfaces with no governing source, undermining manifest and adapter conformance evidence.\n\n#330 (95): Checks that the named host adapter actually implements the manifest threshold.\n\n#335 (91): Janus still holds second-host-adapter as its current frontier; settle #852's counterparty contract and then prove the manifest on a different callback model.\n\n#334 (80): Emits a run-bound conformance record after the corrected multi-adapter harness exists.",
     "state": "open",
     "open": 6,
     "closed": 10,
@@ -1672,7 +1728,7 @@
   {
     "number": 74,
     "title": "Wave 12 — executable laws and assurance",
-    "description": "Full open-issue census: 4 September 2026; `skills@0a0995e2ce3b84265d3c5a5d50d624d5520d3835`. Scores are impact/40 + urgency/25 + readiness/20 + work unblocked/15; dependency and bundle order can override numeric order.\n\n#381 (90): Pandects still holds Echidna and Medusa search-record coverage; active #725/#504 must make per-law exercise truthful first.\n\n#382 (89): Makes per-integration law applicability executable after campaign records are honest.\n\n#416 (87): Adds delinquency and penalty-accrual laws once applicability is machine-readable.\n\n#417 (77): Exercises one-state Pandects laws against materialised historical state after fixture semantics are settled.\n\n#498 (94): Adds diff-scoped Solidity mutation adequacy before broad gas and protocol changes rely on green tests alone.\n\n#840 (91): Synkrisis reads Darwin peak RSS in the wrong unit, corrupting a cross-run comparison input on the platform used for this census.\n\n#393 (90): Records and gates deployed bytecode size before compiler experiments can change it invisibly.",
+    "description": "Full open-issue census: 5 September 2026; `skills@4592e4c97989fb483d47295f673498076907d019`. Scores are impact/40 + urgency/25 + readiness/20 + work unblocked/15; dependency and bundle order can override numeric order.\n\n#381 (90): Pandects still holds Echidna and Medusa search-record coverage; active #725/#504 must make per-law exercise truthful first.\n\n#382 (89): Makes per-integration law applicability executable after campaign records are honest.\n\n#416 (87): Adds delinquency and penalty-accrual laws once applicability is machine-readable.\n\n#417 (77): Exercises one-state Pandects laws against materialised historical state after fixture semantics are settled.\n\n#498 (94): Adds diff-scoped Solidity mutation adequacy before broad gas and protocol changes rely on green tests alone.\n\n#840 (91): Synkrisis reads Darwin peak RSS in the wrong unit, corrupting a cross-run comparison input on the platform used for this census.\n\n#393 (90): Records and gates deployed bytecode size before compiler experiments can change it invisibly.",
     "state": "open",
     "open": 7,
     "closed": 0,
@@ -1739,9 +1795,9 @@
   {
     "number": 75,
     "title": "Wave 13 — parser and compiler front doors",
-    "description": "Full open-issue census: 4 September 2026; `skills@0a0995e2ce3b84265d3c5a5d50d624d5520d3835`. Scores are impact/40 + urgency/25 + readiness/20 + work unblocked/15; dependency and bundle order can override numeric order.\n\n#835 (90): The shared TypeScript lexer documents a recursion ceiling it does not enforce; fix the ingestion boundary before more rules depend on it.\n\n#388 (94): Lemma still holds return-type and state-mutability ABI validation as its current frontier.\n\n#389 (87): Builds pinned solc standard JSON from Foundry projects against the completed callable-surface validator.\n\n#394 (95): Hermes still holds class-vocabulary coverage because 58 pinned rules cannot yet be selected as candidates.\n\n#375 (76): Adds true globstar semantics and a resolved-file echo so incomplete corpora fail visibly.\n\n#400 (72): Adds compiler-settings experiments after size gates and complete rule selection exist.",
+    "description": "Full open-issue census: 5 September 2026; `skills@4592e4c97989fb483d47295f673498076907d019`. Scores are impact/40 + urgency/25 + readiness/20 + work unblocked/15; dependency and bundle order can override numeric order.\n\n#835 (90): The shared TypeScript lexer documents a recursion ceiling it does not enforce; fix the ingestion boundary before more rules depend on it.\n\n#388 (94): Lemma still holds return-type and state-mutability ABI validation as its current frontier.\n\n#389 (87): Builds pinned solc standard JSON from Foundry projects against the completed callable-surface validator.\n\n#394 (95): Hermes still holds class-vocabulary coverage because 58 pinned rules cannot yet be selected as candidates.\n\n#375 (76): Adds true globstar semantics and a resolved-file echo so incomplete corpora fail visibly.\n\n#400 (72): Adds compiler-settings experiments after size gates and complete rule selection exist.\n\n#950 (70): Aligns shared schema anchors across ECMA-262 and Python validators, beside the parser front doors that must agree on those bytes.",
     "state": "open",
-    "open": 6,
+    "open": 7,
     "closed": 0,
     "url": "https://github.com/wildcat-finance/skills/milestone/75",
     "members": [
@@ -1792,16 +1848,24 @@
         "url": "https://github.com/wildcat-finance/skills/issues/400",
         "score": 72,
         "dependencies": []
+      },
+      {
+        "number": 950,
+        "title": "framework-64: a shared schema anchor gives two answers depending on the engine",
+        "state": "open",
+        "url": "https://github.com/wildcat-finance/skills/issues/950",
+        "score": 70,
+        "dependencies": []
       }
     ]
   },
   {
     "number": 76,
     "title": "Wave 14 — credit releases and reconciliation",
-    "description": "Full open-issue census: 4 September 2026; `skills@0a0995e2ce3b84265d3c5a5d50d624d5520d3835`. Scores are impact/40 + urgency/25 + readiness/20 + work unblocked/15; dependency and bundle order can override numeric order.\n\n#398 (98): Tabularium still holds canonical Compound v3 Phase 1 and its offline Ethereum USDC specimen.\n\n#397 (93): Makes proof-backed-state earned by Lazarus verification before releases rely on the class.\n\n#399 (90): Reconciles Alexandria and Tabularium interpretations after both owning adapters and gaps exist.\n\n#396 (87): Enforces redistribution through digest-bound subset exports and explicit withheld gaps.\n\n#392 (76): Diffs fully sourced evidence files after collection is unified.\n\n#882 (70): Triage and either integrate or retire the remaining #391 unified-collection artefacts before starting another collection stack.\n\n#883 (71): Triage the abandoned #390 Midnight branches against the now-shipped Probitas coverage and retain only still-unmerged evidence.",
+    "description": "Full open-issue census: 5 September 2026; `skills@4592e4c97989fb483d47295f673498076907d019`. Scores are impact/40 + urgency/25 + readiness/20 + work unblocked/15; dependency and bundle order can override numeric order.\n\n#398 (98): Tabularium still holds canonical Compound v3 Phase 1 and its offline Ethereum USDC specimen.\n\n#399 (90): Reconciles Alexandria and Tabularium interpretations after both owning adapters and gaps exist.\n\n#396 (87): Enforces redistribution through digest-bound subset exports and explicit withheld gaps.\n\n#392 (76): Diffs fully sourced evidence files after collection is unified.\n\n#882 (70): Triage and either integrate or retire the remaining #391 unified-collection artefacts before starting another collection stack.\n\n#883 (71): Triage the abandoned #390 Midnight branches against the now-shipped Probitas coverage and retain only still-unmerged evidence.",
     "state": "open",
-    "open": 7,
-    "closed": 0,
+    "open": 6,
+    "closed": 1,
     "url": "https://github.com/wildcat-finance/skills/milestone/76",
     "members": [
       {
@@ -1810,14 +1874,6 @@
         "state": "open",
         "url": "https://github.com/wildcat-finance/skills/issues/398",
         "score": 98,
-        "dependencies": []
-      },
-      {
-        "number": 397,
-        "title": "alexandria-3 — make proof-backed-state an earned class",
-        "state": "open",
-        "url": "https://github.com/wildcat-finance/skills/issues/397",
-        "score": 93,
         "dependencies": []
       },
       {
@@ -1859,13 +1915,21 @@
         "url": "https://github.com/wildcat-finance/skills/issues/883",
         "score": 71,
         "dependencies": []
+      },
+      {
+        "number": 397,
+        "title": "alexandria-3 — make proof-backed-state an earned class",
+        "state": "closed",
+        "url": "https://github.com/wildcat-finance/skills/issues/397",
+        "score": null,
+        "dependencies": []
       }
     ]
   },
   {
     "number": 77,
     "title": "Wave 15 — predicates and grading",
-    "description": "Full open-issue census: 4 September 2026; `skills@0a0995e2ce3b84265d3c5a5d50d624d5520d3835`. Scores are impact/40 + urgency/25 + readiness/20 + work unblocked/15; dependency and bundle order can override numeric order.\n\n#376 (86): Verifies release supersession across directories before those relationships become portable statements.\n\n#332 (78): Maps corpus refreshes to broken citations so migrations remain reviewable.\n\n#333 (89): Imports external answers into graders after sentence and corpus bindings are trustworthy.\n\n#401 (60): Ariadne is mature; out-of-tree predicate discovery is optional generation work and must not reopen its grounded-agent frontier implicitly.\n\n#403 (62): Ariadne is mature; roster-tool ingestion is optional generation work after its current predicate registry.\n\n#405 (93): Exports Fiat receipt trails as durable delivery records after Ariadne foundations and handover bindings are stable.\n\n#408 (82): Emits Tabularium release evidence through the dataset predicate.",
+    "description": "Full open-issue census: 5 September 2026; `skills@4592e4c97989fb483d47295f673498076907d019`. Scores are impact/40 + urgency/25 + readiness/20 + work unblocked/15; dependency and bundle order can override numeric order.\n\n#376 (86): Verifies release supersession across directories before those relationships become portable statements.\n\n#332 (78): Maps corpus refreshes to broken citations so migrations remain reviewable.\n\n#333 (89): Imports external answers into graders after sentence and corpus bindings are trustworthy.\n\n#401 (60): Ariadne is mature; out-of-tree predicate discovery is optional generation work and must not reopen its grounded-agent frontier implicitly.\n\n#403 (62): Ariadne is mature; roster-tool ingestion is optional generation work after its current predicate registry.\n\n#405 (93): Exports Fiat receipt trails as durable delivery records after Ariadne foundations and handover bindings are stable.\n\n#408 (82): Emits Tabularium release evidence through the dataset predicate.",
     "state": "open",
     "open": 7,
     "closed": 0,
@@ -1932,7 +1996,7 @@
   {
     "number": 78,
     "title": "Wave 16 — portable releases and accessible state",
-    "description": "Full open-issue census: 4 September 2026; `skills@0a0995e2ce3b84265d3c5a5d50d624d5520d3835`. Scores are impact/40 + urgency/25 + readiness/20 + work unblocked/15; dependency and bundle order can override numeric order.\n\n#404 (78): Shapes accepted Hermes runs as Ariadne claims and command entries.\n\n#411 (96): Berean still holds the first release grounded in captured Wildcat documentation and market reads.\n\n#845 (96): Berean validation crashes on a list-typed reference, so a malformed release can stop the verifier instead of producing a bounded refusal.\n\n#418 (90): Sapheneia still holds the published cross-model AuDHD task corpus as its current frontier.\n\n#419 (80): Defines a canonical compaction-safe working-state block after the corpus.\n\n#421 (80): Ships the executable pre-send checker after the grammar and carve-out are settled.\n\n#420 (78): Defines Brevitas and Sapheneia coexistence against that state grammar.",
+    "description": "Full open-issue census: 5 September 2026; `skills@4592e4c97989fb483d47295f673498076907d019`. Scores are impact/40 + urgency/25 + readiness/20 + work unblocked/15; dependency and bundle order can override numeric order.\n\n#404 (78): Shapes accepted Hermes runs as Ariadne claims and command entries.\n\n#411 (96): Berean still holds the first release grounded in captured Wildcat documentation and market reads.\n\n#845 (96): Berean validation crashes on a list-typed reference, so a malformed release can stop the verifier instead of producing a bounded refusal.\n\n#418 (90): Sapheneia still holds the published cross-model AuDHD task corpus as its current frontier.\n\n#419 (80): Defines a canonical compaction-safe working-state block after the corpus.\n\n#421 (80): Ships the executable pre-send checker after the grammar and carve-out are settled.\n\n#420 (78): Defines Brevitas and Sapheneia coexistence against that state grammar.",
     "state": "open",
     "open": 7,
     "closed": 0,
@@ -1999,9 +2063,9 @@
   {
     "number": 79,
     "title": "Wave 17 — prose evaluation and structural contracts",
-    "description": "Full open-issue census: 4 September 2026; `skills@0a0995e2ce3b84265d3c5a5d50d624d5520d3835`. Scores are impact/40 + urgency/25 + readiness/20 + work unblocked/15; dependency and bundle order can override numeric order.\n\n#843 (93): Brevitas needs one governed answer for schema-fixed artefacts before maintenance cleanup can preserve evidence without permanent false positives.\n\n#422 (90): Imprimatur still holds labelled-prose-v2 after the first corpus failed its registered agreement and coverage gates.\n\n#880 (90): The active cleanup branch must retain corpus cases derived from bulk records before deleting their only reproduction evidence.\n\n#423 (88): Vulgate still holds a repeatable content-parity evaluation across all four registers.\n\n#501 (84): Protects identifiers and host structure in a code-adjacent Vulgate register before broader parity evaluation.\n\n#427 (73): Defines the honest suite-wide Brevitas enforcement boundary after the corpus evidence exists.",
+    "description": "Full open-issue census: 5 September 2026; `skills@4592e4c97989fb483d47295f673498076907d019`. Scores are impact/40 + urgency/25 + readiness/20 + work unblocked/15; dependency and bundle order can override numeric order.\n\n#843 (93): Brevitas needs one governed answer for schema-fixed artefacts before maintenance cleanup can preserve evidence without permanent false positives.\n\n#422 (90): Imprimatur still holds labelled-prose-v2 after the first corpus failed its registered agreement and coverage gates.\n\n#1200 (87): Lets Protasis design reports retain refusals and name what a count measures, bundled with #1214 because both change the study evidence boundary.\n\n#1214 (89): Binds candidate ids in study prose to the design-evidence record before receipt, paired with #1200 on the same Protasis schema and controller surface.\n\n#423 (88): Vulgate still holds a repeatable content-parity evaluation across all four registers.\n\n#501 (84): Protects identifiers and host structure in a code-adjacent Vulgate register before broader parity evaluation.\n\n#427 (73): Defines the honest suite-wide Brevitas enforcement boundary after the corpus evidence exists.",
     "state": "open",
-    "open": 6,
+    "open": 7,
     "closed": 0,
     "url": "https://github.com/wildcat-finance/skills/milestone/79",
     "members": [
@@ -2022,11 +2086,19 @@
         "dependencies": []
       },
       {
-        "number": 880,
-        "title": "brevitas-wish: retain cleanup-derived corpus cases before removing bulk audit records",
+        "number": 1200,
+        "title": "A design report cannot express a refusal, and one criterion names no subject",
         "state": "open",
-        "url": "https://github.com/wildcat-finance/skills/issues/880",
-        "score": 90,
+        "url": "https://github.com/wildcat-finance/skills/issues/1200",
+        "score": 87,
+        "dependencies": []
+      },
+      {
+        "number": 1214,
+        "title": "protasis-wish: the study prose and the design-evidence record list candidates that nothing binds together",
+        "state": "open",
+        "url": "https://github.com/wildcat-finance/skills/issues/1214",
+        "score": 89,
         "dependencies": []
       },
       {
@@ -2058,10 +2130,10 @@
   {
     "number": 80,
     "title": "Wave 18 — governance and maintenance",
-    "description": "Full open-issue census: 4 September 2026; `skills@0a0995e2ce3b84265d3c5a5d50d624d5520d3835`. Scores are impact/40 + urgency/25 + readiness/20 + work unblocked/15; dependency and bundle order can override numeric order.\n\n#1135 (93): Implements the accepted identity-policy change across Fiat, CI, contributor guidance, and collective prose as one governance bundle.\n\n#888 (88): Assign ADR numbers at merge to stop concurrent authors from colliding in a shared namespace.\n\n#894 (86): ADR-014 no longer describes the live milestone history; correct the governance record without rewriting historical assignments.\n\n#886 (80): Retire obsolete inoculation wording everywhere except its historical ADR so current recovery guidance points only to checkpoint archives.\n\n#415 (75): Routes Sapheneia rule-9 circuit breaking into Elenchus after working state can preserve the handoff.\n\n#328 (64): Gives Metron attempt history a canonical home after the recorder exists.",
+    "description": "Full open-issue census: 5 September 2026; `skills@4592e4c97989fb483d47295f673498076907d019`. Scores are impact/40 + urgency/25 + readiness/20 + work unblocked/15; dependency and bundle order can override numeric order.\n\n#1135 (93): Implements the accepted identity-policy change across Fiat, CI, contributor guidance, and collective prose as one governance bundle.\n\n#894 (86): ADR-014 no longer describes the live milestone history; correct the governance record without rewriting historical assignments.\n\n#886 (80): Retire obsolete inoculation wording everywhere except its historical ADR so current recovery guidance points only to checkpoint archives.\n\n#415 (75): Routes Sapheneia rule-9 circuit breaking into Elenchus after working state can preserve the handoff.\n\n#328 (64): Gives Metron attempt history a canonical home after the recorder exists.\n\n#1220 (89): Resolves three duplicate ADR stable identities that now block unambiguous pointers, paired with #1221 on the newly landed merge-time allocator.\n\n#1221 (81): Moves the stranded issue-status decision into the allocator's draft shape so its next merge assigns a valid ADR number, beside #1220's allocator cleanup.",
     "state": "open",
-    "open": 6,
-    "closed": 0,
+    "open": 7,
+    "closed": 1,
     "url": "https://github.com/wildcat-finance/skills/milestone/80",
     "members": [
       {
@@ -2070,14 +2142,6 @@
         "state": "open",
         "url": "https://github.com/wildcat-finance/skills/issues/1135",
         "score": 93,
-        "dependencies": []
-      },
-      {
-        "number": 888,
-        "title": "Assign ADR numbers at merge, not at authoring time",
-        "state": "open",
-        "url": "https://github.com/wildcat-finance/skills/issues/888",
-        "score": 88,
         "dependencies": []
       },
       {
@@ -2111,13 +2175,37 @@
         "url": "https://github.com/wildcat-finance/skills/issues/328",
         "score": 64,
         "dependencies": []
+      },
+      {
+        "number": 1220,
+        "title": "Three numbered decision records share a slug on main",
+        "state": "open",
+        "url": "https://github.com/wildcat-finance/skills/issues/1220",
+        "score": 89,
+        "dependencies": []
+      },
+      {
+        "number": 1221,
+        "title": "Move the unfiled issue-status-block record into the drafts directory for assignment",
+        "state": "open",
+        "url": "https://github.com/wildcat-finance/skills/issues/1221",
+        "score": 81,
+        "dependencies": []
+      },
+      {
+        "number": 888,
+        "title": "Assign ADR numbers at merge, not at authoring time",
+        "state": "closed",
+        "url": "https://github.com/wildcat-finance/skills/issues/888",
+        "score": null,
+        "dependencies": []
       }
     ]
   },
   {
     "number": 64,
     "title": "Wave Δ — distributed Fiat checkpoints",
-    "description": "Full open-issue census: 4 September 2026; `skills@0a0995e2ce3b84265d3c5a5d50d624d5520d3835`. Wave Δ remains the distributed-checkpoint programme; its members follow the receipted programme order.\n\n#859 (100): Programme epic for portable, content-addressed Fiat continuation; keep the packet order explicit and do not infer service or deployment authority.\n\n#1176 (90): Corrects the BSD `wc` exits in the Wave Δ reinstatement runbook before that programme uses the receipted checks again.\n\n#860 (99): The active #784/#814 stack is implementing immutable run and checkpoint identities; finish this foundation before archive or service work.\n\n#508 (98): The live checkpoint stack (#784 and #814) implements immutable run and checkpoint identity; keep the residual carryover and delegated-write boundaries bound to that programme.\n\n#899 (97): checkpoint export reads the next directive before deciding the current boundary is acceptable; refuse or export before advancing controller state.\n\n#861 (96): A cumulative, path-safe export and clean restore remain the next portable-state boundary after immutable identity.\n\n#901 (94): Version-1 and version-2 integration readers describe the same delta differently, so checkpoint compatibility lacks one canonical interpretation.\n\n#864 (90): External transitions must be fenced on independently accepted checkpoints after archive, service, and authority exist.\n\n#862 (85): The intake and publication state machine remains valid after #861, but implementation needs separate repository authority.\n\n#865 (80): Concurrent checkpoint descendants need an append-only graph and explicit resolution after identity and publication fences.\n\n#866 (78): Recovery and revocation rehearsal remains necessary only after the checkpoint service exists.\n\n#863 (75): Locked storage and signed acceptance receipts remain deployment work, with provider and recovery choices deliberately unresolved.\n\n#867 (72): Atlas routing for resume, redraw, or restart belongs after checkpoint service, fork, and recovery contracts are usable.",
+    "description": "Full open-issue census: 5 September 2026; `skills@4592e4c97989fb483d47295f673498076907d019`. Wave Δ remains the distributed-checkpoint programme; its members follow the receipted programme order.\n\n#859 (100): Programme epic for portable, content-addressed Fiat continuation; keep the packet order explicit and do not infer service or deployment authority.\n\n#1176 (90): Corrects the BSD `wc` exits in the Wave Δ reinstatement runbook before that programme uses the receipted checks again.\n\n#860 (99): The active #784/#814 stack is implementing immutable run and checkpoint identities; finish this foundation before archive or service work.\n\n#508 (98): The live checkpoint stack (#784 and #814) implements immutable run and checkpoint identity; keep the residual carryover and delegated-write boundaries bound to that programme.\n\n#899 (97): checkpoint export reads the next directive before deciding the current boundary is acceptable; refuse or export before advancing controller state.\n\n#861 (96): A cumulative, path-safe export and clean restore remain the next portable-state boundary after immutable identity.\n\n#901 (94): Version-1 and version-2 integration readers describe the same delta differently, so checkpoint compatibility lacks one canonical interpretation.\n\n#864 (90): External transitions must be fenced on independently accepted checkpoints after archive, service, and authority exist.\n\n#862 (85): The intake and publication state machine remains valid after #861, but implementation needs separate repository authority.\n\n#865 (80): Concurrent checkpoint descendants need an append-only graph and explicit resolution after identity and publication fences.\n\n#866 (78): Recovery and revocation rehearsal remains necessary only after the checkpoint service exists.\n\n#863 (75): Locked storage and signed acceptance receipts remain deployment work, with provider and recovery choices deliberately unresolved.\n\n#867 (72): Atlas routing for resume, redraw, or restart belongs after checkpoint service, fork, and recovery contracts are usable.",
     "state": "open",
     "open": 13,
     "closed": 15,
@@ -2421,7 +2509,7 @@
   {
     "number": 65,
     "title": "Wave μ — credential-free Fiat execution",
-    "description": "Full open-issue census: 4 September 2026; `skills@0a0995e2ce3b84265d3c5a5d50d624d5520d3835`. Wave μ remains the credential-free execution programme; its packets stay in dependency order.\n\n#879 (98): Programme epic: prove one external Fiat job can return a reviewable patch while credentials, state, acceptance, and publication stay outside the worker.\n\n#872 (96): First programme packet: bind one untrusted job to an exact signed JobSpec before launch.\n\n#873 (94): Second packet: boot a disposable worker with no host mount, credential, or general network after the JobSpec exists.\n\n#874 (93): Third packet: admit only inventoried outputs and reverify the patch from a clean base before trusting worker artefacts.\n\n#875 (92): Fourth packet: keep Fiat state and transition authority on the trusted side of the disposable boundary.\n\n#876 (88): Fifth packet: reconcile disposable execution with ADR-028 continuation after the external controller boundary exists.\n\n#878 (85): Pre-publication proof: attack the credential-free boundary with hostile jobs and one patch-only pilot before enabling publication.\n\n#877 (82): Final publication packet: bind approval to exact bytes and a fork-only publisher after the hostile pilot is independently accepted.",
+    "description": "Full open-issue census: 5 September 2026; `skills@4592e4c97989fb483d47295f673498076907d019`. Wave μ remains the credential-free execution programme; its packets stay in dependency order.\n\n#879 (98): Programme epic: prove one external Fiat job can return a reviewable patch while credentials, state, acceptance, and publication stay outside the worker.\n\n#872 (96): First programme packet: bind one untrusted job to an exact signed JobSpec before launch.\n\n#873 (94): Second packet: boot a disposable worker with no host mount, credential, or general network after the JobSpec exists.\n\n#874 (93): Third packet: admit only inventoried outputs and reverify the patch from a clean base before trusting worker artefacts.\n\n#875 (92): Fourth packet: keep Fiat state and transition authority on the trusted side of the disposable boundary.\n\n#876 (88): Fifth packet: reconcile disposable execution with ADR-028 continuation after the external controller boundary exists.\n\n#878 (85): Pre-publication proof: attack the credential-free boundary with hostile jobs and one patch-only pilot before enabling publication.\n\n#877 (82): Final publication packet: bind approval to exact bytes and a fork-only publisher after the hostile pilot is independently accepted.",
     "state": "open",
     "open": 8,
     "closed": 9,
@@ -2496,7 +2584,7 @@
   {
     "number": 66,
     "title": "Wave Π — protocol targets",
-    "description": "Full open-issue census: 4 September 2026; `skills@0a0995e2ce3b84265d3c5a5d50d624d5520d3835`. Wave Π remains the protocol-target programme; the ordering favours available first-party and preserved evidence.\n\n#1144 (99): Builds Wildcat first in the protocol programme because first-party contracts, documents, captures, and Berean release work are already available.\n\n#1139 (98): Builds the Aave target first because captured v4 material already exists and supplies reusable protocol-target fixtures.\n\n#1140 (96): Builds Compound after Aave because preserved v3 evidence and Tabularium work make its reproducible packet comparatively ready.\n\n#1142 (94): Builds Euler after the first target fixtures, reusing preserved v1 and v2 event evidence.\n\n#1141 (95): Builds Clearpool beside the credit-release tools that already preserve its venue records and known coverage gaps.\n\n#1146 (92): Builds Morpho after its existing capture and attribution work can be bound into the common target packet.\n\n#1145 (90): Builds SparkLend after Aave so their related surfaces share fixtures without conflating protocol-specific gaps.\n\n#1143 (89): Builds Maple after the shared target contract is stable because its current evidence packet is less complete.\n\n#1147 (88): Builds the Maker and Sky target after common adapters exist because its multi-era subject needs extra version boundaries.\n\n#1148 (87): Builds Centrifuge once the shared packet proves how tokenised-credit surfaces and omissions are represented.\n\n#1149 (85): Builds TrueFi late in the programme because it benefits from the established credit-event and source-gap conventions.\n\n#1150 (84): Builds Liquity after the common target machinery is mature because it has fewer direct dependencies on current credit-release work.",
+    "description": "Full open-issue census: 5 September 2026; `skills@4592e4c97989fb483d47295f673498076907d019`. Wave Π remains the protocol-target programme; the ordering favours available first-party and preserved evidence.\n\n#1144 (99): Builds Wildcat first in the protocol programme because first-party contracts, documents, captures, and Berean release work are already available.\n\n#1139 (98): Builds the Aave target first because captured v4 material already exists and supplies reusable protocol-target fixtures.\n\n#1140 (96): Builds Compound after Aave because preserved v3 evidence and Tabularium work make its reproducible packet comparatively ready.\n\n#1142 (94): Builds Euler after the first target fixtures, reusing preserved v1 and v2 event evidence.\n\n#1141 (95): Builds Clearpool beside the credit-release tools that already preserve its venue records and known coverage gaps.\n\n#1146 (92): Builds Morpho after its existing capture and attribution work can be bound into the common target packet.\n\n#1145 (90): Builds SparkLend after Aave so their related surfaces share fixtures without conflating protocol-specific gaps.\n\n#1143 (89): Builds Maple after the shared target contract is stable because its current evidence packet is less complete.\n\n#1147 (88): Builds the Maker and Sky target after common adapters exist because its multi-era subject needs extra version boundaries.\n\n#1148 (87): Builds Centrifuge once the shared packet proves how tokenised-credit surfaces and omissions are represented.\n\n#1149 (85): Builds TrueFi late in the programme because it benefits from the established credit-event and source-gap conventions.\n\n#1150 (84): Builds Liquity after the common target machinery is mature because it has fewer direct dependencies on current credit-release work.",
     "state": "open",
     "open": 12,
     "closed": 0,
