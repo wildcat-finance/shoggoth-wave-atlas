@@ -40,6 +40,12 @@ function checkMember(problems, where, value) {
   if (typeof issue.score !== "number" && issue.score !== null) {
     fail(problems, `${where}.score is not a number or null`);
   }
+  if (!["fiat", "pull_request", "invalid"].includes(String(issue.execution_mode))) {
+    fail(problems, `${where}.execution_mode is not fiat, pull_request, or invalid`);
+  }
+  if (issue.execution_mode === "invalid" && typeof issue.execution_reason !== "string") {
+    fail(problems, `${where}.execution_reason is not a string`);
+  }
   if (!Array.isArray(issue.dependencies)) {
     fail(problems, `${where}.dependencies is not an array`);
     return;

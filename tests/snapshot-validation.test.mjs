@@ -97,6 +97,7 @@ test("a member with a broken dependency is refused, and every problem is reporte
           state: "open",
           url: "https://github.com/wildcat-finance/skills/issues/7",
           score: null,
+          execution_mode: "fiat",
           dependencies: [
             {
               number: 6,

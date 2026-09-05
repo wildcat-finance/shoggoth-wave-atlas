@@ -35,6 +35,9 @@ test("server-renders the Shoggoth Wave Atlas", async () => {
   assert.match(html, /ATLAS MAINTENANCE/);
   assert.match(html, /Work on the map itself\./);
   assert.match(html, /never offered by/);
+  assert.match(html, /Fiat runs/);
+  assert.match(html, /PR jobs/);
+  assert.match(html, /Invalid metadata/);
 });
 
 test("job API returns the selected issue and the complete contribution prompt", async () => {
@@ -43,15 +46,18 @@ test("job API returns the selected issue and the complete contribution prompt", 
   assert.equal(response.headers.get("cache-control"), "no-store");
 
   const body = await response.json();
-  assert.equal(body.schema, "wildcat-wave-job/v2");
+  assert.equal(body.schema, "wildcat-wave-job/v3");
   assert.ok(["live", "cache", "snapshot"].includes(body.read_from));
   assert.ok(Number.isFinite(Date.parse(body.generated_at)));
   assert.match(body.source_revision, /^[0-9a-f]{40}$/i);
   assert.match(body.build_revision, /^[0-9a-f]{40}$/i);
   assert.equal(body.cache_seconds, 600);
   assert.ok(Array.isArray(body.open_issues_without_a_wave));
-  assert.equal(body.selection, "random");
+  assert.deepEqual(body.selection, { method: "random", kind: "all" });
   assert.ok(body.eligible_count > 20);
+  assert.equal(body.eligible_count, body.ready_counts.fiat + body.ready_counts.pull_request);
+  assert.ok(Array.isArray(body.invalid_issues));
+  assert.ok(["fiat", "pull_request"].includes(body.job.execution_mode));
   assert.equal(typeof body.job.number, "number");
   assert.match(body.job.url, new RegExp(`/issues/${body.job.number}$`));
   assert.match(body.job.prompt, new RegExp(`issue #${body.job.number}`));
@@ -59,24 +65,23 @@ test("job API returns the selected issue and the complete contribution prompt", 
   assert.match(body.job.prompt, /use my own valid signing identity/);
   assert.match(body.job.prompt, /publish through my GitHub account/);
   assert.match(body.job.prompt, /Never ask me for or configure the Shoggoth signing key or GitHub account/);
-  assert.match(body.job.prompt, /Fiat does not yet support checkpointing/);
-  assert.match(body.job.prompt, /Work is actively ongoing to complete it/);
+  if (body.job.execution_mode === "fiat") {
+    assert.match(body.job.prompt, /Fiat does not yet support checkpointing/);
+    assert.match(body.job.prompt, /Work is actively ongoing to complete it/);
+  } else {
+    assert.match(body.job.prompt, /one complete pull-request job/);
+    assert.match(body.job.prompt, /Do not start Fiat, run hexctl, or write Fiat receipts/);
+  }
   assert.doesNotMatch(body.job.prompt, /pull\/479|issues\/479|#479/);
-  assert.match(body.job.prompt, /Before hexctl init/);
-  assert.match(body.job.prompt, /stop before init/);
-  assert.match(body.job.prompt, /Do not start the run here or request or transfer Shoggoth credentials/);
-  assert.match(body.job.prompt, /finish the same run in the same environment/);
-  assert.match(body.job.prompt, /unfinished run can lose the work/);
-  assert.match(body.job.prompt, /carry the complete Fiat workflow through rather than only telling me/);
-  assert.match(body.job.prompt, /Do not assume another contributor or session can resume an incomplete run/);
-  assert.ok(
-    body.job.prompt.indexOf(`issue #${body.job.number}`) <
-      body.job.prompt.indexOf("Fiat does not yet support checkpointing"),
-  );
-  assert.ok(
-    body.job.prompt.indexOf("Fiat does not yet support checkpointing") <
-      body.job.prompt.indexOf("Before hexctl init"),
-  );
+  if (body.job.execution_mode === "fiat") {
+    assert.match(body.job.prompt, /Before hexctl init/);
+    assert.match(body.job.prompt, /stop before init/);
+    assert.match(body.job.prompt, /Do not start the run here or request or transfer Shoggoth credentials/);
+    assert.match(body.job.prompt, /finish the same run in the same environment/);
+    assert.match(body.job.prompt, /unfinished run can lose the work/);
+    assert.match(body.job.prompt, /carry the complete Fiat workflow through rather than only telling me/);
+    assert.match(body.job.prompt, /Do not assume another contributor or session can resume an incomplete run/);
+  }
   assert.doesNotMatch(body.job.prompt, /for as little or as long as I want/);
   assert.doesNotMatch(body.job.prompt, /stop cleanly at any checkpoint/);
   assert.doesNotMatch(body.job.prompt, /tell me exactly what I need to do/);
@@ -87,6 +92,8 @@ test("complete job pool spans every dependency-clear wave", async () => {
   const body = await response.json();
 
   assert.equal(body.jobs.length, body.eligible_count);
+  assert.ok(body.jobs.every((job) => ["fiat", "pull_request"].includes(job.execution_mode)));
+  assert.ok(body.invalid_issues.every((issue) => typeof issue.execution_reason === "string"));
   assert.ok(new Set(body.jobs.map((job) => job.wave.milestone_number)).size > 10);
   assert.ok(body.jobs.every((job) => job.prompt.includes(`issue #${job.number}`)));
   assert.ok(
@@ -94,6 +101,25 @@ test("complete job pool spans every dependency-clear wave", async () => {
       job.url.startsWith("https://github.com/wildcat-finance/skills/issues/"),
     ),
   );
+});
+
+test("job API filters selectable work by execution mode", async () => {
+  for (const kind of ["fiat", "pull_request"]) {
+    const response = await request(`/api/job?all=true&kind=${kind}`);
+    const body = await response.json();
+    assert.equal(response.status, 200);
+    assert.deepEqual(body.selection, { method: "random", kind });
+    assert.ok(body.jobs.length > 0);
+    assert.ok(body.jobs.every((job) => job.execution_mode === kind));
+  }
+});
+
+test("job API rejects an unknown execution mode", async () => {
+  const response = await request("/api/job?kind=guess");
+  assert.equal(response.status, 400);
+  assert.deepEqual(await response.json(), {
+    error: "kind must be all, fiat, or pull_request",
+  });
 });
 
 for (const [provider, expectedOrigin] of [

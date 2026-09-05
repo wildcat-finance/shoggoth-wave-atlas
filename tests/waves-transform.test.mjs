@@ -1,7 +1,11 @@
 import assert from "node:assert/strict";
 import test from "node:test";
 
-import { buildWaves, waveKey } from "../app/waves-transform.mjs";
+import {
+  buildWaves,
+  executionClassification,
+  waveKey,
+} from "../app/waves-transform.mjs";
 
 const milestone = {
   number: 1,
@@ -38,6 +42,45 @@ test("a wave carries its members in milestone-description order", () => {
   );
   assert.equal(waves[0].members[0].score, 97);
   assert.equal(waves[0].members[1].score, 91);
+});
+
+test("execution mode accepts only one exact Fiat-Required field", () => {
+  assert.deepEqual(executionClassification("Fiat-Required: 1"), {
+    execution_mode: "fiat",
+  });
+  assert.deepEqual(executionClassification("Fiat-Required: 0"), {
+    execution_mode: "pull_request",
+  });
+  assert.deepEqual(executionClassification(""), {
+    execution_mode: "invalid",
+    execution_reason: "missing Fiat-Required: 0 or 1",
+  });
+  assert.deepEqual(
+    executionClassification("Fiat-Required: 1\nFiat-Required: 0"),
+    {
+      execution_mode: "invalid",
+      execution_reason: "duplicate Fiat-Required fields",
+    },
+  );
+  assert.deepEqual(executionClassification("Fiat-Required: yes"), {
+    execution_mode: "invalid",
+    execution_reason: "invalid Fiat-Required value",
+  });
+});
+
+test("execution classification is carried into every wave member", () => {
+  const { waves } = buildWaves({
+    milestones: [milestone],
+    issues: [
+      issue(10, { body: "Fiat-Required: 1" }),
+      issue(11, { body: "Fiat-Required: 0" }),
+    ],
+  });
+
+  assert.deepEqual(
+    waves[0].members.map((member) => member.execution_mode),
+    ["fiat", "pull_request"],
+  );
 });
 
 test("literal newline escapes in generated milestone prose render as line breaks", () => {

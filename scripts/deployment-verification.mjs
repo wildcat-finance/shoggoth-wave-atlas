@@ -38,6 +38,10 @@ export function inspectDeployment(payload, expectedRevision) {
   const problems = [];
   const body = payload && typeof payload === "object" ? payload : {};
 
+  if (body.schema !== "wildcat-wave-job/v3") {
+    problems.push("Deployment did not return wildcat-wave-job/v3");
+  }
+
   const deployedRevision = body.build_revision;
   if (typeof deployedRevision !== "string" || !SHA_PATTERN.test(deployedRevision)) {
     problems.push("Deployment did not return a valid build_revision");

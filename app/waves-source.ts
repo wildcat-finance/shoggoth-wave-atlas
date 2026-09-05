@@ -8,7 +8,7 @@ const SKILLS_REPOSITORY = "wildcat-finance/skills";
 const ATLAS_REPOSITORY = "wildcat-finance/shoggoth-wave-atlas";
 // Version the cache schema. A v1 entry lacks sourceRevision and would make a
 // fresh deployment report incomplete provenance until its old TTL elapsed.
-const CACHE_KEY = "https://wave-atlas.internal/waves-v2";
+const CACHE_KEY = "https://wave-atlas.internal/waves-v3";
 const ATLAS_CACHE_KEY = "https://wave-atlas.internal/atlas-issues-v1";
 const CACHE_SECONDS = 600;
 const PAGE_SIZE = 100;
@@ -54,6 +54,8 @@ function isIssue(value: unknown): boolean {
     ["open", "closed"].includes(String(issue.state)) &&
     typeof issue.url === "string" &&
     (typeof issue.score === "number" || issue.score === null) &&
+    ["fiat", "pull_request", "invalid"].includes(String(issue.execution_mode)) &&
+    (issue.execution_mode !== "invalid" || typeof issue.execution_reason === "string") &&
     Array.isArray(issue.dependencies) &&
     issue.dependencies.every(isDependency)
   );

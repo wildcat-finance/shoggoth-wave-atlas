@@ -14,6 +14,7 @@
         "state": "open",
         "url": "https://github.com/wildcat-finance/skills/issues/925",
         "score": 100,
+        "execution_mode": "fiat",
         "dependencies": []
       },
       {
@@ -22,6 +23,7 @@
         "state": "open",
         "url": "https://github.com/wildcat-finance/skills/issues/855",
         "score": 100,
+        "execution_mode": "fiat",
         "dependencies": []
       },
       {
@@ -30,6 +32,7 @@
         "state": "open",
         "url": "https://github.com/wildcat-finance/skills/issues/992",
         "score": 95,
+        "execution_mode": "fiat",
         "dependencies": []
       },
       {
@@ -38,6 +41,8 @@
         "state": "open",
         "url": "https://github.com/wildcat-finance/skills/issues/1175",
         "score": 96,
+        "execution_mode": "invalid",
+        "execution_reason": "missing Fiat-Required: 0 or 1",
         "dependencies": []
       },
       {
@@ -46,6 +51,7 @@
         "state": "open",
         "url": "https://github.com/wildcat-finance/skills/issues/912",
         "score": 97,
+        "execution_mode": "pull_request",
         "dependencies": []
       },
       {
@@ -54,6 +60,7 @@
         "state": "open",
         "url": "https://github.com/wildcat-finance/skills/issues/897",
         "score": 94,
+        "execution_mode": "pull_request",
         "dependencies": []
       },
       {
@@ -62,6 +69,7 @@
         "state": "open",
         "url": "https://github.com/wildcat-finance/skills/issues/892",
         "score": 92,
+        "execution_mode": "pull_request",
         "dependencies": []
       },
       {
@@ -70,6 +78,7 @@
         "state": "closed",
         "url": "https://github.com/wildcat-finance/skills/issues/43",
         "score": null,
+        "execution_mode": "pull_request",
         "dependencies": []
       },
       {
@@ -78,6 +87,7 @@
         "state": "closed",
         "url": "https://github.com/wildcat-finance/skills/issues/327",
         "score": null,
+        "execution_mode": "fiat",
         "dependencies": []
       },
       {
@@ -86,6 +96,7 @@
         "state": "closed",
         "url": "https://github.com/wildcat-finance/skills/issues/366",
         "score": null,
+        "execution_mode": "pull_request",
         "dependencies": []
       },
       {
@@ -94,6 +105,7 @@
         "state": "closed",
         "url": "https://github.com/wildcat-finance/skills/issues/368",
         "score": null,
+        "execution_mode": "pull_request",
         "dependencies": []
       },
       {
@@ -102,6 +114,7 @@
         "state": "closed",
         "url": "https://github.com/wildcat-finance/skills/issues/428",
         "score": null,
+        "execution_mode": "pull_request",
         "dependencies": []
       },
       {
@@ -110,6 +123,7 @@
         "state": "closed",
         "url": "https://github.com/wildcat-finance/skills/issues/429",
         "score": null,
+        "execution_mode": "fiat",
         "dependencies": [
           {
             "number": 327,
@@ -125,6 +139,7 @@
         "state": "closed",
         "url": "https://github.com/wildcat-finance/skills/issues/434",
         "score": null,
+        "execution_mode": "fiat",
         "dependencies": []
       },
       {
@@ -133,6 +148,7 @@
         "state": "closed",
         "url": "https://github.com/wildcat-finance/skills/issues/435",
         "score": null,
+        "execution_mode": "fiat",
         "dependencies": [
           {
             "number": 434,
@@ -148,6 +164,7 @@
         "state": "closed",
         "url": "https://github.com/wildcat-finance/skills/issues/436",
         "score": null,
+        "execution_mode": "fiat",
         "dependencies": [
           {
             "number": 434,
@@ -169,6 +186,7 @@
         "state": "closed",
         "url": "https://github.com/wildcat-finance/skills/issues/437",
         "score": null,
+        "execution_mode": "fiat",
         "dependencies": []
       },
       {
@@ -177,6 +195,7 @@
         "state": "closed",
         "url": "https://github.com/wildcat-finance/skills/issues/439",
         "score": null,
+        "execution_mode": "fiat",
         "dependencies": []
       },
       {
@@ -185,6 +204,7 @@
         "state": "closed",
         "url": "https://github.com/wildcat-finance/skills/issues/443",
         "score": null,
+        "execution_mode": "pull_request",
         "dependencies": []
       },
       {
@@ -193,6 +213,7 @@
         "state": "closed",
         "url": "https://github.com/wildcat-finance/skills/issues/495",
         "score": null,
+        "execution_mode": "pull_request",
         "dependencies": []
       },
       {
@@ -201,6 +222,7 @@
         "state": "closed",
         "url": "https://github.com/wildcat-finance/skills/issues/497",
         "score": null,
+        "execution_mode": "fiat",
         "dependencies": [
           {
             "number": 369,
@@ -222,6 +244,7 @@
         "state": "closed",
         "url": "https://github.com/wildcat-finance/skills/issues/500",
         "score": null,
+        "execution_mode": "fiat",
         "dependencies": []
       },
       {
@@ -230,6 +253,7 @@
         "state": "closed",
         "url": "https://github.com/wildcat-finance/skills/issues/502",
         "score": null,
+        "execution_mode": "pull_request",
         "dependencies": []
       },
       {
@@ -238,6 +262,7 @@
         "state": "closed",
         "url": "https://github.com/wildcat-finance/skills/issues/503",
         "score": null,
+        "execution_mode": "pull_request",
         "dependencies": []
       },
       {
@@ -246,6 +271,7 @@
         "state": "closed",
         "url": "https://github.com/wildcat-finance/skills/issues/504",
         "score": null,
+        "execution_mode": "pull_request",
         "dependencies": []
       },
       {
@@ -254,6 +280,7 @@
         "state": "closed",
         "url": "https://github.com/wildcat-finance/skills/issues/505",
         "score": null,
+        "execution_mode": "fiat",
         "dependencies": []
       },
       {
@@ -262,6 +289,7 @@
         "state": "closed",
         "url": "https://github.com/wildcat-finance/skills/issues/833",
         "score": null,
+        "execution_mode": "pull_request",
         "dependencies": []
       },
       {
@@ -270,6 +298,7 @@
         "state": "closed",
         "url": "https://github.com/wildcat-finance/skills/issues/854",
         "score": null,
+        "execution_mode": "fiat",
         "dependencies": []
       },
       {
@@ -278,6 +307,7 @@
         "state": "closed",
         "url": "https://github.com/wildcat-finance/skills/issues/889",
         "score": null,
+        "execution_mode": "fiat",
         "dependencies": []
       },
       {
@@ -286,6 +316,7 @@
         "state": "closed",
         "url": "https://github.com/wildcat-finance/skills/issues/891",
         "score": null,
+        "execution_mode": "fiat",
         "dependencies": []
       },
       {
@@ -294,6 +325,7 @@
         "state": "closed",
         "url": "https://github.com/wildcat-finance/skills/issues/893",
         "score": null,
+        "execution_mode": "fiat",
         "dependencies": []
       },
       {
@@ -302,6 +334,7 @@
         "state": "closed",
         "url": "https://github.com/wildcat-finance/skills/issues/902",
         "score": null,
+        "execution_mode": "pull_request",
         "dependencies": []
       },
       {
@@ -310,6 +343,7 @@
         "state": "closed",
         "url": "https://github.com/wildcat-finance/skills/issues/903",
         "score": null,
+        "execution_mode": "pull_request",
         "dependencies": []
       },
       {
@@ -318,6 +352,7 @@
         "state": "closed",
         "url": "https://github.com/wildcat-finance/skills/issues/906",
         "score": null,
+        "execution_mode": "pull_request",
         "dependencies": []
       }
     ]
@@ -337,6 +372,7 @@
         "state": "open",
         "url": "https://github.com/wildcat-finance/skills/issues/939",
         "score": 96,
+        "execution_mode": "pull_request",
         "dependencies": []
       },
       {
@@ -345,6 +381,7 @@
         "state": "open",
         "url": "https://github.com/wildcat-finance/skills/issues/884",
         "score": 93,
+        "execution_mode": "fiat",
         "dependencies": []
       },
       {
@@ -353,6 +390,7 @@
         "state": "open",
         "url": "https://github.com/wildcat-finance/skills/issues/871",
         "score": 99,
+        "execution_mode": "fiat",
         "dependencies": []
       },
       {
@@ -361,6 +399,7 @@
         "state": "open",
         "url": "https://github.com/wildcat-finance/skills/issues/1170",
         "score": 98,
+        "execution_mode": "pull_request",
         "dependencies": []
       },
       {
@@ -369,6 +408,7 @@
         "state": "open",
         "url": "https://github.com/wildcat-finance/skills/issues/898",
         "score": 96,
+        "execution_mode": "pull_request",
         "dependencies": []
       },
       {
@@ -377,6 +417,7 @@
         "state": "open",
         "url": "https://github.com/wildcat-finance/skills/issues/842",
         "score": 91,
+        "execution_mode": "pull_request",
         "dependencies": []
       },
       {
@@ -385,6 +426,7 @@
         "state": "open",
         "url": "https://github.com/wildcat-finance/skills/issues/844",
         "score": 96,
+        "execution_mode": "pull_request",
         "dependencies": []
       },
       {
@@ -393,6 +435,7 @@
         "state": "closed",
         "url": "https://github.com/wildcat-finance/skills/issues/49",
         "score": null,
+        "execution_mode": "pull_request",
         "dependencies": []
       },
       {
@@ -401,6 +444,7 @@
         "state": "closed",
         "url": "https://github.com/wildcat-finance/skills/issues/74",
         "score": null,
+        "execution_mode": "fiat",
         "dependencies": []
       },
       {
@@ -409,6 +453,7 @@
         "state": "closed",
         "url": "https://github.com/wildcat-finance/skills/issues/315",
         "score": null,
+        "execution_mode": "fiat",
         "dependencies": []
       },
       {
@@ -417,6 +462,7 @@
         "state": "closed",
         "url": "https://github.com/wildcat-finance/skills/issues/316",
         "score": null,
+        "execution_mode": "fiat",
         "dependencies": []
       },
       {
@@ -425,6 +471,7 @@
         "state": "closed",
         "url": "https://github.com/wildcat-finance/skills/issues/317",
         "score": null,
+        "execution_mode": "pull_request",
         "dependencies": []
       },
       {
@@ -433,6 +480,7 @@
         "state": "closed",
         "url": "https://github.com/wildcat-finance/skills/issues/369",
         "score": null,
+        "execution_mode": "pull_request",
         "dependencies": []
       },
       {
@@ -441,6 +489,7 @@
         "state": "closed",
         "url": "https://github.com/wildcat-finance/skills/issues/372",
         "score": null,
+        "execution_mode": "pull_request",
         "dependencies": []
       },
       {
@@ -449,6 +498,7 @@
         "state": "closed",
         "url": "https://github.com/wildcat-finance/skills/issues/377",
         "score": null,
+        "execution_mode": "fiat",
         "dependencies": []
       },
       {
@@ -457,6 +507,7 @@
         "state": "closed",
         "url": "https://github.com/wildcat-finance/skills/issues/446",
         "score": null,
+        "execution_mode": "fiat",
         "dependencies": []
       },
       {
@@ -465,6 +516,7 @@
         "state": "closed",
         "url": "https://github.com/wildcat-finance/skills/issues/461",
         "score": null,
+        "execution_mode": "fiat",
         "dependencies": []
       },
       {
@@ -473,6 +525,7 @@
         "state": "closed",
         "url": "https://github.com/wildcat-finance/skills/issues/462",
         "score": null,
+        "execution_mode": "fiat",
         "dependencies": []
       },
       {
@@ -481,6 +534,7 @@
         "state": "closed",
         "url": "https://github.com/wildcat-finance/skills/issues/847",
         "score": null,
+        "execution_mode": "pull_request",
         "dependencies": []
       }
     ]
@@ -500,6 +554,7 @@
         "state": "closed",
         "url": "https://github.com/wildcat-finance/skills/issues/8",
         "score": null,
+        "execution_mode": "pull_request",
         "dependencies": []
       },
       {
@@ -508,6 +563,7 @@
         "state": "open",
         "url": "https://github.com/wildcat-finance/skills/issues/890",
         "score": 98,
+        "execution_mode": "pull_request",
         "dependencies": []
       },
       {
@@ -516,6 +572,7 @@
         "state": "open",
         "url": "https://github.com/wildcat-finance/skills/issues/885",
         "score": 97,
+        "execution_mode": "fiat",
         "dependencies": []
       },
       {
@@ -524,6 +581,7 @@
         "state": "open",
         "url": "https://github.com/wildcat-finance/skills/issues/363",
         "score": 96,
+        "execution_mode": "fiat",
         "dependencies": [
           {
             "number": 453,
@@ -539,6 +597,7 @@
         "state": "open",
         "url": "https://github.com/wildcat-finance/skills/issues/868",
         "score": 96,
+        "execution_mode": "pull_request",
         "dependencies": []
       },
       {
@@ -547,6 +606,7 @@
         "state": "open",
         "url": "https://github.com/wildcat-finance/skills/issues/933",
         "score": 88,
+        "execution_mode": "fiat",
         "dependencies": []
       },
       {
@@ -555,6 +615,7 @@
         "state": "open",
         "url": "https://github.com/wildcat-finance/skills/issues/976",
         "score": 96,
+        "execution_mode": "fiat",
         "dependencies": []
       },
       {
@@ -563,6 +624,7 @@
         "state": "closed",
         "url": "https://github.com/wildcat-finance/skills/issues/1",
         "score": null,
+        "execution_mode": "pull_request",
         "dependencies": []
       },
       {
@@ -571,6 +633,7 @@
         "state": "open",
         "url": "https://github.com/wildcat-finance/skills/issues/1086",
         "score": 97,
+        "execution_mode": "fiat",
         "dependencies": []
       },
       {
@@ -579,6 +642,7 @@
         "state": "closed",
         "url": "https://github.com/wildcat-finance/skills/issues/2",
         "score": null,
+        "execution_mode": "pull_request",
         "dependencies": []
       },
       {
@@ -587,6 +651,7 @@
         "state": "closed",
         "url": "https://github.com/wildcat-finance/skills/issues/18",
         "score": null,
+        "execution_mode": "pull_request",
         "dependencies": []
       },
       {
@@ -595,6 +660,7 @@
         "state": "closed",
         "url": "https://github.com/wildcat-finance/skills/issues/25",
         "score": null,
+        "execution_mode": "pull_request",
         "dependencies": []
       },
       {
@@ -603,6 +669,7 @@
         "state": "closed",
         "url": "https://github.com/wildcat-finance/skills/issues/29",
         "score": null,
+        "execution_mode": "pull_request",
         "dependencies": []
       },
       {
@@ -611,6 +678,7 @@
         "state": "closed",
         "url": "https://github.com/wildcat-finance/skills/issues/33",
         "score": null,
+        "execution_mode": "pull_request",
         "dependencies": []
       },
       {
@@ -619,6 +687,7 @@
         "state": "closed",
         "url": "https://github.com/wildcat-finance/skills/issues/35",
         "score": null,
+        "execution_mode": "pull_request",
         "dependencies": []
       },
       {
@@ -627,6 +696,7 @@
         "state": "closed",
         "url": "https://github.com/wildcat-finance/skills/issues/44",
         "score": null,
+        "execution_mode": "fiat",
         "dependencies": []
       },
       {
@@ -635,6 +705,7 @@
         "state": "closed",
         "url": "https://github.com/wildcat-finance/skills/issues/47",
         "score": null,
+        "execution_mode": "pull_request",
         "dependencies": []
       },
       {
@@ -643,6 +714,7 @@
         "state": "closed",
         "url": "https://github.com/wildcat-finance/skills/issues/318",
         "score": null,
+        "execution_mode": "fiat",
         "dependencies": []
       },
       {
@@ -651,6 +723,7 @@
         "state": "closed",
         "url": "https://github.com/wildcat-finance/skills/issues/319",
         "score": null,
+        "execution_mode": "pull_request",
         "dependencies": []
       },
       {
@@ -659,6 +732,7 @@
         "state": "closed",
         "url": "https://github.com/wildcat-finance/skills/issues/320",
         "score": null,
+        "execution_mode": "pull_request",
         "dependencies": []
       },
       {
@@ -667,6 +741,7 @@
         "state": "closed",
         "url": "https://github.com/wildcat-finance/skills/issues/321",
         "score": null,
+        "execution_mode": "fiat",
         "dependencies": []
       },
       {
@@ -675,6 +750,7 @@
         "state": "closed",
         "url": "https://github.com/wildcat-finance/skills/issues/322",
         "score": null,
+        "execution_mode": "fiat",
         "dependencies": []
       },
       {
@@ -683,6 +759,7 @@
         "state": "closed",
         "url": "https://github.com/wildcat-finance/skills/issues/370",
         "score": null,
+        "execution_mode": "pull_request",
         "dependencies": []
       },
       {
@@ -691,6 +768,7 @@
         "state": "closed",
         "url": "https://github.com/wildcat-finance/skills/issues/374",
         "score": null,
+        "execution_mode": "fiat",
         "dependencies": []
       },
       {
@@ -699,6 +777,7 @@
         "state": "closed",
         "url": "https://github.com/wildcat-finance/skills/issues/438",
         "score": null,
+        "execution_mode": "fiat",
         "dependencies": []
       },
       {
@@ -707,6 +786,7 @@
         "state": "closed",
         "url": "https://github.com/wildcat-finance/skills/issues/447",
         "score": null,
+        "execution_mode": "fiat",
         "dependencies": []
       },
       {
@@ -715,6 +795,7 @@
         "state": "closed",
         "url": "https://github.com/wildcat-finance/skills/issues/466",
         "score": null,
+        "execution_mode": "pull_request",
         "dependencies": []
       },
       {
@@ -723,6 +804,7 @@
         "state": "closed",
         "url": "https://github.com/wildcat-finance/skills/issues/499",
         "score": null,
+        "execution_mode": "fiat",
         "dependencies": []
       },
       {
@@ -731,6 +813,7 @@
         "state": "closed",
         "url": "https://github.com/wildcat-finance/skills/issues/617",
         "score": null,
+        "execution_mode": "fiat",
         "dependencies": []
       },
       {
@@ -739,6 +822,7 @@
         "state": "closed",
         "url": "https://github.com/wildcat-finance/skills/issues/904",
         "score": null,
+        "execution_mode": "fiat",
         "dependencies": []
       },
       {
@@ -747,6 +831,7 @@
         "state": "closed",
         "url": "https://github.com/wildcat-finance/skills/issues/909",
         "score": null,
+        "execution_mode": "fiat",
         "dependencies": []
       },
       {
@@ -755,6 +840,7 @@
         "state": "closed",
         "url": "https://github.com/wildcat-finance/skills/issues/1057",
         "score": null,
+        "execution_mode": "fiat",
         "dependencies": []
       }
     ]
@@ -774,6 +860,7 @@
         "state": "open",
         "url": "https://github.com/wildcat-finance/skills/issues/1117",
         "score": 95,
+        "execution_mode": "fiat",
         "dependencies": []
       },
       {
@@ -782,6 +869,7 @@
         "state": "open",
         "url": "https://github.com/wildcat-finance/skills/issues/1215",
         "score": 95,
+        "execution_mode": "fiat",
         "dependencies": []
       },
       {
@@ -790,6 +878,7 @@
         "state": "open",
         "url": "https://github.com/wildcat-finance/skills/issues/838",
         "score": 94,
+        "execution_mode": "fiat",
         "dependencies": []
       },
       {
@@ -798,6 +887,7 @@
         "state": "open",
         "url": "https://github.com/wildcat-finance/skills/issues/834",
         "score": 93,
+        "execution_mode": "pull_request",
         "dependencies": []
       },
       {
@@ -806,6 +896,7 @@
         "state": "open",
         "url": "https://github.com/wildcat-finance/skills/issues/553",
         "score": 88,
+        "execution_mode": "fiat",
         "dependencies": []
       },
       {
@@ -814,6 +905,7 @@
         "state": "open",
         "url": "https://github.com/wildcat-finance/skills/issues/1106",
         "score": 91,
+        "execution_mode": "fiat",
         "dependencies": []
       },
       {
@@ -822,6 +914,7 @@
         "state": "open",
         "url": "https://github.com/wildcat-finance/skills/issues/837",
         "score": 86,
+        "execution_mode": "fiat",
         "dependencies": []
       },
       {
@@ -830,6 +923,7 @@
         "state": "closed",
         "url": "https://github.com/wildcat-finance/skills/issues/324",
         "score": null,
+        "execution_mode": "pull_request",
         "dependencies": []
       },
       {
@@ -838,6 +932,7 @@
         "state": "closed",
         "url": "https://github.com/wildcat-finance/skills/issues/325",
         "score": null,
+        "execution_mode": "pull_request",
         "dependencies": []
       }
     ]
@@ -857,6 +952,7 @@
         "state": "open",
         "url": "https://github.com/wildcat-finance/skills/issues/978",
         "score": 98,
+        "execution_mode": "pull_request",
         "dependencies": []
       },
       {
@@ -865,6 +961,7 @@
         "state": "open",
         "url": "https://github.com/wildcat-finance/skills/issues/1212",
         "score": 90,
+        "execution_mode": "fiat",
         "dependencies": []
       },
       {
@@ -873,6 +970,7 @@
         "state": "open",
         "url": "https://github.com/wildcat-finance/skills/issues/880",
         "score": 90,
+        "execution_mode": "pull_request",
         "dependencies": []
       },
       {
@@ -881,6 +979,7 @@
         "state": "open",
         "url": "https://github.com/wildcat-finance/skills/issues/887",
         "score": 85,
+        "execution_mode": "fiat",
         "dependencies": []
       },
       {
@@ -889,6 +988,7 @@
         "state": "open",
         "url": "https://github.com/wildcat-finance/skills/issues/453",
         "score": 95,
+        "execution_mode": "fiat",
         "dependencies": [
           {
             "number": 327,
@@ -916,6 +1016,7 @@
         "state": "open",
         "url": "https://github.com/wildcat-finance/skills/issues/373",
         "score": 81,
+        "execution_mode": "pull_request",
         "dependencies": []
       },
       {
@@ -924,6 +1025,7 @@
         "state": "open",
         "url": "https://github.com/wildcat-finance/skills/issues/858",
         "score": 30,
+        "execution_mode": "pull_request",
         "dependencies": []
       },
       {
@@ -932,6 +1034,7 @@
         "state": "closed",
         "url": "https://github.com/wildcat-finance/skills/issues/58",
         "score": null,
+        "execution_mode": "fiat",
         "dependencies": []
       },
       {
@@ -940,6 +1043,7 @@
         "state": "closed",
         "url": "https://github.com/wildcat-finance/skills/issues/68",
         "score": null,
+        "execution_mode": "fiat",
         "dependencies": []
       },
       {
@@ -948,6 +1052,7 @@
         "state": "closed",
         "url": "https://github.com/wildcat-finance/skills/issues/383",
         "score": null,
+        "execution_mode": "fiat",
         "dependencies": []
       },
       {
@@ -956,6 +1061,7 @@
         "state": "closed",
         "url": "https://github.com/wildcat-finance/skills/issues/386",
         "score": null,
+        "execution_mode": "fiat",
         "dependencies": []
       },
       {
@@ -964,6 +1070,7 @@
         "state": "closed",
         "url": "https://github.com/wildcat-finance/skills/issues/387",
         "score": null,
+        "execution_mode": "pull_request",
         "dependencies": []
       },
       {
@@ -972,6 +1079,7 @@
         "state": "closed",
         "url": "https://github.com/wildcat-finance/skills/issues/881",
         "score": null,
+        "execution_mode": "fiat",
         "dependencies": []
       }
     ]
@@ -991,6 +1099,7 @@
         "state": "open",
         "url": "https://github.com/wildcat-finance/skills/issues/1171",
         "score": 97,
+        "execution_mode": "fiat",
         "dependencies": []
       },
       {
@@ -999,6 +1108,7 @@
         "state": "open",
         "url": "https://github.com/wildcat-finance/skills/issues/836",
         "score": 96,
+        "execution_mode": "pull_request",
         "dependencies": []
       },
       {
@@ -1007,6 +1117,7 @@
         "state": "open",
         "url": "https://github.com/wildcat-finance/skills/issues/895",
         "score": 88,
+        "execution_mode": "pull_request",
         "dependencies": []
       },
       {
@@ -1015,6 +1126,7 @@
         "state": "open",
         "url": "https://github.com/wildcat-finance/skills/issues/1052",
         "score": 93,
+        "execution_mode": "fiat",
         "dependencies": []
       },
       {
@@ -1023,6 +1135,7 @@
         "state": "open",
         "url": "https://github.com/wildcat-finance/skills/issues/1053",
         "score": 94,
+        "execution_mode": "fiat",
         "dependencies": []
       },
       {
@@ -1031,6 +1144,7 @@
         "state": "open",
         "url": "https://github.com/wildcat-finance/skills/issues/971",
         "score": 90,
+        "execution_mode": "pull_request",
         "dependencies": []
       },
       {
@@ -1039,6 +1153,7 @@
         "state": "open",
         "url": "https://github.com/wildcat-finance/skills/issues/856",
         "score": 75,
+        "execution_mode": "fiat",
         "dependencies": []
       },
       {
@@ -1047,6 +1162,7 @@
         "state": "closed",
         "url": "https://github.com/wildcat-finance/skills/issues/51",
         "score": null,
+        "execution_mode": "pull_request",
         "dependencies": []
       },
       {
@@ -1055,6 +1171,7 @@
         "state": "closed",
         "url": "https://github.com/wildcat-finance/skills/issues/329",
         "score": null,
+        "execution_mode": "pull_request",
         "dependencies": []
       }
     ]
@@ -1074,6 +1191,7 @@
         "state": "open",
         "url": "https://github.com/wildcat-finance/skills/issues/942",
         "score": 97,
+        "execution_mode": "fiat",
         "dependencies": []
       },
       {
@@ -1082,6 +1200,7 @@
         "state": "open",
         "url": "https://github.com/wildcat-finance/skills/issues/1046",
         "score": 96,
+        "execution_mode": "fiat",
         "dependencies": []
       },
       {
@@ -1090,6 +1209,7 @@
         "state": "open",
         "url": "https://github.com/wildcat-finance/skills/issues/1155",
         "score": 95,
+        "execution_mode": "fiat",
         "dependencies": []
       },
       {
@@ -1098,6 +1218,7 @@
         "state": "open",
         "url": "https://github.com/wildcat-finance/skills/issues/1122",
         "score": 94,
+        "execution_mode": "pull_request",
         "dependencies": []
       },
       {
@@ -1106,6 +1227,7 @@
         "state": "closed",
         "url": "https://github.com/wildcat-finance/skills/issues/1098",
         "score": null,
+        "execution_mode": "fiat",
         "dependencies": []
       },
       {
@@ -1114,6 +1236,7 @@
         "state": "open",
         "url": "https://github.com/wildcat-finance/skills/issues/1199",
         "score": 87,
+        "execution_mode": "fiat",
         "dependencies": []
       },
       {
@@ -1122,6 +1245,7 @@
         "state": "open",
         "url": "https://github.com/wildcat-finance/skills/issues/1192",
         "score": 91,
+        "execution_mode": "fiat",
         "dependencies": []
       },
       {
@@ -1130,6 +1254,7 @@
         "state": "closed",
         "url": "https://github.com/wildcat-finance/skills/issues/27",
         "score": null,
+        "execution_mode": "pull_request",
         "dependencies": []
       },
       {
@@ -1138,6 +1263,7 @@
         "state": "closed",
         "url": "https://github.com/wildcat-finance/skills/issues/30",
         "score": null,
+        "execution_mode": "pull_request",
         "dependencies": []
       },
       {
@@ -1146,6 +1272,7 @@
         "state": "closed",
         "url": "https://github.com/wildcat-finance/skills/issues/57",
         "score": null,
+        "execution_mode": "fiat",
         "dependencies": []
       },
       {
@@ -1154,6 +1281,7 @@
         "state": "closed",
         "url": "https://github.com/wildcat-finance/skills/issues/390",
         "score": null,
+        "execution_mode": "fiat",
         "dependencies": []
       },
       {
@@ -1162,6 +1290,7 @@
         "state": "closed",
         "url": "https://github.com/wildcat-finance/skills/issues/391",
         "score": null,
+        "execution_mode": "pull_request",
         "dependencies": []
       },
       {
@@ -1170,6 +1299,7 @@
         "state": "closed",
         "url": "https://github.com/wildcat-finance/skills/issues/1030",
         "score": null,
+        "execution_mode": "fiat",
         "dependencies": []
       },
       {
@@ -1178,6 +1308,7 @@
         "state": "closed",
         "url": "https://github.com/wildcat-finance/skills/issues/1066",
         "score": null,
+        "execution_mode": "fiat",
         "dependencies": []
       }
     ]
@@ -1197,6 +1328,7 @@
         "state": "open",
         "url": "https://github.com/wildcat-finance/skills/issues/1132",
         "score": 90,
+        "execution_mode": "pull_request",
         "dependencies": []
       },
       {
@@ -1205,6 +1337,7 @@
         "state": "open",
         "url": "https://github.com/wildcat-finance/skills/issues/1127",
         "score": 93,
+        "execution_mode": "fiat",
         "dependencies": []
       },
       {
@@ -1213,6 +1346,7 @@
         "state": "open",
         "url": "https://github.com/wildcat-finance/skills/issues/1036",
         "score": 72,
+        "execution_mode": "fiat",
         "dependencies": []
       },
       {
@@ -1221,6 +1355,7 @@
         "state": "open",
         "url": "https://github.com/wildcat-finance/skills/issues/1112",
         "score": 84,
+        "execution_mode": "pull_request",
         "dependencies": []
       },
       {
@@ -1229,6 +1364,7 @@
         "state": "open",
         "url": "https://github.com/wildcat-finance/skills/issues/870",
         "score": 83,
+        "execution_mode": "fiat",
         "dependencies": []
       },
       {
@@ -1237,6 +1373,7 @@
         "state": "open",
         "url": "https://github.com/wildcat-finance/skills/issues/841",
         "score": 96,
+        "execution_mode": "pull_request",
         "dependencies": []
       },
       {
@@ -1245,6 +1382,7 @@
         "state": "open",
         "url": "https://github.com/wildcat-finance/skills/issues/869",
         "score": 95,
+        "execution_mode": "fiat",
         "dependencies": []
       },
       {
@@ -1253,6 +1391,7 @@
         "state": "closed",
         "url": "https://github.com/wildcat-finance/skills/issues/4",
         "score": null,
+        "execution_mode": "pull_request",
         "dependencies": []
       },
       {
@@ -1261,6 +1400,7 @@
         "state": "closed",
         "url": "https://github.com/wildcat-finance/skills/issues/6",
         "score": null,
+        "execution_mode": "pull_request",
         "dependencies": []
       },
       {
@@ -1269,6 +1409,7 @@
         "state": "closed",
         "url": "https://github.com/wildcat-finance/skills/issues/21",
         "score": null,
+        "execution_mode": "pull_request",
         "dependencies": []
       },
       {
@@ -1277,6 +1418,7 @@
         "state": "closed",
         "url": "https://github.com/wildcat-finance/skills/issues/39",
         "score": null,
+        "execution_mode": "fiat",
         "dependencies": []
       },
       {
@@ -1285,6 +1427,7 @@
         "state": "closed",
         "url": "https://github.com/wildcat-finance/skills/issues/55",
         "score": null,
+        "execution_mode": "pull_request",
         "dependencies": []
       },
       {
@@ -1293,6 +1436,7 @@
         "state": "closed",
         "url": "https://github.com/wildcat-finance/skills/issues/61",
         "score": null,
+        "execution_mode": "pull_request",
         "dependencies": []
       },
       {
@@ -1301,6 +1445,7 @@
         "state": "closed",
         "url": "https://github.com/wildcat-finance/skills/issues/395",
         "score": null,
+        "execution_mode": "fiat",
         "dependencies": []
       }
     ]
@@ -1320,6 +1465,7 @@
         "state": "open",
         "url": "https://github.com/wildcat-finance/skills/issues/1130",
         "score": 91,
+        "execution_mode": "pull_request",
         "dependencies": []
       },
       {
@@ -1328,6 +1474,7 @@
         "state": "open",
         "url": "https://github.com/wildcat-finance/skills/issues/896",
         "score": 92,
+        "execution_mode": "pull_request",
         "dependencies": []
       },
       {
@@ -1336,6 +1483,7 @@
         "state": "open",
         "url": "https://github.com/wildcat-finance/skills/issues/378",
         "score": 70,
+        "execution_mode": "pull_request",
         "dependencies": []
       },
       {
@@ -1344,6 +1492,7 @@
         "state": "open",
         "url": "https://github.com/wildcat-finance/skills/issues/380",
         "score": 75,
+        "execution_mode": "pull_request",
         "dependencies": []
       },
       {
@@ -1352,6 +1501,7 @@
         "state": "open",
         "url": "https://github.com/wildcat-finance/skills/issues/941",
         "score": 92,
+        "execution_mode": "fiat",
         "dependencies": []
       },
       {
@@ -1360,6 +1510,7 @@
         "state": "open",
         "url": "https://github.com/wildcat-finance/skills/issues/1118",
         "score": 92,
+        "execution_mode": "pull_request",
         "dependencies": []
       },
       {
@@ -1368,6 +1519,8 @@
         "state": "open",
         "url": "https://github.com/wildcat-finance/skills/issues/1204",
         "score": 69,
+        "execution_mode": "invalid",
+        "execution_reason": "missing Fiat-Required: 0 or 1",
         "dependencies": []
       },
       {
@@ -1376,6 +1529,7 @@
         "state": "closed",
         "url": "https://github.com/wildcat-finance/skills/issues/331",
         "score": null,
+        "execution_mode": "pull_request",
         "dependencies": []
       },
       {
@@ -1384,6 +1538,7 @@
         "state": "closed",
         "url": "https://github.com/wildcat-finance/skills/issues/402",
         "score": null,
+        "execution_mode": "fiat",
         "dependencies": []
       }
     ]
@@ -1403,6 +1558,7 @@
         "state": "open",
         "url": "https://github.com/wildcat-finance/skills/issues/371",
         "score": 92,
+        "execution_mode": "fiat",
         "dependencies": []
       },
       {
@@ -1411,6 +1567,7 @@
         "state": "open",
         "url": "https://github.com/wildcat-finance/skills/issues/496",
         "score": 91,
+        "execution_mode": "pull_request",
         "dependencies": []
       },
       {
@@ -1419,6 +1576,7 @@
         "state": "open",
         "url": "https://github.com/wildcat-finance/skills/issues/1198",
         "score": 87,
+        "execution_mode": "pull_request",
         "dependencies": []
       },
       {
@@ -1427,6 +1585,7 @@
         "state": "open",
         "url": "https://github.com/wildcat-finance/skills/issues/412",
         "score": 74,
+        "execution_mode": "pull_request",
         "dependencies": []
       },
       {
@@ -1435,6 +1594,7 @@
         "state": "open",
         "url": "https://github.com/wildcat-finance/skills/issues/326",
         "score": 75,
+        "execution_mode": "pull_request",
         "dependencies": []
       },
       {
@@ -1443,6 +1603,7 @@
         "state": "open",
         "url": "https://github.com/wildcat-finance/skills/issues/414",
         "score": 79,
+        "execution_mode": "pull_request",
         "dependencies": []
       },
       {
@@ -1451,6 +1612,7 @@
         "state": "open",
         "url": "https://github.com/wildcat-finance/skills/issues/379",
         "score": 60,
+        "execution_mode": "pull_request",
         "dependencies": []
       },
       {
@@ -1459,6 +1621,7 @@
         "state": "closed",
         "url": "https://github.com/wildcat-finance/skills/issues/407",
         "score": null,
+        "execution_mode": "pull_request",
         "dependencies": []
       },
       {
@@ -1467,6 +1630,7 @@
         "state": "closed",
         "url": "https://github.com/wildcat-finance/skills/issues/449",
         "score": null,
+        "execution_mode": "fiat",
         "dependencies": []
       },
       {
@@ -1475,6 +1639,7 @@
         "state": "closed",
         "url": "https://github.com/wildcat-finance/skills/issues/458",
         "score": null,
+        "execution_mode": "fiat",
         "dependencies": []
       },
       {
@@ -1483,6 +1648,7 @@
         "state": "closed",
         "url": "https://github.com/wildcat-finance/skills/issues/510",
         "score": null,
+        "execution_mode": "fiat",
         "dependencies": []
       }
     ]
@@ -1502,6 +1668,7 @@
         "state": "open",
         "url": "https://github.com/wildcat-finance/skills/issues/413",
         "score": 60,
+        "execution_mode": "pull_request",
         "dependencies": []
       },
       {
@@ -1510,6 +1677,7 @@
         "state": "open",
         "url": "https://github.com/wildcat-finance/skills/issues/323",
         "score": 65,
+        "execution_mode": "pull_request",
         "dependencies": []
       },
       {
@@ -1518,6 +1686,7 @@
         "state": "open",
         "url": "https://github.com/wildcat-finance/skills/issues/384",
         "score": 65,
+        "execution_mode": "pull_request",
         "dependencies": []
       },
       {
@@ -1526,6 +1695,7 @@
         "state": "open",
         "url": "https://github.com/wildcat-finance/skills/issues/385",
         "score": 68,
+        "execution_mode": "pull_request",
         "dependencies": []
       },
       {
@@ -1534,6 +1704,7 @@
         "state": "open",
         "url": "https://github.com/wildcat-finance/skills/issues/406",
         "score": 55,
+        "execution_mode": "pull_request",
         "dependencies": []
       },
       {
@@ -1542,6 +1713,7 @@
         "state": "open",
         "url": "https://github.com/wildcat-finance/skills/issues/857",
         "score": 88,
+        "execution_mode": "fiat",
         "dependencies": []
       },
       {
@@ -1550,6 +1722,7 @@
         "state": "open",
         "url": "https://github.com/wildcat-finance/skills/issues/1222",
         "score": 87,
+        "execution_mode": "pull_request",
         "dependencies": []
       },
       {
@@ -1558,6 +1731,7 @@
         "state": "closed",
         "url": "https://github.com/wildcat-finance/skills/issues/72",
         "score": null,
+        "execution_mode": "fiat",
         "dependencies": []
       },
       {
@@ -1566,6 +1740,7 @@
         "state": "closed",
         "url": "https://github.com/wildcat-finance/skills/issues/409",
         "score": null,
+        "execution_mode": "pull_request",
         "dependencies": []
       },
       {
@@ -1574,6 +1749,7 @@
         "state": "closed",
         "url": "https://github.com/wildcat-finance/skills/issues/410",
         "score": null,
+        "execution_mode": "pull_request",
         "dependencies": []
       },
       {
@@ -1582,6 +1758,7 @@
         "state": "closed",
         "url": "https://github.com/wildcat-finance/skills/issues/654",
         "score": null,
+        "execution_mode": "fiat",
         "dependencies": []
       },
       {
@@ -1590,6 +1767,7 @@
         "state": "closed",
         "url": "https://github.com/wildcat-finance/skills/issues/655",
         "score": null,
+        "execution_mode": "fiat",
         "dependencies": []
       }
     ]
@@ -1609,6 +1787,7 @@
         "state": "open",
         "url": "https://github.com/wildcat-finance/skills/issues/852",
         "score": 85,
+        "execution_mode": "fiat",
         "dependencies": []
       },
       {
@@ -1617,6 +1796,7 @@
         "state": "open",
         "url": "https://github.com/wildcat-finance/skills/issues/1166",
         "score": 94,
+        "execution_mode": "pull_request",
         "dependencies": []
       },
       {
@@ -1625,6 +1805,7 @@
         "state": "open",
         "url": "https://github.com/wildcat-finance/skills/issues/846",
         "score": 92,
+        "execution_mode": "pull_request",
         "dependencies": []
       },
       {
@@ -1633,6 +1814,7 @@
         "state": "open",
         "url": "https://github.com/wildcat-finance/skills/issues/330",
         "score": 95,
+        "execution_mode": "pull_request",
         "dependencies": []
       },
       {
@@ -1641,6 +1823,7 @@
         "state": "open",
         "url": "https://github.com/wildcat-finance/skills/issues/335",
         "score": 91,
+        "execution_mode": "fiat",
         "dependencies": []
       },
       {
@@ -1649,6 +1832,7 @@
         "state": "open",
         "url": "https://github.com/wildcat-finance/skills/issues/334",
         "score": 80,
+        "execution_mode": "pull_request",
         "dependencies": []
       },
       {
@@ -1657,6 +1841,7 @@
         "state": "closed",
         "url": "https://github.com/wildcat-finance/skills/issues/10",
         "score": null,
+        "execution_mode": "pull_request",
         "dependencies": []
       },
       {
@@ -1665,6 +1850,7 @@
         "state": "closed",
         "url": "https://github.com/wildcat-finance/skills/issues/12",
         "score": null,
+        "execution_mode": "pull_request",
         "dependencies": []
       },
       {
@@ -1673,6 +1859,7 @@
         "state": "closed",
         "url": "https://github.com/wildcat-finance/skills/issues/14",
         "score": null,
+        "execution_mode": "pull_request",
         "dependencies": []
       },
       {
@@ -1681,6 +1868,7 @@
         "state": "closed",
         "url": "https://github.com/wildcat-finance/skills/issues/16",
         "score": null,
+        "execution_mode": "pull_request",
         "dependencies": []
       },
       {
@@ -1689,6 +1877,7 @@
         "state": "closed",
         "url": "https://github.com/wildcat-finance/skills/issues/20",
         "score": null,
+        "execution_mode": "pull_request",
         "dependencies": []
       },
       {
@@ -1697,6 +1886,7 @@
         "state": "closed",
         "url": "https://github.com/wildcat-finance/skills/issues/23",
         "score": null,
+        "execution_mode": "pull_request",
         "dependencies": []
       },
       {
@@ -1705,6 +1895,7 @@
         "state": "closed",
         "url": "https://github.com/wildcat-finance/skills/issues/53",
         "score": null,
+        "execution_mode": "pull_request",
         "dependencies": []
       },
       {
@@ -1713,6 +1904,7 @@
         "state": "closed",
         "url": "https://github.com/wildcat-finance/skills/issues/63",
         "score": null,
+        "execution_mode": "fiat",
         "dependencies": []
       },
       {
@@ -1721,6 +1913,7 @@
         "state": "closed",
         "url": "https://github.com/wildcat-finance/skills/issues/76",
         "score": null,
+        "execution_mode": "pull_request",
         "dependencies": []
       }
     ]
@@ -1740,6 +1933,7 @@
         "state": "open",
         "url": "https://github.com/wildcat-finance/skills/issues/381",
         "score": 90,
+        "execution_mode": "fiat",
         "dependencies": []
       },
       {
@@ -1748,6 +1942,7 @@
         "state": "open",
         "url": "https://github.com/wildcat-finance/skills/issues/382",
         "score": 89,
+        "execution_mode": "pull_request",
         "dependencies": []
       },
       {
@@ -1756,6 +1951,7 @@
         "state": "open",
         "url": "https://github.com/wildcat-finance/skills/issues/416",
         "score": 87,
+        "execution_mode": "pull_request",
         "dependencies": []
       },
       {
@@ -1764,6 +1960,7 @@
         "state": "open",
         "url": "https://github.com/wildcat-finance/skills/issues/417",
         "score": 77,
+        "execution_mode": "fiat",
         "dependencies": []
       },
       {
@@ -1772,6 +1969,7 @@
         "state": "open",
         "url": "https://github.com/wildcat-finance/skills/issues/498",
         "score": 94,
+        "execution_mode": "fiat",
         "dependencies": []
       },
       {
@@ -1780,6 +1978,7 @@
         "state": "open",
         "url": "https://github.com/wildcat-finance/skills/issues/840",
         "score": 91,
+        "execution_mode": "pull_request",
         "dependencies": []
       },
       {
@@ -1788,6 +1987,7 @@
         "state": "open",
         "url": "https://github.com/wildcat-finance/skills/issues/393",
         "score": 90,
+        "execution_mode": "pull_request",
         "dependencies": []
       }
     ]
@@ -1807,6 +2007,7 @@
         "state": "open",
         "url": "https://github.com/wildcat-finance/skills/issues/835",
         "score": 90,
+        "execution_mode": "pull_request",
         "dependencies": []
       },
       {
@@ -1815,6 +2016,7 @@
         "state": "open",
         "url": "https://github.com/wildcat-finance/skills/issues/388",
         "score": 94,
+        "execution_mode": "fiat",
         "dependencies": []
       },
       {
@@ -1823,6 +2025,7 @@
         "state": "open",
         "url": "https://github.com/wildcat-finance/skills/issues/389",
         "score": 87,
+        "execution_mode": "pull_request",
         "dependencies": []
       },
       {
@@ -1831,6 +2034,7 @@
         "state": "open",
         "url": "https://github.com/wildcat-finance/skills/issues/394",
         "score": 95,
+        "execution_mode": "fiat",
         "dependencies": []
       },
       {
@@ -1839,6 +2043,7 @@
         "state": "open",
         "url": "https://github.com/wildcat-finance/skills/issues/375",
         "score": 76,
+        "execution_mode": "pull_request",
         "dependencies": []
       },
       {
@@ -1847,6 +2052,7 @@
         "state": "open",
         "url": "https://github.com/wildcat-finance/skills/issues/400",
         "score": 72,
+        "execution_mode": "pull_request",
         "dependencies": []
       },
       {
@@ -1855,6 +2061,7 @@
         "state": "open",
         "url": "https://github.com/wildcat-finance/skills/issues/950",
         "score": 70,
+        "execution_mode": "pull_request",
         "dependencies": []
       }
     ]
@@ -1874,6 +2081,7 @@
         "state": "open",
         "url": "https://github.com/wildcat-finance/skills/issues/398",
         "score": 98,
+        "execution_mode": "fiat",
         "dependencies": []
       },
       {
@@ -1882,6 +2090,7 @@
         "state": "open",
         "url": "https://github.com/wildcat-finance/skills/issues/399",
         "score": 90,
+        "execution_mode": "pull_request",
         "dependencies": []
       },
       {
@@ -1890,6 +2099,7 @@
         "state": "open",
         "url": "https://github.com/wildcat-finance/skills/issues/396",
         "score": 87,
+        "execution_mode": "pull_request",
         "dependencies": []
       },
       {
@@ -1898,6 +2108,7 @@
         "state": "open",
         "url": "https://github.com/wildcat-finance/skills/issues/392",
         "score": 76,
+        "execution_mode": "pull_request",
         "dependencies": []
       },
       {
@@ -1906,6 +2117,7 @@
         "state": "open",
         "url": "https://github.com/wildcat-finance/skills/issues/882",
         "score": 70,
+        "execution_mode": "fiat",
         "dependencies": []
       },
       {
@@ -1914,6 +2126,7 @@
         "state": "open",
         "url": "https://github.com/wildcat-finance/skills/issues/883",
         "score": 71,
+        "execution_mode": "fiat",
         "dependencies": []
       },
       {
@@ -1922,6 +2135,7 @@
         "state": "closed",
         "url": "https://github.com/wildcat-finance/skills/issues/397",
         "score": null,
+        "execution_mode": "pull_request",
         "dependencies": []
       }
     ]
@@ -1941,6 +2155,7 @@
         "state": "open",
         "url": "https://github.com/wildcat-finance/skills/issues/376",
         "score": 86,
+        "execution_mode": "pull_request",
         "dependencies": []
       },
       {
@@ -1949,6 +2164,7 @@
         "state": "open",
         "url": "https://github.com/wildcat-finance/skills/issues/332",
         "score": 78,
+        "execution_mode": "pull_request",
         "dependencies": []
       },
       {
@@ -1957,6 +2173,7 @@
         "state": "open",
         "url": "https://github.com/wildcat-finance/skills/issues/333",
         "score": 89,
+        "execution_mode": "pull_request",
         "dependencies": []
       },
       {
@@ -1965,6 +2182,7 @@
         "state": "open",
         "url": "https://github.com/wildcat-finance/skills/issues/401",
         "score": 60,
+        "execution_mode": "fiat",
         "dependencies": []
       },
       {
@@ -1973,6 +2191,7 @@
         "state": "open",
         "url": "https://github.com/wildcat-finance/skills/issues/403",
         "score": 62,
+        "execution_mode": "fiat",
         "dependencies": []
       },
       {
@@ -1981,6 +2200,7 @@
         "state": "open",
         "url": "https://github.com/wildcat-finance/skills/issues/405",
         "score": 93,
+        "execution_mode": "fiat",
         "dependencies": []
       },
       {
@@ -1989,6 +2209,7 @@
         "state": "open",
         "url": "https://github.com/wildcat-finance/skills/issues/408",
         "score": 82,
+        "execution_mode": "pull_request",
         "dependencies": []
       }
     ]
@@ -2008,6 +2229,7 @@
         "state": "open",
         "url": "https://github.com/wildcat-finance/skills/issues/404",
         "score": 78,
+        "execution_mode": "pull_request",
         "dependencies": []
       },
       {
@@ -2016,6 +2238,7 @@
         "state": "open",
         "url": "https://github.com/wildcat-finance/skills/issues/411",
         "score": 96,
+        "execution_mode": "fiat",
         "dependencies": []
       },
       {
@@ -2024,6 +2247,7 @@
         "state": "open",
         "url": "https://github.com/wildcat-finance/skills/issues/845",
         "score": 96,
+        "execution_mode": "pull_request",
         "dependencies": []
       },
       {
@@ -2032,6 +2256,7 @@
         "state": "open",
         "url": "https://github.com/wildcat-finance/skills/issues/418",
         "score": 90,
+        "execution_mode": "fiat",
         "dependencies": []
       },
       {
@@ -2040,6 +2265,7 @@
         "state": "open",
         "url": "https://github.com/wildcat-finance/skills/issues/419",
         "score": 80,
+        "execution_mode": "pull_request",
         "dependencies": []
       },
       {
@@ -2048,6 +2274,7 @@
         "state": "open",
         "url": "https://github.com/wildcat-finance/skills/issues/421",
         "score": 80,
+        "execution_mode": "pull_request",
         "dependencies": []
       },
       {
@@ -2056,6 +2283,7 @@
         "state": "open",
         "url": "https://github.com/wildcat-finance/skills/issues/420",
         "score": 78,
+        "execution_mode": "pull_request",
         "dependencies": []
       }
     ]
@@ -2075,6 +2303,7 @@
         "state": "open",
         "url": "https://github.com/wildcat-finance/skills/issues/843",
         "score": 93,
+        "execution_mode": "pull_request",
         "dependencies": []
       },
       {
@@ -2083,6 +2312,7 @@
         "state": "open",
         "url": "https://github.com/wildcat-finance/skills/issues/422",
         "score": 90,
+        "execution_mode": "fiat",
         "dependencies": []
       },
       {
@@ -2091,6 +2321,7 @@
         "state": "open",
         "url": "https://github.com/wildcat-finance/skills/issues/1200",
         "score": 87,
+        "execution_mode": "pull_request",
         "dependencies": []
       },
       {
@@ -2099,6 +2330,7 @@
         "state": "open",
         "url": "https://github.com/wildcat-finance/skills/issues/1214",
         "score": 89,
+        "execution_mode": "fiat",
         "dependencies": []
       },
       {
@@ -2107,6 +2339,7 @@
         "state": "open",
         "url": "https://github.com/wildcat-finance/skills/issues/423",
         "score": 88,
+        "execution_mode": "fiat",
         "dependencies": []
       },
       {
@@ -2115,6 +2348,7 @@
         "state": "open",
         "url": "https://github.com/wildcat-finance/skills/issues/501",
         "score": 84,
+        "execution_mode": "pull_request",
         "dependencies": []
       },
       {
@@ -2123,6 +2357,7 @@
         "state": "open",
         "url": "https://github.com/wildcat-finance/skills/issues/427",
         "score": 73,
+        "execution_mode": "fiat",
         "dependencies": []
       }
     ]
@@ -2142,6 +2377,7 @@
         "state": "open",
         "url": "https://github.com/wildcat-finance/skills/issues/1135",
         "score": 93,
+        "execution_mode": "fiat",
         "dependencies": []
       },
       {
@@ -2150,6 +2386,7 @@
         "state": "open",
         "url": "https://github.com/wildcat-finance/skills/issues/894",
         "score": 86,
+        "execution_mode": "pull_request",
         "dependencies": []
       },
       {
@@ -2158,6 +2395,7 @@
         "state": "open",
         "url": "https://github.com/wildcat-finance/skills/issues/886",
         "score": 80,
+        "execution_mode": "pull_request",
         "dependencies": []
       },
       {
@@ -2166,6 +2404,7 @@
         "state": "open",
         "url": "https://github.com/wildcat-finance/skills/issues/415",
         "score": 75,
+        "execution_mode": "pull_request",
         "dependencies": []
       },
       {
@@ -2174,6 +2413,7 @@
         "state": "open",
         "url": "https://github.com/wildcat-finance/skills/issues/328",
         "score": 64,
+        "execution_mode": "pull_request",
         "dependencies": []
       },
       {
@@ -2182,6 +2422,7 @@
         "state": "open",
         "url": "https://github.com/wildcat-finance/skills/issues/1220",
         "score": 89,
+        "execution_mode": "pull_request",
         "dependencies": []
       },
       {
@@ -2190,6 +2431,7 @@
         "state": "open",
         "url": "https://github.com/wildcat-finance/skills/issues/1221",
         "score": 81,
+        "execution_mode": "pull_request",
         "dependencies": []
       },
       {
@@ -2198,6 +2440,7 @@
         "state": "closed",
         "url": "https://github.com/wildcat-finance/skills/issues/888",
         "score": null,
+        "execution_mode": "fiat",
         "dependencies": []
       }
     ]
@@ -2217,6 +2460,7 @@
         "state": "open",
         "url": "https://github.com/wildcat-finance/skills/issues/859",
         "score": 100,
+        "execution_mode": "fiat",
         "dependencies": [
           {
             "number": 866,
@@ -2238,6 +2482,8 @@
         "state": "open",
         "url": "https://github.com/wildcat-finance/skills/issues/1176",
         "score": 90,
+        "execution_mode": "invalid",
+        "execution_reason": "missing Fiat-Required: 0 or 1",
         "dependencies": []
       },
       {
@@ -2246,6 +2492,7 @@
         "state": "open",
         "url": "https://github.com/wildcat-finance/skills/issues/860",
         "score": 99,
+        "execution_mode": "fiat",
         "dependencies": [
           {
             "number": 559,
@@ -2261,6 +2508,7 @@
         "state": "open",
         "url": "https://github.com/wildcat-finance/skills/issues/508",
         "score": 98,
+        "execution_mode": "fiat",
         "dependencies": []
       },
       {
@@ -2269,6 +2517,7 @@
         "state": "open",
         "url": "https://github.com/wildcat-finance/skills/issues/899",
         "score": 97,
+        "execution_mode": "pull_request",
         "dependencies": []
       },
       {
@@ -2277,6 +2526,7 @@
         "state": "open",
         "url": "https://github.com/wildcat-finance/skills/issues/861",
         "score": 96,
+        "execution_mode": "fiat",
         "dependencies": [
           {
             "number": 435,
@@ -2310,6 +2560,7 @@
         "state": "open",
         "url": "https://github.com/wildcat-finance/skills/issues/901",
         "score": 94,
+        "execution_mode": "pull_request",
         "dependencies": []
       },
       {
@@ -2318,6 +2569,7 @@
         "state": "open",
         "url": "https://github.com/wildcat-finance/skills/issues/864",
         "score": 90,
+        "execution_mode": "fiat",
         "dependencies": [
           {
             "number": 861,
@@ -2345,6 +2597,7 @@
         "state": "open",
         "url": "https://github.com/wildcat-finance/skills/issues/862",
         "score": 85,
+        "execution_mode": "fiat",
         "dependencies": [
           {
             "number": 861,
@@ -2360,6 +2613,7 @@
         "state": "open",
         "url": "https://github.com/wildcat-finance/skills/issues/865",
         "score": 80,
+        "execution_mode": "fiat",
         "dependencies": [
           {
             "number": 860,
@@ -2393,6 +2647,7 @@
         "state": "open",
         "url": "https://github.com/wildcat-finance/skills/issues/866",
         "score": 78,
+        "execution_mode": "fiat",
         "dependencies": [
           {
             "number": 861,
@@ -2432,6 +2687,7 @@
         "state": "open",
         "url": "https://github.com/wildcat-finance/skills/issues/863",
         "score": 75,
+        "execution_mode": "fiat",
         "dependencies": [
           {
             "number": 862,
@@ -2447,6 +2703,7 @@
         "state": "open",
         "url": "https://github.com/wildcat-finance/skills/issues/867",
         "score": 72,
+        "execution_mode": "fiat",
         "dependencies": [
           {
             "number": 505,
@@ -2486,6 +2743,7 @@
         "state": "closed",
         "url": "https://github.com/wildcat-finance/skills/issues/839",
         "score": null,
+        "execution_mode": "pull_request",
         "dependencies": []
       },
       {
@@ -2494,6 +2752,7 @@
         "state": "closed",
         "url": "https://github.com/wildcat-finance/skills/issues/848",
         "score": null,
+        "execution_mode": "pull_request",
         "dependencies": []
       },
       {
@@ -2502,6 +2761,7 @@
         "state": "closed",
         "url": "https://github.com/wildcat-finance/skills/issues/900",
         "score": null,
+        "execution_mode": "pull_request",
         "dependencies": []
       }
     ]
@@ -2521,6 +2781,7 @@
         "state": "open",
         "url": "https://github.com/wildcat-finance/skills/issues/879",
         "score": 98,
+        "execution_mode": "fiat",
         "dependencies": []
       },
       {
@@ -2529,6 +2790,7 @@
         "state": "open",
         "url": "https://github.com/wildcat-finance/skills/issues/872",
         "score": 96,
+        "execution_mode": "fiat",
         "dependencies": []
       },
       {
@@ -2537,6 +2799,7 @@
         "state": "open",
         "url": "https://github.com/wildcat-finance/skills/issues/873",
         "score": 94,
+        "execution_mode": "fiat",
         "dependencies": []
       },
       {
@@ -2545,6 +2808,7 @@
         "state": "open",
         "url": "https://github.com/wildcat-finance/skills/issues/874",
         "score": 93,
+        "execution_mode": "fiat",
         "dependencies": []
       },
       {
@@ -2553,6 +2817,7 @@
         "state": "open",
         "url": "https://github.com/wildcat-finance/skills/issues/875",
         "score": 92,
+        "execution_mode": "fiat",
         "dependencies": []
       },
       {
@@ -2561,6 +2826,7 @@
         "state": "open",
         "url": "https://github.com/wildcat-finance/skills/issues/876",
         "score": 88,
+        "execution_mode": "fiat",
         "dependencies": []
       },
       {
@@ -2569,6 +2835,7 @@
         "state": "open",
         "url": "https://github.com/wildcat-finance/skills/issues/878",
         "score": 85,
+        "execution_mode": "fiat",
         "dependencies": []
       },
       {
@@ -2577,6 +2844,7 @@
         "state": "open",
         "url": "https://github.com/wildcat-finance/skills/issues/877",
         "score": 82,
+        "execution_mode": "fiat",
         "dependencies": []
       }
     ]
@@ -2596,6 +2864,7 @@
         "state": "open",
         "url": "https://github.com/wildcat-finance/skills/issues/1144",
         "score": 99,
+        "execution_mode": "fiat",
         "dependencies": []
       },
       {
@@ -2604,6 +2873,7 @@
         "state": "open",
         "url": "https://github.com/wildcat-finance/skills/issues/1139",
         "score": 98,
+        "execution_mode": "fiat",
         "dependencies": []
       },
       {
@@ -2612,6 +2882,7 @@
         "state": "open",
         "url": "https://github.com/wildcat-finance/skills/issues/1140",
         "score": 96,
+        "execution_mode": "fiat",
         "dependencies": []
       },
       {
@@ -2620,6 +2891,7 @@
         "state": "open",
         "url": "https://github.com/wildcat-finance/skills/issues/1142",
         "score": 94,
+        "execution_mode": "fiat",
         "dependencies": []
       },
       {
@@ -2628,6 +2900,7 @@
         "state": "open",
         "url": "https://github.com/wildcat-finance/skills/issues/1141",
         "score": 95,
+        "execution_mode": "fiat",
         "dependencies": []
       },
       {
@@ -2636,6 +2909,7 @@
         "state": "open",
         "url": "https://github.com/wildcat-finance/skills/issues/1146",
         "score": 92,
+        "execution_mode": "fiat",
         "dependencies": []
       },
       {
@@ -2644,6 +2918,7 @@
         "state": "open",
         "url": "https://github.com/wildcat-finance/skills/issues/1145",
         "score": 90,
+        "execution_mode": "fiat",
         "dependencies": []
       },
       {
@@ -2652,6 +2927,7 @@
         "state": "open",
         "url": "https://github.com/wildcat-finance/skills/issues/1143",
         "score": 89,
+        "execution_mode": "fiat",
         "dependencies": []
       },
       {
@@ -2660,6 +2936,7 @@
         "state": "open",
         "url": "https://github.com/wildcat-finance/skills/issues/1147",
         "score": 88,
+        "execution_mode": "fiat",
         "dependencies": []
       },
       {
@@ -2668,6 +2945,7 @@
         "state": "open",
         "url": "https://github.com/wildcat-finance/skills/issues/1148",
         "score": 87,
+        "execution_mode": "fiat",
         "dependencies": []
       },
       {
@@ -2676,6 +2954,7 @@
         "state": "open",
         "url": "https://github.com/wildcat-finance/skills/issues/1149",
         "score": 85,
+        "execution_mode": "fiat",
         "dependencies": []
       },
       {
@@ -2684,6 +2963,7 @@
         "state": "open",
         "url": "https://github.com/wildcat-finance/skills/issues/1150",
         "score": 84,
+        "execution_mode": "fiat",
         "dependencies": []
       }
     ]
