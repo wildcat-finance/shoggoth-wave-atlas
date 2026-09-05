@@ -8,6 +8,8 @@ type IssueRecord = {
   state: "open" | "closed";
   url: string;
   score: number | null;
+  execution_mode: "fiat" | "pull_request" | "invalid";
+  execution_reason?: string;
   dependencies: Array<{
     number: number;
     title: string;
@@ -38,6 +40,13 @@ export type WaveRecord = {
 // Waves are a single numbered sequence now. The α and β families are retired,
 // so nothing here sorts, filters or colours by one.
 type View = "all" | "active";
+type DeskMode = "all" | "fiat" | "pull_request" | "invalid";
+
+const executionLabels = {
+  fiat: "Fiat run",
+  pull_request: "PR job",
+  invalid: "Invalid metadata",
+} as const;
 
 function compactPurpose(description: string) {
   if (!description) return "No milestone description has been recorded.";
@@ -73,6 +82,7 @@ export function WaveAtlas({
   const [query, setQuery] = useState("");
   const [view, setView] = useState<View>("all");
   const [deskWave, setDeskWave] = useState<number | null>(null);
+  const [deskMode, setDeskMode] = useState<DeskMode>("all");
   const [expanded, setExpanded] = useState<Set<number>>(new Set());
 
   const totals = useMemo(() => {
@@ -111,8 +121,16 @@ export function WaveAtlas({
           ),
         })),
     );
-    const ready = graphIssues.filter((issue) => issue.ready);
-    const readyWaveNumbers = new Set(ready.map((issue) => issue.wave.number));
+    const selectableReady = graphIssues.filter(
+      (issue) => issue.ready && issue.execution_mode !== "invalid",
+    );
+    const invalid = graphIssues.filter((issue) => issue.execution_mode === "invalid");
+    const byMode = deskMode === "all"
+      ? selectableReady
+      : deskMode === "invalid"
+        ? invalid
+        : selectableReady.filter((issue) => issue.execution_mode === deskMode);
+    const readyWaveNumbers = new Set(byMode.map((issue) => issue.wave.number));
     const inWave = (issue: { wave: WaveRecord }) =>
       deskWave === null || issue.wave.number === deskWave;
 
@@ -121,10 +139,15 @@ export function WaveAtlas({
       // swapped for another without clearing it first.
       readyWaves: waves.filter((wave) => readyWaveNumbers.has(wave.number)),
       graphIssues: graphIssues.filter(inWave),
-      ready: ready.filter(inWave),
-      readyTotal: ready.length,
+      displayed: byMode.filter(inWave),
+      readyTotal: selectableReady.length,
+      counts: {
+        fiat: selectableReady.filter((issue) => issue.execution_mode === "fiat").length,
+        pull_request: selectableReady.filter((issue) => issue.execution_mode === "pull_request").length,
+        invalid: invalid.length,
+      },
     };
-  }, [deskWave, waves]);
+  }, [deskMode, deskWave, waves]);
 
   const visible = useMemo(() => {
     const needle = query.trim().toLowerCase();
@@ -277,11 +300,32 @@ export function WaveAtlas({
           <div className="eyebrow">PICK-UP DESK</div>
           <h2 id="starter-heading">Aye, here you go.</h2>
           <p>
-            These are every open job across the Atlas whose recorded hard
-            dependencies are closed. The public API draws one at random so a
-            crowd is spread across the ready pool. Wave order remains
-            sequencing advice; it is not silently promoted into a hard edge.
+            Fiat runs and ordinary pull-request jobs are separate ready pools.
+            The public API selects only work with an exact execution marker and
+            closed hard dependencies. Invalid metadata remains visible for
+            repair, but is never offered as a job.
           </p>
+          <div className="desk-modes" role="group" aria-label="Filter by execution mode">
+            {([
+              ["all", "All ready", dependencyDesk.readyTotal],
+              ["fiat", "Fiat runs", dependencyDesk.counts.fiat],
+              ["pull_request", "PR jobs", dependencyDesk.counts.pull_request],
+              ["invalid", "Invalid metadata", dependencyDesk.counts.invalid],
+            ] as const).map(([mode, label, count]) => (
+              <button
+                type="button"
+                className={deskMode === mode ? "active" : ""}
+                aria-pressed={deskMode === mode}
+                onClick={() => {
+                  setDeskMode(mode);
+                  setDeskWave(null);
+                }}
+                key={mode}
+              >
+                <span>{label}</span><strong>{count}</strong>
+              </button>
+            ))}
+          </div>
           <div className="frontier-tags" role="group" aria-label="Filter the ready pool by wave">
             {deskWave !== null && (
               <button
@@ -289,7 +333,7 @@ export function WaveAtlas({
                 className="frontier-clear"
                 onClick={() => setDeskWave(null)}
               >
-                Show all {dependencyDesk.readyTotal} ready
+                Clear wave filter
               </button>
             )}
             {dependencyDesk.readyWaves.map((wave) => (
@@ -321,37 +365,48 @@ export function WaveAtlas({
           <a className="api-link" href="/api/job" target="_blank" rel="noreferrer">
             <span>PUBLIC API</span>
             <code>GET /api/job</code>
-            <small>Random by default · add ?all=true for the complete pool</small>
+            <small>Use ?kind=fiat or ?kind=pull_request · add ?all=true for a pool</small>
           </a>
         </div>
 
         <div className="ready-grid">
-          {dependencyDesk.ready.map((issue) => (
+          {dependencyDesk.displayed.map((issue) => (
             <a className="ready-card" href={issue.url} target="_blank" rel="noreferrer" key={issue.number}>
-              <span className="ready-top"><span>READY</span><strong>#{issue.number}</strong></span>
+              <span className="ready-top">
+                <span>{issue.execution_mode === "invalid" ? "NEEDS METADATA" : "READY"}</span>
+                <strong>#{issue.number}</strong>
+              </span>
+              <span className={`execution-badge ${issue.execution_mode}`}>
+                {executionLabels[issue.execution_mode]}
+              </span>
               <b>{issue.title}</b>
               <small>{issue.wave.title}</small>
               <span className="edge-copy">
-                {issue.unlocks.length
+                {issue.execution_mode === "invalid"
+                  ? issue.execution_reason
+                  : issue.unlocks.length
                   ? `Unlocks ${issue.unlocks.map((item) => `#${item.number}`).join(", ")}`
                   : "No recorded downstream edge"}
               </span>
             </a>
           ))}
-          {dependencyDesk.ready.length === 0 && (
+          {dependencyDesk.displayed.length === 0 && (
             <div className="no-ready">
-              Nothing is dependency-clear yet. The graph below names every
-              recorded open dependency.
+              Nothing matches this execution and wave filter. The graph below
+              still names every open issue and recorded dependency.
             </div>
           )}
         </div>
 
         <div className="dependency-lanes" aria-label="Recorded dependency graph">
           {dependencyDesk.graphIssues.map((issue) => (
-            <div className={`dependency-node ${issue.ready ? "ready" : "blocked"}`} key={issue.number}>
+            <div className={`dependency-node ${issue.ready ? "ready" : "blocked"} ${issue.execution_mode}`} key={issue.number}>
               <div>
                 <a href={issue.url} target="_blank" rel="noreferrer">#{issue.number}</a>
                 <strong>{issue.title}</strong>
+                <span className={`execution-badge ${issue.execution_mode}`}>
+                  {executionLabels[issue.execution_mode]}
+                </span>
               </div>
               <span>
                 {issue.dependencies.length
@@ -410,6 +465,9 @@ export function WaveAtlas({
                         <span className="issue-number">#{issue.number}</span>
                         <span className="issue-title">
                           {issue.title}
+                          <span className={`execution-badge ${issue.execution_mode}`}>
+                            {executionLabels[issue.execution_mode]}
+                          </span>
                           {issue.dependencies.length > 0 && (
                             <small>
                               needs {issue.dependencies.map((item) => `#${item.number}`).join(", ")}

@@ -14,7 +14,7 @@ const OTHER_REVISION = "e5131e9aeadf6750c6201d4ba4babaf62eb9f76b";
 
 function healthy(overrides = {}) {
   return {
-    schema: "wildcat-wave-job/v2",
+    schema: "wildcat-wave-job/v3",
     read_from: "cache",
     generated_at: "2026-08-28T01:04:37.050Z",
     source_revision: OTHER_REVISION,

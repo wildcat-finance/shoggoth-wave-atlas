@@ -1,4 +1,4 @@
-import { fiatPrompt, randomEligibleJob } from "../../job";
+import { jobPrompt, randomEligibleJob } from "../../job";
 import { loadWaves } from "../../waves-source";
 
 export async function GET() {
@@ -12,7 +12,7 @@ export async function GET() {
   }
 
   const destination = new URL("https://claude.ai/new");
-  destination.searchParams.set("q", fiatPrompt(job));
+  destination.searchParams.set("q", jobPrompt(job));
   return new Response(null, {
     status: 307,
     headers: { Location: destination.toString(), "Cache-Control": "no-store" },

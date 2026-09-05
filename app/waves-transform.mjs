@@ -35,6 +35,36 @@ export function descriptionOrder(description, issueNumber) {
   return index === -1 ? Number.MAX_SAFE_INTEGER : index;
 }
 
+export function executionClassification(body = "") {
+  const fields = body
+    .split(/\r?\n/)
+    .map((line) => line.trim())
+    .filter((line) => line.startsWith("Fiat-Required:"));
+
+  if (fields.length === 0) {
+    return {
+      execution_mode: "invalid",
+      execution_reason: "missing Fiat-Required: 0 or 1",
+    };
+  }
+  if (fields.length > 1) {
+    return {
+      execution_mode: "invalid",
+      execution_reason: "duplicate Fiat-Required fields",
+    };
+  }
+  if (fields[0] === "Fiat-Required: 1") {
+    return { execution_mode: "fiat" };
+  }
+  if (fields[0] === "Fiat-Required: 0") {
+    return { execution_mode: "pull_request" };
+  }
+  return {
+    execution_mode: "invalid",
+    execution_reason: "invalid Fiat-Required value",
+  };
+}
+
 function dependencyMap(allIssues) {
   const issueByKey = new Map(
     allIssues.map((issue) => [
@@ -154,6 +184,7 @@ export function buildWaves({ milestones, issues: rawIssues }) {
           state: issue.state,
           url: issue.html_url,
           score: scoreFor(description, issue.number),
+          ...executionClassification(issue.body ?? ""),
           dependencies: [...(dependencyNumbers.get(issue.number) ?? [])]
             .filter((number) => number !== issue.number)
             .sort((a, b) => a - b)
