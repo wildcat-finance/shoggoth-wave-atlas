@@ -2071,8 +2071,8 @@
     "title": "Wave 14 — credit releases and reconciliation",
     "description": "Full open-issue census: 5 September 2026; `skills@4592e4c97989fb483d47295f673498076907d019`. Scores are impact/40 + urgency/25 + readiness/20 + work unblocked/15; dependency and bundle order can override numeric order.\n\n#398 (98): Tabularium still holds canonical Compound v3 Phase 1 and its offline Ethereum USDC specimen.\n\n#399 (90): Reconciles Alexandria and Tabularium interpretations after both owning adapters and gaps exist.\n\n#396 (87): Enforces redistribution through digest-bound subset exports and explicit withheld gaps.\n\n#392 (76): Diffs fully sourced evidence files after collection is unified.\n\n#882 (70): Triage and either integrate or retire the remaining #391 unified-collection artefacts before starting another collection stack.\n\n#883 (71): Triage the abandoned #390 Midnight branches against the now-shipped Probitas coverage and retain only still-unmerged evidence.",
     "state": "open",
-    "open": 6,
-    "closed": 1,
+    "open": 5,
+    "closed": 2,
     "url": "https://github.com/wildcat-finance/skills/milestone/76",
     "members": [
       {
@@ -2105,7 +2105,7 @@
       {
         "number": 392,
         "title": "probitas-3 — diff two evidence files for re-diligence",
-        "state": "open",
+        "state": "closed",
         "url": "https://github.com/wildcat-finance/skills/issues/392",
         "score": 76,
         "execution_mode": "pull_request",
