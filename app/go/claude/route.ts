@@ -11,7 +11,7 @@ export async function GET() {
     );
   }
 
-  const destination = new URL("https://claude.ai/new");
+  const destination = new URL("claude://code/new");
   destination.searchParams.set("q", jobPrompt(job));
   return new Response(null, {
     status: 307,
