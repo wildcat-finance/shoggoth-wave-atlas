@@ -2412,7 +2412,7 @@
   {
     "number": 81,
     "title": "Wave 19: controller contracts",
-    "description": "Re-censused 6 September 2026 against `wildcat-finance/skills@66f43a0e07865daf526036ad1efbf98e3e27deac`; scores are impact `/40`, evidenced urgency `/25`, readiness `/20`, and work unblocked `/15`.\n\n#1276 (98: 38/25/20/15): Declares the inputs a held job needs before ranking or execution, so it opens this controller-contract group while its active delivery is completed.\n#1264 (94: 38/24/18/14): Keeps later runbook amendments bound when a study changes, following the input declaration because both govern what a resumed run may trust.\n#1267 (91: 35/22/19/15): Reconciles ADR-assignment and Fiat trailer rules on their shared commit surface before either gate can reject a valid delivery.\n#1299 (90: 34/22/19/15): Removes a repository-external environment variable from the activation assertion, beside the other gate-contract repairs because it can silence their evidence.\n#1294 (86: 36/23/16/11): Extends the commit gate to merge and cherry-pick commits after its present commit classes and refusal rules are settled.\n#1273 (86: 36/21/17/12): Joins terminal evidence to the study's declared success criteria, closing the group after the records and commit gates that supply that evidence.",
+    "description": "Re-censused 6 September 2026 against `wildcat-finance/skills@66f43a0e07865daf526036ad1efbf98e3e27deac`; scores are impact `/40`, evidenced urgency `/25`, readiness `/20`, and work unblocked `/15`.\n\n#1276 (98) [38/25/20/15]: Declares the inputs a held job needs before ranking or execution, so it opens this controller-contract group while its active delivery is completed.\n#1264 (94) [38/24/18/14]: Keeps later runbook amendments bound when a study changes, following the input declaration because both govern what a resumed run may trust.\n#1267 (91) [35/22/19/15]: Reconciles ADR-assignment and Fiat trailer rules on their shared commit surface before either gate can reject a valid delivery.\n#1299 (90) [34/22/19/15]: Removes a repository-external environment variable from the activation assertion, beside the other gate-contract repairs because it can silence their evidence.\n#1294 (86) [36/23/16/11]: Extends the commit gate to merge and cherry-pick commits after its present commit classes and refusal rules are settled.\n#1273 (86) [36/21/17/12]: Joins terminal evidence to the study's declared success criteria, closing the group after the records and commit gates that supply that evidence.",
     "state": "open",
     "open": 6,
     "closed": 0,
@@ -2423,7 +2423,7 @@
         "title": "versioning-wish: a held job states no inputs, so ranking a frontier means guessing whether it can be started",
         "state": "open",
         "url": "https://github.com/wildcat-finance/skills/issues/1276",
-        "score": null,
+        "score": 98,
         "execution_mode": "fiat",
         "dependencies": []
       },
@@ -2432,7 +2432,7 @@
         "title": "framework-97: a study amendment silently unbinds every runbook amendment",
         "state": "open",
         "url": "https://github.com/wildcat-finance/skills/issues/1264",
-        "score": null,
+        "score": 94,
         "execution_mode": "fiat",
         "dependencies": []
       },
@@ -2441,7 +2441,7 @@
         "title": "framework-98: ADR assignment and Fiat require incompatible terminal trailer blocks",
         "state": "open",
         "url": "https://github.com/wildcat-finance/skills/issues/1267",
-        "score": null,
+        "score": 91,
         "execution_mode": "pull_request",
         "dependencies": []
       },
@@ -2450,7 +2450,7 @@
         "title": "The activation assertion can be silenced by a variable this repository does not own",
         "state": "open",
         "url": "https://github.com/wildcat-finance/skills/issues/1299",
-        "score": null,
+        "score": 90,
         "execution_mode": "pull_request",
         "dependencies": []
       },
@@ -2459,7 +2459,7 @@
         "title": "The commit gate does not see merge or cherry-pick commits",
         "state": "open",
         "url": "https://github.com/wildcat-finance/skills/issues/1294",
-        "score": null,
+        "score": 86,
         "execution_mode": "fiat",
         "dependencies": []
       },
@@ -2468,7 +2468,7 @@
         "title": "protasis-wish: nothing checks a finished run against the success criteria its own study declared",
         "state": "open",
         "url": "https://github.com/wildcat-finance/skills/issues/1273",
-        "score": null,
+        "score": 86,
         "execution_mode": "fiat",
         "dependencies": []
       }
@@ -2477,7 +2477,7 @@
   {
     "number": 82,
     "title": "Wave 20: structured assurance",
-    "description": "Re-censused 6 September 2026 against `wildcat-finance/skills@66f43a0e07865daf526036ad1efbf98e3e27deac`; scores are impact `/40`, evidenced urgency `/25`, readiness `/20`, and work unblocked `/15`.\n\n#1275 (92: 35/24/20/13): Gives Elenchus results a joined structured form; its active delivery leads the group and shares the evidence surface with #1222.\n#1222 (89: 35/22/18/14): Emits structured Fiat audit rounds for Anamnesis, paired with #1275 because both replace isolated prose records with machine-readable relations.\n#1295 (84: 28/21/20/15): Runs a shell linter over the two commit-gate scripts before further control-flow work relies on them.\n#1274 (83: 33/20/17/13): Makes Phylax dependency-drift review mechanically visible after the shell surface itself has been checked.\n#1271 (80: 33/17/17/13): Adds producer identity to Ariadne's verified evidence binding, next to the structured provenance work that can consume it.\n#1296 (78: 25/18/20/15): Corrects three measured documentation claims last, once the code and evidence contracts they describe have stopped moving.",
+    "description": "Re-censused 6 September 2026 against `wildcat-finance/skills@66f43a0e07865daf526036ad1efbf98e3e27deac`; scores are impact `/40`, evidenced urgency `/25`, readiness `/20`, and work unblocked `/15`.\n\n#1275 (92) [35/24/20/13]: Gives Elenchus results a joined structured form; its active delivery leads the group and shares the evidence surface with #1222.\n#1222 (89) [35/22/18/14]: Emits structured Fiat audit rounds for Anamnesis, paired with #1275 because both replace isolated prose records with machine-readable relations.\n#1295 (84) [28/21/20/15]: Runs a shell linter over the two commit-gate scripts before further control-flow work relies on them.\n#1274 (83) [33/20/17/13]: Makes Phylax dependency-drift review mechanically visible after the shell surface itself has been checked.\n#1271 (80) [33/17/17/13]: Adds producer identity to Ariadne's verified evidence binding, next to the structured provenance work that can consume it.\n#1296 (78) [25/18/20/15]: Corrects three measured documentation claims last, once the code and evidence contracts they describe have stopped moving.",
     "state": "open",
     "open": 6,
     "closed": 0,
@@ -2488,7 +2488,7 @@
         "title": "elenchus-wish: a fixed-and-guarded result is written once and never joined to the next one",
         "state": "open",
         "url": "https://github.com/wildcat-finance/skills/issues/1275",
-        "score": null,
+        "score": 92,
         "execution_mode": "fiat",
         "dependencies": []
       },
@@ -2497,7 +2497,7 @@
         "title": "fiat-wish: an audit round writes findings as prose, and Anamnesis cannot read them",
         "state": "open",
         "url": "https://github.com/wildcat-finance/skills/issues/1222",
-        "score": null,
+        "score": 89,
         "execution_mode": "pull_request",
         "dependencies": []
       },
@@ -2506,7 +2506,7 @@
         "title": "No shell linter has read the commit gate's two scripts",
         "state": "open",
         "url": "https://github.com/wildcat-finance/skills/issues/1295",
-        "score": null,
+        "score": 84,
         "execution_mode": "pull_request",
         "dependencies": []
       },
@@ -2515,7 +2515,7 @@
         "title": "phylax-wish: the boundary review refuses dependency drift and the mechanical gate cannot see it",
         "state": "open",
         "url": "https://github.com/wildcat-finance/skills/issues/1274",
-        "score": null,
+        "score": 83,
         "execution_mode": "fiat",
         "dependencies": []
       },
@@ -2524,7 +2524,7 @@
         "title": "ariadne-wish: a verified statement establishes its evidence binding and never says who produced it",
         "state": "open",
         "url": "https://github.com/wildcat-finance/skills/issues/1271",
-        "score": null,
+        "score": 80,
         "execution_mode": "fiat",
         "dependencies": []
       },
@@ -2533,7 +2533,7 @@
         "title": "Three documentation claims run 857 measured but could not correct",
         "state": "open",
         "url": "https://github.com/wildcat-finance/skills/issues/1296",
-        "score": null,
+        "score": 78,
         "execution_mode": "pull_request",
         "dependencies": []
       }
@@ -2542,7 +2542,7 @@
   {
     "number": 83,
     "title": "Wave 21: bounded reading",
-    "description": "Re-censused 6 September 2026 against `wildcat-finance/skills@66f43a0e07865daf526036ad1efbf98e3e27deac`; scores are impact `/40`, evidenced urgency `/25`, readiness `/20`, and work unblocked `/15`.\n\n#1260 (92: 33/24/20/15): Enables the dormant Horos CI shard first so the currency checks beside it will run on every relevant change.\n#1130 (85: 30/20/20/15): Holds `.horos/candidates.json` current, paired with #1253 because one scan writes both tracked census views.\n#1253 (88: 31/22/20/15): Holds `.horos/census.json` current beside #1130 after the CI runner in #1260 makes the check effective.\n#1272 (82: 34/20/16/12): Measures Horos savings in model tokens rather than file bytes after the scanner outputs and CI evidence are trustworthy.\n#1227 (85: 38/23/15/9): Reduces Fiat's instruction load using the corrected measurement boundary, placed after its prerequisites despite its higher score.",
+    "description": "Re-censused 6 September 2026 against `wildcat-finance/skills@66f43a0e07865daf526036ad1efbf98e3e27deac`; scores are impact `/40`, evidenced urgency `/25`, readiness `/20`, and work unblocked `/15`.\n\n#1260 (92) [33/24/20/15]: Enables the dormant Horos CI shard first so the currency checks beside it will run on every relevant change.\n#1130 (85) [30/20/20/15]: Holds `.horos/candidates.json` current, paired with #1253 because one scan writes both tracked census views.\n#1253 (88) [31/22/20/15]: Holds `.horos/census.json` current beside #1130 after the CI runner in #1260 makes the check effective.\n#1272 (82) [34/20/16/12]: Measures Horos savings in model tokens rather than file bytes after the scanner outputs and CI evidence are trustworthy.\n#1227 (85) [38/23/15/9]: Reduces Fiat's instruction load using the corrected measurement boundary, placed after its prerequisites despite its higher score.",
     "state": "open",
     "open": 5,
     "closed": 0,
@@ -2553,7 +2553,7 @@
         "title": "No CI job runs the Horos suite, and three runs refused the lead on a reason that is not true",
         "state": "open",
         "url": "https://github.com/wildcat-finance/skills/issues/1260",
-        "score": null,
+        "score": 92,
         "execution_mode": "pull_request",
         "dependencies": []
       },
@@ -2562,7 +2562,7 @@
         "title": "framework-77: .horos/candidates.json is tracked, written by the scanner and checked by nothing",
         "state": "open",
         "url": "https://github.com/wildcat-finance/skills/issues/1130",
-        "score": null,
+        "score": 85,
         "execution_mode": "pull_request",
         "dependencies": []
       },
@@ -2571,7 +2571,7 @@
         "title": "The repository census is tracked, written by the scanner and checked by nothing",
         "state": "open",
         "url": "https://github.com/wildcat-finance/skills/issues/1253",
-        "score": null,
+        "score": 88,
         "execution_mode": "pull_request",
         "dependencies": []
       },
@@ -2580,7 +2580,7 @@
         "title": "horos-wish: the boundary's saving is measured in file bytes and spent in model tokens",
         "state": "open",
         "url": "https://github.com/wildcat-finance/skills/issues/1272",
-        "score": null,
+        "score": 82,
         "execution_mode": "fiat",
         "dependencies": []
       },
@@ -2589,7 +2589,7 @@
         "title": "framework-95: Fiat instruction load is prose pinned by sentence and digest",
         "state": "open",
         "url": "https://github.com/wildcat-finance/skills/issues/1227",
-        "score": null,
+        "score": 85,
         "execution_mode": "fiat",
         "dependencies": []
       }
@@ -2598,7 +2598,7 @@
   {
     "number": 84,
     "title": "Wave 22: prose evidence",
-    "description": "Re-censused 6 September 2026 against `wildcat-finance/skills@66f43a0e07865daf526036ad1efbf98e3e27deac`; scores are impact `/40`, evidenced urgency `/25`, readiness `/20`, and work unblocked `/15`.\n\n#1300 (N/R): Preserves the recovery map for hidden issues as a non-executable parent record, kept visible beside its recovered child #1298.\n#1298 (70: 23/14/18/15): Collects evidenced structural-prose candidates from the recovered wish, feeding rather than replacing #422.\n#422 (75: 37/18/12/8): Builds Imprimatur's labelled-prose-v2 frontier after #1298's candidate evidence is available for review.\n#1304 (89: 31/23/20/15): Makes a prose-phase exit status prove its configured threshold, grouped with the checker work but independently ready.\n#1263 (80: 32/20/16/12): Checks prose quantities against the artefacts they count once the prose gate's success signal is dependable.\n#421 (83: 33/18/18/14): Adds Sapheneia's evidence-preserving pre-send checker, closing the group with the consumer-side parity gate.",
+    "description": "Re-censused 6 September 2026 against `wildcat-finance/skills@66f43a0e07865daf526036ad1efbf98e3e27deac`; scores are impact `/40`, evidenced urgency `/25`, readiness `/20`, and work unblocked `/15`.\n\n#1300 (N/R): Preserves the recovery map for hidden issues as a non-executable parent record, kept visible beside its recovered child #1298.\n#1298 (70) [23/14/18/15]: Collects evidenced structural-prose candidates from the recovered wish, feeding rather than replacing #422.\n#422 (75) [37/18/12/8]: Builds Imprimatur's labelled-prose-v2 frontier after #1298's candidate evidence is available for review.\n#1304 (89) [31/23/20/15]: Makes a prose-phase exit status prove its configured threshold, grouped with the checker work but independently ready.\n#1263 (80) [32/20/16/12]: Checks prose quantities against the artefacts they count once the prose gate's success signal is dependable.\n#421 (83) [33/18/18/14]: Adds Sapheneia's evidence-preserving pre-send checker, closing the group with the consumer-side parity gate.",
     "state": "open",
     "open": 6,
     "closed": 0,
@@ -2619,7 +2619,7 @@
         "title": "imprimatur-wish: collect evidence for additional structural prose families",
         "state": "open",
         "url": "https://github.com/wildcat-finance/skills/issues/1298",
-        "score": null,
+        "score": 70,
         "execution_mode": "invalid",
         "execution_reason": "missing Fiat-Required: 0 or 1",
         "dependencies": []
@@ -2629,7 +2629,7 @@
         "title": "imprimatur-next — build labelled-prose-v2 with fresh blind annotations",
         "state": "open",
         "url": "https://github.com/wildcat-finance/skills/issues/422",
-        "score": null,
+        "score": 75,
         "execution_mode": "fiat",
         "dependencies": []
       },
@@ -2638,7 +2638,7 @@
         "title": "imprimatur reports defects and exits 0, so a prose-phase exit code proves nothing",
         "state": "open",
         "url": "https://github.com/wildcat-finance/skills/issues/1304",
-        "score": null,
+        "score": 89,
         "execution_mode": "pull_request",
         "dependencies": []
       },
@@ -2647,7 +2647,7 @@
         "title": "framework-96: no check verifies prose quantities against the artefacts they count",
         "state": "open",
         "url": "https://github.com/wildcat-finance/skills/issues/1263",
-        "score": null,
+        "score": 80,
         "execution_mode": "fiat",
         "dependencies": []
       },
@@ -2656,7 +2656,7 @@
         "title": "sapheneia-1 — ship an executable pre-send checker",
         "state": "open",
         "url": "https://github.com/wildcat-finance/skills/issues/421",
-        "score": null,
+        "score": 83,
         "execution_mode": "pull_request",
         "dependencies": []
       }
