@@ -1,11 +1,12 @@
 import { writeFileSync } from "node:fs";
 import { resolve } from "node:path";
 
+import { githubPageUrl, nextGithubCursor } from "../app/github-pagination.mjs";
 import { buildWaves } from "../app/waves-transform.mjs";
 
 const SKILLS_REPOSITORY = "wildcat-finance/skills";
 const PAGE_SIZE = 100;
-const MAX_PAGES = 20;
+const MAX_PAGES = 50;
 const FETCH_TIMEOUT_MS = 15_000;
 
 // Read Skills over plain HTTP, the same way app/waves-source.ts does, rather
@@ -14,7 +15,7 @@ const FETCH_TIMEOUT_MS = 15_000;
 // This is not a style preference. A GitHub Actions `GITHUB_TOKEN` is an
 // installation credential scoped to the repository running the workflow, and
 // handing it to this read returned fourteen milestones and *zero issues* from
-// wildcat-finance/skills — a successful-looking response describing nothing.
+// wildcat-finance/skills: a successful-looking response describing nothing.
 // An unauthenticated read of the same two endpoints, from the same runner in
 // the same minute, returned the whole backlog. So the credential narrowed the
 // answer instead of widening it, and the safe default for a public repository
@@ -34,14 +35,18 @@ async function githubPages(path) {
   if (token) headers.Authorization = `Bearer ${token}`;
 
   const collected = [];
-  // Pages are requested by number rather than by following Link headers.
-  // GitHub returns those as `repositories/{id}/...`, which some proxies refuse,
-  // and the live reader walks pages the same way. One strategy, no dependency
-  // on a header being passed through untouched.
+  let after;
+  // GitHub refuses numbered pagination after the first 1,000 records. Read the
+  // cursor from its Link header, then rebuild the URL on the public repository
+  // path so a proxy never has to accept the repositories/{id} form.
   for (let page = 1; page <= MAX_PAGES; page += 1) {
-    const url =
-      `https://api.github.com/repos/${SKILLS_REPOSITORY}/${path}` +
-      `?state=all&per_page=${PAGE_SIZE}&page=${page}`;
+    const url = githubPageUrl({
+      repository: SKILLS_REPOSITORY,
+      path,
+      state: "all",
+      pageSize: PAGE_SIZE,
+      after,
+    });
     const response = await fetch(url, {
       headers,
       signal: AbortSignal.timeout(FETCH_TIMEOUT_MS),
@@ -60,7 +65,8 @@ async function githubPages(path) {
       throw new Error(`GitHub ${path} page ${page} was not an array`);
     }
     collected.push(...body);
-    if (body.length < PAGE_SIZE) return collected;
+    after = nextGithubCursor(response.headers.get("link"));
+    if (!after) return collected;
   }
   throw new Error(`GitHub ${path} exceeded ${MAX_PAGES} pages`);
 }
@@ -93,7 +99,7 @@ const sourceRevision = await sourceRevisionOf();
 
 // An empty read is a failed read wearing data's clothes. Skills always has
 // milestones and always has issues, so zero of either means the read did not
-// see the repository — a narrowed credential, a truncated page, a proxy
+// see the repository: a narrowed credential, a truncated page, or a proxy
 // answering for GitHub. Refuse before anything is written: a snapshot with
 // waves and no issues passes every structural check and silently becomes an
 // Atlas that offers nothing.
