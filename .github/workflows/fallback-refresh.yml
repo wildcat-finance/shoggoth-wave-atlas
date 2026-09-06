@@ -5,8 +5,8 @@ name: Fallback snapshot refresh
 # floor under that read, not the source. A floor ages on its own, so this keeps
 # it current without anyone having to remember to.
 #
-# Nothing here publishes generated data to main. A change becomes one pull
-# request on one branch; a person merges it.
+# A changed, validated snapshot becomes one signed commit on one pull request.
+# The configured PR token then merges that exact head automatically.
 
 on:
   schedule:
@@ -94,11 +94,12 @@ jobs:
         if: steps.detect.outputs.changed == 'true'
         env:
           GITHUB_TOKEN: ${{ github.token }}
-          # Optional. Opening a pull request from Actions is gated by a setting
+          # Opening a pull request from Actions is gated by a setting
           # pinned above this organisation, so github.token is refused however
           # the permissions block is written. A fine-grained token with
           # `pull-requests: write` on this repository is not subject to that
-          # gate. Without it the refresh still commits to the branch and warns
-          # that the pull request needs opening by hand.
+          # gate. Automatic mode refuses to publish without it rather than
+          # leaving a branch that still needs a person.
           PR_TOKEN: ${{ secrets.PR_TOKEN }}
+          AUTO_MERGE: "true"
         run: node scripts/publish-fallback-refresh.mjs

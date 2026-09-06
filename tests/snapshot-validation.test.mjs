@@ -6,6 +6,7 @@ import { join } from "node:path";
 import test from "node:test";
 
 import { inspectSnapshot } from "../scripts/snapshot-validation.mjs";
+import { generatedAtFor } from "../scripts/snapshot-observation.mjs";
 
 const waves = JSON.parse(
   readFileSync(new URL("../app/waves-data.json", import.meta.url), "utf8"),
@@ -28,6 +29,38 @@ test("the committed pair passes", () => {
     waves.reduce((total, wave) => total + wave.members.length, 0),
   );
   assert.equal(report.droppedCount, meta.dropped.length);
+});
+
+test("a no-op refresh retains its observation time", () => {
+  const observedAt = "2026-09-06T06:00:00.000Z";
+  assert.equal(
+    generatedAtFor({
+      previousWaves: waves,
+      previousMeta: meta,
+      waves: clone(waves),
+      sourceRevision: meta.source_revision,
+      dropped: clone(meta.dropped),
+      observedAt,
+    }),
+    meta.generated_at,
+  );
+});
+
+test("a changed fallback receives the new observation time", () => {
+  const changed = clone(waves);
+  changed[0].title += " changed";
+  const observedAt = "2026-09-06T06:00:00.000Z";
+  assert.equal(
+    generatedAtFor({
+      previousWaves: waves,
+      previousMeta: meta,
+      waves: changed,
+      sourceRevision: meta.source_revision,
+      dropped: meta.dropped,
+      observedAt,
+    }),
+    observedAt,
+  );
 });
 
 test("an empty wave set is refused", () => {
@@ -193,6 +226,19 @@ test("the publisher refuses an invalid snapshot before it touches GitHub", () =>
   assert.equal(code, 1);
   assert.match(stderr, /Refusing to publish an invalid fallback snapshot/);
   // Nothing was attempted against the API, so no status or ref appears here.
+  assert.doesNotMatch(stderr, /returned \d{3}/);
+});
+
+test("automatic publication refuses to run without its PR token", () => {
+  const { code, stderr } = run("publish-fallback-refresh.mjs", new URL("..", import.meta.url).pathname, {
+    GITHUB_TOKEN: "not-a-real-token",
+    GH_TOKEN: "not-a-real-token",
+    GITHUB_REPOSITORY: "wildcat-finance/shoggoth-wave-atlas",
+    AUTO_MERGE: "true",
+    PR_TOKEN: "",
+  });
+  assert.equal(code, 1);
+  assert.match(stderr, /AUTO_MERGE requires PR_TOKEN/);
   assert.doesNotMatch(stderr, /returned \d{3}/);
 });
 

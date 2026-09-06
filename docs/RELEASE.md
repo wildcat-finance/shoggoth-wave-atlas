@@ -6,7 +6,7 @@ Two automated paths touch this repository, and they do not overlap.
 | --- | --- | --- |
 | Workflow | `.github/workflows/fallback-refresh.yml` | `.github/workflows/release-verification.yml` |
 | Owns | `app/waves-data.json`, `app/waves-meta.json` | the served application |
-| Produces | one pull request | one packaged artifact and one deployment record |
+| Produces | one automatically merged pull request | one packaged artifact and one deployment record |
 | Touches production | never | never publishes; it verifies |
 
 The refresh maintains the recovery floor. The release path publishes the
@@ -39,7 +39,7 @@ appears later it must keep both the project id and the hostname to be worth
 taking. Changing `.openai/hosting.json` to a new project id is a deliberate
 migration with a URL change, not a fix, and it should not be merged as one.
 
-## Why nothing here publishes
+## Why publication lives outside GitHub Actions
 
 Publication is a Sites connector call from an authenticated Codex session on
 the owning account. There is no Sites CLI, no public deployment API, no service
@@ -47,7 +47,10 @@ credential, and no GitHub App: nothing a workflow could hold. The organisation
 Projects API is an API-management surface and carries no version or deployment
 operations. This repository will not invent a private endpoint or hold a
 long-lived personal token to fake one, so the release workflow is named for
-what it does — it packages and verifies — and a person performs the publish.
+what it does: it packages and verifies. A five-minute Codex heartbeat on the
+owning account performs the supported connector calls. It changes nothing when
+the latest accepted `main` revision is already live and reports only a publish
+or a failure.
 
 `@openai/sites-vite-plugin` packages `.openai/hosting.json` (and `drizzle/**`,
 when present) into `dist/.openai/`. The artifact this workflow uploads is
@@ -64,8 +67,8 @@ therefore exactly what a Sites version is saved from.
      `appgprj_6a895aa2e35c8191b3cbf5733f7866ee`,
    - uploads `atlas-<sha>` as the artifact to publish,
    - opens a `production` deployment record marked *in progress*.
-3. Publish that revision from the owning Codex account. In a Codex session with
-   this repository, on a clean checkout of that exact commit:
+3. The owning-account Codex heartbeat observes that the accepted revision is
+   not live. In a clean detached checkout of that exact commit it runs:
 
    ```bash
    GITHUB_SHA=<sha> npm run build
@@ -74,7 +77,7 @@ therefore exactly what a Sites version is saved from.
    node scripts/check-package.mjs
    ```
 
-   Then, through the Sites connector: `sites_save_site_version` with the
+   Then, through the Sites connector, it calls `sites_save_site_version` with the
    project id, the commit SHA, and an archive of `dist`; `sites_deploy_site_version`
    with the saved version id it returns; `sites_get_deployment_status` to
    confirm. Sites keeps its own internal source branch and may need it
@@ -85,9 +88,9 @@ therefore exactly what a Sites version is saved from.
    catches up within the polling window it marks the deployment `failure`.
 
 Runs are serialised by the `atlas-release` concurrency group, so two merges
-cannot verify out of order. A merge that is superseded before anyone publishes
-it records a failed deployment, which is accurate: that revision was never
-served. Publish the newer one.
+cannot verify out of order. The publisher always selects current `main`; a
+revision superseded before the next heartbeat is deliberately skipped, and its
+record says it was never served.
 
 ## Manual recovery
 
@@ -134,16 +137,19 @@ the currently verified one is refused unless `allow_rollback` is checked.
 
 ## Credentials
 
-- The workflows use only `GITHUB_TOKEN`, scoped per job: `contents: read` for
-  CI and packaging, `deployments: write` for the release record, and
-  `contents: write` plus `pull-requests: write` for the fallback refresh.
+- The workflows use `GITHUB_TOKEN`, scoped per job: `contents: read` for CI and
+  packaging, `deployments: write` for the release record, and `contents: write`
+  plus `pull-requests: write` for the fallback refresh. The refresh also uses
+  the repository's fine-grained `PR_TOKEN` to open and merge its generated
+  pull request because the organisation blocks that operation for Actions
+  tokens.
 - No workflow persists a credential in a Git remote or in `.git/config`; every
   checkout sets `persist-credentials: false`, and every write to GitHub goes
   through the API with the token passed in the environment.
 - The Sites publication credential is the owning account's authenticated Codex
-  connector session. It is not stored in this repository and must not be added
-  to it. Rotate it by re-authenticating that account; nothing here needs
-  updating when it changes.
+  connector session used by the heartbeat. It is not stored in this repository
+  and must not be added to it. Rotate it by re-authenticating that account;
+  nothing here needs updating when it changes.
 - A publish may mint a short-lived credential for Sites' own internal source
   repository. It is scoped to that repository, cannot save or deploy versions
   on its own, and expires; a later publish obtains a fresh one through the
