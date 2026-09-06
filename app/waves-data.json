@@ -4,8 +4,8 @@
     "title": "Wave 0 — publication and test truth",
     "description": "Full open-issue census: 5 September 2026; `skills@4592e4c97989fb483d47295f673498076907d019`. Scores are impact/40 + urgency/25 + readiness/20 + work unblocked/15; dependency and bundle order can override numeric order.\n\n#925 (100): Closes the fail-open App publication path by making the required prose and evidence gates unavoidable before a GitHub write.\n\n#855 (100): The GitHub App is the visible delivery route, but App-opened pull requests receive no checks; #851 reached main through this zero-check path.\n\n#992 (95): Restores a complete, affordable plugin gate without reactivating a required context that cannot report, making later repository-wide changes safer.\n\n#1175 (96): Makes the adapter-timeout tests deterministic under repository load; the current suite passed here, but the seven recorded flakes remain valid evidence.\n\n#912 (97): The coverage selector check still reads Python and Solidity through the 256 KiB Markdown-law reader; #905 bought headroom but explicitly left this accidental source-size cap intact.\n\n#897 (94): The root suite can scan untracked Fiat controller state and fail on an active run, coupling product verification to local orchestration debris.\n\n#892 (92): Hexctl changes can break two other subsystems without naming their checks, leaving the controller's affected-scope gate incomplete.",
     "state": "open",
-    "open": 7,
-    "closed": 36,
+    "open": 6,
+    "closed": 37,
     "url": "https://github.com/wildcat-finance/skills/milestone/51",
     "members": [
       {
@@ -66,7 +66,7 @@
       {
         "number": 892,
         "title": "A hexctl.py change turns two other subsystems red and names neither",
-        "state": "open",
+        "state": "closed",
         "url": "https://github.com/wildcat-finance/skills/issues/892",
         "score": 92,
         "execution_mode": "pull_request",
@@ -362,8 +362,8 @@
     "title": "Wave 1 — promise and controller truth",
     "description": "Full open-issue census: 5 September 2026; `skills@4592e4c97989fb483d47295f673498076907d019`. Scores are impact/40 + urgency/25 + readiness/20 + work unblocked/15; dependency and bundle order can override numeric order.\n\n#939 (96): Repairs the dead-code capability row whose promise identifier has no governing declaration, ahead of further obligation automation.\n\n#884 (93): Promise Machine obligations still exist only in prose where no gate evaluates them; enumerate the live gap before another transition relies on it.\n\n#871 (99): A prior run advanced beyond an exhausted controller without an authorising Promise; make every Fiat mutation prove the exact transition it consumes.\n\n#1170 (98): Stops Kronos from treating a Fiat currency refusal as a clean result before any ranked loop relies on stale controller state.\n\n#898 (96): done integrate reports an attribution failure when the merge commit is merely unfetched, hiding a recoverable transport state behind the wrong diagnosis.\n\n#842 (91): Horos can validate a boundary against a different tracked tree inside a run worktree; make the read boundary name the universe it actually checked.\n\n#844 (96): Ariadne credential scrubbing leaks on a multi-at authority and pair parsing is last-wins; both are concrete unsafe input behaviours on current main.",
     "state": "open",
-    "open": 7,
-    "closed": 18,
+    "open": 6,
+    "closed": 19,
     "url": "https://github.com/wildcat-finance/skills/milestone/52",
     "members": [
       {
@@ -396,7 +396,7 @@
       {
         "number": 1170,
         "title": "framework-93: the Kronos re-pin boundary reads a currency refusal as a pass",
-        "state": "open",
+        "state": "closed",
         "url": "https://github.com/wildcat-finance/skills/issues/1170",
         "score": 98,
         "execution_mode": "pull_request",
@@ -544,8 +544,8 @@
     "title": "Wave 2 — receipt and prerequisite continuity",
     "description": "Full open-issue census: 5 September 2026; `skills@4592e4c97989fb483d47295f673498076907d019`. Scores are impact/40 + urgency/25 + readiness/20 + work unblocked/15; dependency and bundle order can override numeric order.\n\n#890 (98): A case-only mismatch between runbook and steps.json can strand a Fiat run with no controller repair path.\n\n#885 (97): Fiat's loop claims exceed the state carried by the controller, so resume and recovery can depend on facts the machine cannot verify.\n\n#363 (96): Fiat v5.37.1 still holds delegated task identity as its current gap; reused collaboration handles can expose the wrong issue across resume and compaction.\n\n#868 (96): The terminal integration receipt still depends on a run ref the documented order can delete; choose an authoritative record before another run strands itself.\n\n#933 (88): Adds receipted task-prerequisite checks before Fiat creates delivery state, after the required controller-truth foundations are in place.\n\n#976 (96): Moves link validation before study and runbook receipts freeze broken references, paired with the controller-level enforcement in #1086.\n\n#1086 (97): Runs Hypomnema link checks before `done study` and `done runbook` create immutable receipts, implementing the recurring failure seen in #976.",
     "state": "open",
-    "open": 7,
-    "closed": 27,
+    "open": 6,
+    "closed": 28,
     "url": "https://github.com/wildcat-finance/skills/milestone/53",
     "members": [
       {
@@ -560,7 +560,7 @@
       {
         "number": 890,
         "title": "A runbook heading that differs from steps.json by letter case strands the run with no repair",
-        "state": "open",
+        "state": "closed",
         "url": "https://github.com/wildcat-finance/skills/issues/890",
         "score": 98,
         "execution_mode": "pull_request",
@@ -1089,8 +1089,8 @@
     "title": "Wave 5 — distribution and currency",
     "description": "Full open-issue census: 5 September 2026; `skills@4592e4c97989fb483d47295f673498076907d019`. Scores are impact/40 + urgency/25 + readiness/20 + work unblocked/15; dependency and bundle order can override numeric order.\n\n#1171 (97): Replaces branch-head currency with subtree-relevant evidence so one unrelated commit does not mark every installed plugin behind.\n\n#836 (96): Current main added Homologia and changed both marketplaces and the portable mirror, but no gate proves those distributed views remain current.\n\n#895 (88): Claude plugin update can report success without re-pinning changed plugin content, leaving host routing on stale bytes.\n\n#1052 (93): Distinguishes a missing canonical workflow from ordinary drift so the external package rebuild reports a truthful failure.\n\n#1053 (94): Establishes why the advertised hourly skills-runtime rebuild never fires and restores observable scheduled execution.\n\n#971 (90): Repairs the aggregate registry after its corrected residual became real when the generated runtime moved out of this repository.\n\n#856 (75): The Atlas hand-off question remains useful, but every client and authentication measurement must be repeated before any contributor button is added.",
     "state": "open",
-    "open": 7,
-    "closed": 2,
+    "open": 6,
+    "closed": 3,
     "url": "https://github.com/wildcat-finance/skills/milestone/56",
     "members": [
       {
@@ -1150,7 +1150,7 @@
       {
         "number": 856,
         "title": "framework-13: test the remaining Atlas hand-offs before adding README buttons",
-        "state": "open",
+        "state": "closed",
         "url": "https://github.com/wildcat-finance/skills/issues/856",
         "score": 75,
         "execution_mode": "fiat",
@@ -1455,19 +1455,10 @@
     "title": "Wave 8 — issue visibility and reading boundaries",
     "description": "Full open-issue census: 5 September 2026; `skills@4592e4c97989fb483d47295f673498076907d019`. Scores are impact/40 + urgency/25 + readiness/20 + work unblocked/15; dependency and bundle order can override numeric order.\n\n#1130 (91): Governs `.horos/candidates.json` as either checked derived state or untracked output before boundary scans can silently rewrite it.\n\n#896 (92): Horos mixes file and directory entries without declaring their semantics, so a reader cannot tell what the boundary covers.\n\n#378 (70): The directory map remains useful, but Horos now holds content-addressed objects and a Markdown outline extractor ahead of this orientation work.\n\n#380 (75): A verified exclusion stream remains useful, but it follows Horos's content-addressed-object and outline work.\n\n#941 (92): Makes every new open issue reachable by the Atlas through assignment or a visible catch-all; this census clears the present backlog but not the standing rule.\n\n#1118 (92): Keeps Atlas dependency extraction out of bounded issue-status prose, alongside the issue visibility and parsing rules that govern the same surface.\n\n#1204 (69): Creates one durable old-to-new issue-number map and decides how dead references are guarded, after the standing issue-visibility rules in the same wave.",
     "state": "open",
-    "open": 7,
+    "open": 6,
     "closed": 2,
     "url": "https://github.com/wildcat-finance/skills/milestone/59",
     "members": [
-      {
-        "number": 1130,
-        "title": "framework-77: .horos/candidates.json is tracked, written by the scanner and checked by nothing",
-        "state": "open",
-        "url": "https://github.com/wildcat-finance/skills/issues/1130",
-        "score": 91,
-        "execution_mode": "pull_request",
-        "dependencies": []
-      },
       {
         "number": 896,
         "title": "The Horos boundary mixes file and directory entries without saying so",
@@ -1658,8 +1649,8 @@
     "title": "Wave 10 — historical replay and operational handoffs",
     "description": "Full open-issue census: 5 September 2026; `skills@4592e4c97989fb483d47295f673498076907d019`. Scores are impact/40 + urgency/25 + readiness/20 + work unblocked/15; dependency and bundle order can override numeric order.\n\n#413 (60): Elenchus is mature; an unresolved-failure hand-off to Ephoros remains optional generation work.\n\n#323 (65): Phylax is mature and this hostile-input harness remains optional generation work; it must not silently reopen the governed frontier.\n\n#384 (65): The Foundry replay profile remains useful generation work behind Lazarus's current empty-block receipt-witness frontier.\n\n#385 (68): Live-test capture remains useful generation work behind Lazarus's current empty-block receipt-witness frontier.\n\n#406 (55): Ariadne is mature; accepting a Lazarus fixture as deployment confirmation is optional generation work after the current Lazarus frontier.\n\n#857 (88): Makes the commit gate survive clone and handoff boundaries, placed with the replay and portability work that consumes that durable state.\n\n#1222 (87): Emits structured Fiat audit findings that Anamnesis can preserve; it follows #1212 because that prerequisite changes the record grammar and history layout.",
     "state": "open",
-    "open": 7,
-    "closed": 5,
+    "open": 5,
+    "closed": 6,
     "url": "https://github.com/wildcat-finance/skills/milestone/61",
     "members": [
       {
@@ -1710,19 +1701,10 @@
       {
         "number": 857,
         "title": "framework-16 — the commit gate lives in one clone and dies with it",
-        "state": "open",
+        "state": "closed",
         "url": "https://github.com/wildcat-finance/skills/issues/857",
         "score": 88,
         "execution_mode": "fiat",
-        "dependencies": []
-      },
-      {
-        "number": 1222,
-        "title": "fiat-wish: an audit round writes findings as prose, and Anamnesis cannot read them",
-        "state": "open",
-        "url": "https://github.com/wildcat-finance/skills/issues/1222",
-        "score": 87,
-        "execution_mode": "pull_request",
         "dependencies": []
       },
       {
@@ -2219,7 +2201,7 @@
     "title": "Wave 16 — portable releases and accessible state",
     "description": "Full open-issue census: 5 September 2026; `skills@4592e4c97989fb483d47295f673498076907d019`. Scores are impact/40 + urgency/25 + readiness/20 + work unblocked/15; dependency and bundle order can override numeric order.\n\n#404 (78): Shapes accepted Hermes runs as Ariadne claims and command entries.\n\n#411 (96): Berean still holds the first release grounded in captured Wildcat documentation and market reads.\n\n#845 (96): Berean validation crashes on a list-typed reference, so a malformed release can stop the verifier instead of producing a bounded refusal.\n\n#418 (90): Sapheneia still holds the published cross-model AuDHD task corpus as its current frontier.\n\n#419 (80): Defines a canonical compaction-safe working-state block after the corpus.\n\n#421 (80): Ships the executable pre-send checker after the grammar and carve-out are settled.\n\n#420 (78): Defines Brevitas and Sapheneia coexistence against that state grammar.",
     "state": "open",
-    "open": 7,
+    "open": 6,
     "closed": 0,
     "url": "https://github.com/wildcat-finance/skills/milestone/78",
     "members": [
@@ -2269,15 +2251,6 @@
         "dependencies": []
       },
       {
-        "number": 421,
-        "title": "sapheneia-1 — ship an executable pre-send checker",
-        "state": "open",
-        "url": "https://github.com/wildcat-finance/skills/issues/421",
-        "score": 80,
-        "execution_mode": "pull_request",
-        "dependencies": []
-      },
-      {
         "number": 420,
         "title": "brevitas-3 — define joint-activation behaviour with Sapheneia",
         "state": "open",
@@ -2293,7 +2266,7 @@
     "title": "Wave 17 — prose evaluation and structural contracts",
     "description": "Full open-issue census: 5 September 2026; `skills@4592e4c97989fb483d47295f673498076907d019`. Scores are impact/40 + urgency/25 + readiness/20 + work unblocked/15; dependency and bundle order can override numeric order.\n\n#843 (93): Brevitas needs one governed answer for schema-fixed artefacts before maintenance cleanup can preserve evidence without permanent false positives.\n\n#422 (90): Imprimatur still holds labelled-prose-v2 after the first corpus failed its registered agreement and coverage gates.\n\n#1200 (87): Lets Protasis design reports retain refusals and name what a count measures, bundled with #1214 because both change the study evidence boundary.\n\n#1214 (89): Binds candidate ids in study prose to the design-evidence record before receipt, paired with #1200 on the same Protasis schema and controller surface.\n\n#423 (88): Vulgate still holds a repeatable content-parity evaluation across all four registers.\n\n#501 (84): Protects identifiers and host structure in a code-adjacent Vulgate register before broader parity evaluation.\n\n#427 (73): Defines the honest suite-wide Brevitas enforcement boundary after the corpus evidence exists.",
     "state": "open",
-    "open": 7,
+    "open": 6,
     "closed": 0,
     "url": "https://github.com/wildcat-finance/skills/milestone/79",
     "members": [
@@ -2304,15 +2277,6 @@
         "url": "https://github.com/wildcat-finance/skills/issues/843",
         "score": 93,
         "execution_mode": "pull_request",
-        "dependencies": []
-      },
-      {
-        "number": 422,
-        "title": "imprimatur-next — build labelled-prose-v2 with fresh blind annotations",
-        "state": "open",
-        "url": "https://github.com/wildcat-finance/skills/issues/422",
-        "score": 90,
-        "execution_mode": "fiat",
         "dependencies": []
       },
       {
@@ -2446,6 +2410,259 @@
     ]
   },
   {
+    "number": 81,
+    "title": "Wave 19: controller contracts",
+    "description": "Re-censused 6 September 2026 against `wildcat-finance/skills@66f43a0e07865daf526036ad1efbf98e3e27deac`; scores are impact `/40`, evidenced urgency `/25`, readiness `/20`, and work unblocked `/15`.\n\n#1276 (98: 38/25/20/15): Declares the inputs a held job needs before ranking or execution, so it opens this controller-contract group while its active delivery is completed.\n#1264 (94: 38/24/18/14): Keeps later runbook amendments bound when a study changes, following the input declaration because both govern what a resumed run may trust.\n#1267 (91: 35/22/19/15): Reconciles ADR-assignment and Fiat trailer rules on their shared commit surface before either gate can reject a valid delivery.\n#1299 (90: 34/22/19/15): Removes a repository-external environment variable from the activation assertion, beside the other gate-contract repairs because it can silence their evidence.\n#1294 (86: 36/23/16/11): Extends the commit gate to merge and cherry-pick commits after its present commit classes and refusal rules are settled.\n#1273 (86: 36/21/17/12): Joins terminal evidence to the study's declared success criteria, closing the group after the records and commit gates that supply that evidence.",
+    "state": "open",
+    "open": 6,
+    "closed": 0,
+    "url": "https://github.com/wildcat-finance/skills/milestone/81",
+    "members": [
+      {
+        "number": 1276,
+        "title": "versioning-wish: a held job states no inputs, so ranking a frontier means guessing whether it can be started",
+        "state": "open",
+        "url": "https://github.com/wildcat-finance/skills/issues/1276",
+        "score": null,
+        "execution_mode": "fiat",
+        "dependencies": []
+      },
+      {
+        "number": 1264,
+        "title": "framework-97: a study amendment silently unbinds every runbook amendment",
+        "state": "open",
+        "url": "https://github.com/wildcat-finance/skills/issues/1264",
+        "score": null,
+        "execution_mode": "fiat",
+        "dependencies": []
+      },
+      {
+        "number": 1267,
+        "title": "framework-98: ADR assignment and Fiat require incompatible terminal trailer blocks",
+        "state": "open",
+        "url": "https://github.com/wildcat-finance/skills/issues/1267",
+        "score": null,
+        "execution_mode": "pull_request",
+        "dependencies": []
+      },
+      {
+        "number": 1299,
+        "title": "The activation assertion can be silenced by a variable this repository does not own",
+        "state": "open",
+        "url": "https://github.com/wildcat-finance/skills/issues/1299",
+        "score": null,
+        "execution_mode": "pull_request",
+        "dependencies": []
+      },
+      {
+        "number": 1294,
+        "title": "The commit gate does not see merge or cherry-pick commits",
+        "state": "open",
+        "url": "https://github.com/wildcat-finance/skills/issues/1294",
+        "score": null,
+        "execution_mode": "fiat",
+        "dependencies": []
+      },
+      {
+        "number": 1273,
+        "title": "protasis-wish: nothing checks a finished run against the success criteria its own study declared",
+        "state": "open",
+        "url": "https://github.com/wildcat-finance/skills/issues/1273",
+        "score": null,
+        "execution_mode": "fiat",
+        "dependencies": []
+      }
+    ]
+  },
+  {
+    "number": 82,
+    "title": "Wave 20: structured assurance",
+    "description": "Re-censused 6 September 2026 against `wildcat-finance/skills@66f43a0e07865daf526036ad1efbf98e3e27deac`; scores are impact `/40`, evidenced urgency `/25`, readiness `/20`, and work unblocked `/15`.\n\n#1275 (92: 35/24/20/13): Gives Elenchus results a joined structured form; its active delivery leads the group and shares the evidence surface with #1222.\n#1222 (89: 35/22/18/14): Emits structured Fiat audit rounds for Anamnesis, paired with #1275 because both replace isolated prose records with machine-readable relations.\n#1295 (84: 28/21/20/15): Runs a shell linter over the two commit-gate scripts before further control-flow work relies on them.\n#1274 (83: 33/20/17/13): Makes Phylax dependency-drift review mechanically visible after the shell surface itself has been checked.\n#1271 (80: 33/17/17/13): Adds producer identity to Ariadne's verified evidence binding, next to the structured provenance work that can consume it.\n#1296 (78: 25/18/20/15): Corrects three measured documentation claims last, once the code and evidence contracts they describe have stopped moving.",
+    "state": "open",
+    "open": 6,
+    "closed": 0,
+    "url": "https://github.com/wildcat-finance/skills/milestone/82",
+    "members": [
+      {
+        "number": 1275,
+        "title": "elenchus-wish: a fixed-and-guarded result is written once and never joined to the next one",
+        "state": "open",
+        "url": "https://github.com/wildcat-finance/skills/issues/1275",
+        "score": null,
+        "execution_mode": "fiat",
+        "dependencies": []
+      },
+      {
+        "number": 1222,
+        "title": "fiat-wish: an audit round writes findings as prose, and Anamnesis cannot read them",
+        "state": "open",
+        "url": "https://github.com/wildcat-finance/skills/issues/1222",
+        "score": null,
+        "execution_mode": "pull_request",
+        "dependencies": []
+      },
+      {
+        "number": 1295,
+        "title": "No shell linter has read the commit gate's two scripts",
+        "state": "open",
+        "url": "https://github.com/wildcat-finance/skills/issues/1295",
+        "score": null,
+        "execution_mode": "pull_request",
+        "dependencies": []
+      },
+      {
+        "number": 1274,
+        "title": "phylax-wish: the boundary review refuses dependency drift and the mechanical gate cannot see it",
+        "state": "open",
+        "url": "https://github.com/wildcat-finance/skills/issues/1274",
+        "score": null,
+        "execution_mode": "fiat",
+        "dependencies": []
+      },
+      {
+        "number": 1271,
+        "title": "ariadne-wish: a verified statement establishes its evidence binding and never says who produced it",
+        "state": "open",
+        "url": "https://github.com/wildcat-finance/skills/issues/1271",
+        "score": null,
+        "execution_mode": "fiat",
+        "dependencies": []
+      },
+      {
+        "number": 1296,
+        "title": "Three documentation claims run 857 measured but could not correct",
+        "state": "open",
+        "url": "https://github.com/wildcat-finance/skills/issues/1296",
+        "score": null,
+        "execution_mode": "pull_request",
+        "dependencies": []
+      }
+    ]
+  },
+  {
+    "number": 83,
+    "title": "Wave 21: bounded reading",
+    "description": "Re-censused 6 September 2026 against `wildcat-finance/skills@66f43a0e07865daf526036ad1efbf98e3e27deac`; scores are impact `/40`, evidenced urgency `/25`, readiness `/20`, and work unblocked `/15`.\n\n#1260 (92: 33/24/20/15): Enables the dormant Horos CI shard first so the currency checks beside it will run on every relevant change.\n#1130 (85: 30/20/20/15): Holds `.horos/candidates.json` current, paired with #1253 because one scan writes both tracked census views.\n#1253 (88: 31/22/20/15): Holds `.horos/census.json` current beside #1130 after the CI runner in #1260 makes the check effective.\n#1272 (82: 34/20/16/12): Measures Horos savings in model tokens rather than file bytes after the scanner outputs and CI evidence are trustworthy.\n#1227 (85: 38/23/15/9): Reduces Fiat's instruction load using the corrected measurement boundary, placed after its prerequisites despite its higher score.",
+    "state": "open",
+    "open": 5,
+    "closed": 0,
+    "url": "https://github.com/wildcat-finance/skills/milestone/83",
+    "members": [
+      {
+        "number": 1260,
+        "title": "No CI job runs the Horos suite, and three runs refused the lead on a reason that is not true",
+        "state": "open",
+        "url": "https://github.com/wildcat-finance/skills/issues/1260",
+        "score": null,
+        "execution_mode": "pull_request",
+        "dependencies": []
+      },
+      {
+        "number": 1130,
+        "title": "framework-77: .horos/candidates.json is tracked, written by the scanner and checked by nothing",
+        "state": "open",
+        "url": "https://github.com/wildcat-finance/skills/issues/1130",
+        "score": null,
+        "execution_mode": "pull_request",
+        "dependencies": []
+      },
+      {
+        "number": 1253,
+        "title": "The repository census is tracked, written by the scanner and checked by nothing",
+        "state": "open",
+        "url": "https://github.com/wildcat-finance/skills/issues/1253",
+        "score": null,
+        "execution_mode": "pull_request",
+        "dependencies": []
+      },
+      {
+        "number": 1272,
+        "title": "horos-wish: the boundary's saving is measured in file bytes and spent in model tokens",
+        "state": "open",
+        "url": "https://github.com/wildcat-finance/skills/issues/1272",
+        "score": null,
+        "execution_mode": "fiat",
+        "dependencies": []
+      },
+      {
+        "number": 1227,
+        "title": "framework-95: Fiat instruction load is prose pinned by sentence and digest",
+        "state": "open",
+        "url": "https://github.com/wildcat-finance/skills/issues/1227",
+        "score": null,
+        "execution_mode": "fiat",
+        "dependencies": []
+      }
+    ]
+  },
+  {
+    "number": 84,
+    "title": "Wave 22: prose evidence",
+    "description": "Re-censused 6 September 2026 against `wildcat-finance/skills@66f43a0e07865daf526036ad1efbf98e3e27deac`; scores are impact `/40`, evidenced urgency `/25`, readiness `/20`, and work unblocked `/15`.\n\n#1300 (N/R): Preserves the recovery map for hidden issues as a non-executable parent record, kept visible beside its recovered child #1298.\n#1298 (70: 23/14/18/15): Collects evidenced structural-prose candidates from the recovered wish, feeding rather than replacing #422.\n#422 (75: 37/18/12/8): Builds Imprimatur's labelled-prose-v2 frontier after #1298's candidate evidence is available for review.\n#1304 (89: 31/23/20/15): Makes a prose-phase exit status prove its configured threshold, grouped with the checker work but independently ready.\n#1263 (80: 32/20/16/12): Checks prose quantities against the artefacts they count once the prose gate's success signal is dependable.\n#421 (83: 33/18/18/14): Adds Sapheneia's evidence-preserving pre-send checker, closing the group with the consumer-side parity gate.",
+    "state": "open",
+    "open": 6,
+    "closed": 0,
+    "url": "https://github.com/wildcat-finance/skills/milestone/84",
+    "members": [
+      {
+        "number": 1300,
+        "title": "Recovery record for hidden numbers 661, 666, 668, 669, 671, 672, 673, 674, 676, 677, 678, 679, 680, 681, 682, 683 (author shoggoth-wildcat returns 404)",
+        "state": "open",
+        "url": "https://github.com/wildcat-finance/skills/issues/1300",
+        "score": null,
+        "execution_mode": "invalid",
+        "execution_reason": "missing Fiat-Required: 0 or 1",
+        "dependencies": []
+      },
+      {
+        "number": 1298,
+        "title": "imprimatur-wish: collect evidence for additional structural prose families",
+        "state": "open",
+        "url": "https://github.com/wildcat-finance/skills/issues/1298",
+        "score": null,
+        "execution_mode": "invalid",
+        "execution_reason": "missing Fiat-Required: 0 or 1",
+        "dependencies": []
+      },
+      {
+        "number": 422,
+        "title": "imprimatur-next — build labelled-prose-v2 with fresh blind annotations",
+        "state": "open",
+        "url": "https://github.com/wildcat-finance/skills/issues/422",
+        "score": null,
+        "execution_mode": "fiat",
+        "dependencies": []
+      },
+      {
+        "number": 1304,
+        "title": "imprimatur reports defects and exits 0, so a prose-phase exit code proves nothing",
+        "state": "open",
+        "url": "https://github.com/wildcat-finance/skills/issues/1304",
+        "score": null,
+        "execution_mode": "pull_request",
+        "dependencies": []
+      },
+      {
+        "number": 1263,
+        "title": "framework-96: no check verifies prose quantities against the artefacts they count",
+        "state": "open",
+        "url": "https://github.com/wildcat-finance/skills/issues/1263",
+        "score": null,
+        "execution_mode": "fiat",
+        "dependencies": []
+      },
+      {
+        "number": 421,
+        "title": "sapheneia-1 — ship an executable pre-send checker",
+        "state": "open",
+        "url": "https://github.com/wildcat-finance/skills/issues/421",
+        "score": null,
+        "execution_mode": "pull_request",
+        "dependencies": []
+      }
+    ]
+  },
+  {
     "number": 64,
     "title": "Wave Δ — distributed Fiat checkpoints",
     "description": "Full open-issue census: 5 September 2026; `skills@4592e4c97989fb483d47295f673498076907d019`. Wave Δ remains the distributed-checkpoint programme; its members follow the receipted programme order.\n\n#859 (100): Programme epic for portable, content-addressed Fiat continuation; keep the packet order explicit and do not infer service or deployment authority.\n\n#1176 (90): Corrects the BSD `wc` exits in the Wave Δ reinstatement runbook before that programme uses the receipted checks again.\n\n#860 (99): The active #784/#814 stack is implementing immutable run and checkpoint identities; finish this foundation before archive or service work.\n\n#508 (98): The live checkpoint stack (#784 and #814) implements immutable run and checkpoint identity; keep the residual carryover and delegated-write boundaries bound to that programme.\n\n#899 (97): checkpoint export reads the next directive before deciding the current boundary is acceptable; refuse or export before advancing controller state.\n\n#861 (96): A cumulative, path-safe export and clean restore remain the next portable-state boundary after immutable identity.\n\n#901 (94): Version-1 and version-2 integration readers describe the same delta differently, so checkpoint compatibility lacks one canonical interpretation.\n\n#864 (90): External transitions must be fenced on independently accepted checkpoints after archive, service, and authority exist.\n\n#862 (85): The intake and publication state machine remains valid after #861, but implementation needs separate repository authority.\n\n#865 (80): Concurrent checkpoint descendants need an append-only graph and explicit resolution after identity and publication fences.\n\n#866 (78): Recovery and revocation rehearsal remains necessary only after the checkpoint service exists.\n\n#863 (75): Locked storage and signed acceptance receipts remain deployment work, with provider and recovery choices deliberately unresolved.\n\n#867 (72): Atlas routing for resume, redraw, or restart belongs after checkpoint service, fork, and recovery contracts are usable.",
@@ -2543,7 +2760,7 @@
           {
             "number": 857,
             "title": "framework-16 — the commit gate lives in one clone and dies with it",
-            "state": "open",
+            "state": "closed",
             "url": "https://github.com/wildcat-finance/skills/issues/857"
           },
           {
@@ -2714,7 +2931,7 @@
           {
             "number": 856,
             "title": "framework-13: test the remaining Atlas hand-offs before adding README buttons",
-            "state": "open",
+            "state": "closed",
             "url": "https://github.com/wildcat-finance/skills/issues/856"
           },
           {

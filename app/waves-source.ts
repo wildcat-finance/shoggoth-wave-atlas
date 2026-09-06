@@ -1,4 +1,5 @@
 import { buildAtlasIssues } from "./atlas-issues-transform.mjs";
+import { githubPageUrl, nextGithubCursor } from "./github-pagination.mjs";
 import { buildWaves } from "./waves-transform.mjs";
 import type { AtlasIssueRecord, WaveRecord } from "./WaveAtlas";
 import snapshotWaves from "./waves-data.json";
@@ -12,7 +13,7 @@ const CACHE_KEY = "https://wave-atlas.internal/waves-v3";
 const ATLAS_CACHE_KEY = "https://wave-atlas.internal/atlas-issues-v1";
 const CACHE_SECONDS = 600;
 const PAGE_SIZE = 100;
-const MAX_PAGES = 10;
+const MAX_PAGES = 50;
 const FETCH_TIMEOUT_MS = 8000;
 
 export type WavesSource = "live" | "cache" | "snapshot";
@@ -157,8 +158,9 @@ async function githubPages(
   if (token) headers.Authorization = `Bearer ${token}`;
 
   const collected: unknown[] = [];
+  let after: string | undefined;
   for (let page = 1; page <= MAX_PAGES; page += 1) {
-    const url = `https://api.github.com/repos/${repository}/${path}?state=${state}&per_page=${PAGE_SIZE}&page=${page}`;
+    const url = githubPageUrl({ repository, path, state, pageSize: PAGE_SIZE, after });
     const response = await fetch(url, {
       headers,
       signal: AbortSignal.timeout(FETCH_TIMEOUT_MS),
@@ -191,7 +193,8 @@ async function githubPages(
       throw new Error(`GitHub ${repository}/${path} page ${page} was not an array`);
     }
     collected.push(...body);
-    if (body.length < PAGE_SIZE) return collected;
+    after = nextGithubCursor(response.headers.get("link"));
+    if (!after) return collected;
   }
   // A truncated read would silently shrink the eligible set, so refuse it
   // rather than serve a partial answer that looks complete.

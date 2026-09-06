@@ -1,18 +1,5 @@
 {
-  "generated_at": "2026-09-05T06:39:20.856Z",
-  "source_revision": "427c9e6c9ddc853baeeafb20fb1caa6a283cbcb6",
-  "dropped": [
-    {
-      "number": 1227,
-      "title": "framework-95: Fiat instruction load is prose pinned by sentence and digest",
-      "url": "https://github.com/wildcat-finance/skills/issues/1227",
-      "reason": "no milestone"
-    },
-    {
-      "number": 1228,
-      "title": "The #1098 prover reads any Fiat run's design record and reddens two root-suite tests",
-      "url": "https://github.com/wildcat-finance/skills/issues/1228",
-      "reason": "no milestone"
-    }
-  ]
+  "generated_at": "2026-09-06T04:30:33.965Z",
+  "source_revision": "66f43a0e07865daf526036ad1efbf98e3e27deac",
+  "dropped": []
 }
