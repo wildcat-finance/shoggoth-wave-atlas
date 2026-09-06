@@ -122,9 +122,9 @@ test("job API rejects an unknown execution mode", async () => {
   });
 });
 
-for (const [provider, expectedOrigin] of [
-  ["chatgpt", "https://chatgpt.com"],
-  ["claude", "https://claude.ai"],
+for (const [provider, expectedProtocol, expectedHost, promptParameter] of [
+  ["chatgpt", "codex:", "threads", "prompt"],
+  ["claude", "claude:", "code", "q"],
 ]) {
   test(`${provider} redirect carries the API-selected issue and prompt`, async () => {
     const apiResponse = await request("/api/job?all=true");
@@ -134,7 +134,13 @@ for (const [provider, expectedOrigin] of [
     assert.equal(response.status, 307);
     assert.equal(response.headers.get("cache-control"), "no-store");
     const destination = new URL(response.headers.get("location"));
-    assert.equal(destination.origin, expectedOrigin);
-    assert.ok(jobs.some((job) => job.prompt === destination.searchParams.get("q")));
+    assert.equal(destination.protocol, expectedProtocol);
+    assert.equal(destination.host, expectedHost);
+    assert.equal(destination.pathname, "/new");
+    assert.ok(
+      jobs.some(
+        (job) => job.prompt === destination.searchParams.get(promptParameter),
+      ),
+    );
   });
 }

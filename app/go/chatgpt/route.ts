@@ -11,8 +11,8 @@ export async function GET() {
     );
   }
 
-  const destination = new URL("https://chatgpt.com/");
-  destination.searchParams.set("q", jobPrompt(job));
+  const destination = new URL("codex://threads/new");
+  destination.searchParams.set("prompt", jobPrompt(job));
   return new Response(null, {
     status: 307,
     headers: { Location: destination.toString(), "Cache-Control": "no-store" },
