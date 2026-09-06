@@ -4,9 +4,8 @@ name: Release verification
 # then proves what is actually being served. It does not publish. Publication
 # is a Sites connector call from an authenticated Codex session on the account
 # that owns the project: there is no Sites CLI, deployment API, service
-# credential, or GitHub App for a workflow to hold, and an invented private
-# endpoint or a long-lived personal token would be a worse answer than saying
-# so. See docs/RELEASE.md for the publish and rollback procedures.
+# credential, or GitHub App for this workflow to hold. An authenticated Codex
+# heartbeat supplies that supported connector boundary. See docs/RELEASE.md.
 #
 # Calling this "deploy" would be a lie. It is the gate around the deploy: the
 # artifact it packages is the one to publish, and the deployment record it
@@ -174,5 +173,5 @@ jobs:
             echo "- Verifier: ${{ steps.verify.outcome }}"
             echo "- Previously verified: \`${{ steps.record.outputs.previous_verified_revision }}\`"
             echo
-            echo "Publication is performed by the authorised Sites publisher; see docs/RELEASE.md."
+            echo "Publication is performed by the authorised Sites heartbeat; see docs/RELEASE.md."
           } >> "$GITHUB_STEP_SUMMARY"

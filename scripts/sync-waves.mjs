@@ -1,8 +1,9 @@
-import { writeFileSync } from "node:fs";
+import { readFileSync, writeFileSync } from "node:fs";
 import { resolve } from "node:path";
 
 import { githubPageUrl, nextGithubCursor } from "../app/github-pagination.mjs";
 import { buildWaves } from "../app/waves-transform.mjs";
+import { generatedAtFor } from "./snapshot-observation.mjs";
 
 const SKILLS_REPOSITORY = "wildcat-finance/skills";
 const PAGE_SIZE = 100;
@@ -117,7 +118,24 @@ if (memberCount === 0) {
     `Read ${issues.length} issue(s) but none landed in a wave; refusing to write a snapshot`,
   );
 }
-const generatedAt = new Date().toISOString();
+const observedAt = new Date().toISOString();
+let previousWaves;
+let previousMeta;
+try {
+  previousWaves = JSON.parse(readFileSync(resolve("app/waves-data.json"), "utf8"));
+  previousMeta = JSON.parse(readFileSync(resolve("app/waves-meta.json"), "utf8"));
+} catch {
+  // A missing or invalid previous pair cannot establish equality. The new
+  // generated pair is still validated before anything may publish it.
+}
+const generatedAt = generatedAtFor({
+  previousWaves,
+  previousMeta,
+  waves,
+  sourceRevision,
+  dropped,
+  observedAt,
+});
 
 writeFileSync(
   resolve("app/waves-data.json"),
@@ -131,7 +149,14 @@ writeFileSync(
   `${JSON.stringify({ generated_at: generatedAt, source_revision: sourceRevision, dropped }, null, 2)}\n`,
 );
 
-console.log(`Captured ${waves.length} waves and ${memberCount} issues at ${generatedAt}.`);
+if (generatedAt === observedAt) {
+  console.log(`Captured ${waves.length} waves and ${memberCount} issues at ${generatedAt}.`);
+} else {
+  console.log(
+    `Revalidated ${waves.length} waves and ${memberCount} issues; ` +
+      `the fallback still matches ${generatedAt}.`,
+  );
+}
 
 // An open issue with no milestone is invisible to the Atlas. That is the rule,
 // because a wave is a milestone, but it used to be a silent rule: issues sat
