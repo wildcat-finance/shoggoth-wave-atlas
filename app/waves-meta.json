@@ -1,5 +1,48 @@
 {
-  "generated_at": "2026-09-06T04:42:36.519Z",
+  "generated_at": "2026-09-06T06:40:54.259Z",
   "source_revision": "66f43a0e07865daf526036ad1efbf98e3e27deac",
-  "dropped": []
+  "dropped": [
+    {
+      "number": 1308,
+      "title": "The Elenchus runner reports failure counts without test identities, so a verdict cannot name what it rests on",
+      "url": "https://github.com/wildcat-finance/skills/issues/1308",
+      "reason": "no milestone"
+    },
+    {
+      "number": 1309,
+      "title": "A fresh clone cannot run the checks that write under .hexaemeron, because the directory is ignored only by a file the clone does not carry",
+      "url": "https://github.com/wildcat-finance/skills/issues/1309",
+      "reason": "no milestone"
+    },
+    {
+      "number": 1310,
+      "title": "A demonstration record with more than one command cannot be repeated, because the work root is built once per run",
+      "url": "https://github.com/wildcat-finance/skills/issues/1310",
+      "reason": "no milestone"
+    },
+    {
+      "number": 1311,
+      "title": "The contributor guide PDF is generated from no repository source, so its comparison cannot detect a prose change",
+      "url": "https://github.com/wildcat-finance/skills/issues/1311",
+      "reason": "no milestone"
+    },
+    {
+      "number": 1312,
+      "title": "The promise machine PDF has no generator in the repository and states counts the tree contradicts",
+      "url": "https://github.com/wildcat-finance/skills/issues/1312",
+      "reason": "no milestone"
+    },
+    {
+      "number": 1313,
+      "title": "The front door checker reads every governed ledger eagerly, so one malformed ledger hides the state of every document",
+      "url": "https://github.com/wildcat-finance/skills/issues/1313",
+      "reason": "no milestone"
+    },
+    {
+      "number": 1314,
+      "title": "imprimatur: restore PR #678 (causal_subject_has_no family) that merged into a deleted Fiat branch and never reached main",
+      "url": "https://github.com/wildcat-finance/skills/issues/1314",
+      "reason": "no milestone"
+    }
+  ]
 }
