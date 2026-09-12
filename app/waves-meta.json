@@ -1,47 +1,227 @@
 {
-  "generated_at": "2026-09-06T06:40:54.259Z",
-  "source_revision": "66f43a0e07865daf526036ad1efbf98e3e27deac",
+  "generated_at": "2026-09-12T18:30:07.290Z",
+  "source_revision": "b9cafd196b1d8f8b74b207320836532c14e78bab",
   "dropped": [
     {
-      "number": 1308,
-      "title": "The Elenchus runner reports failure counts without test identities, so a verdict cannot name what it rests on",
-      "url": "https://github.com/wildcat-finance/skills/issues/1308",
+      "number": 1357,
+      "title": "kickoff/horos-7: a TypeScript repository boundary merged and green in CI",
+      "url": "https://github.com/wildcat-finance/skills/issues/1357",
       "reason": "no milestone"
     },
     {
-      "number": 1309,
-      "title": "A fresh clone cannot run the checks that write under .hexaemeron, because the directory is ignored only by a file the clone does not carry",
-      "url": "https://github.com/wildcat-finance/skills/issues/1309",
+      "number": 1480,
+      "title": "fiat-wish: a later step's commits can be carried into a lower waiting branch",
+      "url": "https://github.com/wildcat-finance/skills/issues/1480",
       "reason": "no milestone"
     },
     {
-      "number": 1310,
-      "title": "A demonstration record with more than one command cannot be repeated, because the work root is built once per run",
-      "url": "https://github.com/wildcat-finance/skills/issues/1310",
+      "number": 1482,
+      "title": "protasis-wish: pin the kickoff venue, generation and deployment input registry",
+      "url": "https://github.com/wildcat-finance/skills/issues/1482",
       "reason": "no milestone"
     },
     {
-      "number": 1311,
-      "title": "The contributor guide PDF is generated from no repository source, so its comparison cannot detect a prose change",
-      "url": "https://github.com/wildcat-finance/skills/issues/1311",
+      "number": 1483,
+      "title": "horos-wish: identify the split archive and approve its exclusion rule",
+      "url": "https://github.com/wildcat-finance/skills/issues/1483",
       "reason": "no milestone"
     },
     {
-      "number": 1312,
-      "title": "The promise machine PDF has no generator in the repository and states counts the tree contradicts",
-      "url": "https://github.com/wildcat-finance/skills/issues/1312",
+      "number": 1484,
+      "title": "horos-wish: finish the existing app-v2 boundary CI delivery",
+      "url": "https://github.com/wildcat-finance/skills/issues/1484",
       "reason": "no milestone"
     },
     {
-      "number": 1313,
-      "title": "The front door checker reads every governed ledger eagerly, so one malformed ledger hides the state of every document",
-      "url": "https://github.com/wildcat-finance/skills/issues/1313",
+      "number": 1485,
+      "title": "protasis-wish: pin and decide the proposed indexed-actor event revision",
+      "url": "https://github.com/wildcat-finance/skills/issues/1485",
       "reason": "no milestone"
     },
     {
-      "number": 1314,
-      "title": "imprimatur: restore PR #678 (causal_subject_has_no family) that merged into a deleted Fiat branch and never reached main",
-      "url": "https://github.com/wildcat-finance/skills/issues/1314",
+      "number": 1486,
+      "title": "lazarus-wish: declare the finite two-chain fixture pilot",
+      "url": "https://github.com/wildcat-finance/skills/issues/1486",
+      "reason": "no milestone"
+    },
+    {
+      "number": 1487,
+      "title": "probitas-wish: decide permitted protocol-observed disclosure and conclusions",
+      "url": "https://github.com/wildcat-finance/skills/issues/1487",
+      "reason": "no milestone"
+    },
+    {
+      "number": 1488,
+      "title": "protasis-wish: approve the capture fleet and bounded provider plan",
+      "url": "https://github.com/wildcat-finance/skills/issues/1488",
+      "reason": "no milestone"
+    },
+    {
+      "number": 1489,
+      "title": "alexandria-wish: declare the durable store and capture migration inputs",
+      "url": "https://github.com/wildcat-finance/skills/issues/1489",
+      "reason": "no milestone"
+    },
+    {
+      "number": 1490,
+      "title": "alexandria-wish: select and seal the kickoff reference capture",
+      "url": "https://github.com/wildcat-finance/skills/issues/1490",
+      "reason": "no milestone"
+    },
+    {
+      "number": 1491,
+      "title": "protasis-wish: pin the serving consumer and activation contract",
+      "url": "https://github.com/wildcat-finance/skills/issues/1491",
+      "reason": "no milestone"
+    },
+    {
+      "number": 1492,
+      "title": "homologia-wish: select the scaled conversion and its independent expected vectors",
+      "url": "https://github.com/wildcat-finance/skills/issues/1492",
+      "reason": "no milestone"
+    },
+    {
+      "number": 1493,
+      "title": "protasis-wish: map displayed and replayed credit values to exact evidence",
+      "url": "https://github.com/wildcat-finance/skills/issues/1493",
+      "reason": "no milestone"
+    },
+    {
+      "number": 1494,
+      "title": "probitas-wish: identify conflicting venue sources and record the selection",
+      "url": "https://github.com/wildcat-finance/skills/issues/1494",
+      "reason": "no milestone"
+    },
+    {
+      "number": 1495,
+      "title": "janus-wish: state the host withdrawal policy for expiry and provider failure",
+      "url": "https://github.com/wildcat-finance/skills/issues/1495",
+      "reason": "no milestone"
+    },
+    {
+      "number": 1496,
+      "title": "probitas-wish: declare cross-chain identity assumptions for the fused view",
+      "url": "https://github.com/wildcat-finance/skills/issues/1496",
+      "reason": "no milestone"
+    },
+    {
+      "number": 1497,
+      "title": "protasis-wish: pin the wrapper and end-account attribution oracle",
+      "url": "https://github.com/wildcat-finance/skills/issues/1497",
+      "reason": "no milestone"
+    },
+    {
+      "number": 1498,
+      "title": "tabularium-wish: land the pinned-map prerequisite before further adapters",
+      "url": "https://github.com/wildcat-finance/skills/issues/1498",
+      "reason": "no milestone"
+    },
+    {
+      "number": 1503,
+      "title": "alexandria-next: attribute implementation epochs by transaction position",
+      "url": "https://github.com/wildcat-finance/skills/issues/1503",
+      "reason": "no milestone"
+    },
+    {
+      "number": 1513,
+      "title": "framework-156: a law edit and the agent-instruction corpus cannot both be current",
+      "url": "https://github.com/wildcat-finance/skills/issues/1513",
+      "reason": "no milestone"
+    },
+    {
+      "number": 1514,
+      "title": "framework-157: nothing this repository can read enforces the signed commits it documents",
+      "url": "https://github.com/wildcat-finance/skills/issues/1514",
+      "reason": "no milestone"
+    },
+    {
+      "number": 1517,
+      "title": "anamnesis-wish: a producer cell carrying the synopsis separator is dropped without a refusal",
+      "url": "https://github.com/wildcat-finance/skills/issues/1517",
+      "reason": "no milestone"
+    },
+    {
+      "number": 1520,
+      "title": "framework-158: main is red on one assertion because a coverage field changed meaning",
+      "url": "https://github.com/wildcat-finance/skills/issues/1520",
+      "reason": "no milestone"
+    },
+    {
+      "number": 1523,
+      "title": "imprimatur-wish: harden collect_family_evidence.py on the leads four audit rounds read and left",
+      "url": "https://github.com/wildcat-finance/skills/issues/1523",
+      "reason": "no milestone"
+    },
+    {
+      "number": 1524,
+      "title": "framework-159: a design-evidence cell that blocks integration is pinned at done study and no amend command reaches it",
+      "url": "https://github.com/wildcat-finance/skills/issues/1524",
+      "reason": "no milestone"
+    },
+    {
+      "number": 1531,
+      "title": "framework-108: a frontier runbook wrote a version token its own study said to compute",
+      "url": "https://github.com/wildcat-finance/skills/issues/1531",
+      "reason": "no milestone"
+    },
+    {
+      "number": 1532,
+      "title": "ephoros-wish: E003 reads a newline as the end of a right-hand side",
+      "url": "https://github.com/wildcat-finance/skills/issues/1532",
+      "reason": "no milestone"
+    },
+    {
+      "number": 1533,
+      "title": "ephoros-wish: decide whether an identifier is a bounded label, and make both surfaces agree",
+      "url": "https://github.com/wildcat-finance/skills/issues/1533",
+      "reason": "no milestone"
+    },
+    {
+      "number": 1534,
+      "title": "framework-109: a design record cell and an unrun study check say less than the study",
+      "url": "https://github.com/wildcat-finance/skills/issues/1534",
+      "reason": "no milestone"
+    },
+    {
+      "number": 1535,
+      "title": "elenchus-wish: the runner default ceiling reports inconclusive for a guard that holds",
+      "url": "https://github.com/wildcat-finance/skills/issues/1535",
+      "reason": "no milestone"
+    },
+    {
+      "number": 1536,
+      "title": "ephoros-wish: ship the recall decoy the design record depends on",
+      "url": "https://github.com/wildcat-finance/skills/issues/1536",
+      "reason": "no milestone"
+    },
+    {
+      "number": 1538,
+      "title": "framework-110: main fails 30 of its own tests and nothing reports it",
+      "url": "https://github.com/wildcat-finance/skills/issues/1538",
+      "reason": "no milestone"
+    },
+    {
+      "number": 1539,
+      "title": "elenchus-wish: raise a non-assertion exception when the required guard surface is absent",
+      "url": "https://github.com/wildcat-finance/skills/issues/1539",
+      "reason": "no milestone"
+    },
+    {
+      "number": 1540,
+      "title": "fiat-wish: declare the runbook amendment surface once instead of per step",
+      "url": "https://github.com/wildcat-finance/skills/issues/1540",
+      "reason": "no milestone"
+    },
+    {
+      "number": 1541,
+      "title": "fiat-wish: the declared Warden runner returns inconclusive on an overlaid parent",
+      "url": "https://github.com/wildcat-finance/skills/issues/1541",
+      "reason": "no milestone"
+    },
+    {
+      "number": 1542,
+      "title": "framework-160: a repository test asserts on transient controller state",
+      "url": "https://github.com/wildcat-finance/skills/issues/1542",
       "reason": "no milestone"
     }
   ]
