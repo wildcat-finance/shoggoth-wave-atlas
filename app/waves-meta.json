@@ -1,5 +1,12 @@
 {
-  "generated_at": "2026-09-13T02:32:57.254Z",
+  "generated_at": "2026-09-13T06:44:52.664Z",
   "source_revision": "97b74e5d1adda5d86f59c8936e32d5af6840e0d0",
-  "dropped": []
+  "dropped": [
+    {
+      "number": 1558,
+      "title": "framework-161: the uniqueness check reads one title form, so eleven held numbers read as free",
+      "url": "https://github.com/wildcat-finance/skills/issues/1558",
+      "reason": "no milestone"
+    }
+  ]
 }
