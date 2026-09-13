@@ -35,7 +35,7 @@ concurrency:
   cancel-in-progress: false
 
 env:
-  DEPLOY_URL: https://shoggoth-wave-atlas.functi0nzer0.chatgpt.site
+  DEPLOY_URL: https://shoggoth-wave-atlas.functi0nzer0-outlook.chatgpt.site
   EXPECTED_SITES_PROJECT: appgprj_6a895aa2e35c8191b3cbf5733f7866ee
 
 jobs:
