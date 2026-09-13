@@ -1,6 +1,6 @@
 {
-  "generated_at": "2026-09-13T12:36:24.749Z",
-  "source_revision": "45f2a7e3e14395af218c9373eeecaf263bf766da",
+  "generated_at": "2026-09-13T18:31:17.298Z",
+  "source_revision": "cdee4a28e7634516890006086da563e10d68e6cb",
   "dropped": [
     {
       "number": 1558,
@@ -24,6 +24,18 @@
       "number": 1576,
       "title": "elenchus-wish: a guard that errors on a name its fix adds reads inconclusive",
       "url": "https://github.com/wildcat-finance/skills/issues/1576",
+      "reason": "no milestone"
+    },
+    {
+      "number": 1578,
+      "title": "fiat-wish: bound the rebind records a study amendment writes into controller state",
+      "url": "https://github.com/wildcat-finance/skills/issues/1578",
+      "reason": "no milestone"
+    },
+    {
+      "number": 1586,
+      "title": "framework-163: a metron test class passes alone and fails under the parallel runner",
+      "url": "https://github.com/wildcat-finance/skills/issues/1586",
       "reason": "no milestone"
     }
   ]
