@@ -26,8 +26,8 @@ if (!token) {
 // Opening a pull request from Actions is gated by a setting this organisation
 // cannot reach: it is pinned above the org, so `GITHUB_TOKEN` is refused no
 // matter what the workflow's `permissions:` block says. The gate applies to
-// the Actions token, not to a user token, so PR_TOKEN — a fine-grained token
-// with `pull-requests: write` on this repository — opens the pull request when
+// the Actions token, not to a user token, so PR_TOKEN, a fine-grained token
+// with `pull-requests: write` on this repository, opens the pull request when
 // one is configured. Without it, manual mode still commits and reports the
 // compare URL. Automatic mode refuses before touching GitHub.
 const prToken = process.env.PR_TOKEN || token;
@@ -250,10 +250,26 @@ if (autoMerge) {
     `/pulls/${pull.number}/merge`,
     { sha: refreshOid, merge_method: "merge" },
     [],
-    prToken,
+    token,
   );
   if (merged.body?.merged !== true) {
     throw new Error(`GitHub did not merge pull request #${pull.number}.`);
   }
+  const mergeOid = merged.body.sha;
+  if (!/^[0-9a-f]{40}$/.test(mergeOid ?? "")) {
+    throw new Error(`GitHub merged pull request #${pull.number} without returning its commit.`);
+  }
   console.log(`Automatically merged ${repo} pull request #${pull.number}.`);
+
+  // Events written with GITHUB_TOKEN do not start another workflow. Dispatch
+  // the release gate explicitly so the accepted merge still gets packaged and
+  // the Sites heartbeat can recognise it.
+  await rest(
+    "POST",
+    "/actions/workflows/release-verification.yml/dispatches",
+    { ref: BASE_BRANCH, inputs: { revision: mergeOid, allow_rollback: "false" } },
+    [204],
+    token,
+  );
+  console.log(`Dispatched release verification for ${mergeOid}.`);
 }

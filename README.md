@@ -122,8 +122,10 @@ existing observation time, ends there, and creates nothing. A timestamp alone
 cannot manufacture a change. If the fallback differs, the run executes
 `npm test`, `npm run lint`, and `git diff --check`, then updates one branch,
 `automation/fallback-refresh`, behind one pull request containing only those
-two files. The configured `PR_TOKEN` merges that exact validated head after a
-final check that `main` has not advanced.
+two files. The configured `PR_TOKEN` opens or updates the pull request. The
+workflow token merges that exact validated head after a final check that
+`main` has not advanced, then dispatches release verification for the returned
+merge commit.
 
 The Skills read sends no credential. Skills is public, and the workflow's own
 `GITHUB_TOKEN` is scoped to this repository: passing it to that read returned
@@ -135,8 +137,10 @@ GitHub gates pull-request creation from Actions behind a setting separate from
 token permissions, and in this organisation that setting is pinned above the
 org: `GITHUB_TOKEN` is refused however the `permissions:` block is written.
 `PR_TOKEN` is therefore required in automatic mode. It is a fine-grained token
-with `pull-requests: write` on this repository and opens and merges the pull
-request. If the secret is absent, the run fails before it publishes anything.
+with `pull-requests: write` on this repository and opens or updates the pull
+request. Merging changes repository contents, so that operation stays with the
+workflow token's declared `contents: write` permission. If the secret is
+absent, the run fails before it publishes anything.
 
 The commit is made through GitHub's API rather than `git push`, so it is signed
 and no credential is written into a Git remote or config. A failed read, parse,

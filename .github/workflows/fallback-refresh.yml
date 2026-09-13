@@ -27,7 +27,8 @@ jobs:
   refresh:
     runs-on: ubuntu-latest
     permissions:
-      # Enough to update the refresh branch and its pull request. Nothing else.
+      # Update the refresh branch and pull request, then dispatch its release gate.
+      actions: write
       contents: write
       pull-requests: write
     steps:
