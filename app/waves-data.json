@@ -912,8 +912,8 @@
     "title": "Wave 3: evidence protection and incident cleanup",
     "description": "Full open-issue census: 2026-09-13T02:22:01.415Z; `skills@97b74e5d1adda5d86f59c8936e32d5af6840e0d0`. Scores are impact/40 + evidenced urgency/25 + readiness/20 + work unblocked/15; dependency and bundle order may override numeric order.\n\n#453 (97) [38/25/20/14]: Inject known-failure guards before production changes; active pull-request work makes it ready now and keeps it beside the fiat surface under review.\n#880 (90) [36/23/18/13]: Retain cleanup-derived corpus cases before removing bulk audit records; it stays in the evidence protection and incident cleanup bundle because its brevitas implementation surface and review evidence are shared.\n#1212 (90) [36/23/18/13]: Move closed audit history off the tree, keep it by digest, and give Warden an evidence field; it stays in the evidence protection and incident cleanup bundle because its fiat implementation surface and review evidence are shared.\n#363 (96) [38/24/19/15]: Bind delegated task identity to the current issue, step and role; it follows #453 and stays with fiat work that consumes the same hand-off.\n#374 (85) [38/19/16/12]: Forward-test the linter across a held engineering corpus; the current brevitas ledger holds this frontier, so it precedes optional work on the same contract.\n#843 (93) [37/23/19/14]: Decide whether a schema-fixed artefact is exempt from the structure codes; it stays in the prose evaluation and structural contracts bundle because its brevitas implementation surface and review evidence are shared.\n#1214 (89) [36/22/18/13]: The study prose and the design-evidence record list candidates that nothing binds together; it stays in the prose evaluation and structural contracts bundle because its protasis implementation surface and review evidence are shared.",
     "state": "open",
-    "open": 7,
-    "closed": 0,
+    "open": 6,
+    "closed": 1,
     "url": "https://github.com/wildcat-finance/skills/milestone/88",
     "members": [
       {
@@ -955,7 +955,7 @@
       },
       {
         "number": 1212,
-        "title": "fiat-wish: move closed audit history off the tree, keep it by digest, and give Warden an evidence field",
+        "title": "fiat-next: move closed audit history off the tree, keep it by digest, and give Warden an evidence field",
         "state": "open",
         "url": "https://github.com/wildcat-finance/skills/issues/1212",
         "score": 90,
@@ -965,7 +965,7 @@
       {
         "number": 363,
         "title": "fiat-next: bind delegated task identity to the current issue, step and role",
-        "state": "open",
+        "state": "closed",
         "url": "https://github.com/wildcat-finance/skills/issues/363",
         "score": 96,
         "execution_mode": "fiat",
