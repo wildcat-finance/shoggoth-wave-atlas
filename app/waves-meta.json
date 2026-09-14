@@ -1,6 +1,6 @@
 {
-  "generated_at": "2026-09-14T01:08:08.715Z",
-  "source_revision": "15bc85b6ae32e19b67df279070dc022ea3059d80",
+  "generated_at": "2026-09-14T06:56:16.381Z",
+  "source_revision": "acd8f4d89693fba915f32cdc1544bd86cc064be8",
   "dropped": [
     {
       "number": 1558,
@@ -81,9 +81,15 @@
       "reason": "no milestone"
     },
     {
-      "number": 1597,
-      "title": "hermes-wish: accept the emitter-fidelity differential suite as the CMP-10 reference for the 27 assembly emitters",
-      "url": "https://github.com/wildcat-finance/skills/issues/1597",
+      "number": 1606,
+      "title": "hypomnema-wish: the pointer walk reads the gitignored Promise Machine runtime copy",
+      "url": "https://github.com/wildcat-finance/skills/issues/1606",
+      "reason": "no milestone"
+    },
+    {
+      "number": 1614,
+      "title": "fiat-wish: next tells the operator to halt a run whose directed step merge is not yet receipted",
+      "url": "https://github.com/wildcat-finance/skills/issues/1614",
       "reason": "no milestone"
     }
   ]
