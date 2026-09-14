@@ -1,6 +1,6 @@
 {
-  "generated_at": "2026-09-13T18:31:17.298Z",
-  "source_revision": "cdee4a28e7634516890006086da563e10d68e6cb",
+  "generated_at": "2026-09-14T01:08:08.715Z",
+  "source_revision": "15bc85b6ae32e19b67df279070dc022ea3059d80",
   "dropped": [
     {
       "number": 1558,
@@ -36,6 +36,54 @@
       "number": 1586,
       "title": "framework-163: a metron test class passes alone and fails under the parallel runner",
       "url": "https://github.com/wildcat-finance/skills/issues/1586",
+      "reason": "no milestone"
+    },
+    {
+      "number": 1589,
+      "title": "protasis-wish: recover Wildcat V1 deployment epochs and build inputs",
+      "url": "https://github.com/wildcat-finance/skills/issues/1589",
+      "reason": "no milestone"
+    },
+    {
+      "number": 1590,
+      "title": "protasis-wish: complete the approved Wildcat V2 estate source map",
+      "url": "https://github.com/wildcat-finance/skills/issues/1590",
+      "reason": "no milestone"
+    },
+    {
+      "number": 1591,
+      "title": "protasis-wish: recover Aave V3 deployment and corpus input pins",
+      "url": "https://github.com/wildcat-finance/skills/issues/1591",
+      "reason": "no milestone"
+    },
+    {
+      "number": 1592,
+      "title": "protasis-wish: recover the three approved Maple contract-family input bundles",
+      "url": "https://github.com/wildcat-finance/skills/issues/1592",
+      "reason": "no milestone"
+    },
+    {
+      "number": 1593,
+      "title": "protasis-wish: recover Euler V1 and V2 deployment and compiler inputs",
+      "url": "https://github.com/wildcat-finance/skills/issues/1593",
+      "reason": "no milestone"
+    },
+    {
+      "number": 1594,
+      "title": "protasis-wish: recover Centrifuge V3 hub and spoke input bindings",
+      "url": "https://github.com/wildcat-finance/skills/issues/1594",
+      "reason": "no milestone"
+    },
+    {
+      "number": 1596,
+      "title": "homologia-wish: make the restored-mtime guard independent of timestamp ticks",
+      "url": "https://github.com/wildcat-finance/skills/issues/1596",
+      "reason": "no milestone"
+    },
+    {
+      "number": 1597,
+      "title": "hermes-wish: accept the emitter-fidelity differential suite as the CMP-10 reference for the 27 assembly emitters",
+      "url": "https://github.com/wildcat-finance/skills/issues/1597",
       "reason": "no milestone"
     }
   ]
