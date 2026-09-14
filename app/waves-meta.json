@@ -1,6 +1,6 @@
 {
-  "generated_at": "2026-09-14T06:56:16.381Z",
-  "source_revision": "acd8f4d89693fba915f32cdc1544bd86cc064be8",
+  "generated_at": "2026-09-14T12:41:48.967Z",
+  "source_revision": "485c90d3ad545b696584197f83d942c705988216",
   "dropped": [
     {
       "number": 1558,
@@ -78,12 +78,6 @@
       "number": 1596,
       "title": "homologia-wish: make the restored-mtime guard independent of timestamp ticks",
       "url": "https://github.com/wildcat-finance/skills/issues/1596",
-      "reason": "no milestone"
-    },
-    {
-      "number": 1606,
-      "title": "hypomnema-wish: the pointer walk reads the gitignored Promise Machine runtime copy",
-      "url": "https://github.com/wildcat-finance/skills/issues/1606",
       "reason": "no milestone"
     },
     {
