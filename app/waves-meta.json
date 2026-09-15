@@ -1,6 +1,6 @@
 {
-  "generated_at": "2026-09-14T18:34:46.445Z",
-  "source_revision": "d17990cb7f65aabbde83cc34030ad61dadaaface",
+  "generated_at": "2026-09-15T01:03:59.035Z",
+  "source_revision": "b61f600e72fab94c6c71a4410cd5e6061d098762",
   "dropped": [
     {
       "number": 1558,
@@ -84,6 +84,36 @@
       "number": 1614,
       "title": "fiat-wish: next tells the operator to halt a run whose directed step merge is not yet receipted",
       "url": "https://github.com/wildcat-finance/skills/issues/1614",
+      "reason": "no milestone"
+    },
+    {
+      "number": 1640,
+      "title": "ariadne-wish: scrub.credentials replaces a URL's host when its path holds an @",
+      "url": "https://github.com/wildcat-finance/skills/issues/1640",
+      "reason": "no milestone"
+    },
+    {
+      "number": 1641,
+      "title": "lemma-wish: comments and refusals describe Ariadne's parser and userinfo split as before #1639",
+      "url": "https://github.com/wildcat-finance/skills/issues/1641",
+      "reason": "no milestone"
+    },
+    {
+      "number": 1647,
+      "title": "fiat-wish: bound signing-key verification failure diagnostics",
+      "url": "https://github.com/wildcat-finance/skills/issues/1647",
+      "reason": "no milestone"
+    },
+    {
+      "number": 1648,
+      "title": "fiat-wish: keep archive restore bound to its admitted destination",
+      "url": "https://github.com/wildcat-finance/skills/issues/1648",
+      "reason": "no milestone"
+    },
+    {
+      "number": 1649,
+      "title": "fiat-wish: establish the archive restore concurrency boundary",
+      "url": "https://github.com/wildcat-finance/skills/issues/1649",
       "reason": "no milestone"
     }
   ]
