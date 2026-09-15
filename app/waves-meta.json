@@ -1,6 +1,6 @@
 {
-  "generated_at": "2026-09-15T01:03:59.035Z",
-  "source_revision": "b61f600e72fab94c6c71a4410cd5e6061d098762",
+  "generated_at": "2026-09-15T12:40:48.463Z",
+  "source_revision": "c86f2c625c246d68d6dc3d5e652fca97ccd6a6b4",
   "dropped": [
     {
       "number": 1558,
@@ -30,12 +30,6 @@
       "number": 1578,
       "title": "fiat-wish: bound the rebind records a study amendment writes into controller state",
       "url": "https://github.com/wildcat-finance/skills/issues/1578",
-      "reason": "no milestone"
-    },
-    {
-      "number": 1586,
-      "title": "framework-163: a metron test class passes alone and fails under the parallel runner",
-      "url": "https://github.com/wildcat-finance/skills/issues/1586",
       "reason": "no milestone"
     },
     {
@@ -114,6 +108,54 @@
       "number": 1649,
       "title": "fiat-wish: establish the archive restore concurrency boundary",
       "url": "https://github.com/wildcat-finance/skills/issues/1649",
+      "reason": "no milestone"
+    },
+    {
+      "number": 1656,
+      "title": "hypomnema-wish: the link and code-span scan takes quadratic time on a dense line",
+      "url": "https://github.com/wildcat-finance/skills/issues/1656",
+      "reason": "no milestone"
+    },
+    {
+      "number": 1657,
+      "title": "phylax-wish: a model proxy lifecycle test fails under load on a one-second join",
+      "url": "https://github.com/wildcat-finance/skills/issues/1657",
+      "reason": "no milestone"
+    },
+    {
+      "number": 1660,
+      "title": "framework-3: a keyring that trusts GitHub's web-flow keys skips Fiat's GitHub-signature refusal",
+      "url": "https://github.com/wildcat-finance/skills/issues/1660",
+      "reason": "no milestone"
+    },
+    {
+      "number": 1661,
+      "title": "framework-4: contributors.py --check refuses the delivery App's bot login",
+      "url": "https://github.com/wildcat-finance/skills/issues/1661",
+      "reason": "no milestone"
+    },
+    {
+      "number": 1662,
+      "title": "framework-12: the process-group demonstrations test races under host load",
+      "url": "https://github.com/wildcat-finance/skills/issues/1662",
+      "reason": "no milestone"
+    },
+    {
+      "number": 1663,
+      "title": "framework-14: Hypomnema's changed-docs form reports H009 for a record outside the selection",
+      "url": "https://github.com/wildcat-finance/skills/issues/1663",
+      "reason": "no milestone"
+    },
+    {
+      "number": 1665,
+      "title": "framework-15: done integrate refuses a decision-assignment sync once main's tracking ref reaches the merge",
+      "url": "https://github.com/wildcat-finance/skills/issues/1665",
+      "reason": "no milestone"
+    },
+    {
+      "number": 1666,
+      "title": "fiat-wish: a run finds main's evolution advance only at resolve-versions, and a mid-run controller switch leaves no checked record",
+      "url": "https://github.com/wildcat-finance/skills/issues/1666",
       "reason": "no milestone"
     }
   ]
