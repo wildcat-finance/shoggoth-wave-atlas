@@ -1,6 +1,6 @@
 {
-  "generated_at": "2026-09-16T12:41:21.804Z",
-  "source_revision": "ed94a4564c53b28c8db6cd22d3fd38e809338d75",
+  "generated_at": "2026-09-16T18:34:26.940Z",
+  "source_revision": "9599fa46e8e2c5436a0dae4327c8e5b72f5159a9",
   "dropped": [
     {
       "number": 1558,
@@ -159,9 +159,9 @@
       "reason": "no milestone"
     },
     {
-      "number": 1693,
-      "title": "probitas-wish: render drops or misfiles a record its tier does not place, and verify still passes",
-      "url": "https://github.com/wildcat-finance/skills/issues/1693",
+      "number": 1704,
+      "title": "elenchus-wish: the parent-guard executable-change test fails under suite load before its runner starts",
+      "url": "https://github.com/wildcat-finance/skills/issues/1704",
       "reason": "no milestone"
     }
   ]
