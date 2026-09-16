@@ -2189,8 +2189,8 @@
     "title": "Wave 12: failure and operational evidence",
     "description": "Full open-issue census: 2026-09-13T02:22:01.415Z; `skills@97b74e5d1adda5d86f59c8936e32d5af6840e0d0`. Scores are impact/40 + evidenced urgency/25 + readiness/20 + work unblocked/15; dependency and bundle order may override numeric order.\n\n#1503 (92) [35/25/20/12]: Attribute implementation epochs by transaction position; active pull-request work makes it ready now and keeps it beside the alexandria surface under review.\n#396 (87) [35/22/17/13]: Enforce redistribution classes with a subset-release export; it stays in the credit releases and reconciliation bundle because its alexandria implementation surface and review evidence are shared.\n#496 (91) [36/23/18/14]: Own the on-chain event surface, and state where the address rule stops; it stays in the failure and operational evidence bundle because its ephoros implementation surface and review evidence are shared.\n#1198 (87) [35/22/17/13]: An audit round's Elenchus verdict turns on which file a digest rebind names; it stays in the failure and operational evidence bundle because its fiat implementation surface and review evidence are shared.\n#414 (79) [32/20/16/11]: Define the ephoros-histogram-to-baseline path; it stays in the failure and operational evidence bundle because its metron implementation surface and review evidence are shared.\n#1222 (89) [35/22/18/14]: An audit round writes findings as prose, and Anamnesis cannot read them; it stays in the structured assurance bundle because its fiat implementation surface and review evidence are shared.\n#1295 (84) [28/21/20/15]: No shell linter has read the commit gate's two scripts; it stays in the structured assurance bundle because its framework implementation surface and review evidence are shared.",
     "state": "open",
-    "open": 7,
-    "closed": 0,
+    "open": 6,
+    "closed": 1,
     "url": "https://github.com/wildcat-finance/skills/milestone/97",
     "members": [
       {
@@ -2223,7 +2223,7 @@
       {
         "number": 1198,
         "title": "fiat-wish: an audit round's Elenchus verdict turns on which file a digest rebind names",
-        "state": "open",
+        "state": "closed",
         "url": "https://github.com/wildcat-finance/skills/issues/1198",
         "score": 87,
         "execution_mode": "pull_request",
@@ -4333,7 +4333,7 @@
     "title": "Wave Δ — distributed Fiat checkpoints",
     "description": "Full open-issue census: 2026-09-13T02:22:01.415Z; `skills@97b74e5d1adda5d86f59c8936e32d5af6840e0d0`. Wave Δ remains the distributed-checkpoint programme; its existing membership is preserved and ordered by its own dependencies.\n\n#508 (98) [39/25/20/14]: Bind exhausted-audit carryover, delegated writes, and runbook gates; it stays in the Wave Δ programme bundle because its fiat implementation surface and review evidence are shared.\n#899 (97) [39/24/19/15]: `checkpoint export` reads the next directive before deciding the boundary is acceptable; it stays in the Wave Δ programme bundle because its framework implementation surface and review evidence are shared.\n#861 (96) [38/25/18/15]: Export and restore cumulative Fiat checkpoints; active pull-request work makes it ready now and keeps it beside the fiat surface under review.\n#901 (94) [38/24/19/13]: The version-1 and version-2 integration readers describe the same delta differently; it stays in the Wave Δ programme bundle because its framework implementation surface and review evidence are shared.\n#1176 (94) [36/25/20/13]: The reinstatement runbook's retired-record check cannot exit zero under BSD wc; active pull-request work makes it ready now and keeps it beside the framework surface under review.\n#862 (85) [34/21/17/13]: Build the checkpoint intake, validation, and publication state machine; it follows #861 and stays with fiat work that consumes the same hand-off.\n#863 (75) [30/19/15/11]: Deploy the locked checkpoint authority and signed receipt path; it follows #862 and stays with fiat work that consumes the same hand-off.\n#864 (88) [36/23/16/13]: Fence external-run transitions on accepted checkpoints; it follows #861, #862, #863 and stays with fiat work that consumes the same hand-off.\n#865 (80) [32/20/16/12]: Represent and resolve concurrent checkpoint descendants; it follows #862, #863, #864 and stays with fiat work that consumes the same hand-off.\n#866 (78) [31/20/16/11]: Prove checkpoint reconciliation, revocation, and disaster recovery; it follows #861, #862, #863 and stays with fiat work that consumes the same hand-off.\n#867 (72) [29/18/14/11]: Route contributors to resume, redraw, or start from accepted Fiat state; it follows #864, #865, #866 and stays with fiat work that consumes the same hand-off.\n#859 (100) [40/25/20/15]: Make one receipted transition portable between contributors; it follows #867, #866 and stays with fiat work that consumes the same hand-off.",
     "state": "open",
-    "open": 10,
+    "open": 11,
     "closed": 18,
     "url": "https://github.com/wildcat-finance/skills/milestone/64",
     "members": [
@@ -4646,6 +4646,22 @@
         "score": null,
         "execution_mode": "pull_request",
         "dependencies": []
+      },
+      {
+        "number": 1676,
+        "title": "fiat-wish: publish the checkpoint authority protocol and R2 storage amendments",
+        "state": "open",
+        "url": "https://github.com/wildcat-finance/skills/issues/1676",
+        "score": null,
+        "execution_mode": "fiat",
+        "dependencies": [
+          {
+            "number": 860,
+            "title": "fiat-wish — bind portable runs to an immutable base and checkpoint identity",
+            "state": "closed",
+            "url": "https://github.com/wildcat-finance/skills/issues/860"
+          }
+        ]
       }
     ]
   },

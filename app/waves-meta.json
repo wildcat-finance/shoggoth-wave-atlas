@@ -1,6 +1,6 @@
 {
-  "generated_at": "2026-09-15T18:32:51.597Z",
-  "source_revision": "fd3486012e0e134a2a04ccdf8969619905ace22d",
+  "generated_at": "2026-09-16T01:03:10.780Z",
+  "source_revision": "1d4e4eebcba1825d0eb3192bf08a6c509bdc0d74",
   "dropped": [
     {
       "number": 1558,
@@ -111,18 +111,6 @@
       "reason": "no milestone"
     },
     {
-      "number": 1656,
-      "title": "hypomnema-wish: the link and code-span scan takes quadratic time on a dense line",
-      "url": "https://github.com/wildcat-finance/skills/issues/1656",
-      "reason": "no milestone"
-    },
-    {
-      "number": 1657,
-      "title": "phylax-wish: a model proxy lifecycle test fails under load on a one-second join",
-      "url": "https://github.com/wildcat-finance/skills/issues/1657",
-      "reason": "no milestone"
-    },
-    {
       "number": 1660,
       "title": "framework-3: a keyring that trusts GitHub's web-flow keys skips Fiat's GitHub-signature refusal",
       "url": "https://github.com/wildcat-finance/skills/issues/1660",
@@ -156,6 +144,24 @@
       "number": 1666,
       "title": "fiat-wish: a run finds main's evolution advance only at resolve-versions, and a mid-run controller switch leaves no checked record",
       "url": "https://github.com/wildcat-finance/skills/issues/1666",
+      "reason": "no milestone"
+    },
+    {
+      "number": 1677,
+      "title": "framework-164: the README and the contributor guide disagree about what the Atlas launchers open",
+      "url": "https://github.com/wildcat-finance/skills/issues/1677",
+      "reason": "no milestone"
+    },
+    {
+      "number": 1678,
+      "title": "alexandria-wish: the interval demonstrations cannot run from a packaged runtime",
+      "url": "https://github.com/wildcat-finance/skills/issues/1678",
+      "reason": "no milestone"
+    },
+    {
+      "number": 1679,
+      "title": "alexandria-wish: Collector.collect leaks its journal descriptors when it refuses",
+      "url": "https://github.com/wildcat-finance/skills/issues/1679",
       "reason": "no milestone"
     }
   ]
