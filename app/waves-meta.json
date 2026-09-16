@@ -1,6 +1,6 @@
 {
-  "generated_at": "2026-09-16T01:03:10.780Z",
-  "source_revision": "1d4e4eebcba1825d0eb3192bf08a6c509bdc0d74",
+  "generated_at": "2026-09-16T06:46:13.466Z",
+  "source_revision": "d351177599cc4db3c16d7404823c1a56e51ab3fc",
   "dropped": [
     {
       "number": 1558,
@@ -162,6 +162,12 @@
       "number": 1679,
       "title": "alexandria-wish: Collector.collect leaks its journal descriptors when it refuses",
       "url": "https://github.com/wildcat-finance/skills/issues/1679",
+      "reason": "no milestone"
+    },
+    {
+      "number": 1688,
+      "title": "protasis-wish: the gate-commands reference omits the accepted constructor keywords and named constants",
+      "url": "https://github.com/wildcat-finance/skills/issues/1688",
       "reason": "no milestone"
     }
   ]
