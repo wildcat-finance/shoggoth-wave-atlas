@@ -1,6 +1,6 @@
 {
-  "generated_at": "2026-09-16T06:46:13.466Z",
-  "source_revision": "d351177599cc4db3c16d7404823c1a56e51ab3fc",
+  "generated_at": "2026-09-16T12:41:21.804Z",
+  "source_revision": "ed94a4564c53b28c8db6cd22d3fd38e809338d75",
   "dropped": [
     {
       "number": 1558,
@@ -111,12 +111,6 @@
       "reason": "no milestone"
     },
     {
-      "number": 1660,
-      "title": "framework-3: a keyring that trusts GitHub's web-flow keys skips Fiat's GitHub-signature refusal",
-      "url": "https://github.com/wildcat-finance/skills/issues/1660",
-      "reason": "no milestone"
-    },
-    {
       "number": 1661,
       "title": "framework-4: contributors.py --check refuses the delivery App's bot login",
       "url": "https://github.com/wildcat-finance/skills/issues/1661",
@@ -132,12 +126,6 @@
       "number": 1663,
       "title": "framework-14: Hypomnema's changed-docs form reports H009 for a record outside the selection",
       "url": "https://github.com/wildcat-finance/skills/issues/1663",
-      "reason": "no milestone"
-    },
-    {
-      "number": 1665,
-      "title": "framework-15: done integrate refuses a decision-assignment sync once main's tracking ref reaches the merge",
-      "url": "https://github.com/wildcat-finance/skills/issues/1665",
       "reason": "no milestone"
     },
     {
@@ -168,6 +156,12 @@
       "number": 1688,
       "title": "protasis-wish: the gate-commands reference omits the accepted constructor keywords and named constants",
       "url": "https://github.com/wildcat-finance/skills/issues/1688",
+      "reason": "no milestone"
+    },
+    {
+      "number": 1693,
+      "title": "probitas-wish: render drops or misfiles a record its tier does not place, and verify still passes",
+      "url": "https://github.com/wildcat-finance/skills/issues/1693",
       "reason": "no milestone"
     }
   ]
