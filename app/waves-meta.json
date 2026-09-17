@@ -1,6 +1,6 @@
 {
-  "generated_at": "2026-09-17T06:46:50.509Z",
-  "source_revision": "1d131b98a78c888b571f302e5b4c899aa2e47caf",
+  "generated_at": "2026-09-17T18:35:51.296Z",
+  "source_revision": "9182d0adcb7e9a5330c259d9dc1e044b511711c2",
   "dropped": [
     {
       "number": 1558,
@@ -168,6 +168,12 @@
       "number": 1713,
       "title": "framework-165: a run that halts before done integrate owes task-issue closure and no command records it",
       "url": "https://github.com/wildcat-finance/skills/issues/1713",
+      "reason": "no milestone"
+    },
+    {
+      "number": 1715,
+      "title": "fiat-wish: unregistered-cli-module-bindings names a recovery that cannot apply",
+      "url": "https://github.com/wildcat-finance/skills/issues/1715",
       "reason": "no milestone"
     }
   ]
