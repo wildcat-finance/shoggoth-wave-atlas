@@ -1,6 +1,6 @@
 {
-  "generated_at": "2026-09-18T01:02:56.944Z",
-  "source_revision": "e3cea4ef5dc833861beb0cdd132ec6220006cd1e",
+  "generated_at": "2026-09-18T06:45:33.059Z",
+  "source_revision": "f0fa0c6632bd5fbef7f35e731646c32741ef282a",
   "dropped": [
     {
       "number": 1558,
@@ -72,12 +72,6 @@
       "number": 1596,
       "title": "homologia-wish: make the restored-mtime guard independent of timestamp ticks",
       "url": "https://github.com/wildcat-finance/skills/issues/1596",
-      "reason": "no milestone"
-    },
-    {
-      "number": 1614,
-      "title": "fiat-wish: next tells the operator to halt a run whose directed step merge is not yet receipted",
-      "url": "https://github.com/wildcat-finance/skills/issues/1614",
       "reason": "no milestone"
     },
     {
