@@ -1,6 +1,6 @@
 {
-  "generated_at": "2026-09-19T12:36:32.370Z",
-  "source_revision": "fc3236e386a4a14fc8c0fae40b1dad92b49227c8",
+  "generated_at": "2026-09-19T18:30:53.070Z",
+  "source_revision": "e2307ed5966e18727434b3e49bec89db736f7b17",
   "dropped": [
     {
       "number": 1558,
@@ -180,6 +180,18 @@
       "number": 1734,
       "title": "framework-167: two Anamnesis tests skip on the absence of controller state but not on its identity",
       "url": "https://github.com/wildcat-finance/skills/issues/1734",
+      "reason": "no milestone"
+    },
+    {
+      "number": 1755,
+      "title": "fiat-wish: distinguish empty key-marker quotations from private-key material in checkpoints",
+      "url": "https://github.com/wildcat-finance/skills/issues/1755",
+      "reason": "no milestone"
+    },
+    {
+      "number": 1756,
+      "title": "fiat-wish: observe plugin currency on Codex",
+      "url": "https://github.com/wildcat-finance/skills/issues/1756",
       "reason": "no milestone"
     }
   ]
