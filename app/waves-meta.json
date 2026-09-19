@@ -1,6 +1,6 @@
 {
-  "generated_at": "2026-09-18T06:45:33.059Z",
-  "source_revision": "f0fa0c6632bd5fbef7f35e731646c32741ef282a",
+  "generated_at": "2026-09-19T01:01:34.533Z",
+  "source_revision": "e4cef131e272cf8dc3a403a84aa40c22531fd790",
   "dropped": [
     {
       "number": 1558,
@@ -180,6 +180,12 @@
       "number": 1720,
       "title": "framework-166: the portable payload sits 78,600 bytes under its reserve line",
       "url": "https://github.com/wildcat-finance/skills/issues/1720",
+      "reason": "no milestone"
+    },
+    {
+      "number": 1731,
+      "title": "alexandria-wish: the interval collector cannot capture any admitted kickoff target",
+      "url": "https://github.com/wildcat-finance/skills/issues/1731",
       "reason": "no milestone"
     }
   ]
