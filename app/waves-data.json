@@ -1579,7 +1579,14 @@
         "url": "https://github.com/wildcat-finance/skills/issues/4",
         "score": null,
         "execution_mode": "pull_request",
-        "dependencies": []
+        "dependencies": [
+          {
+            "number": 1738,
+            "title": "fiat-wish: accept SSH checkpoint signatures and retain GPG verification",
+            "state": "closed",
+            "url": "https://github.com/wildcat-finance/skills/issues/1738"
+          }
+        ]
       },
       {
         "number": 6,

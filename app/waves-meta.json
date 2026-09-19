@@ -1,6 +1,6 @@
 {
-  "generated_at": "2026-09-19T06:41:28.721Z",
-  "source_revision": "0dd41be5c10bc83d3df33c9fdca3d385264059ba",
+  "generated_at": "2026-09-19T12:36:32.370Z",
+  "source_revision": "fc3236e386a4a14fc8c0fae40b1dad92b49227c8",
   "dropped": [
     {
       "number": 1558,
@@ -30,12 +30,6 @@
       "number": 1578,
       "title": "fiat-wish: bound the rebind records a study amendment writes into controller state",
       "url": "https://github.com/wildcat-finance/skills/issues/1578",
-      "reason": "no milestone"
-    },
-    {
-      "number": 1589,
-      "title": "protasis-wish: recover Wildcat V1 deployment epochs and build inputs",
-      "url": "https://github.com/wildcat-finance/skills/issues/1589",
       "reason": "no milestone"
     },
     {
