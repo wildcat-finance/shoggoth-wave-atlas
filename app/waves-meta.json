@@ -1,6 +1,6 @@
 {
-  "generated_at": "2026-09-19T01:01:34.533Z",
-  "source_revision": "e4cef131e272cf8dc3a403a84aa40c22531fd790",
+  "generated_at": "2026-09-19T06:41:28.721Z",
+  "source_revision": "0dd41be5c10bc83d3df33c9fdca3d385264059ba",
   "dropped": [
     {
       "number": 1558,
@@ -36,12 +36,6 @@
       "number": 1589,
       "title": "protasis-wish: recover Wildcat V1 deployment epochs and build inputs",
       "url": "https://github.com/wildcat-finance/skills/issues/1589",
-      "reason": "no milestone"
-    },
-    {
-      "number": 1590,
-      "title": "protasis-wish: complete the approved Wildcat V2 estate source map",
-      "url": "https://github.com/wildcat-finance/skills/issues/1590",
       "reason": "no milestone"
     },
     {
@@ -186,6 +180,12 @@
       "number": 1731,
       "title": "alexandria-wish: the interval collector cannot capture any admitted kickoff target",
       "url": "https://github.com/wildcat-finance/skills/issues/1731",
+      "reason": "no milestone"
+    },
+    {
+      "number": 1734,
+      "title": "framework-167: two Anamnesis tests skip on the absence of controller state but not on its identity",
+      "url": "https://github.com/wildcat-finance/skills/issues/1734",
       "reason": "no milestone"
     }
   ]
