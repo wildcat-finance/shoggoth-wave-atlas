@@ -1,6 +1,6 @@
 {
-  "generated_at": "2026-09-20T01:08:39.869Z",
-  "source_revision": "35f2abe518e2b4ed5735837ae35320cf1aa4a11a",
+  "generated_at": "2026-09-20T06:42:03.263Z",
+  "source_revision": "aededf66434ed4b4e3994bbaab5f1005fe10b453",
   "dropped": [
     {
       "number": 1558,
@@ -153,12 +153,6 @@
       "reason": "no milestone"
     },
     {
-      "number": 1715,
-      "title": "fiat-wish: unregistered-cli-module-bindings names a recovery that cannot apply",
-      "url": "https://github.com/wildcat-finance/skills/issues/1715",
-      "reason": "no milestone"
-    },
-    {
       "number": 1717,
       "title": "horos-wish: the test runner refuses an Elenchus report path through a symlinked prefix",
       "url": "https://github.com/wildcat-finance/skills/issues/1717",
@@ -234,6 +228,18 @@
       "number": 1781,
       "title": "fiat-wish: the checkpoint signing test errors with GPG exit 128 under nested run_checks workers",
       "url": "https://github.com/wildcat-finance/skills/issues/1781",
+      "reason": "no milestone"
+    },
+    {
+      "number": 1782,
+      "title": "framework-169: the allocator numbers every inherited draft and main carries five that fail once numbered",
+      "url": "https://github.com/wildcat-finance/skills/issues/1782",
+      "reason": "no milestone"
+    },
+    {
+      "number": 1788,
+      "title": "framework-170: ignored bytecode counts toward the 512-entry skill-tree cap and reddens 34 root tests",
+      "url": "https://github.com/wildcat-finance/skills/issues/1788",
       "reason": "no milestone"
     }
   ]

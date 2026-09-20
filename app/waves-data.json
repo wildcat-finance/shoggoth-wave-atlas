@@ -2935,8 +2935,7 @@
         "state": "open",
         "url": "https://github.com/wildcat-finance/skills/issues/1300",
         "score": 65,
-        "execution_mode": "invalid",
-        "execution_reason": "missing Fiat-Required: 0 or 1",
+        "execution_mode": "pull_request",
         "dependencies": []
       },
       {
@@ -2990,8 +2989,7 @@
         "state": "open",
         "url": "https://github.com/wildcat-finance/skills/issues/1204",
         "score": 69,
-        "execution_mode": "invalid",
-        "execution_reason": "missing Fiat-Required: 0 or 1",
+        "execution_mode": "pull_request",
         "dependencies": []
       }
     ]
@@ -3505,8 +3503,8 @@
     "title": "Wave 27: governance and maintenance",
     "description": "Full open-issue census: 2026-09-13T02:22:01.415Z; `skills@97b74e5d1adda5d86f59c8936e32d5af6840e0d0`. Scores are impact/40 + evidenced urgency/25 + readiness/20 + work unblocked/15; dependency and bundle order may override numeric order.\n\n#1326 (64) [32/16/12/4]: The design-bridge target rule and the drafts convention cannot both be satisfied; it stays in the governance and maintenance bundle because its framework implementation surface and review evidence are shared.\n#328 (64) [26/16/13/9]: Give the attempt ledger a canonical home; it stays in the governance and maintenance bundle because its metron implementation surface and review evidence are shared.\n#1479 (63) [32/16/11/4]: Eleven filed bodies are unstartable and the fix is an edit ADR-014 forbids; it stays in the governance and maintenance bundle because its framework implementation surface and review evidence are shared.\n#1474 (62) [32/12/14/4]: The framework-N opening rule refuses 90 bodies ADR-014 forbids repairing; it stays in the governance and maintenance bundle because its framework implementation surface and review evidence are shared.\n#1451 (66) [32/16/14/4]: No check walks audit/, and a merged record there is already failing the lint; it stays in the evidence protection and incident cleanup bundle because its framework implementation surface and review evidence are shared.\n#1433 (65) [35/12/14/4]: A runbook amendment receipt says which verdicts held, never which packets it reaches; it stays in the receipt and prerequisite continuity bundle because its framework implementation surface and review evidence are shared.\n#1319 (63) [35/12/12/4]: Concurrent runs claim one plugin version and nothing reports it; it stays in the distribution and currency bundle because its framework implementation surface and review evidence are shared.",
     "state": "open",
-    "open": 7,
-    "closed": 0,
+    "open": 6,
+    "closed": 1,
     "url": "https://github.com/wildcat-finance/skills/milestone/112",
     "members": [
       {
@@ -3530,7 +3528,7 @@
       {
         "number": 1479,
         "title": "framework-153: eleven filed bodies are unstartable and the fix is an edit ADR-014 forbids",
-        "state": "open",
+        "state": "closed",
         "url": "https://github.com/wildcat-finance/skills/issues/1479",
         "score": 63,
         "execution_mode": "pull_request",
@@ -4060,8 +4058,7 @@
         "state": "open",
         "url": "https://github.com/wildcat-finance/skills/issues/1314",
         "score": 63,
-        "execution_mode": "invalid",
-        "execution_reason": "missing Fiat-Required: 0 or 1",
+        "execution_mode": "fiat",
         "dependencies": []
       },
       {
@@ -4340,8 +4337,8 @@
     "title": "Wave Δ — distributed Fiat checkpoints",
     "description": "Full open-issue census: 2026-09-13T02:22:01.415Z; `skills@97b74e5d1adda5d86f59c8936e32d5af6840e0d0`. Wave Δ remains the distributed-checkpoint programme; its existing membership is preserved and ordered by its own dependencies.\n\n#508 (98) [39/25/20/14]: Bind exhausted-audit carryover, delegated writes, and runbook gates; it stays in the Wave Δ programme bundle because its fiat implementation surface and review evidence are shared.\n#899 (97) [39/24/19/15]: `checkpoint export` reads the next directive before deciding the boundary is acceptable; it stays in the Wave Δ programme bundle because its framework implementation surface and review evidence are shared.\n#861 (96) [38/25/18/15]: Export and restore cumulative Fiat checkpoints; active pull-request work makes it ready now and keeps it beside the fiat surface under review.\n#901 (94) [38/24/19/13]: The version-1 and version-2 integration readers describe the same delta differently; it stays in the Wave Δ programme bundle because its framework implementation surface and review evidence are shared.\n#1176 (94) [36/25/20/13]: The reinstatement runbook's retired-record check cannot exit zero under BSD wc; active pull-request work makes it ready now and keeps it beside the framework surface under review.\n#862 (85) [34/21/17/13]: Build the checkpoint intake, validation, and publication state machine; it follows #861 and stays with fiat work that consumes the same hand-off.\n#863 (75) [30/19/15/11]: Deploy the locked checkpoint authority and signed receipt path; it follows #862 and stays with fiat work that consumes the same hand-off.\n#864 (88) [36/23/16/13]: Fence external-run transitions on accepted checkpoints; it follows #861, #862, #863 and stays with fiat work that consumes the same hand-off.\n#865 (80) [32/20/16/12]: Represent and resolve concurrent checkpoint descendants; it follows #862, #863, #864 and stays with fiat work that consumes the same hand-off.\n#866 (78) [31/20/16/11]: Prove checkpoint reconciliation, revocation, and disaster recovery; it follows #861, #862, #863 and stays with fiat work that consumes the same hand-off.\n#867 (72) [29/18/14/11]: Route contributors to resume, redraw, or start from accepted Fiat state; it follows #864, #865, #866 and stays with fiat work that consumes the same hand-off.\n#859 (100) [40/25/20/15]: Make one receipted transition portable between contributors; it follows #867, #866 and stays with fiat work that consumes the same hand-off.",
     "state": "open",
-    "open": 11,
-    "closed": 18,
+    "open": 10,
+    "closed": 19,
     "url": "https://github.com/wildcat-finance/skills/milestone/64",
     "members": [
       {
@@ -4411,8 +4408,7 @@
         "state": "open",
         "url": "https://github.com/wildcat-finance/skills/issues/1176",
         "score": 94,
-        "execution_mode": "invalid",
-        "execution_reason": "missing Fiat-Required: 0 or 1",
+        "execution_mode": "pull_request",
         "dependencies": []
       },
       {
@@ -4657,7 +4653,7 @@
       {
         "number": 1676,
         "title": "fiat-wish: publish the checkpoint authority protocol and R2 storage amendments",
-        "state": "open",
+        "state": "closed",
         "url": "https://github.com/wildcat-finance/skills/issues/1676",
         "score": null,
         "execution_mode": "fiat",
