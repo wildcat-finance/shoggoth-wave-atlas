@@ -1,6 +1,6 @@
 {
-  "generated_at": "2026-09-19T18:30:53.070Z",
-  "source_revision": "e2307ed5966e18727434b3e49bec89db736f7b17",
+  "generated_at": "2026-09-20T01:08:39.869Z",
+  "source_revision": "35f2abe518e2b4ed5735837ae35320cf1aa4a11a",
   "dropped": [
     {
       "number": 1558,
@@ -183,15 +183,57 @@
       "reason": "no milestone"
     },
     {
-      "number": 1755,
-      "title": "fiat-wish: distinguish empty key-marker quotations from private-key material in checkpoints",
-      "url": "https://github.com/wildcat-finance/skills/issues/1755",
-      "reason": "no milestone"
-    },
-    {
       "number": 1756,
       "title": "fiat-wish: observe plugin currency on Codex",
       "url": "https://github.com/wildcat-finance/skills/issues/1756",
+      "reason": "no milestone"
+    },
+    {
+      "number": 1759,
+      "title": "tabularium-wish: the portable runtime drops the v1 rebuild scripts its own documents name",
+      "url": "https://github.com/wildcat-finance/skills/issues/1759",
+      "reason": "no milestone"
+    },
+    {
+      "number": 1760,
+      "title": "tabularium-wish: the closed key set in both schema documents is unenforced in Python",
+      "url": "https://github.com/wildcat-finance/skills/issues/1760",
+      "reason": "no milestone"
+    },
+    {
+      "number": 1761,
+      "title": "framework-17: the demonstrations ceiling test races its own per-command budget",
+      "url": "https://github.com/wildcat-finance/skills/issues/1761",
+      "reason": "no milestone"
+    },
+    {
+      "number": 1762,
+      "title": "framework-19: a runbook Exit clause cannot be amended for a command-dense step",
+      "url": "https://github.com/wildcat-finance/skills/issues/1762",
+      "reason": "no milestone"
+    },
+    {
+      "number": 1765,
+      "title": "elenchus-wish: the Hexaemeron test runner cannot produce an Elenchus report under the runner boundary",
+      "url": "https://github.com/wildcat-finance/skills/issues/1765",
+      "reason": "no milestone"
+    },
+    {
+      "number": 1768,
+      "title": "lazarus-wish: the default macOS temporary statement test looks up the wrong path component",
+      "url": "https://github.com/wildcat-finance/skills/issues/1768",
+      "reason": "no milestone"
+    },
+    {
+      "number": 1774,
+      "title": "framework-168: the roster's per-skill entries are bound to no ledger, so a closed frontier never reddens them",
+      "url": "https://github.com/wildcat-finance/skills/issues/1774",
+      "reason": "no milestone"
+    },
+    {
+      "number": 1781,
+      "title": "fiat-wish: the checkpoint signing test errors with GPG exit 128 under nested run_checks workers",
+      "url": "https://github.com/wildcat-finance/skills/issues/1781",
       "reason": "no milestone"
     }
   ]
