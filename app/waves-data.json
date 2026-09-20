@@ -4,8 +4,8 @@
     "title": "Wave 0: publication and test truth",
     "description": "Full open-issue census: 2026-09-13T02:22:01.415Z; `skills@97b74e5d1adda5d86f59c8936e32d5af6840e0d0`. Scores are impact/40 + evidenced urgency/25 + readiness/20 + work unblocked/15; dependency and bundle order may override numeric order.\n\n#855 (100) [40/25/20/15]: Pull requests opened by the delivery App receive no checks; it stays in the publication and test truth bundle because its framework implementation surface and review evidence are shared.\n#925 (100) [40/25/20/15]: The App token can publish without the issue-publication gates; it stays in the publication and test truth bundle because its framework implementation surface and review evidence are shared.\n#912 (97) [39/24/19/15]: The coverage selector check reads source files through the Markdown law reader, capping test module size by accident; it stays in the publication and test truth bundle because its framework implementation surface and review evidence are shared.\n#992 (95) [38/24/19/14]: The complete plugin gate costs half an hour and is disabled; it stays in the publication and test truth bundle because its framework implementation surface and review evidence are shared.\n#897 (94) [38/24/19/13]: The root suite scans a Fiat run's untracked controller state and fails on it; it stays in the publication and test truth bundle because its framework implementation surface and review evidence are shared.\n#871 (99) [40/25/20/14]: Make every Fiat mutation prove the Promise that authorises it; active pull-request work makes it ready now and keeps it beside the framework surface under review.\n#898 (98) [38/25/20/15]: `done integrate` blames attribution when the merge commit is simply not fetched; active pull-request work makes it ready now and keeps it beside the framework surface under review.",
     "state": "open",
-    "open": 5,
-    "closed": 2,
+    "open": 7,
+    "closed": 3,
     "url": "https://github.com/wildcat-finance/skills/milestone/85",
     "members": [
       {
@@ -68,6 +68,33 @@
         "state": "open",
         "url": "https://github.com/wildcat-finance/skills/issues/898",
         "score": 98,
+        "execution_mode": "pull_request",
+        "dependencies": []
+      },
+      {
+        "number": 1734,
+        "title": "framework-167: two Anamnesis tests skip on the absence of controller state but not on its identity",
+        "state": "open",
+        "url": "https://github.com/wildcat-finance/skills/issues/1734",
+        "score": null,
+        "execution_mode": "pull_request",
+        "dependencies": []
+      },
+      {
+        "number": 1781,
+        "title": "fiat-wish: the checkpoint signing test errors with GPG exit 128 under nested run_checks workers",
+        "state": "open",
+        "url": "https://github.com/wildcat-finance/skills/issues/1781",
+        "score": null,
+        "execution_mode": "pull_request",
+        "dependencies": []
+      },
+      {
+        "number": 1788,
+        "title": "framework-170: ignored bytecode counts toward the 512-entry skill-tree cap and reddens 34 root tests",
+        "state": "closed",
+        "url": "https://github.com/wildcat-finance/skills/issues/1788",
+        "score": null,
         "execution_mode": "pull_request",
         "dependencies": []
       }
@@ -391,7 +418,7 @@
     "title": "Wave 1: instruction architecture and token cost",
     "description": "Full open-issue census: 2026-09-13T02:22:01.415Z; `skills@97b74e5d1adda5d86f59c8936e32d5af6840e0d0`. Scores are impact/40 + evidenced urgency/25 + readiness/20 + work unblocked/15; dependency and bundle order may override numeric order.\n\n#844 (96) [38/24/19/15]: Scrub.credentials leaks on a multi-@ authority, and parse_pairs is last-wins; ariadne is mature, so this stays recognisable as optional generation work without reopening its frontier.\n#939 (96) [38/24/19/15]: A capability entry names a promise that does not exist; it stays in the promise and controller truth bundle because its framework implementation surface and review evidence are shared.\n#842 (91) [36/23/18/14]: The boundary and the tree disagree inside a run worktree; horos is mature, so this stays recognisable as optional generation work without reopening its frontier.\n#942 (99) [39/25/20/15]: Prototype Noema as a model-native sliced instruction IR; active pull-request work makes it ready now and keeps it beside the framework surface under review.\n#1046 (98) [38/25/20/15]: Select an implementation-ready instruction architecture from WAI1, Noema, or a better design; active pull-request work makes it ready now and keeps it beside the framework surface under review.\n#1155 (95) [38/24/19/14]: Select a cache-native prompt-construction architecture; it stays in the instruction architecture and token cost bundle because its framework implementation surface and review evidence are shared.\n#1192 (95) [36/25/20/14]: Make a before-span edit reconcile: store model binding offsets relative to the reviewed span; active pull-request work makes it ready now and keeps it beside the framework surface under review.",
     "state": "open",
-    "open": 6,
+    "open": 8,
     "closed": 1,
     "url": "https://github.com/wildcat-finance/skills/milestone/86",
     "members": [
@@ -456,6 +483,24 @@
         "url": "https://github.com/wildcat-finance/skills/issues/1192",
         "score": 95,
         "execution_mode": "fiat",
+        "dependencies": []
+      },
+      {
+        "number": 1640,
+        "title": "ariadne-wish: scrub.credentials replaces a URL's host when its path holds an @",
+        "state": "open",
+        "url": "https://github.com/wildcat-finance/skills/issues/1640",
+        "score": null,
+        "execution_mode": "pull_request",
+        "dependencies": []
+      },
+      {
+        "number": 1641,
+        "title": "lemma-wish: comments and refusals describe Ariadne's parser and userinfo split as before #1639",
+        "state": "open",
+        "url": "https://github.com/wildcat-finance/skills/issues/1641",
+        "score": null,
+        "execution_mode": "pull_request",
         "dependencies": []
       }
     ]
@@ -1041,7 +1086,7 @@
     "title": "Wave 4: credit releases and reconciliation",
     "description": "Full open-issue census: 2026-09-13T02:22:01.415Z; `skills@97b74e5d1adda5d86f59c8936e32d5af6840e0d0`. Scores are impact/40 + evidenced urgency/25 + readiness/20 + work unblocked/15; dependency and bundle order may override numeric order.\n\n#423 (88) [35/22/18/13]: Run a content-parity evaluation across all four registers; the current vulgate ledger holds this frontier, so it precedes optional work on the same contract.\n#398 (98) [39/25/20/14]: Ship Compound v3 Phase 1 from Alexandria raw evidence; the current tabularium ledger holds this frontier, so it precedes optional work on the same contract.\n#399 (90) [36/23/18/13]: Reconcile Alexandria's derived view against the owning adapter; it stays in the credit releases and reconciliation bundle because its tabularium implementation surface and review evidence are shared.\n#1422 (89) [38/23/16/12]: Establish account-attributed debt units for a Midnight secondary close; the current probitas ledger holds this frontier, so it precedes optional work on the same contract.\n#411 (98) [38/25/20/15]: Ship the first release grounded in captured Wildcat documentation; active pull-request work makes it ready now and keeps it beside the berean surface under review.\n#845 (96) [38/24/19/15]: Validate crashes on a list-typed reference; it stays in the portable releases and accessible state bundle because its berean implementation surface and review evidence are shared.\n#418 (90) [36/23/18/13]: Build and publish the held cross-model corpus; the current sapheneia ledger holds this frontier, so it precedes optional work on the same contract.",
     "state": "open",
-    "open": 7,
+    "open": 8,
     "closed": 0,
     "url": "https://github.com/wildcat-finance/skills/milestone/89",
     "members": [
@@ -1105,6 +1150,15 @@
         "state": "open",
         "url": "https://github.com/wildcat-finance/skills/issues/418",
         "score": 90,
+        "execution_mode": "fiat",
+        "dependencies": []
+      },
+      {
+        "number": 1731,
+        "title": "alexandria-wish: the interval collector cannot capture any admitted kickoff target",
+        "state": "open",
+        "url": "https://github.com/wildcat-finance/skills/issues/1731",
+        "score": null,
         "execution_mode": "fiat",
         "dependencies": []
       }
@@ -1198,7 +1252,7 @@
     "title": "Wave 5: distribution and currency",
     "description": "Full open-issue census: 2026-09-13T02:22:01.415Z; `skills@97b74e5d1adda5d86f59c8936e32d5af6840e0d0`. Scores are impact/40 + evidenced urgency/25 + readiness/20 + work unblocked/15; dependency and bundle order may override numeric order.\n\n#1171 (97) [39/24/19/15]: A moved branch head reports every plugin behind, six of them unchanged; it stays in the distribution and currency bundle because its framework implementation surface and review evidence are shared.\n#836 (96) [38/24/19/15]: Nothing verifies the marketplace mirror is current; it stays in the distribution and currency bundle because its framework implementation surface and review evidence are shared.\n#1053 (94) [38/24/19/13]: The skills-runtime rebuild has never run on its schedule; it stays in the distribution and currency bundle because its framework implementation surface and review evidence are shared.\n#1052 (93) [37/23/19/14]: The rebuild job reports a missing canonical workflow as drift; it stays in the distribution and currency bundle because its framework implementation surface and review evidence are shared.\n#971 (90) [36/23/18/13]: The generator-aggregate registry names a prefix that no longer exists; it stays in the distribution and currency bundle because its framework implementation surface and review evidence are shared.\n#895 (88) [35/22/18/13]: Claude plugin update reports success without re-pinning a changed plugin; it stays in the distribution and currency bundle because its framework implementation surface and review evidence are shared.\n#1117 (95) [38/24/19/14]: Nothing compares a committed copy of a receipted artefact against its receipt; it stays in the recovery and carryover bundle because its framework implementation surface and review evidence are shared.",
     "state": "open",
-    "open": 6,
+    "open": 8,
     "closed": 1,
     "url": "https://github.com/wildcat-finance/skills/milestone/90",
     "members": [
@@ -1264,6 +1318,24 @@
         "score": 95,
         "execution_mode": "fiat",
         "dependencies": []
+      },
+      {
+        "number": 1720,
+        "title": "framework-166: the portable payload sits 78,600 bytes under its reserve line",
+        "state": "open",
+        "url": "https://github.com/wildcat-finance/skills/issues/1720",
+        "score": null,
+        "execution_mode": "fiat",
+        "dependencies": []
+      },
+      {
+        "number": 1756,
+        "title": "fiat-wish: observe plugin currency on Codex",
+        "state": "open",
+        "url": "https://github.com/wildcat-finance/skills/issues/1756",
+        "score": null,
+        "execution_mode": "fiat",
+        "dependencies": []
       }
     ]
   },
@@ -1319,7 +1391,7 @@
     "title": "Wave 6: recovery and carryover",
     "description": "Full open-issue census: 2026-09-13T02:22:01.415Z; `skills@97b74e5d1adda5d86f59c8936e32d5af6840e0d0`. Scores are impact/40 + evidenced urgency/25 + readiness/20 + work unblocked/15; dependency and bundle order may override numeric order.\n\n#1215 (95) [38/24/19/14]: The digest refusal names a restore that no command performs and no stored copy allows; it stays in the recovery and carryover bundle because its fiat implementation surface and review evidence are shared.\n#838 (94) [38/24/19/13]: Carried-forward items carry no disposition any gate can check; it stays in the recovery and carryover bundle because its framework implementation surface and review evidence are shared.\n#834 (93) [37/23/19/14]: The evolution contract pins two Fiat ledger rows by position; it stays in the recovery and carryover bundle because its framework implementation surface and review evidence are shared.\n#1106 (91) [36/23/18/14]: An adopted early merge below the run branch still needs a person; it stays in the recovery and carryover bundle because its framework implementation surface and review evidence are shared.\n#553 (88) [35/22/18/13]: Reconcile prematurely merged stacked pull requests; it stays in the recovery and carryover bundle because its fiat implementation surface and review evidence are shared.\n#837 (86) [34/22/17/13]: Append-only amendments leave a document's body contradicting its tail; it stays in the recovery and carryover bundle because its framework implementation surface and review evidence are shared.\n#498 (94) [38/24/19/13]: Create Basanos for diff-scoped mutation adequacy of Solidity suites; it stays in the executable laws and assurance bundle because its framework implementation surface and review evidence are shared.",
     "state": "open",
-    "open": 7,
+    "open": 8,
     "closed": 0,
     "url": "https://github.com/wildcat-finance/skills/milestone/91",
     "members": [
@@ -1383,6 +1455,15 @@
         "state": "open",
         "url": "https://github.com/wildcat-finance/skills/issues/498",
         "score": 94,
+        "execution_mode": "fiat",
+        "dependencies": []
+      },
+      {
+        "number": 1713,
+        "title": "framework-165: a run that halts before done integrate owes task-issue closure and no command records it",
+        "state": "open",
+        "url": "https://github.com/wildcat-finance/skills/issues/1713",
+        "score": null,
         "execution_mode": "fiat",
         "dependencies": []
       }
@@ -1476,7 +1557,7 @@
     "title": "Wave 7: executable laws and assurance",
     "description": "Full open-issue census: 2026-09-13T02:22:01.415Z; `skills@97b74e5d1adda5d86f59c8936e32d5af6840e0d0`. Scores are impact/40 + evidenced urgency/25 + readiness/20 + work unblocked/15; dependency and bundle order may override numeric order.\n\n#840 (91) [36/23/18/14]: Darwin peak RSS is read in the wrong unit; it stays in the executable laws and assurance bundle because its synkrisis implementation surface and review evidence are shared.\n#381 (90) [36/23/18/13]: Widen the search record to the Echidna and Medusa campaigns; the current pandects ledger holds this frontier, so it precedes optional work on the same contract.\n#393 (90) [36/23/18/13]: Record and gate deployed bytecode size; it stays in the executable laws and assurance bundle because its hermes implementation surface and review evidence are shared.\n#382 (89) [36/22/18/13]: Make integration applicability machine-readable; it stays in the executable laws and assurance bundle because its pandects implementation surface and review evidence are shared.\n#416 (87) [35/22/17/13]: Add a delinquency and penalty-accrual law family; it stays in the executable laws and assurance bundle because its pandects implementation surface and review evidence are shared.\n#841 (96) [38/24/19/15]: No unittest-json-v1 runner, so every Elenchus verdict is inconclusive; it stays in the instruction evidence and router grading bundle because its lemma implementation surface and review evidence are shared.\n#869 (95) [38/24/19/14]: A valid failing report with multiple failing subtests is rejected as malformed; elenchus is mature, so this stays recognisable as optional generation work without reopening its frontier.",
     "state": "open",
-    "open": 7,
+    "open": 8,
     "closed": 0,
     "url": "https://github.com/wildcat-finance/skills/milestone/92",
     "members": [
@@ -1541,6 +1622,15 @@
         "url": "https://github.com/wildcat-finance/skills/issues/869",
         "score": 95,
         "execution_mode": "fiat",
+        "dependencies": []
+      },
+      {
+        "number": 1576,
+        "title": "elenchus-wish: a guard that errors on a name its fix adds reads inconclusive",
+        "state": "open",
+        "url": "https://github.com/wildcat-finance/skills/issues/1576",
+        "score": null,
+        "execution_mode": "pull_request",
         "dependencies": []
       }
     ]
@@ -1752,7 +1842,7 @@
     "title": "Wave 9: controller contracts",
     "description": "Full open-issue census: 2026-09-13T02:22:01.415Z; `skills@97b74e5d1adda5d86f59c8936e32d5af6840e0d0`. Scores are impact/40 + evidenced urgency/25 + readiness/20 + work unblocked/15; dependency and bundle order may override numeric order.\n\n#835 (90) [36/23/18/13]: The TypeScript lexer's documented recursion bound is not enforced; it stays in the parser and compiler front doors bundle because its framework implementation surface and review evidence are shared.\n#389 (87) [35/22/17/13]: Build a Foundry front door that emits pinned solc standard JSON; it stays in the parser and compiler front doors bundle because its lemma implementation surface and review evidence are shared.\n#1264 (94) [38/24/18/14]: A study amendment silently unbinds every runbook amendment; it stays in the controller contracts bundle because its framework implementation surface and review evidence are shared.\n#1267 (91) [35/22/19/15]: ADR assignment and Fiat require incompatible terminal trailer blocks; it stays in the controller contracts bundle because its framework implementation surface and review evidence are shared.\n#1299 (90) [34/22/19/15]: The activation assertion can be silenced by a variable this repository does not own; it stays in the controller contracts bundle because its framework implementation surface and review evidence are shared.\n#1273 (86) [36/21/17/12]: Nothing checks a finished run against the success criteria its own study declared; it stays in the controller contracts bundle because its protasis implementation surface and review evidence are shared.\n#1294 (86) [36/23/16/11]: The commit gate does not see merge or cherry-pick commits; it stays in the controller contracts bundle because its framework implementation surface and review evidence are shared.",
     "state": "open",
-    "open": 5,
+    "open": 8,
     "closed": 2,
     "url": "https://github.com/wildcat-finance/skills/milestone/94",
     "members": [
@@ -1816,6 +1906,33 @@
         "state": "open",
         "url": "https://github.com/wildcat-finance/skills/issues/1294",
         "score": 86,
+        "execution_mode": "fiat",
+        "dependencies": []
+      },
+      {
+        "number": 1578,
+        "title": "fiat-wish: bound the rebind records a study amendment writes into controller state",
+        "state": "open",
+        "url": "https://github.com/wildcat-finance/skills/issues/1578",
+        "score": null,
+        "execution_mode": "pull_request",
+        "dependencies": []
+      },
+      {
+        "number": 1666,
+        "title": "fiat-wish: a run finds main's evolution advance only at resolve-versions, and a mid-run controller switch leaves no checked record",
+        "state": "open",
+        "url": "https://github.com/wildcat-finance/skills/issues/1666",
+        "score": null,
+        "execution_mode": "fiat",
+        "dependencies": []
+      },
+      {
+        "number": 1762,
+        "title": "framework-19: a runbook Exit clause cannot be amended for a command-dense step",
+        "state": "open",
+        "url": "https://github.com/wildcat-finance/skills/issues/1762",
+        "score": null,
         "execution_mode": "fiat",
         "dependencies": []
       }
@@ -1891,7 +2008,7 @@
     "title": "Wave 10: governance and maintenance",
     "description": "Full open-issue census: 2026-09-13T02:22:01.415Z; `skills@97b74e5d1adda5d86f59c8936e32d5af6840e0d0`. Scores are impact/40 + evidenced urgency/25 + readiness/20 + work unblocked/15; dependency and bundle order may override numeric order.\n\n#1135 (93) [37/23/19/14]: Retire the mandatory Shoggoth co-signature and the runtime-host authorship ban; it stays in the governance and maintenance bundle because its framework implementation surface and review evidence are shared.\n#1421 (89) [38/23/16/12]: Prove a decision stands in exactly one established home across the repository; the current hypomnema ledger holds this frontier, so it precedes optional work on the same contract.\n#1220 (89) [36/22/18/13]: Three numbered decision records share a slug on main; it stays in the governance and maintenance bundle because its framework implementation surface and review evidence are shared.\n#894 (86) [34/22/17/13]: ADR-014 misstates what happened to the superseded Wave milestones; it stays in the governance and maintenance bundle because its framework implementation surface and review evidence are shared.\n#896 (92) [37/23/18/14]: The Horos boundary mixes file and directory entries without saying so; it stays in the issue visibility and reading boundaries bundle because its framework implementation surface and review evidence are shared.\n#941 (92) [37/23/18/14]: Give every issue a wave when it is filed, or a standing catch-all; it stays in the issue visibility and reading boundaries bundle because its framework implementation surface and review evidence are shared.\n#1118 (92) [37/23/18/14]: The Atlas dependency extractor must skip the issue status block; it stays in the issue visibility and reading boundaries bundle because its framework implementation surface and review evidence are shared.",
     "state": "open",
-    "open": 6,
+    "open": 8,
     "closed": 1,
     "url": "https://github.com/wildcat-finance/skills/milestone/95",
     "members": [
@@ -1956,6 +2073,24 @@
         "url": "https://github.com/wildcat-finance/skills/issues/1118",
         "score": 92,
         "execution_mode": "pull_request",
+        "dependencies": []
+      },
+      {
+        "number": 1661,
+        "title": "framework-4: contributors.py --check refuses the delivery App's bot login",
+        "state": "open",
+        "url": "https://github.com/wildcat-finance/skills/issues/1661",
+        "score": null,
+        "execution_mode": "pull_request",
+        "dependencies": []
+      },
+      {
+        "number": 1782,
+        "title": "framework-169: the allocator numbers every inherited draft and main carries five that fail once numbered",
+        "state": "open",
+        "url": "https://github.com/wildcat-finance/skills/issues/1782",
+        "score": null,
+        "execution_mode": "fiat",
         "dependencies": []
       }
     ]
@@ -2030,7 +2165,7 @@
     "title": "Wave 11: predicates and grading",
     "description": "Full open-issue census: 2026-09-13T02:22:01.415Z; `skills@97b74e5d1adda5d86f59c8936e32d5af6840e0d0`. Scores are impact/40 + evidenced urgency/25 + readiness/20 + work unblocked/15; dependency and bundle order may override numeric order.\n\n#1260 (92) [33/24/20/15]: No CI job runs the Horos suite, and three runs refused the lead on a reason that is not true; it stays in the bounded reading bundle because its framework implementation surface and review evidence are shared.\n#1130 (85) [30/20/20/15]: .horos/candidates.json is tracked, written by the scanner and checked by nothing; it stays in the bounded reading bundle because its framework implementation surface and review evidence are shared.\n#1272 (82) [34/20/16/12]: The boundary's saving is measured in file bytes and spent in model tokens; horos is mature, so this stays recognisable as optional generation work without reopening its frontier.\n#405 (93) [37/23/19/14]: Export the run's receipt trail as a durable delivery record at integrate; it stays in the predicates and grading bundle because its fiat implementation surface and review evidence are shared.\n#333 (89) [36/22/18/13]: Close the loop from exported cases back to a graded report; it stays in the predicates and grading bundle because its berean implementation surface and review evidence are shared.\n#376 (86) [34/22/17/13]: Verify supersession lineage across release directories; it stays in the predicates and grading bundle because its tabularium implementation surface and review evidence are shared.\n#408 (82) [33/21/16/12]: Emit release evidence through Ariadne's dataset predicate; it stays in the predicates and grading bundle because its tabularium implementation surface and review evidence are shared.",
     "state": "open",
-    "open": 6,
+    "open": 7,
     "closed": 1,
     "url": "https://github.com/wildcat-finance/skills/milestone/96",
     "members": [
@@ -2094,6 +2229,15 @@
         "state": "open",
         "url": "https://github.com/wildcat-finance/skills/issues/408",
         "score": 82,
+        "execution_mode": "pull_request",
+        "dependencies": []
+      },
+      {
+        "number": 1717,
+        "title": "horos-wish: the test runner refuses an Elenchus report path through a symlinked prefix",
+        "state": "open",
+        "url": "https://github.com/wildcat-finance/skills/issues/1717",
+        "score": null,
         "execution_mode": "pull_request",
         "dependencies": []
       }
@@ -2196,7 +2340,7 @@
     "title": "Wave 12: failure and operational evidence",
     "description": "Full open-issue census: 2026-09-13T02:22:01.415Z; `skills@97b74e5d1adda5d86f59c8936e32d5af6840e0d0`. Scores are impact/40 + evidenced urgency/25 + readiness/20 + work unblocked/15; dependency and bundle order may override numeric order.\n\n#1503 (92) [35/25/20/12]: Attribute implementation epochs by transaction position; active pull-request work makes it ready now and keeps it beside the alexandria surface under review.\n#396 (87) [35/22/17/13]: Enforce redistribution classes with a subset-release export; it stays in the credit releases and reconciliation bundle because its alexandria implementation surface and review evidence are shared.\n#496 (91) [36/23/18/14]: Own the on-chain event surface, and state where the address rule stops; it stays in the failure and operational evidence bundle because its ephoros implementation surface and review evidence are shared.\n#1198 (87) [35/22/17/13]: An audit round's Elenchus verdict turns on which file a digest rebind names; it stays in the failure and operational evidence bundle because its fiat implementation surface and review evidence are shared.\n#414 (79) [32/20/16/11]: Define the ephoros-histogram-to-baseline path; it stays in the failure and operational evidence bundle because its metron implementation surface and review evidence are shared.\n#1222 (89) [35/22/18/14]: An audit round writes findings as prose, and Anamnesis cannot read them; it stays in the structured assurance bundle because its fiat implementation surface and review evidence are shared.\n#1295 (84) [28/21/20/15]: No shell linter has read the commit gate's two scripts; it stays in the structured assurance bundle because its framework implementation surface and review evidence are shared.",
     "state": "open",
-    "open": 5,
+    "open": 8,
     "closed": 2,
     "url": "https://github.com/wildcat-finance/skills/milestone/97",
     "members": [
@@ -2261,6 +2405,33 @@
         "url": "https://github.com/wildcat-finance/skills/issues/1295",
         "score": 84,
         "execution_mode": "pull_request",
+        "dependencies": []
+      },
+      {
+        "number": 1765,
+        "title": "elenchus-wish: the Hexaemeron test runner cannot produce an Elenchus report under the runner boundary",
+        "state": "open",
+        "url": "https://github.com/wildcat-finance/skills/issues/1765",
+        "score": null,
+        "execution_mode": "pull_request",
+        "dependencies": []
+      },
+      {
+        "number": 1791,
+        "title": "ephoros-next: thread the lexer's span kinds through the per-file TypeScript index",
+        "state": "open",
+        "url": "https://github.com/wildcat-finance/skills/issues/1791",
+        "score": null,
+        "execution_mode": "fiat",
+        "dependencies": []
+      },
+      {
+        "number": 1792,
+        "title": "metron-next: hold a comparison to the conditions it was taken under",
+        "state": "open",
+        "url": "https://github.com/wildcat-finance/skills/issues/1792",
+        "score": null,
+        "execution_mode": "fiat",
         "dependencies": []
       }
     ]
@@ -2635,7 +2806,7 @@
     "title": "Wave 17: publication and test truth",
     "description": "Full open-issue census: 2026-09-13T02:22:01.415Z; `skills@97b74e5d1adda5d86f59c8936e32d5af6840e0d0`. Scores are impact/40 + evidenced urgency/25 + readiness/20 + work unblocked/15; dependency and bundle order may override numeric order.\n\n#1337 (66) [32/16/14/4]: The checked runner exports the variable that skips the commit-gate activation case; it stays in the publication and test truth bundle because its framework implementation surface and review evidence are shared.\n#1342 (66) [32/16/14/4]: A selected check refuses exactly the working-tree state the selector runs on; it stays in the publication and test truth bundle because its framework implementation surface and review evidence are shared.\n#1437 (66) [32/16/14/4]: The suite list names a portable payload check that cannot pass; it stays in the publication and test truth bundle because its framework implementation surface and review evidence are shared.\n#427 (73) [29/18/15/11]: Half the prose contract is enforced and half is honour-system; it stays in the prose evaluation and structural contracts bundle because its framework implementation surface and review evidence are shared.\n#1338 (66) [32/16/14/4]: B022 fires on a hard wrap that puts an ordinary word at a line start; it stays in the prose evaluation and structural contracts bundle because its brevitas implementation surface and review evidence are shared.\n#417 (77) [31/19/15/12]: Judge one-state laws against Lazarus-captured historical state; it stays in the executable laws and assurance bundle because its pandects implementation surface and review evidence are shared.\n#375 (76) [30/19/15/12]: Give include patterns real globstar semantics with a resolved-file echo; it stays in the parser and compiler front doors bundle because its lemma implementation surface and review evidence are shared.",
     "state": "open",
-    "open": 6,
+    "open": 8,
     "closed": 1,
     "url": "https://github.com/wildcat-finance/skills/milestone/102",
     "members": [
@@ -2701,6 +2872,24 @@
         "score": 76,
         "execution_mode": "pull_request",
         "dependencies": []
+      },
+      {
+        "number": 1571,
+        "title": "framework-162: a read guard reports tampering when the full check run reads its own snapshot",
+        "state": "open",
+        "url": "https://github.com/wildcat-finance/skills/issues/1571",
+        "score": null,
+        "execution_mode": "pull_request",
+        "dependencies": []
+      },
+      {
+        "number": 1768,
+        "title": "lazarus-wish: the default macOS temporary statement test looks up the wrong path component",
+        "state": "open",
+        "url": "https://github.com/wildcat-finance/skills/issues/1768",
+        "score": null,
+        "execution_mode": "pull_request",
+        "dependencies": []
       }
     ]
   },
@@ -2719,7 +2908,7 @@
     "title": "Wave 18: credit releases and reconciliation",
     "description": "Full open-issue census: 2026-09-13T02:22:01.415Z; `skills@97b74e5d1adda5d86f59c8936e32d5af6840e0d0`. Scores are impact/40 + evidenced urgency/25 + readiness/20 + work unblocked/15; dependency and bundle order may override numeric order.\n\n#400 (72) [29/18/14/11]: Add a compiler-settings experiment class; it stays in the parser and compiler front doors bundle because its hermes implementation surface and review evidence are shared.\n#950 (70) [28/18/14/10]: The task-admission schema disappeared, but the two live run-observation schemas still accept newline-ended scalars under Python JSON Schema.\n#883 (71) [28/18/14/11]: Carry-overs from the abandoned 390 Midnight stack (#739, #741); it stays in the credit releases and reconciliation bundle because its framework implementation surface and review evidence are shared.\n#1362 (72) [32/16/12/12]: A schema whose enums match what the code emits; it stays in the credit releases and reconciliation bundle because its tabularium implementation surface and review evidence are shared.\n#1443 (70) [32/16/18/4]: Give the registry and error-receipts components a consumer or a declaration; it stays in the credit releases and reconciliation bundle because its alexandria implementation surface and review evidence are shared.\n#882 (70) [28/18/14/10]: Remnants of the issue 391 unified-collection run; it stays in the credit releases and reconciliation bundle because its framework implementation surface and review evidence are shared.\n#1445 (67) [29/16/18/4]: Widen the collector's socket confinement evidence to match its claim; it stays in the credit releases and reconciliation bundle because its alexandria implementation surface and review evidence are shared.",
     "state": "open",
-    "open": 6,
+    "open": 8,
     "closed": 1,
     "url": "https://github.com/wildcat-finance/skills/milestone/103",
     "members": [
@@ -2785,6 +2974,24 @@
         "score": 67,
         "execution_mode": "pull_request",
         "dependencies": []
+      },
+      {
+        "number": 1679,
+        "title": "alexandria-wish: Collector.collect leaks its journal descriptors when it refuses",
+        "state": "open",
+        "url": "https://github.com/wildcat-finance/skills/issues/1679",
+        "score": null,
+        "execution_mode": "pull_request",
+        "dependencies": []
+      },
+      {
+        "number": 1759,
+        "title": "tabularium-wish: the portable runtime drops the v1 rebuild scripts its own documents name",
+        "state": "open",
+        "url": "https://github.com/wildcat-finance/skills/issues/1759",
+        "score": null,
+        "execution_mode": "pull_request",
+        "dependencies": []
       }
     ]
   },
@@ -2831,7 +3038,7 @@
     "title": "Wave 19: credit evidence and releases",
     "description": "Full open-issue census: 2026-09-13T02:22:01.415Z; `skills@97b74e5d1adda5d86f59c8936e32d5af6840e0d0`. Scores are impact/40 + evidenced urgency/25 + readiness/20 + work unblocked/15; dependency and bundle order may override numeric order.\n\n#1444 (66) [32/12/18/4]: A refusal receipt status should carry a status, not a block number; it stays in the credit releases and reconciliation bundle because its alexandria implementation surface and review evidence are shared.\n#1329 (66) [32/16/14/4]: The credit-history example README describes coverage its own demonstration contradicts; it stays in the credit releases and reconciliation bundle because its alexandria implementation surface and review evidence are shared.\n#1489 (67) [32/13/12/10]: Declare the durable store and capture migration inputs; it stays in the credit evidence and releases bundle because its alexandria implementation surface and review evidence are shared.\n#1498 (67) [32/13/12/10]: Land the pinned-map prerequisite before further adapters; it stays in the credit evidence and releases bundle because its tabularium implementation surface and review evidence are shared.\n#1486 (65) [32/13/12/8]: Declare the finite two-chain fixture pilot; it stays in the credit evidence and releases bundle because its lazarus implementation surface and review evidence are shared.\n#1494 (65) [32/13/12/8]: Identify conflicting venue sources and record the selection; it stays in the credit evidence and releases bundle because its probitas implementation surface and review evidence are shared.\n#422 (75) [37/18/12/8]: Build labelled-prose-v2 with fresh blind annotations; the current imprimatur ledger holds this frontier, so it precedes optional work on the same contract.",
     "state": "open",
-    "open": 7,
+    "open": 8,
     "closed": 0,
     "url": "https://github.com/wildcat-finance/skills/milestone/104",
     "members": [
@@ -2896,6 +3103,15 @@
         "url": "https://github.com/wildcat-finance/skills/issues/422",
         "score": 75,
         "execution_mode": "fiat",
+        "dependencies": []
+      },
+      {
+        "number": 1678,
+        "title": "alexandria-wish: the interval demonstrations cannot run from a packaged runtime",
+        "state": "open",
+        "url": "https://github.com/wildcat-finance/skills/issues/1678",
+        "score": null,
+        "execution_mode": "pull_request",
         "dependencies": []
       }
     ]
@@ -3019,7 +3235,7 @@
     "title": "Wave 21: repository assurance",
     "description": "Full open-issue census: 2026-09-13T02:22:01.415Z; `skills@97b74e5d1adda5d86f59c8936e32d5af6840e0d0`. Scores are impact/40 + evidenced urgency/25 + readiness/20 + work unblocked/15; dependency and bundle order may override numeric order.\n\n#1531 (69) [35/12/18/4]: A frontier runbook wrote a version token its own study said to compute; it stays in the repository assurance bundle because its framework implementation surface and review evidence are shared.\n#1514 (67) [35/16/12/4]: Nothing this repository can read enforces the signed commits it documents; it stays in the repository assurance bundle because its framework implementation surface and review evidence are shared.\n#1534 (67) [32/16/15/4]: A design record cell and an unrun study check say less than the study; it stays in the repository assurance bundle because its framework implementation surface and review evidence are shared.\n#1495 (65) [32/13/12/8]: State the host withdrawal policy for expiry and provider failure; it stays in the repository assurance bundle because its janus implementation surface and review evidence are shared.\n#1513 (64) [32/16/12/4]: A law edit and the agent-instruction corpus cannot both be current; it stays in the repository assurance bundle because its framework implementation surface and review evidence are shared.\n#1524 (63) [35/12/12/4]: A design-evidence cell that blocks integration is pinned at done study and no amend command reaches it; it stays in the repository assurance bundle because its framework implementation surface and review evidence are shared.\n#1517 (63) [29/16/14/4]: A producer cell carrying the synopsis separator is dropped without a refusal; it stays in the repository assurance bundle because its anamnesis implementation surface and review evidence are shared.",
     "state": "open",
-    "open": 6,
+    "open": 7,
     "closed": 1,
     "url": "https://github.com/wildcat-finance/skills/milestone/106",
     "members": [
@@ -3085,6 +3301,15 @@
         "score": 63,
         "execution_mode": "pull_request",
         "dependencies": []
+      },
+      {
+        "number": 1774,
+        "title": "framework-168: the roster's per-skill entries are bound to no ledger, so a closed frontier never reddens them",
+        "state": "open",
+        "url": "https://github.com/wildcat-finance/skills/issues/1774",
+        "score": null,
+        "execution_mode": "fiat",
+        "dependencies": []
       }
     ]
   },
@@ -3113,7 +3338,7 @@
     "title": "Wave 22: controller contracts",
     "description": "Full open-issue census: 2026-09-13T02:22:01.415Z; `skills@97b74e5d1adda5d86f59c8936e32d5af6840e0d0`. Scores are impact/40 + evidenced urgency/25 + readiness/20 + work unblocked/15; dependency and bundle order may override numeric order.\n\n#1492 (62) [29/13/12/8]: Select the scaled conversion and its independent expected vectors; it stays in the repository assurance bundle because its homologia implementation surface and review evidence are shared.\n#1345 (71) [32/21/14/4]: The Fiat-Required refusal names the edit that turns it off; active pull-request work makes it ready now and keeps it beside the fiat surface under review.\n#1436 (67) [35/16/12/4]: A conformance criterion can block the step that produces its evidence; it stays in the controller contracts bundle because its framework implementation surface and review evidence are shared.\n#1323 (66) [32/16/14/4]: Control characters survive the render collapse and reach a terminal; it stays in the controller contracts bundle because its kronos implementation surface and review evidence are shared.\n#1339 (66) [32/16/14/4]: Audit-round --findings counts table rows and the reference does not say so; it stays in the controller contracts bundle because its fiat implementation surface and review evidence are shared.\n#1343 (66) [32/16/14/4]: The init currency warning reads the target checkout rather than the base the run cuts from; it stays in the controller contracts bundle because its fiat implementation surface and review evidence are shared.\n#1454 (66) [32/16/14/4]: A risk register scope may be narrower than its own criterion; it stays in the controller contracts bundle because its protasis implementation surface and review evidence are shared.",
     "state": "open",
-    "open": 6,
+    "open": 8,
     "closed": 1,
     "url": "https://github.com/wildcat-finance/skills/milestone/107",
     "members": [
@@ -3179,6 +3404,24 @@
         "score": 66,
         "execution_mode": "pull_request",
         "dependencies": []
+      },
+      {
+        "number": 1575,
+        "title": "protasis-wish: a pending resolver can name HEAD, which is a merge commit when the integration transition runs",
+        "state": "open",
+        "url": "https://github.com/wildcat-finance/skills/issues/1575",
+        "score": null,
+        "execution_mode": "pull_request",
+        "dependencies": []
+      },
+      {
+        "number": 1663,
+        "title": "framework-14: Hypomnema's changed-docs form reports H009 for a record outside the selection",
+        "state": "open",
+        "url": "https://github.com/wildcat-finance/skills/issues/1663",
+        "score": null,
+        "execution_mode": "pull_request",
+        "dependencies": []
       }
     ]
   },
@@ -3207,7 +3450,7 @@
     "title": "Wave 23: controller contracts",
     "description": "Full open-issue census: 2026-09-13T02:22:01.415Z; `skills@97b74e5d1adda5d86f59c8936e32d5af6840e0d0`. Scores are impact/40 + evidenced urgency/25 + readiness/20 + work unblocked/15; dependency and bundle order may override numeric order.\n\n#1322 (63) [29/16/14/4]: Parked renders a forgeable line and cannot share show's collapse; it stays in the controller contracts bundle because its kronos implementation surface and review evidence are shared.\n#1325 (63) [29/16/14/4]: Show has no type validation on the read-back path; it stays in the controller contracts bundle because its kronos implementation surface and review evidence are shared.\n#1453 (63) [29/16/14/4]: Init exits 0 whether it started a run or routed a filed zero; it stays in the controller contracts bundle because its fiat implementation surface and review evidence are shared.\n#1472 (63) [29/16/14/4]: A snapshot test asserts no ledger declares anything, and one now does; it stays in the controller contracts bundle because its kronos implementation surface and review evidence are shared.\n#1491 (71) [32/13/12/14]: Pin the serving consumer and activation contract; it stays in the controller and phase contracts bundle because its protasis implementation surface and review evidence are shared.\n#1482 (68) [29/13/12/14]: Pin the kickoff venue, generation and deployment input registry; it stays in the controller and phase contracts bundle because its protasis implementation surface and review evidence are shared.\n#1533 (67) [29/16/18/4]: Decide whether an identifier is a bounded label, and make both surfaces agree; it stays in the controller and phase contracts bundle because its ephoros implementation surface and review evidence are shared.",
     "state": "open",
-    "open": 5,
+    "open": 7,
     "closed": 2,
     "url": "https://github.com/wildcat-finance/skills/milestone/108",
     "members": [
@@ -3273,6 +3516,24 @@
         "score": 67,
         "execution_mode": "pull_request",
         "dependencies": []
+      },
+      {
+        "number": 1591,
+        "title": "protasis-wish: recover Aave V3 deployment and corpus input pins",
+        "state": "open",
+        "url": "https://github.com/wildcat-finance/skills/issues/1591",
+        "score": null,
+        "execution_mode": "pull_request",
+        "dependencies": []
+      },
+      {
+        "number": 1593,
+        "title": "protasis-wish: recover Euler V1 and V2 deployment and compiler inputs",
+        "state": "open",
+        "url": "https://github.com/wildcat-finance/skills/issues/1593",
+        "score": null,
+        "execution_mode": "pull_request",
+        "dependencies": []
       }
     ]
   },
@@ -3281,7 +3542,7 @@
     "title": "Wave 24: controller and phase contracts",
     "description": "Full open-issue census: 2026-09-13T02:22:01.415Z; `skills@97b74e5d1adda5d86f59c8936e32d5af6840e0d0`. Scores are impact/40 + evidenced urgency/25 + readiness/20 + work unblocked/15; dependency and bundle order may override numeric order.\n\n#1535 (67) [29/16/18/4]: The runner default ceiling reports inconclusive for a guard that holds; elenchus is mature, so this stays recognisable as optional generation work without reopening its frontier.\n#1536 (67) [29/16/18/4]: Ship the recall decoy the design record depends on; it stays in the controller and phase contracts bundle because its ephoros implementation surface and review evidence are shared.\n#1555 (66) [32/16/14/4]: The frontier ledger readers traceback on a decode failure and quote unbounded text; it stays in the controller and phase contracts bundle because its fiat implementation surface and review evidence are shared.\n#1488 (66) [29/13/12/12]: Approve the capture fleet and bounded provider plan; it stays in the controller and phase contracts bundle because its protasis implementation surface and review evidence are shared.\n#1539 (65) [29/16/14/6]: Raise a non-assertion exception when the required guard surface is absent; elenchus is mature, so this stays recognisable as optional generation work without reopening its frontier.\n#1541 (65) [29/16/14/6]: The declared Warden runner returns inconclusive on an overlaid parent; it stays in the controller and phase contracts bundle because its fiat implementation surface and review evidence are shared.\n#1540 (64) [32/16/12/4]: Declare the runbook amendment surface once instead of per step; it stays in the controller and phase contracts bundle because its fiat implementation surface and review evidence are shared.",
     "state": "open",
-    "open": 7,
+    "open": 8,
     "closed": 0,
     "url": "https://github.com/wildcat-finance/skills/milestone/109",
     "members": [
@@ -3347,6 +3608,15 @@
         "score": 64,
         "execution_mode": "fiat",
         "dependencies": []
+      },
+      {
+        "number": 1704,
+        "title": "elenchus-wish: the parent-guard executable-change test fails under suite load before its runner starts",
+        "state": "open",
+        "url": "https://github.com/wildcat-finance/skills/issues/1704",
+        "score": null,
+        "execution_mode": "pull_request",
+        "dependencies": []
       }
     ]
   },
@@ -3355,7 +3625,7 @@
     "title": "Wave 25: controller and phase contracts",
     "description": "Full open-issue census: 2026-09-13T02:22:01.415Z; `skills@97b74e5d1adda5d86f59c8936e32d5af6840e0d0`. Scores are impact/40 + evidenced urgency/25 + readiness/20 + work unblocked/15; dependency and bundle order may override numeric order.\n\n#1485 (64) [29/13/12/10]: Pin and decide the proposed indexed-actor event revision; it stays in the controller and phase contracts bundle because its protasis implementation surface and review evidence are shared.\n#1493 (64) [29/13/12/10]: Map displayed and replayed credit values to exact evidence; it stays in the controller and phase contracts bundle because its protasis implementation surface and review evidence are shared.\n#1497 (62) [29/13/12/8]: Pin the wrapper and end-account attribution oracle; it stays in the controller and phase contracts bundle because its protasis implementation surface and review evidence are shared.\n#1480 (60) [32/12/12/4]: A later step's commits can be carried into a lower waiting branch; it stays in the controller and phase contracts bundle because its fiat implementation surface and review evidence are shared.\n#1532 (60) [29/12/15/4]: E003 reads a newline as the end of a right-hand side; it stays in the controller and phase contracts bundle because its ephoros implementation surface and review evidence are shared.\n#1556 (60) [29/16/11/4]: A byte-order mark hides the carried-forward section from its reader; it stays in the controller and phase contracts bundle because its fiat implementation surface and review evidence are shared.\n#1370 (70) [32/16/14/8]: Human-written comparison policy; it follows #1488 and stays with synkrisis work that consumes the same hand-off.",
     "state": "open",
-    "open": 5,
+    "open": 8,
     "closed": 2,
     "url": "https://github.com/wildcat-finance/skills/milestone/110",
     "members": [
@@ -3421,6 +3691,33 @@
         "score": 70,
         "execution_mode": "pull_request",
         "dependencies": []
+      },
+      {
+        "number": 1592,
+        "title": "protasis-wish: recover the three approved Maple contract-family input bundles",
+        "state": "open",
+        "url": "https://github.com/wildcat-finance/skills/issues/1592",
+        "score": null,
+        "execution_mode": "pull_request",
+        "dependencies": []
+      },
+      {
+        "number": 1594,
+        "title": "protasis-wish: recover Centrifuge V3 hub and spoke input bindings",
+        "state": "open",
+        "url": "https://github.com/wildcat-finance/skills/issues/1594",
+        "score": null,
+        "execution_mode": "pull_request",
+        "dependencies": []
+      },
+      {
+        "number": 1688,
+        "title": "protasis-wish: the gate-commands reference omits the accepted constructor keywords and named constants",
+        "state": "open",
+        "url": "https://github.com/wildcat-finance/skills/issues/1688",
+        "score": null,
+        "execution_mode": "pull_request",
+        "dependencies": []
       }
     ]
   },
@@ -3429,7 +3726,7 @@
     "title": "Wave 26: structured assurance",
     "description": "Full open-issue census: 2026-09-13T02:22:01.415Z; `skills@97b74e5d1adda5d86f59c8936e32d5af6840e0d0`. Scores are impact/40 + evidenced urgency/25 + readiness/20 + work unblocked/15; dependency and bundle order may override numeric order.\n\n#1369 (68) [32/16/12/8]: Run observation per collector run; it follows #1488 and stays with synkrisis work that consumes the same hand-off.\n#1377 (66) [32/16/12/6]: The capture fleet as the first captured cohort; it follows #1369, #1370 and stays with synkrisis work that consumes the same hand-off.\n#1308 (62) [29/16/11/6]: The Elenchus runner reports failure counts without test identities, so a verdict cannot name what it rests on; elenchus is mature, so this stays recognisable as optional generation work without reopening its frontier.\n#1380 (60) [28/12/14/6]: Pinned checkout and reviewed workbook preserved by digest; it follows #1489 and stays with dokimasia work that consumes the same hand-off.\n#1475 (69) [35/16/14/4]: The kickoff queue has 54 filings and no registered title form; it stays in the governance and maintenance bundle because its framework implementation surface and review evidence are shared.\n#1311 (66) [32/16/14/4]: The contributor guide PDF is generated from no repository source, so its comparison cannot detect a prose change; it stays in the governance and maintenance bundle because its framework implementation surface and review evidence are shared.\n#1312 (66) [32/16/14/4]: The promise machine PDF has no generator in the repository and states counts the tree contradicts; it stays in the governance and maintenance bundle because its framework implementation surface and review evidence are shared.",
     "state": "open",
-    "open": 6,
+    "open": 7,
     "closed": 1,
     "url": "https://github.com/wildcat-finance/skills/milestone/111",
     "members": [
@@ -3495,6 +3792,15 @@
         "score": 66,
         "execution_mode": "pull_request",
         "dependencies": []
+      },
+      {
+        "number": 1677,
+        "title": "framework-164: the README and the contributor guide disagree about what the Atlas launchers open",
+        "state": "open",
+        "url": "https://github.com/wildcat-finance/skills/issues/1677",
+        "score": null,
+        "execution_mode": "pull_request",
+        "dependencies": []
       }
     ]
   },
@@ -3503,7 +3809,7 @@
     "title": "Wave 27: governance and maintenance",
     "description": "Full open-issue census: 2026-09-13T02:22:01.415Z; `skills@97b74e5d1adda5d86f59c8936e32d5af6840e0d0`. Scores are impact/40 + evidenced urgency/25 + readiness/20 + work unblocked/15; dependency and bundle order may override numeric order.\n\n#1326 (64) [32/16/12/4]: The design-bridge target rule and the drafts convention cannot both be satisfied; it stays in the governance and maintenance bundle because its framework implementation surface and review evidence are shared.\n#328 (64) [26/16/13/9]: Give the attempt ledger a canonical home; it stays in the governance and maintenance bundle because its metron implementation surface and review evidence are shared.\n#1479 (63) [32/16/11/4]: Eleven filed bodies are unstartable and the fix is an edit ADR-014 forbids; it stays in the governance and maintenance bundle because its framework implementation surface and review evidence are shared.\n#1474 (62) [32/12/14/4]: The framework-N opening rule refuses 90 bodies ADR-014 forbids repairing; it stays in the governance and maintenance bundle because its framework implementation surface and review evidence are shared.\n#1451 (66) [32/16/14/4]: No check walks audit/, and a merged record there is already failing the lint; it stays in the evidence protection and incident cleanup bundle because its framework implementation surface and review evidence are shared.\n#1433 (65) [35/12/14/4]: A runbook amendment receipt says which verdicts held, never which packets it reaches; it stays in the receipt and prerequisite continuity bundle because its framework implementation surface and review evidence are shared.\n#1319 (63) [35/12/12/4]: Concurrent runs claim one plugin version and nothing reports it; it stays in the distribution and currency bundle because its framework implementation surface and review evidence are shared.",
     "state": "open",
-    "open": 6,
+    "open": 7,
     "closed": 1,
     "url": "https://github.com/wildcat-finance/skills/milestone/112",
     "members": [
@@ -3569,6 +3875,15 @@
         "score": 63,
         "execution_mode": "fiat",
         "dependencies": []
+      },
+      {
+        "number": 1558,
+        "title": "framework-161: the uniqueness check reads one title form, so eleven held numbers read as free",
+        "state": "open",
+        "url": "https://github.com/wildcat-finance/skills/issues/1558",
+        "score": null,
+        "execution_mode": "pull_request",
+        "dependencies": []
       }
     ]
   },
@@ -3577,7 +3892,7 @@
     "title": "Wave 28: parser and compiler front doors",
     "description": "Full open-issue census: 2026-09-13T02:22:01.415Z; `skills@97b74e5d1adda5d86f59c8936e32d5af6840e0d0`. Scores are impact/40 + evidenced urgency/25 + readiness/20 + work unblocked/15; dependency and bundle order may override numeric order.\n\n#1320 (63) [35/12/12/4]: Nothing binds a run's committed documents to its controller artefacts; it stays in the promise and controller truth bundle because its framework implementation surface and review evidence are shared.\n#1429 (62) [28/16/14/4]: A clean tree makes the checked runner exit 0 having run nothing; it stays in the publication and test truth bundle because its framework implementation surface and review evidence are shared.\n#1310 (59) [32/12/11/4]: A demonstration record with more than one command cannot be repeated, because the work root is built once per run; it stays in the publication and test truth bundle because its framework implementation surface and review evidence are shared.\n#1363 (69) [32/13/10/14]: Entry-point maps at two commits, diffed; it follows #1482, #1485 and stays with x-ray work that consumes the same hand-off.\n#1359 (65) [28/13/10/14]: Pinned Solidity corpus over deployed code; it follows #1482 and stays with lemma work that consumes the same hand-off.\n#1366 (68) [32/16/12/8]: Indexed-flag validation in the callable-surface check; it follows #1359 and stays with lemma work that consumes the same hand-off.\n#1365 (61) [32/9/12/8]: Documentation corpus with deprecated trees excluded by name; it follows #1482, #1359 and stays with lemma work that consumes the same hand-off.",
     "state": "open",
-    "open": 6,
+    "open": 8,
     "closed": 1,
     "url": "https://github.com/wildcat-finance/skills/milestone/113",
     "members": [
@@ -3641,6 +3956,24 @@
         "state": "open",
         "url": "https://github.com/wildcat-finance/skills/issues/1365",
         "score": 61,
+        "execution_mode": "pull_request",
+        "dependencies": []
+      },
+      {
+        "number": 1662,
+        "title": "framework-12: the process-group demonstrations test races under host load",
+        "state": "open",
+        "url": "https://github.com/wildcat-finance/skills/issues/1662",
+        "score": null,
+        "execution_mode": "pull_request",
+        "dependencies": []
+      },
+      {
+        "number": 1761,
+        "title": "framework-17: the demonstrations ceiling test races its own per-command budget",
+        "state": "open",
+        "url": "https://github.com/wildcat-finance/skills/issues/1761",
+        "score": null,
         "execution_mode": "pull_request",
         "dependencies": []
       }
@@ -4012,7 +4345,7 @@
     "title": "Wave 34: homologia and imprimatur contracts",
     "description": "Full open-issue census: 2026-09-13T02:22:01.415Z; `skills@97b74e5d1adda5d86f59c8936e32d5af6840e0d0`. Scores are impact/40 + evidenced urgency/25 + readiness/20 + work unblocked/15; dependency and bundle order may override numeric order.\n\n#1391 (70) [32/16/14/8]: Evidence class of chain-side integers per venue; it follows #1384, #1382 and stays with homologia work that consumes the same hand-off.\n#1400 (66) [32/16/12/6]: Pinned mirror execution through the adapter protocol; it follows #1382, #1391 and stays with homologia work that consumes the same hand-off.\n#1376 (63) [32/13/10/8]: Deployed-address binding, or a \"modeled, not deployed\" label; it follows #1358, #1482 and stays with janus work that consumes the same hand-off.\n#1401 (66) [32/16/12/6]: Exit-liveness evidence on the withdrawal path; it follows #1495, #1393, #1358 and stays with janus work that consumes the same hand-off.\n#1314 (63) [29/12/16/6]: Restore PR #678 (causal_subject_has_no family) that merged into a deleted Fiat branch and never reached main; it remains visible here but cannot enter either execution pool until its missing Fiat decision is recorded.\n#1523 (59) [29/12/14/4]: Harden collect_family_evidence.py on the leads four audit rounds read and left; it stays in the prose evidence bundle because its imprimatur implementation surface and review evidence are shared.",
     "state": "open",
-    "open": 6,
+    "open": 7,
     "closed": 0,
     "url": "https://github.com/wildcat-finance/skills/milestone/119",
     "members": [
@@ -4067,6 +4400,15 @@
         "state": "open",
         "url": "https://github.com/wildcat-finance/skills/issues/1523",
         "score": 59,
+        "execution_mode": "pull_request",
+        "dependencies": []
+      },
+      {
+        "number": 1596,
+        "title": "homologia-wish: make the restored-mtime guard independent of timestamp ticks",
+        "state": "open",
+        "url": "https://github.com/wildcat-finance/skills/issues/1596",
+        "score": null,
         "execution_mode": "pull_request",
         "dependencies": []
       }
@@ -4207,7 +4549,7 @@
     "title": "Wave 37: credit releases and reconciliation",
     "description": "Full open-issue census: 2026-09-13T02:22:01.415Z; `skills@97b74e5d1adda5d86f59c8936e32d5af6840e0d0`. Scores are impact/40 + evidenced urgency/25 + readiness/20 + work unblocked/15; dependency and bundle order may override numeric order.\n\n#1403 (70) [32/16/12/10]: Address partition at build time; it follows #1394 and stays with tabularium work that consumes the same hand-off.\n#1408 (68) [32/16/12/8]: Coverage rows and gaps in the served artefact; it follows #1389, #1403, #1385 and stays with probitas work that consumes the same hand-off.\n#1395 (63) [32/9/10/12]: Further adapters onto the v3 schema; it follows #1362, #1482, #1379 and stays with tabularium work that consumes the same hand-off.\n#1388 (68) [32/16/14/6]: A venue is mapped at a pinned commit before its adapter is written; it follows #1498, #1395 and stays with x-ray work that consumes the same hand-off.\n#1398 (68) [32/16/12/8]: Coverage windows as a release boundary with correct-refusal cases; it follows #1378, #1394, #1390 and stays with berean work that consumes the same hand-off.\n#1397 (66) [32/16/12/6]: `verify` never in a request path; it follows #1389, #1374 and stays with ariadne work that consumes the same hand-off.",
     "state": "open",
-    "open": 6,
+    "open": 7,
     "closed": 0,
     "url": "https://github.com/wildcat-finance/skills/milestone/122",
     "members": [
@@ -4263,6 +4605,15 @@
         "url": "https://github.com/wildcat-finance/skills/issues/1397",
         "score": 66,
         "execution_mode": "fiat",
+        "dependencies": []
+      },
+      {
+        "number": 1760,
+        "title": "tabularium-wish: the closed key set in both schema documents is unenforced in Python",
+        "state": "open",
+        "url": "https://github.com/wildcat-finance/skills/issues/1760",
+        "score": null,
+        "execution_mode": "pull_request",
         "dependencies": []
       }
     ]
@@ -4337,7 +4688,7 @@
     "title": "Wave Δ — distributed Fiat checkpoints",
     "description": "Full open-issue census: 2026-09-13T02:22:01.415Z; `skills@97b74e5d1adda5d86f59c8936e32d5af6840e0d0`. Wave Δ remains the distributed-checkpoint programme; its existing membership is preserved and ordered by its own dependencies.\n\n#508 (98) [39/25/20/14]: Bind exhausted-audit carryover, delegated writes, and runbook gates; it stays in the Wave Δ programme bundle because its fiat implementation surface and review evidence are shared.\n#899 (97) [39/24/19/15]: `checkpoint export` reads the next directive before deciding the boundary is acceptable; it stays in the Wave Δ programme bundle because its framework implementation surface and review evidence are shared.\n#861 (96) [38/25/18/15]: Export and restore cumulative Fiat checkpoints; active pull-request work makes it ready now and keeps it beside the fiat surface under review.\n#901 (94) [38/24/19/13]: The version-1 and version-2 integration readers describe the same delta differently; it stays in the Wave Δ programme bundle because its framework implementation surface and review evidence are shared.\n#1176 (94) [36/25/20/13]: The reinstatement runbook's retired-record check cannot exit zero under BSD wc; active pull-request work makes it ready now and keeps it beside the framework surface under review.\n#862 (85) [34/21/17/13]: Build the checkpoint intake, validation, and publication state machine; it follows #861 and stays with fiat work that consumes the same hand-off.\n#863 (75) [30/19/15/11]: Deploy the locked checkpoint authority and signed receipt path; it follows #862 and stays with fiat work that consumes the same hand-off.\n#864 (88) [36/23/16/13]: Fence external-run transitions on accepted checkpoints; it follows #861, #862, #863 and stays with fiat work that consumes the same hand-off.\n#865 (80) [32/20/16/12]: Represent and resolve concurrent checkpoint descendants; it follows #862, #863, #864 and stays with fiat work that consumes the same hand-off.\n#866 (78) [31/20/16/11]: Prove checkpoint reconciliation, revocation, and disaster recovery; it follows #861, #862, #863 and stays with fiat work that consumes the same hand-off.\n#867 (72) [29/18/14/11]: Route contributors to resume, redraw, or start from accepted Fiat state; it follows #864, #865, #866 and stays with fiat work that consumes the same hand-off.\n#859 (100) [40/25/20/15]: Make one receipted transition portable between contributors; it follows #867, #866 and stays with fiat work that consumes the same hand-off.",
     "state": "open",
-    "open": 10,
+    "open": 13,
     "closed": 19,
     "url": "https://github.com/wildcat-finance/skills/milestone/64",
     "members": [
@@ -4648,6 +4999,33 @@
         "url": "https://github.com/wildcat-finance/skills/issues/900",
         "score": null,
         "execution_mode": "pull_request",
+        "dependencies": []
+      },
+      {
+        "number": 1647,
+        "title": "fiat-wish: bound signing-key verification failure diagnostics",
+        "state": "open",
+        "url": "https://github.com/wildcat-finance/skills/issues/1647",
+        "score": null,
+        "execution_mode": "pull_request",
+        "dependencies": []
+      },
+      {
+        "number": 1648,
+        "title": "fiat-wish: keep archive restore bound to its admitted destination",
+        "state": "open",
+        "url": "https://github.com/wildcat-finance/skills/issues/1648",
+        "score": null,
+        "execution_mode": "fiat",
+        "dependencies": []
+      },
+      {
+        "number": 1649,
+        "title": "fiat-wish: establish the archive restore concurrency boundary",
+        "state": "open",
+        "url": "https://github.com/wildcat-finance/skills/issues/1649",
+        "score": null,
+        "execution_mode": "fiat",
         "dependencies": []
       },
       {
