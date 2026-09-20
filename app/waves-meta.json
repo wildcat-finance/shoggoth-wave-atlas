@@ -1,12 +1,5 @@
 {
-  "generated_at": "2026-09-20T12:37:04.616Z",
-  "source_revision": "66f52785813a8453e7c7d54f2371aa8f6e465640",
-  "dropped": [
-    {
-      "number": 1794,
-      "title": "fiat-wish: support macOS and Linux sandboxes for checkpoint conformance",
-      "url": "https://github.com/wildcat-finance/skills/issues/1794",
-      "reason": "no milestone"
-    }
-  ]
+  "generated_at": "2026-09-20T18:31:54.792Z",
+  "source_revision": "daa382ec73dda581e684f9d026228f7b81bd6035",
+  "dropped": []
 }
