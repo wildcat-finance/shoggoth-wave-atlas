@@ -1,11 +1,17 @@
 {
-  "generated_at": "2026-09-21T06:57:42.522Z",
-  "source_revision": "a06cd696cbfade69eeb42a49e91d876550ccdb36",
+  "generated_at": "2026-09-21T18:35:52.247Z",
+  "source_revision": "7952eafa337f5ba1c4f45417ceb154673f629c1c",
   "dropped": [
     {
       "number": 1812,
       "title": "framework-1: the accepted example-payload omission leaves ADR-090's reserve amount unresolved",
       "url": "https://github.com/wildcat-finance/skills/issues/1812",
+      "reason": "no milestone"
+    },
+    {
+      "number": 1816,
+      "title": "lazarus-wish: the test runner refuses an Elenchus report path through a symlinked prefix",
+      "url": "https://github.com/wildcat-finance/skills/issues/1816",
       "reason": "no milestone"
     }
   ]
