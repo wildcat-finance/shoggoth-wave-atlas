@@ -1,5 +1,12 @@
 {
-  "generated_at": "2026-09-21T01:08:02.043Z",
+  "generated_at": "2026-09-21T06:57:42.522Z",
   "source_revision": "a06cd696cbfade69eeb42a49e91d876550ccdb36",
-  "dropped": []
+  "dropped": [
+    {
+      "number": 1812,
+      "title": "framework-1: the accepted example-payload omission leaves ADR-090's reserve amount unresolved",
+      "url": "https://github.com/wildcat-finance/skills/issues/1812",
+      "reason": "no milestone"
+    }
+  ]
 }
