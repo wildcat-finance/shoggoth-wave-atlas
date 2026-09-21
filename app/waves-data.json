@@ -4345,8 +4345,8 @@
     "title": "Wave 34: homologia and imprimatur contracts",
     "description": "Full open-issue census: 2026-09-13T02:22:01.415Z; `skills@97b74e5d1adda5d86f59c8936e32d5af6840e0d0`. Scores are impact/40 + evidenced urgency/25 + readiness/20 + work unblocked/15; dependency and bundle order may override numeric order.\n\n#1391 (70) [32/16/14/8]: Evidence class of chain-side integers per venue; it follows #1384, #1382 and stays with homologia work that consumes the same hand-off.\n#1400 (66) [32/16/12/6]: Pinned mirror execution through the adapter protocol; it follows #1382, #1391 and stays with homologia work that consumes the same hand-off.\n#1376 (63) [32/13/10/8]: Deployed-address binding, or a \"modeled, not deployed\" label; it follows #1358, #1482 and stays with janus work that consumes the same hand-off.\n#1401 (66) [32/16/12/6]: Exit-liveness evidence on the withdrawal path; it follows #1495, #1393, #1358 and stays with janus work that consumes the same hand-off.\n#1314 (63) [29/12/16/6]: Restore PR #678 (causal_subject_has_no family) that merged into a deleted Fiat branch and never reached main; it remains visible here but cannot enter either execution pool until its missing Fiat decision is recorded.\n#1523 (59) [29/12/14/4]: Harden collect_family_evidence.py on the leads four audit rounds read and left; it stays in the prose evidence bundle because its imprimatur implementation surface and review evidence are shared.",
     "state": "open",
-    "open": 7,
-    "closed": 0,
+    "open": 6,
+    "closed": 1,
     "url": "https://github.com/wildcat-finance/skills/milestone/119",
     "members": [
       {
@@ -4406,7 +4406,7 @@
       {
         "number": 1596,
         "title": "homologia-wish: make the restored-mtime guard independent of timestamp ticks",
-        "state": "open",
+        "state": "closed",
         "url": "https://github.com/wildcat-finance/skills/issues/1596",
         "score": null,
         "execution_mode": "pull_request",
