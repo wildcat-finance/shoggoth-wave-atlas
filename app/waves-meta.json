@@ -1,6 +1,6 @@
 {
-  "generated_at": "2026-09-21T18:35:52.247Z",
-  "source_revision": "7952eafa337f5ba1c4f45417ceb154673f629c1c",
+  "generated_at": "2026-09-22T01:03:35.425Z",
+  "source_revision": "2cc1ca5ad6ddd96b08ac606a6accf19249e49a81",
   "dropped": [
     {
       "number": 1812,
@@ -9,9 +9,15 @@
       "reason": "no milestone"
     },
     {
-      "number": 1816,
-      "title": "lazarus-wish: the test runner refuses an Elenchus report path through a symlinked prefix",
-      "url": "https://github.com/wildcat-finance/skills/issues/1816",
+      "number": 1831,
+      "title": "alexandria-wish: an opening-only dispute prevents building its partial release",
+      "url": "https://github.com/wildcat-finance/skills/issues/1831",
+      "reason": "no milestone"
+    },
+    {
+      "number": 1836,
+      "title": "framework-20: validate restored checkpoint next responses offline",
+      "url": "https://github.com/wildcat-finance/skills/issues/1836",
       "reason": "no milestone"
     }
   ]
