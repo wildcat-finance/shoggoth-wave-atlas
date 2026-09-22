@@ -4,8 +4,8 @@
     "title": "Wave 0: publication and test truth",
     "description": "Full open-issue census: 2026-09-13T02:22:01.415Z; `skills@97b74e5d1adda5d86f59c8936e32d5af6840e0d0`. Scores are impact/40 + evidenced urgency/25 + readiness/20 + work unblocked/15; dependency and bundle order may override numeric order.\n\n#855 (100) [40/25/20/15]: Pull requests opened by the delivery App receive no checks; it stays in the publication and test truth bundle because its framework implementation surface and review evidence are shared.\n#925 (100) [40/25/20/15]: The App token can publish without the issue-publication gates; it stays in the publication and test truth bundle because its framework implementation surface and review evidence are shared.\n#912 (97) [39/24/19/15]: The coverage selector check reads source files through the Markdown law reader, capping test module size by accident; it stays in the publication and test truth bundle because its framework implementation surface and review evidence are shared.\n#992 (95) [38/24/19/14]: The complete plugin gate costs half an hour and is disabled; it stays in the publication and test truth bundle because its framework implementation surface and review evidence are shared.\n#897 (94) [38/24/19/13]: The root suite scans a Fiat run's untracked controller state and fails on it; it stays in the publication and test truth bundle because its framework implementation surface and review evidence are shared.\n#871 (99) [40/25/20/14]: Make every Fiat mutation prove the Promise that authorises it; active pull-request work makes it ready now and keeps it beside the framework surface under review.\n#898 (98) [38/25/20/15]: `done integrate` blames attribution when the merge commit is simply not fetched; active pull-request work makes it ready now and keeps it beside the framework surface under review.",
     "state": "open",
-    "open": 7,
-    "closed": 3,
+    "open": 6,
+    "closed": 4,
     "url": "https://github.com/wildcat-finance/skills/milestone/85",
     "members": [
       {
@@ -83,7 +83,7 @@
       {
         "number": 1781,
         "title": "fiat-wish: the checkpoint signing test errors with GPG exit 128 under nested run_checks workers",
-        "state": "open",
+        "state": "closed",
         "url": "https://github.com/wildcat-finance/skills/issues/1781",
         "score": null,
         "execution_mode": "pull_request",
@@ -2638,8 +2638,8 @@
     "title": "Wave 15: evidence protection and incident cleanup",
     "description": "Full open-issue census: 2026-09-13T02:22:01.415Z; `skills@97b74e5d1adda5d86f59c8936e32d5af6840e0d0`. Scores are impact/40 + evidenced urgency/25 + readiness/20 + work unblocked/15; dependency and bundle order may override numeric order.\n\n#415 (75) [30/19/15/11]: Route the rule-9 circuit breaker into Elenchus; it stays in the governance and maintenance bundle because its sapheneia implementation surface and review evidence are shared.\n#419 (80) [32/20/16/12]: Give working state a canonical block that survives compaction; it stays in the portable releases and accessible state bundle because its sapheneia implementation surface and review evidence are shared.\n#404 (78) [31/20/16/11]: Emit accepted runs as Ariadne claims and command entries; it stays in the portable releases and accessible state bundle because its hermes implementation surface and review evidence are shared.\n#420 (78) [31/20/16/11]: Define joint-activation behaviour with Sapheneia; it stays in the portable releases and accessible state bundle because its brevitas implementation surface and review evidence are shared.\n#373 (81) [32/20/16/13]: Emit machine-readable diagnostics for Fiat's audit chain; it stays in the evidence protection and incident cleanup bundle because its brevitas implementation surface and review evidence are shared.\n#887 (85) [34/21/17/13]: The test modules were renamed, but both live schema strings still name issue 429; keep only the schema-and-receipt residual.\n#1364 (70) [32/16/12/10]: Rights basis and disclosure class per source; it stays in the evidence protection and incident cleanup bundle because its anamnesis implementation surface and review evidence are shared.",
     "state": "open",
-    "open": 7,
-    "closed": 0,
+    "open": 6,
+    "closed": 1,
     "url": "https://github.com/wildcat-finance/skills/milestone/100",
     "members": [
       {
@@ -2699,7 +2699,7 @@
       {
         "number": 1364,
         "title": "kickoff/anamnesis-14: rights basis and disclosure class per source",
-        "state": "open",
+        "state": "closed",
         "url": "https://github.com/wildcat-finance/skills/issues/1364",
         "score": 70,
         "execution_mode": "fiat",
@@ -3892,8 +3892,8 @@
     "title": "Wave 28: parser and compiler front doors",
     "description": "Full open-issue census: 2026-09-13T02:22:01.415Z; `skills@97b74e5d1adda5d86f59c8936e32d5af6840e0d0`. Scores are impact/40 + evidenced urgency/25 + readiness/20 + work unblocked/15; dependency and bundle order may override numeric order.\n\n#1320 (63) [35/12/12/4]: Nothing binds a run's committed documents to its controller artefacts; it stays in the promise and controller truth bundle because its framework implementation surface and review evidence are shared.\n#1429 (62) [28/16/14/4]: A clean tree makes the checked runner exit 0 having run nothing; it stays in the publication and test truth bundle because its framework implementation surface and review evidence are shared.\n#1310 (59) [32/12/11/4]: A demonstration record with more than one command cannot be repeated, because the work root is built once per run; it stays in the publication and test truth bundle because its framework implementation surface and review evidence are shared.\n#1363 (69) [32/13/10/14]: Entry-point maps at two commits, diffed; it follows #1482, #1485 and stays with x-ray work that consumes the same hand-off.\n#1359 (65) [28/13/10/14]: Pinned Solidity corpus over deployed code; it follows #1482 and stays with lemma work that consumes the same hand-off.\n#1366 (68) [32/16/12/8]: Indexed-flag validation in the callable-surface check; it follows #1359 and stays with lemma work that consumes the same hand-off.\n#1365 (61) [32/9/12/8]: Documentation corpus with deprecated trees excluded by name; it follows #1482, #1359 and stays with lemma work that consumes the same hand-off.",
     "state": "open",
-    "open": 8,
-    "closed": 1,
+    "open": 7,
+    "closed": 2,
     "url": "https://github.com/wildcat-finance/skills/milestone/113",
     "members": [
       {
@@ -3971,7 +3971,7 @@
       {
         "number": 1761,
         "title": "framework-17: the demonstrations ceiling test races its own per-command budget",
-        "state": "open",
+        "state": "closed",
         "url": "https://github.com/wildcat-finance/skills/issues/1761",
         "score": null,
         "execution_mode": "pull_request",
@@ -4132,8 +4132,8 @@
     "title": "Wave 31: credit releases and reconciliation",
     "description": "Full open-issue census: 2026-09-13T02:22:01.415Z; `skills@97b74e5d1adda5d86f59c8936e32d5af6840e0d0`. Scores are impact/40 + evidenced urgency/25 + readiness/20 + work unblocked/15; dependency and bundle order may override numeric order.\n\n#1487 (62) [29/13/12/8]: Decide permitted protocol-observed disclosure and conclusions; it stays in the credit evidence and releases bundle because its probitas implementation surface and review evidence are shared.\n#1496 (62) [29/13/12/8]: Declare cross-chain identity assumptions for the fused view; it stays in the credit evidence and releases bundle because its probitas implementation surface and review evidence are shared.\n#1368 (70) [32/16/12/10]: A fourth provenance tier, `protocol-observed`; it follows #1487 and stays with probitas work that consumes the same hand-off.\n#1378 (70) [32/12/12/14]: A venue adapter that declares unattributable events unsupported; it follows #1361, #1363, #1362 and stays with tabularium work that consumes the same hand-off.\n#1385 (66) [32/12/14/8]: One pinned source per venue row where sources disagree; it follows #1494, #1378 and stays with probitas work that consumes the same hand-off.\n#1374 (72) [32/16/12/12]: `dataset/v1` statement over a sealed capture; it follows #1490 and stays with ariadne work that consumes the same hand-off.\n#1375 (68) [32/16/12/8]: Source class for protocol-observed sentences; it follows #1368 and stays with berean work that consumes the same hand-off.",
     "state": "open",
-    "open": 6,
-    "closed": 1,
+    "open": 5,
+    "closed": 2,
     "url": "https://github.com/wildcat-finance/skills/milestone/116",
     "members": [
       {
@@ -4184,7 +4184,7 @@
       {
         "number": 1374,
         "title": "kickoff/ariadne-24: `dataset/v1` statement over a sealed capture",
-        "state": "open",
+        "state": "closed",
         "url": "https://github.com/wildcat-finance/skills/issues/1374",
         "score": 72,
         "execution_mode": "fiat",

@@ -1,6 +1,6 @@
 {
-  "generated_at": "2026-09-22T06:46:15.889Z",
-  "source_revision": "0bc3546cffac104d16d3c837d4d6c353de4c2dca",
+  "generated_at": "2026-09-22T12:41:08.729Z",
+  "source_revision": "5fd3cd649f83a542dc8789c662a0aac7afa13b58",
   "dropped": [
     {
       "number": 1812,
@@ -18,6 +18,12 @@
       "number": 1836,
       "title": "framework-20: validate restored checkpoint next responses offline",
       "url": "https://github.com/wildcat-finance/skills/issues/1836",
+      "reason": "no milestone"
+    },
+    {
+      "number": 1854,
+      "title": "framework-171: a random scratch directory name can contain a redacted metadata key",
+      "url": "https://github.com/wildcat-finance/skills/issues/1854",
       "reason": "no milestone"
     }
   ]
