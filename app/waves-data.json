@@ -1252,8 +1252,8 @@
     "title": "Wave 5: distribution and currency",
     "description": "Full open-issue census: 2026-09-13T02:22:01.415Z; `skills@97b74e5d1adda5d86f59c8936e32d5af6840e0d0`. Scores are impact/40 + evidenced urgency/25 + readiness/20 + work unblocked/15; dependency and bundle order may override numeric order.\n\n#1171 (97) [39/24/19/15]: A moved branch head reports every plugin behind, six of them unchanged; it stays in the distribution and currency bundle because its framework implementation surface and review evidence are shared.\n#836 (96) [38/24/19/15]: Nothing verifies the marketplace mirror is current; it stays in the distribution and currency bundle because its framework implementation surface and review evidence are shared.\n#1053 (94) [38/24/19/13]: The skills-runtime rebuild has never run on its schedule; it stays in the distribution and currency bundle because its framework implementation surface and review evidence are shared.\n#1052 (93) [37/23/19/14]: The rebuild job reports a missing canonical workflow as drift; it stays in the distribution and currency bundle because its framework implementation surface and review evidence are shared.\n#971 (90) [36/23/18/13]: The generator-aggregate registry names a prefix that no longer exists; it stays in the distribution and currency bundle because its framework implementation surface and review evidence are shared.\n#895 (88) [35/22/18/13]: Claude plugin update reports success without re-pinning a changed plugin; it stays in the distribution and currency bundle because its framework implementation surface and review evidence are shared.\n#1117 (95) [38/24/19/14]: Nothing compares a committed copy of a receipted artefact against its receipt; it stays in the recovery and carryover bundle because its framework implementation surface and review evidence are shared.",
     "state": "open",
-    "open": 8,
-    "closed": 1,
+    "open": 7,
+    "closed": 2,
     "url": "https://github.com/wildcat-finance/skills/milestone/90",
     "members": [
       {
@@ -1322,7 +1322,7 @@
       {
         "number": 1720,
         "title": "framework-166: the portable payload sits 78,600 bytes under its reserve line",
-        "state": "open",
+        "state": "closed",
         "url": "https://github.com/wildcat-finance/skills/issues/1720",
         "score": null,
         "execution_mode": "fiat",
@@ -2008,8 +2008,8 @@
     "title": "Wave 10: governance and maintenance",
     "description": "Full open-issue census: 2026-09-13T02:22:01.415Z; `skills@97b74e5d1adda5d86f59c8936e32d5af6840e0d0`. Scores are impact/40 + evidenced urgency/25 + readiness/20 + work unblocked/15; dependency and bundle order may override numeric order.\n\n#1135 (93) [37/23/19/14]: Retire the mandatory Shoggoth co-signature and the runtime-host authorship ban; it stays in the governance and maintenance bundle because its framework implementation surface and review evidence are shared.\n#1421 (89) [38/23/16/12]: Prove a decision stands in exactly one established home across the repository; the current hypomnema ledger holds this frontier, so it precedes optional work on the same contract.\n#1220 (89) [36/22/18/13]: Three numbered decision records share a slug on main; it stays in the governance and maintenance bundle because its framework implementation surface and review evidence are shared.\n#894 (86) [34/22/17/13]: ADR-014 misstates what happened to the superseded Wave milestones; it stays in the governance and maintenance bundle because its framework implementation surface and review evidence are shared.\n#896 (92) [37/23/18/14]: The Horos boundary mixes file and directory entries without saying so; it stays in the issue visibility and reading boundaries bundle because its framework implementation surface and review evidence are shared.\n#941 (92) [37/23/18/14]: Give every issue a wave when it is filed, or a standing catch-all; it stays in the issue visibility and reading boundaries bundle because its framework implementation surface and review evidence are shared.\n#1118 (92) [37/23/18/14]: The Atlas dependency extractor must skip the issue status block; it stays in the issue visibility and reading boundaries bundle because its framework implementation surface and review evidence are shared.",
     "state": "open",
-    "open": 8,
-    "closed": 1,
+    "open": 7,
+    "closed": 2,
     "url": "https://github.com/wildcat-finance/skills/milestone/95",
     "members": [
       {
@@ -2078,7 +2078,7 @@
       {
         "number": 1661,
         "title": "framework-4: contributors.py --check refuses the delivery App's bot login",
-        "state": "open",
+        "state": "closed",
         "url": "https://github.com/wildcat-finance/skills/issues/1661",
         "score": null,
         "execution_mode": "pull_request",
