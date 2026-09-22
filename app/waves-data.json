@@ -1086,8 +1086,8 @@
     "title": "Wave 4: credit releases and reconciliation",
     "description": "Full open-issue census: 2026-09-13T02:22:01.415Z; `skills@97b74e5d1adda5d86f59c8936e32d5af6840e0d0`. Scores are impact/40 + evidenced urgency/25 + readiness/20 + work unblocked/15; dependency and bundle order may override numeric order.\n\n#423 (88) [35/22/18/13]: Run a content-parity evaluation across all four registers; the current vulgate ledger holds this frontier, so it precedes optional work on the same contract.\n#398 (98) [39/25/20/14]: Ship Compound v3 Phase 1 from Alexandria raw evidence; the current tabularium ledger holds this frontier, so it precedes optional work on the same contract.\n#399 (90) [36/23/18/13]: Reconcile Alexandria's derived view against the owning adapter; it stays in the credit releases and reconciliation bundle because its tabularium implementation surface and review evidence are shared.\n#1422 (89) [38/23/16/12]: Establish account-attributed debt units for a Midnight secondary close; the current probitas ledger holds this frontier, so it precedes optional work on the same contract.\n#411 (98) [38/25/20/15]: Ship the first release grounded in captured Wildcat documentation; active pull-request work makes it ready now and keeps it beside the berean surface under review.\n#845 (96) [38/24/19/15]: Validate crashes on a list-typed reference; it stays in the portable releases and accessible state bundle because its berean implementation surface and review evidence are shared.\n#418 (90) [36/23/18/13]: Build and publish the held cross-model corpus; the current sapheneia ledger holds this frontier, so it precedes optional work on the same contract.",
     "state": "open",
-    "open": 8,
-    "closed": 0,
+    "open": 7,
+    "closed": 1,
     "url": "https://github.com/wildcat-finance/skills/milestone/89",
     "members": [
       {
@@ -1156,7 +1156,7 @@
       {
         "number": 1731,
         "title": "alexandria-wish: the interval collector cannot capture any admitted kickoff target",
-        "state": "open",
+        "state": "closed",
         "url": "https://github.com/wildcat-finance/skills/issues/1731",
         "score": null,
         "execution_mode": "fiat",
