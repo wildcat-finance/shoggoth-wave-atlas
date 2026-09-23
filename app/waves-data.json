@@ -3450,8 +3450,8 @@
     "title": "Wave 23: controller contracts",
     "description": "Full open-issue census: 2026-09-13T02:22:01.415Z; `skills@97b74e5d1adda5d86f59c8936e32d5af6840e0d0`. Scores are impact/40 + evidenced urgency/25 + readiness/20 + work unblocked/15; dependency and bundle order may override numeric order.\n\n#1322 (63) [29/16/14/4]: Parked renders a forgeable line and cannot share show's collapse; it stays in the controller contracts bundle because its kronos implementation surface and review evidence are shared.\n#1325 (63) [29/16/14/4]: Show has no type validation on the read-back path; it stays in the controller contracts bundle because its kronos implementation surface and review evidence are shared.\n#1453 (63) [29/16/14/4]: Init exits 0 whether it started a run or routed a filed zero; it stays in the controller contracts bundle because its fiat implementation surface and review evidence are shared.\n#1472 (63) [29/16/14/4]: A snapshot test asserts no ledger declares anything, and one now does; it stays in the controller contracts bundle because its kronos implementation surface and review evidence are shared.\n#1491 (71) [32/13/12/14]: Pin the serving consumer and activation contract; it stays in the controller and phase contracts bundle because its protasis implementation surface and review evidence are shared.\n#1482 (68) [29/13/12/14]: Pin the kickoff venue, generation and deployment input registry; it stays in the controller and phase contracts bundle because its protasis implementation surface and review evidence are shared.\n#1533 (67) [29/16/18/4]: Decide whether an identifier is a bounded label, and make both surfaces agree; it stays in the controller and phase contracts bundle because its ephoros implementation surface and review evidence are shared.",
     "state": "open",
-    "open": 6,
-    "closed": 3,
+    "open": 5,
+    "closed": 4,
     "url": "https://github.com/wildcat-finance/skills/milestone/108",
     "members": [
       {
@@ -3520,7 +3520,7 @@
       {
         "number": 1591,
         "title": "protasis-wish: recover Aave V3 deployment and corpus input pins",
-        "state": "open",
+        "state": "closed",
         "url": "https://github.com/wildcat-finance/skills/issues/1591",
         "score": null,
         "execution_mode": "pull_request",
@@ -4280,8 +4280,8 @@
     "title": "Wave 33: parser and compiler front doors",
     "description": "Full open-issue census: 2026-09-13T02:22:01.415Z; `skills@97b74e5d1adda5d86f59c8936e32d5af6840e0d0`. Scores are impact/40 + evidenced urgency/25 + readiness/20 + work unblocked/15; dependency and bundle order may override numeric order.\n\n#1407 (66) [32/16/12/6]: Wrapper attribution invariant; it follows #1497, #1399, #1378 and stays with fizz work that consumes the same hand-off.\n#1387 (68) [32/16/12/8]: Reconciliation gate between entry points and each adapter; it follows #1378, #1363 and stays with x-ray work that consumes the same hand-off.\n#1355 (59) [32/9/10/8]: Frozen layout and selector set for a proxy-deployed estate; it follows #1482 and stays with hermes work that consumes the same hand-off.\n#1381 (62) [32/12/12/6]: `EXT-11` run pricing an added indexed topic; it follows #1355, #1354, #1378 and stays with hermes work that consumes the same hand-off.\n#1390 (68) [32/16/12/8]: A grounded release over a second protocol; it follows #1359, #1384, #1365 and stays with berean work that consumes the same hand-off.\n#1382 (66) [32/12/12/10]: Declared pair for a scaled-to-normalized conversion; it follows #1492, #1378 and stays with homologia work that consumes the same hand-off.",
     "state": "open",
-    "open": 6,
-    "closed": 0,
+    "open": 5,
+    "closed": 1,
     "url": "https://github.com/wildcat-finance/skills/milestone/118",
     "members": [
       {
@@ -4305,7 +4305,7 @@
       {
         "number": 1355,
         "title": "kickoff/hermes-5: frozen layout and selector set for a proxy-deployed estate",
-        "state": "open",
+        "state": "closed",
         "url": "https://github.com/wildcat-finance/skills/issues/1355",
         "score": 59,
         "execution_mode": "fiat",
