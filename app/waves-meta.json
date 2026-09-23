@@ -1,6 +1,6 @@
 {
-  "generated_at": "2026-09-23T06:46:38.581Z",
-  "source_revision": "efdf802d06e4d5de1ef97818e6014a502483639f",
+  "generated_at": "2026-09-23T12:41:34.652Z",
+  "source_revision": "17ea8d2ab5e52081370b13b92390b64849ed880d",
   "dropped": [
     {
       "number": 1812,
@@ -54,6 +54,42 @@
       "number": 1868,
       "title": "protasis-wish: correct the SphereX declaration source in the kickoff 1359 registry",
       "url": "https://github.com/wildcat-finance/skills/issues/1868",
+      "reason": "no milestone"
+    },
+    {
+      "number": 1872,
+      "title": "alexandria-wish: capture Aave V3 Ethereum with the Wildcat interval method",
+      "url": "https://github.com/wildcat-finance/skills/issues/1872",
+      "reason": "no milestone"
+    },
+    {
+      "number": 1874,
+      "title": "alexandria-wish: read the Wildcat kickoff evidence from a digest-pinned Miskatonic checkout",
+      "url": "https://github.com/wildcat-finance/skills/issues/1874",
+      "reason": "no milestone"
+    },
+    {
+      "number": 1877,
+      "title": "lazarus-wish: read the capture endpoint and bearer from the environment",
+      "url": "https://github.com/wildcat-finance/skills/issues/1877",
+      "reason": "no milestone"
+    },
+    {
+      "number": 1878,
+      "title": "elenchus-wish: give root-suite guards a conclusive verdict",
+      "url": "https://github.com/wildcat-finance/skills/issues/1878",
+      "reason": "no milestone"
+    },
+    {
+      "number": 1879,
+      "title": "hermes-wish: keep nondeterministic invariant rows out of Gate 3",
+      "url": "https://github.com/wildcat-finance/skills/issues/1879",
+      "reason": "no milestone"
+    },
+    {
+      "number": 1880,
+      "title": "protasis-wish: map the V2 OpenAccessRoleProvider to its public source",
+      "url": "https://github.com/wildcat-finance/skills/issues/1880",
       "reason": "no milestone"
     }
   ]
