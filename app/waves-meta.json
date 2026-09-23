@@ -1,5 +1,5 @@
 {
-  "generated_at": "2026-09-23T12:41:34.652Z",
+  "generated_at": "2026-09-23T18:35:54.908Z",
   "source_revision": "17ea8d2ab5e52081370b13b92390b64849ed880d",
   "dropped": [
     {
@@ -90,6 +90,30 @@
       "number": 1880,
       "title": "protasis-wish: map the V2 OpenAccessRoleProvider to its public source",
       "url": "https://github.com/wildcat-finance/skills/issues/1880",
+      "reason": "no milestone"
+    },
+    {
+      "number": 1887,
+      "title": "alexandria-wish: a journal edited after reconcile still builds as agreed",
+      "url": "https://github.com/wildcat-finance/skills/issues/1887",
+      "reason": "no milestone"
+    },
+    {
+      "number": 1888,
+      "title": "alexandria-wish: let one interval release hold a venue-sized capture",
+      "url": "https://github.com/wildcat-finance/skills/issues/1888",
+      "reason": "no milestone"
+    },
+    {
+      "number": 1891,
+      "title": "alexandria-wish: build and check an interval release one component at a time",
+      "url": "https://github.com/wildcat-finance/skills/issues/1891",
+      "reason": "no milestone"
+    },
+    {
+      "number": 1892,
+      "title": "alexandria-wish: emit a statement for a release past the 8 MiB statement limit",
+      "url": "https://github.com/wildcat-finance/skills/issues/1892",
       "reason": "no milestone"
     }
   ]
