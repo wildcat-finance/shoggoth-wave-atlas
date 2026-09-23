@@ -1,6 +1,6 @@
 {
-  "generated_at": "2026-09-22T18:36:09.939Z",
-  "source_revision": "e9e95b891b3ae642516e017c46b97a18a1480164",
+  "generated_at": "2026-09-23T06:46:38.581Z",
+  "source_revision": "efdf802d06e4d5de1ef97818e6014a502483639f",
   "dropped": [
     {
       "number": 1812,
@@ -24,6 +24,36 @@
       "number": 1854,
       "title": "framework-171: a random scratch directory name can contain a redacted metadata key",
       "url": "https://github.com/wildcat-finance/skills/issues/1854",
+      "reason": "no milestone"
+    },
+    {
+      "number": 1859,
+      "title": "fiat-wish: done study admits a study that done runbook then refuses K001",
+      "url": "https://github.com/wildcat-finance/skills/issues/1859",
+      "reason": "no milestone"
+    },
+    {
+      "number": 1860,
+      "title": "tabularium-wish: keccak256 pads a 135-mod-136-byte input with an extra block",
+      "url": "https://github.com/wildcat-finance/skills/issues/1860",
+      "reason": "no milestone"
+    },
+    {
+      "number": 1861,
+      "title": "framework-39: root Elenchus runners report a missing surface as a guard failure",
+      "url": "https://github.com/wildcat-finance/skills/issues/1861",
+      "reason": "no milestone"
+    },
+    {
+      "number": 1867,
+      "title": "solidity-auditor-wish: record the emitter table for the unreleased v2.5 candidate",
+      "url": "https://github.com/wildcat-finance/skills/issues/1867",
+      "reason": "no milestone"
+    },
+    {
+      "number": 1868,
+      "title": "protasis-wish: correct the SphereX declaration source in the kickoff 1359 registry",
+      "url": "https://github.com/wildcat-finance/skills/issues/1868",
       "reason": "no milestone"
     }
   ]

@@ -4,8 +4,8 @@
     "title": "Wave 0: publication and test truth",
     "description": "Full open-issue census: 2026-09-13T02:22:01.415Z; `skills@97b74e5d1adda5d86f59c8936e32d5af6840e0d0`. Scores are impact/40 + evidenced urgency/25 + readiness/20 + work unblocked/15; dependency and bundle order may override numeric order.\n\n#855 (100) [40/25/20/15]: Pull requests opened by the delivery App receive no checks; it stays in the publication and test truth bundle because its framework implementation surface and review evidence are shared.\n#925 (100) [40/25/20/15]: The App token can publish without the issue-publication gates; it stays in the publication and test truth bundle because its framework implementation surface and review evidence are shared.\n#912 (97) [39/24/19/15]: The coverage selector check reads source files through the Markdown law reader, capping test module size by accident; it stays in the publication and test truth bundle because its framework implementation surface and review evidence are shared.\n#992 (95) [38/24/19/14]: The complete plugin gate costs half an hour and is disabled; it stays in the publication and test truth bundle because its framework implementation surface and review evidence are shared.\n#897 (94) [38/24/19/13]: The root suite scans a Fiat run's untracked controller state and fails on it; it stays in the publication and test truth bundle because its framework implementation surface and review evidence are shared.\n#871 (99) [40/25/20/14]: Make every Fiat mutation prove the Promise that authorises it; active pull-request work makes it ready now and keeps it beside the framework surface under review.\n#898 (98) [38/25/20/15]: `done integrate` blames attribution when the merge commit is simply not fetched; active pull-request work makes it ready now and keeps it beside the framework surface under review.",
     "state": "open",
-    "open": 6,
-    "closed": 4,
+    "open": 4,
+    "closed": 6,
     "url": "https://github.com/wildcat-finance/skills/milestone/85",
     "members": [
       {
@@ -38,7 +38,7 @@
       {
         "number": 992,
         "title": "framework-69: the complete plugin gate costs half an hour and is disabled [epic]",
-        "state": "open",
+        "state": "closed",
         "url": "https://github.com/wildcat-finance/skills/issues/992",
         "score": 95,
         "execution_mode": "fiat",
@@ -74,7 +74,7 @@
       {
         "number": 1734,
         "title": "framework-167: two Anamnesis tests skip on the absence of controller state but not on its identity",
-        "state": "open",
+        "state": "closed",
         "url": "https://github.com/wildcat-finance/skills/issues/1734",
         "score": null,
         "execution_mode": "pull_request",
@@ -3984,8 +3984,8 @@
     "title": "Wave 29: executable laws and assurance",
     "description": "Full open-issue census: 2026-09-13T02:22:01.415Z; `skills@97b74e5d1adda5d86f59c8936e32d5af6840e0d0`. Scores are impact/40 + evidenced urgency/25 + readiness/20 + work unblocked/15; dependency and bundle order may override numeric order.\n\n#1371 (70) [32/16/14/8]: Named-file scope manifest with interfaces in scope; it follows #1363 and stays with solidity-auditor work that consumes the same hand-off.\n#1372 (70) [32/16/12/10]: Audit of an unreleased event-model diff; it follows #1485, #1371 and stays with solidity-auditor work that consumes the same hand-off.\n#1361 (63) [32/9/10/12]: Emitter-versus-declaration check at a pinned commit; it follows #1482 and stays with solidity-auditor work that consumes the same hand-off.\n#1354 (81) [32/22/15/12]: Emitter-fidelity differential suite, shared with Hermes; it follows #1482, #1361 and stays with fizz work that consumes the same hand-off.\n#385 (68) [27/17/14/10]: Derive a draft capture plan by recording a live test run; it stays in the historical replay and operational handoffs bundle because its lazarus implementation surface and review evidence are shared.\n#1367 (66) [32/16/12/6]: Multi-block, multi-chain plan; it follows #1486 and stays with lazarus work that consumes the same hand-off.\n#323 (65) [26/16/13/10]: Ship a reusable hostile-input test harness for ingestion paths; phylax is mature, so this stays recognisable as optional generation work without reopening its frontier.",
     "state": "open",
-    "open": 6,
-    "closed": 1,
+    "open": 5,
+    "closed": 2,
     "url": "https://github.com/wildcat-finance/skills/milestone/114",
     "members": [
       {
@@ -4009,7 +4009,7 @@
       {
         "number": 1361,
         "title": "kickoff/solidity-auditor-11: emitter-versus-declaration check at a pinned commit",
-        "state": "open",
+        "state": "closed",
         "url": "https://github.com/wildcat-finance/skills/issues/1361",
         "score": 63,
         "execution_mode": "fiat",
