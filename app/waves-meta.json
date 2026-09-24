@@ -1,6 +1,6 @@
 {
-  "generated_at": "2026-09-24T06:47:02.227Z",
-  "source_revision": "d3e8015121e8dd25f5b26562087e3b8bf3c6f7e8",
+  "generated_at": "2026-09-24T12:42:43.644Z",
+  "source_revision": "7b43f814fd8fc4f17b520cdf2709494ada297173",
   "dropped": [
     {
       "number": 1812,
@@ -93,12 +93,6 @@
       "reason": "no milestone"
     },
     {
-      "number": 1888,
-      "title": "alexandria-wish: let one interval release hold a venue-sized capture",
-      "url": "https://github.com/wildcat-finance/skills/issues/1888",
-      "reason": "no milestone"
-    },
-    {
       "number": 1891,
       "title": "alexandria-wish: build and check an interval release one component at a time",
       "url": "https://github.com/wildcat-finance/skills/issues/1891",
@@ -138,6 +132,18 @@
       "number": 1899,
       "title": "framework-173: track four upstream memory and retrieval candidates",
       "url": "https://github.com/wildcat-finance/skills/issues/1899",
+      "reason": "no milestone"
+    },
+    {
+      "number": 1902,
+      "title": "alexandria-wish: bind every check read to the verified release",
+      "url": "https://github.com/wildcat-finance/skills/issues/1902",
+      "reason": "no milestone"
+    },
+    {
+      "number": 1906,
+      "title": "fiat-wish: accept a closing reference followed by sentence punctuation",
+      "url": "https://github.com/wildcat-finance/skills/issues/1906",
       "reason": "no milestone"
     }
   ]
