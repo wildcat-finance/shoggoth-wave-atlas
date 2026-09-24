@@ -3649,7 +3649,7 @@
           {
             "number": 1895,
             "title": "Replace Wildcat subgraph semantics with Alexandria/R2-backed mappings",
-            "state": "open",
+            "state": "closed",
             "url": "https://github.com/wildcat-finance/skills/issues/1895"
           },
           {
