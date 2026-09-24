@@ -1,6 +1,6 @@
 {
-  "generated_at": "2026-09-24T12:42:43.644Z",
-  "source_revision": "7b43f814fd8fc4f17b520cdf2709494ada297173",
+  "generated_at": "2026-09-24T18:35:49.113Z",
+  "source_revision": "02b0543facd0c7aac5724ec5400a0b9cafd75082",
   "dropped": [
     {
       "number": 1812,
@@ -102,12 +102,6 @@
       "number": 1892,
       "title": "alexandria-wish: emit a statement for a release past the 8 MiB statement limit",
       "url": "https://github.com/wildcat-finance/skills/issues/1892",
-      "reason": "no milestone"
-    },
-    {
-      "number": 1895,
-      "title": "Replace Wildcat subgraph semantics with Alexandria/R2-backed mappings",
-      "url": "https://github.com/wildcat-finance/skills/issues/1895",
       "reason": "no milestone"
     },
     {
