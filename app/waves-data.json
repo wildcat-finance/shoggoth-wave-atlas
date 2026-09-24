@@ -3645,7 +3645,20 @@
         "url": "https://github.com/wildcat-finance/skills/issues/1493",
         "score": 64,
         "execution_mode": "pull_request",
-        "dependencies": []
+        "dependencies": [
+          {
+            "number": 1895,
+            "title": "Replace Wildcat subgraph semantics with Alexandria/R2-backed mappings",
+            "state": "open",
+            "url": "https://github.com/wildcat-finance/skills/issues/1895"
+          },
+          {
+            "number": 1896,
+            "title": "Retire the prototype Wildcat subgraph acquisition path after R2 parity",
+            "state": "open",
+            "url": "https://github.com/wildcat-finance/skills/issues/1896"
+          }
+        ]
       },
       {
         "number": 1497,

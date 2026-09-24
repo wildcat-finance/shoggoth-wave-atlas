@@ -1,6 +1,6 @@
 {
-  "generated_at": "2026-09-24T01:03:15.468Z",
-  "source_revision": "25597406e72cdb502fcbaba6f285f4ae20fe0d21",
+  "generated_at": "2026-09-24T06:47:02.227Z",
+  "source_revision": "d3e8015121e8dd25f5b26562087e3b8bf3c6f7e8",
   "dropped": [
     {
       "number": 1812,
@@ -108,6 +108,36 @@
       "number": 1892,
       "title": "alexandria-wish: emit a statement for a release past the 8 MiB statement limit",
       "url": "https://github.com/wildcat-finance/skills/issues/1892",
+      "reason": "no milestone"
+    },
+    {
+      "number": 1895,
+      "title": "Replace Wildcat subgraph semantics with Alexandria/R2-backed mappings",
+      "url": "https://github.com/wildcat-finance/skills/issues/1895",
+      "reason": "no milestone"
+    },
+    {
+      "number": 1896,
+      "title": "Retire the prototype Wildcat subgraph acquisition path after R2 parity",
+      "url": "https://github.com/wildcat-finance/skills/issues/1896",
+      "reason": "no milestone"
+    },
+    {
+      "number": 1897,
+      "title": "framework-42: measure codebase-memory-mcp against rg and Horos",
+      "url": "https://github.com/wildcat-finance/skills/issues/1897",
+      "reason": "no milestone"
+    },
+    {
+      "number": 1898,
+      "title": "framework-172: measure Context7 against version-specific official documentation",
+      "url": "https://github.com/wildcat-finance/skills/issues/1898",
+      "reason": "no milestone"
+    },
+    {
+      "number": 1899,
+      "title": "framework-173: track four upstream memory and retrieval candidates",
+      "url": "https://github.com/wildcat-finance/skills/issues/1899",
       "reason": "no milestone"
     }
   ]
