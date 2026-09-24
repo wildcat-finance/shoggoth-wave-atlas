@@ -1,6 +1,6 @@
 {
-  "generated_at": "2026-09-23T18:35:54.908Z",
-  "source_revision": "17ea8d2ab5e52081370b13b92390b64849ed880d",
+  "generated_at": "2026-09-24T01:03:15.468Z",
+  "source_revision": "25597406e72cdb502fcbaba6f285f4ae20fe0d21",
   "dropped": [
     {
       "number": 1812,
@@ -30,12 +30,6 @@
       "number": 1859,
       "title": "fiat-wish: done study admits a study that done runbook then refuses K001",
       "url": "https://github.com/wildcat-finance/skills/issues/1859",
-      "reason": "no milestone"
-    },
-    {
-      "number": 1860,
-      "title": "tabularium-wish: keccak256 pads a 135-mod-136-byte input with an extra block",
-      "url": "https://github.com/wildcat-finance/skills/issues/1860",
       "reason": "no milestone"
     },
     {
