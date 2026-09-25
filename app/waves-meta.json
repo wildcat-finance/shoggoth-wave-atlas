@@ -1,5 +1,5 @@
 {
-  "generated_at": "2026-09-25T01:03:44.994Z",
+  "generated_at": "2026-09-25T12:42:21.941Z",
   "source_revision": "dc837a458503877bc029d740398fbe2c37ed922d",
   "dropped": [
     {
@@ -144,6 +144,12 @@
       "number": 1909,
       "title": "elenchus-wish: the Hexaemeron runner cannot emit the unittest-json-v2 rows the absent-name rule reads",
       "url": "https://github.com/wildcat-finance/skills/issues/1909",
+      "reason": "no milestone"
+    },
+    {
+      "number": 1911,
+      "title": "kronos-wish: rank and deliver the one-pull-request queue, re-ranking after every merge",
+      "url": "https://github.com/wildcat-finance/skills/issues/1911",
       "reason": "no milestone"
     }
   ]
