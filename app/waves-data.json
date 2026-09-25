@@ -3822,8 +3822,8 @@
     "title": "Wave 27: governance and maintenance",
     "description": "Full open-issue census: 2026-09-13T02:22:01.415Z; `skills@97b74e5d1adda5d86f59c8936e32d5af6840e0d0`. Scores are impact/40 + evidenced urgency/25 + readiness/20 + work unblocked/15; dependency and bundle order may override numeric order.\n\n#1326 (64) [32/16/12/4]: The design-bridge target rule and the drafts convention cannot both be satisfied; it stays in the governance and maintenance bundle because its framework implementation surface and review evidence are shared.\n#328 (64) [26/16/13/9]: Give the attempt ledger a canonical home; it stays in the governance and maintenance bundle because its metron implementation surface and review evidence are shared.\n#1479 (63) [32/16/11/4]: Eleven filed bodies are unstartable and the fix is an edit ADR-014 forbids; it stays in the governance and maintenance bundle because its framework implementation surface and review evidence are shared.\n#1474 (62) [32/12/14/4]: The framework-N opening rule refuses 90 bodies ADR-014 forbids repairing; it stays in the governance and maintenance bundle because its framework implementation surface and review evidence are shared.\n#1451 (66) [32/16/14/4]: No check walks audit/, and a merged record there is already failing the lint; it stays in the evidence protection and incident cleanup bundle because its framework implementation surface and review evidence are shared.\n#1433 (65) [35/12/14/4]: A runbook amendment receipt says which verdicts held, never which packets it reaches; it stays in the receipt and prerequisite continuity bundle because its framework implementation surface and review evidence are shared.\n#1319 (63) [35/12/12/4]: Concurrent runs claim one plugin version and nothing reports it; it stays in the distribution and currency bundle because its framework implementation surface and review evidence are shared.",
     "state": "open",
-    "open": 7,
-    "closed": 1,
+    "open": 6,
+    "closed": 2,
     "url": "https://github.com/wildcat-finance/skills/milestone/112",
     "members": [
       {
@@ -3892,7 +3892,7 @@
       {
         "number": 1558,
         "title": "framework-161: the uniqueness check reads one title form, so eleven held numbers read as free",
-        "state": "open",
+        "state": "closed",
         "url": "https://github.com/wildcat-finance/skills/issues/1558",
         "score": null,
         "execution_mode": "pull_request",

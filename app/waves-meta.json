@@ -1,6 +1,6 @@
 {
-  "generated_at": "2026-09-25T12:42:21.941Z",
-  "source_revision": "dc837a458503877bc029d740398fbe2c37ed922d",
+  "generated_at": "2026-09-25T18:34:38.435Z",
+  "source_revision": "95dca9d0f04353856f4e1684333b3ed94e85de87",
   "dropped": [
     {
       "number": 1812,
@@ -15,21 +15,9 @@
       "reason": "no milestone"
     },
     {
-      "number": 1836,
-      "title": "framework-20: validate restored checkpoint next responses offline",
-      "url": "https://github.com/wildcat-finance/skills/issues/1836",
-      "reason": "no milestone"
-    },
-    {
       "number": 1854,
       "title": "framework-171: a random scratch directory name can contain a redacted metadata key",
       "url": "https://github.com/wildcat-finance/skills/issues/1854",
-      "reason": "no milestone"
-    },
-    {
-      "number": 1859,
-      "title": "fiat-wish: done study admits a study that done runbook then refuses K001",
-      "url": "https://github.com/wildcat-finance/skills/issues/1859",
       "reason": "no milestone"
     },
     {
@@ -84,12 +72,6 @@
       "number": 1880,
       "title": "protasis-wish: map the V2 OpenAccessRoleProvider to its public source",
       "url": "https://github.com/wildcat-finance/skills/issues/1880",
-      "reason": "no milestone"
-    },
-    {
-      "number": 1887,
-      "title": "alexandria-wish: a journal edited after reconcile still builds as agreed",
-      "url": "https://github.com/wildcat-finance/skills/issues/1887",
       "reason": "no milestone"
     },
     {
@@ -150,6 +132,12 @@
       "number": 1911,
       "title": "kronos-wish: rank and deliver the one-pull-request queue, re-ranking after every merge",
       "url": "https://github.com/wildcat-finance/skills/issues/1911",
+      "reason": "no milestone"
+    },
+    {
+      "number": 1916,
+      "title": "framework-174: the checkpoint release benchmark discards a failing sample's error output",
+      "url": "https://github.com/wildcat-finance/skills/issues/1916",
       "reason": "no milestone"
     }
   ]
