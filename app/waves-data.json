@@ -418,8 +418,8 @@
     "title": "Wave 1: instruction architecture and token cost",
     "description": "Full open-issue census: 2026-09-13T02:22:01.415Z; `skills@97b74e5d1adda5d86f59c8936e32d5af6840e0d0`. Scores are impact/40 + evidenced urgency/25 + readiness/20 + work unblocked/15; dependency and bundle order may override numeric order.\n\n#844 (96) [38/24/19/15]: Scrub.credentials leaks on a multi-@ authority, and parse_pairs is last-wins; ariadne is mature, so this stays recognisable as optional generation work without reopening its frontier.\n#939 (96) [38/24/19/15]: A capability entry names a promise that does not exist; it stays in the promise and controller truth bundle because its framework implementation surface and review evidence are shared.\n#842 (91) [36/23/18/14]: The boundary and the tree disagree inside a run worktree; horos is mature, so this stays recognisable as optional generation work without reopening its frontier.\n#942 (99) [39/25/20/15]: Prototype Noema as a model-native sliced instruction IR; active pull-request work makes it ready now and keeps it beside the framework surface under review.\n#1046 (98) [38/25/20/15]: Select an implementation-ready instruction architecture from WAI1, Noema, or a better design; active pull-request work makes it ready now and keeps it beside the framework surface under review.\n#1155 (95) [38/24/19/14]: Select a cache-native prompt-construction architecture; it stays in the instruction architecture and token cost bundle because its framework implementation surface and review evidence are shared.\n#1192 (95) [36/25/20/14]: Make a before-span edit reconcile: store model binding offsets relative to the reviewed span; active pull-request work makes it ready now and keeps it beside the framework surface under review.",
     "state": "open",
-    "open": 8,
-    "closed": 1,
+    "open": 7,
+    "closed": 2,
     "url": "https://github.com/wildcat-finance/skills/milestone/86",
     "members": [
       {
@@ -497,7 +497,7 @@
       {
         "number": 1641,
         "title": "lemma-wish: comments and refusals describe Ariadne's parser and userinfo split as before #1639",
-        "state": "open",
+        "state": "closed",
         "url": "https://github.com/wildcat-finance/skills/issues/1641",
         "score": null,
         "execution_mode": "pull_request",
@@ -1557,8 +1557,8 @@
     "title": "Wave 7: executable laws and assurance",
     "description": "Full open-issue census: 2026-09-13T02:22:01.415Z; `skills@97b74e5d1adda5d86f59c8936e32d5af6840e0d0`. Scores are impact/40 + evidenced urgency/25 + readiness/20 + work unblocked/15; dependency and bundle order may override numeric order.\n\n#840 (91) [36/23/18/14]: Darwin peak RSS is read in the wrong unit; it stays in the executable laws and assurance bundle because its synkrisis implementation surface and review evidence are shared.\n#381 (90) [36/23/18/13]: Widen the search record to the Echidna and Medusa campaigns; the current pandects ledger holds this frontier, so it precedes optional work on the same contract.\n#393 (90) [36/23/18/13]: Record and gate deployed bytecode size; it stays in the executable laws and assurance bundle because its hermes implementation surface and review evidence are shared.\n#382 (89) [36/22/18/13]: Make integration applicability machine-readable; it stays in the executable laws and assurance bundle because its pandects implementation surface and review evidence are shared.\n#416 (87) [35/22/17/13]: Add a delinquency and penalty-accrual law family; it stays in the executable laws and assurance bundle because its pandects implementation surface and review evidence are shared.\n#841 (96) [38/24/19/15]: No unittest-json-v1 runner, so every Elenchus verdict is inconclusive; it stays in the instruction evidence and router grading bundle because its lemma implementation surface and review evidence are shared.\n#869 (95) [38/24/19/14]: A valid failing report with multiple failing subtests is rejected as malformed; elenchus is mature, so this stays recognisable as optional generation work without reopening its frontier.",
     "state": "open",
-    "open": 8,
-    "closed": 0,
+    "open": 7,
+    "closed": 1,
     "url": "https://github.com/wildcat-finance/skills/milestone/92",
     "members": [
       {
@@ -1627,7 +1627,7 @@
       {
         "number": 1576,
         "title": "elenchus-wish: a guard that errors on a name its fix adds reads inconclusive",
-        "state": "open",
+        "state": "closed",
         "url": "https://github.com/wildcat-finance/skills/issues/1576",
         "score": null,
         "execution_mode": "pull_request",

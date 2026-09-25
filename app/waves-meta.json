@@ -1,6 +1,6 @@
 {
-  "generated_at": "2026-09-24T18:35:49.113Z",
-  "source_revision": "02b0543facd0c7aac5724ec5400a0b9cafd75082",
+  "generated_at": "2026-09-25T01:03:44.994Z",
+  "source_revision": "dc837a458503877bc029d740398fbe2c37ed922d",
   "dropped": [
     {
       "number": 1812,
@@ -138,6 +138,12 @@
       "number": 1906,
       "title": "fiat-wish: accept a closing reference followed by sentence punctuation",
       "url": "https://github.com/wildcat-finance/skills/issues/1906",
+      "reason": "no milestone"
+    },
+    {
+      "number": 1909,
+      "title": "elenchus-wish: the Hexaemeron runner cannot emit the unittest-json-v2 rows the absent-name rule reads",
+      "url": "https://github.com/wildcat-finance/skills/issues/1909",
       "reason": "no milestone"
     }
   ]
