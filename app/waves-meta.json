@@ -1,6 +1,6 @@
 {
-  "generated_at": "2026-09-25T18:34:38.435Z",
-  "source_revision": "95dca9d0f04353856f4e1684333b3ed94e85de87",
+  "generated_at": "2026-09-26T18:34:13.652Z",
+  "source_revision": "19346d2845801a288b982ec3442a57c69913e797",
   "dropped": [
     {
       "number": 1812,
@@ -138,6 +138,48 @@
       "number": 1916,
       "title": "framework-174: the checkpoint release benchmark discards a failing sample's error output",
       "url": "https://github.com/wildcat-finance/skills/issues/1916",
+      "reason": "no milestone"
+    },
+    {
+      "number": 1918,
+      "title": "alexandria-wish: collect accepts traces from a node that is still syncing",
+      "url": "https://github.com/wildcat-finance/skills/issues/1918",
+      "reason": "no milestone"
+    },
+    {
+      "number": 1923,
+      "title": "x-ray-wish: record full-suite coverage for the v2.5 candidate",
+      "url": "https://github.com/wildcat-finance/skills/issues/1923",
+      "reason": "no milestone"
+    },
+    {
+      "number": 1924,
+      "title": "probitas-wish: restore Wildcat standing from preserved state",
+      "url": "https://github.com/wildcat-finance/skills/issues/1924",
+      "reason": "no milestone"
+    },
+    {
+      "number": 1925,
+      "title": "probitas-wish: reconstruct Wildcat delinquency episodes from preserved evidence",
+      "url": "https://github.com/wildcat-finance/skills/issues/1925",
+      "reason": "no milestone"
+    },
+    {
+      "number": 1926,
+      "title": "probitas-wish: restore unpaid Wildcat withdrawal batches from preserved evidence",
+      "url": "https://github.com/wildcat-finance/skills/issues/1926",
+      "reason": "no milestone"
+    },
+    {
+      "number": 1927,
+      "title": "fiat-wish: let the final-green suite gate pass on a macOS host with Homebrew tools",
+      "url": "https://github.com/wildcat-finance/skills/issues/1927",
+      "reason": "no milestone"
+    },
+    {
+      "number": 1930,
+      "title": "alexandria-wish: six remaining throughput gaps in collect and reconcile",
+      "url": "https://github.com/wildcat-finance/skills/issues/1930",
       "reason": "no milestone"
     }
   ]
