@@ -1,6 +1,6 @@
 {
-  "generated_at": "2026-09-27T01:12:09.696Z",
-  "source_revision": "e992a54b4e3e4671bae98b448d57690de8dfa044",
+  "generated_at": "2026-09-27T06:45:36.665Z",
+  "source_revision": "d0349335f9949de5a4ae84fc2d718f676dcc582b",
   "dropped": [
     {
       "number": 1812,
@@ -168,6 +168,24 @@
       "number": 1927,
       "title": "fiat-wish: let the final-green suite gate pass on a macOS host with Homebrew tools",
       "url": "https://github.com/wildcat-finance/skills/issues/1927",
+      "reason": "no milestone"
+    },
+    {
+      "number": 1942,
+      "title": "framework-175: the suite list omits checks the check map declares",
+      "url": "https://github.com/wildcat-finance/skills/issues/1942",
+      "reason": "no milestone"
+    },
+    {
+      "number": 1943,
+      "title": "ephoros-wish: E005 reads any subscript of a variable named log as a log index",
+      "url": "https://github.com/wildcat-finance/skills/issues/1943",
+      "reason": "no milestone"
+    },
+    {
+      "number": 1944,
+      "title": "protasis-wish: a repository with no test runner cannot declare gate commands until an untracked runner exists",
+      "url": "https://github.com/wildcat-finance/skills/issues/1944",
       "reason": "no milestone"
     }
   ]
