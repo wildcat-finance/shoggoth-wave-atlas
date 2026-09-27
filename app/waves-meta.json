@@ -1,6 +1,6 @@
 {
-  "generated_at": "2026-09-26T18:34:13.652Z",
-  "source_revision": "19346d2845801a288b982ec3442a57c69913e797",
+  "generated_at": "2026-09-27T01:12:09.696Z",
+  "source_revision": "e992a54b4e3e4671bae98b448d57690de8dfa044",
   "dropped": [
     {
       "number": 1812,
@@ -141,12 +141,6 @@
       "reason": "no milestone"
     },
     {
-      "number": 1918,
-      "title": "alexandria-wish: collect accepts traces from a node that is still syncing",
-      "url": "https://github.com/wildcat-finance/skills/issues/1918",
-      "reason": "no milestone"
-    },
-    {
       "number": 1923,
       "title": "x-ray-wish: record full-suite coverage for the v2.5 candidate",
       "url": "https://github.com/wildcat-finance/skills/issues/1923",
@@ -174,12 +168,6 @@
       "number": 1927,
       "title": "fiat-wish: let the final-green suite gate pass on a macOS host with Homebrew tools",
       "url": "https://github.com/wildcat-finance/skills/issues/1927",
-      "reason": "no milestone"
-    },
-    {
-      "number": 1930,
-      "title": "alexandria-wish: six remaining throughput gaps in collect and reconcile",
-      "url": "https://github.com/wildcat-finance/skills/issues/1930",
       "reason": "no milestone"
     }
   ]
