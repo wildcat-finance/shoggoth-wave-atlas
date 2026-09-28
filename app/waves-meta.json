@@ -1,6 +1,6 @@
 {
-  "generated_at": "2026-09-28T12:47:41.218Z",
-  "source_revision": "1f772fc01bb50c90fe0f254fec8ed088fbe6ab13",
+  "generated_at": "2026-09-28T18:38:52.795Z",
+  "source_revision": "182bf2c8de5ebf0573e9bfaf13c9af30542fbd6c",
   "dropped": [
     {
       "number": 1812,
@@ -222,6 +222,12 @@
       "number": 1983,
       "title": "lemma-wish: validate pinned compiler ASTs that omit usedEvents",
       "url": "https://github.com/wildcat-finance/skills/issues/1983",
+      "reason": "no milestone"
+    },
+    {
+      "number": 1990,
+      "title": "alexandria-wish: collect fails a shard when the node caps eth_getLogs results instead of splitting the range",
+      "url": "https://github.com/wildcat-finance/skills/issues/1990",
       "reason": "no milestone"
     }
   ]
