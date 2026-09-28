@@ -1,6 +1,6 @@
 {
-  "generated_at": "2026-09-28T07:02:56.438Z",
-  "source_revision": "769a6383ae4a8a74681da434e788d8e56252a49b",
+  "generated_at": "2026-09-28T12:47:41.218Z",
+  "source_revision": "1f772fc01bb50c90fe0f254fec8ed088fbe6ab13",
   "dropped": [
     {
       "number": 1812,
@@ -171,21 +171,9 @@
       "reason": "no milestone"
     },
     {
-      "number": 1962,
-      "title": "solidity-auditor-wish: check Wildcat V1 emitters against pinned declarations",
-      "url": "https://github.com/wildcat-finance/skills/issues/1962",
-      "reason": "no milestone"
-    },
-    {
       "number": 1963,
       "title": "x-ray-wish: map Wildcat V1 entry points and event linkage",
       "url": "https://github.com/wildcat-finance/skills/issues/1963",
-      "reason": "no milestone"
-    },
-    {
-      "number": 1964,
-      "title": "fizz-wish: exercise Wildcat V1 emitter fidelity",
-      "url": "https://github.com/wildcat-finance/skills/issues/1964",
       "reason": "no milestone"
     },
     {
@@ -222,6 +210,18 @@
       "number": 1972,
       "title": "framework-177: the root suite writes a design report into a Fiat run's live report directory",
       "url": "https://github.com/wildcat-finance/skills/issues/1972",
+      "reason": "no milestone"
+    },
+    {
+      "number": 1979,
+      "title": "elenchus-wish: a user-site Lazarus lock makes every guard verdict inconclusive",
+      "url": "https://github.com/wildcat-finance/skills/issues/1979",
+      "reason": "no milestone"
+    },
+    {
+      "number": 1983,
+      "title": "lemma-wish: validate pinned compiler ASTs that omit usedEvents",
+      "url": "https://github.com/wildcat-finance/skills/issues/1983",
       "reason": "no milestone"
     }
   ]
