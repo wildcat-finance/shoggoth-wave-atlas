@@ -1,6 +1,6 @@
 {
-  "generated_at": "2026-09-27T18:34:58.271Z",
-  "source_revision": "2dbfe40e08ee41429c521e0089a31ed872a1890d",
+  "generated_at": "2026-09-28T01:12:35.158Z",
+  "source_revision": "bdcf124b933a37a820d89e29e1d7b81413488150",
   "dropped": [
     {
       "number": 1812,
@@ -66,12 +66,6 @@
       "number": 1879,
       "title": "hermes-wish: keep nondeterministic invariant rows out of Gate 3",
       "url": "https://github.com/wildcat-finance/skills/issues/1879",
-      "reason": "no milestone"
-    },
-    {
-      "number": 1880,
-      "title": "protasis-wish: map the V2 OpenAccessRoleProvider to its public source",
-      "url": "https://github.com/wildcat-finance/skills/issues/1880",
       "reason": "no milestone"
     },
     {
@@ -180,6 +174,30 @@
       "number": 1944,
       "title": "protasis-wish: a repository with no test runner cannot declare gate commands until an untracked runner exists",
       "url": "https://github.com/wildcat-finance/skills/issues/1944",
+      "reason": "no milestone"
+    },
+    {
+      "number": 1958,
+      "title": "alexandria-next: reconcile provider transaction-index disagreements",
+      "url": "https://github.com/wildcat-finance/skills/issues/1958",
+      "reason": "no milestone"
+    },
+    {
+      "number": 1962,
+      "title": "solidity-auditor-wish: check Wildcat V1 emitters against pinned declarations",
+      "url": "https://github.com/wildcat-finance/skills/issues/1962",
+      "reason": "no milestone"
+    },
+    {
+      "number": 1963,
+      "title": "x-ray-wish: map Wildcat V1 entry points and event linkage",
+      "url": "https://github.com/wildcat-finance/skills/issues/1963",
+      "reason": "no milestone"
+    },
+    {
+      "number": 1964,
+      "title": "fizz-wish: exercise Wildcat V1 emitter fidelity",
+      "url": "https://github.com/wildcat-finance/skills/issues/1964",
       "reason": "no milestone"
     }
   ]

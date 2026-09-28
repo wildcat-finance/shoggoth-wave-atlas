@@ -1739,8 +1739,8 @@
     "title": "Wave 8: hook contracts and host binding",
     "description": "Full open-issue census: 2026-09-13T02:22:01.415Z; `skills@97b74e5d1adda5d86f59c8936e32d5af6840e0d0`. Scores are impact/40 + evidenced urgency/25 + readiness/20 + work unblocked/15; dependency and bundle order may override numeric order.\n\n#330 (95) [38/24/19/14]: Check a manifest against the adapter it names; it stays in the hook contracts and host binding bundle because its janus implementation surface and review evidence are shared.\n#1166 (94) [38/24/19/13]: A manifest names its host as a free string and binds to no source; it stays in the hook contracts and host binding bundle because its janus implementation surface and review evidence are shared.\n#846 (92) [37/23/18/14]: Three version surfaces disagree and nothing governs the script constant; it stays in the hook contracts and host binding bundle because its janus implementation surface and review evidence are shared.\n#335 (91) [36/23/18/14]: Ship a second host adapter for a different callback model; the current janus ledger holds this frontier, so it precedes optional work on the same contract.\n#852 (85) [34/21/17/13]: Decide whether a manifest describes its counterparties' behaviour or their interface; it stays in the hook contracts and host binding bundle because its janus implementation surface and review evidence are shared.\n#394 (95) [38/24/19/14]: Widen the optimisation classes to cover the pinned rule corpus; the current hermes ledger holds this frontier, so it precedes optional work on the same contract.\n#388 (94) [38/24/19/13]: Cover return types and state mutability in ABI validation; the current lemma ledger holds this frontier, so it precedes optional work on the same contract.",
     "state": "open",
-    "open": 7,
-    "closed": 0,
+    "open": 6,
+    "closed": 1,
     "url": "https://github.com/wildcat-finance/skills/milestone/93",
     "members": [
       {
@@ -1755,7 +1755,7 @@
       {
         "number": 1166,
         "title": "janus-wish: a manifest names its host as a free string and binds to no source",
-        "state": "open",
+        "state": "closed",
         "url": "https://github.com/wildcat-finance/skills/issues/1166",
         "score": 94,
         "execution_mode": "pull_request",
@@ -4183,7 +4183,26 @@
         "url": "https://github.com/wildcat-finance/skills/issues/1378",
         "score": 70,
         "execution_mode": "fiat",
-        "dependencies": []
+        "dependencies": [
+          {
+            "number": 1962,
+            "title": "solidity-auditor-wish: check Wildcat V1 emitters against pinned declarations",
+            "state": "open",
+            "url": "https://github.com/wildcat-finance/skills/issues/1962"
+          },
+          {
+            "number": 1963,
+            "title": "x-ray-wish: map Wildcat V1 entry points and event linkage",
+            "state": "open",
+            "url": "https://github.com/wildcat-finance/skills/issues/1963"
+          },
+          {
+            "number": 1964,
+            "title": "fizz-wish: exercise Wildcat V1 emitter fidelity",
+            "state": "open",
+            "url": "https://github.com/wildcat-finance/skills/issues/1964"
+          }
+        ]
       },
       {
         "number": 1385,
