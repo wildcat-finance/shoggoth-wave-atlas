@@ -1,6 +1,6 @@
 {
-  "generated_at": "2026-09-28T01:12:35.158Z",
-  "source_revision": "bdcf124b933a37a820d89e29e1d7b81413488150",
+  "generated_at": "2026-09-28T07:02:56.438Z",
+  "source_revision": "769a6383ae4a8a74681da434e788d8e56252a49b",
   "dropped": [
     {
       "number": 1812,
@@ -30,12 +30,6 @@
       "number": 1867,
       "title": "solidity-auditor-wish: record the emitter table for the unreleased v2.5 candidate",
       "url": "https://github.com/wildcat-finance/skills/issues/1867",
-      "reason": "no milestone"
-    },
-    {
-      "number": 1868,
-      "title": "protasis-wish: correct the SphereX declaration source in the kickoff 1359 registry",
-      "url": "https://github.com/wildcat-finance/skills/issues/1868",
       "reason": "no milestone"
     },
     {
@@ -171,12 +165,6 @@
       "reason": "no milestone"
     },
     {
-      "number": 1944,
-      "title": "protasis-wish: a repository with no test runner cannot declare gate commands until an untracked runner exists",
-      "url": "https://github.com/wildcat-finance/skills/issues/1944",
-      "reason": "no milestone"
-    },
-    {
       "number": 1958,
       "title": "alexandria-next: reconcile provider transaction-index disagreements",
       "url": "https://github.com/wildcat-finance/skills/issues/1958",
@@ -198,6 +186,42 @@
       "number": 1964,
       "title": "fizz-wish: exercise Wildcat V1 emitter fidelity",
       "url": "https://github.com/wildcat-finance/skills/issues/1964",
+      "reason": "no milestone"
+    },
+    {
+      "number": 1967,
+      "title": "fiat-wish: run-exit refuses every locally registered runner, so no declared criterion can use one",
+      "url": "https://github.com/wildcat-finance/skills/issues/1967",
+      "reason": "no milestone"
+    },
+    {
+      "number": 1968,
+      "title": "protasis-wish: an adapter change can ship without admitting its predecessor digest for replay",
+      "url": "https://github.com/wildcat-finance/skills/issues/1968",
+      "reason": "no milestone"
+    },
+    {
+      "number": 1969,
+      "title": "fiat-wish: restoring a success-criteria checkpoint into a new directory refuses admission-drift",
+      "url": "https://github.com/wildcat-finance/skills/issues/1969",
+      "reason": "no milestone"
+    },
+    {
+      "number": 1970,
+      "title": "fiat-wish: a push interrupted between the ledger and state writes has no recovery",
+      "url": "https://github.com/wildcat-finance/skills/issues/1970",
+      "reason": "no milestone"
+    },
+    {
+      "number": 1971,
+      "title": "framework-176: the Hexaemeron runner's test manifest has 784 bytes left under its cap",
+      "url": "https://github.com/wildcat-finance/skills/issues/1971",
+      "reason": "no milestone"
+    },
+    {
+      "number": 1972,
+      "title": "framework-177: the root suite writes a design report into a Fiat run's live report directory",
+      "url": "https://github.com/wildcat-finance/skills/issues/1972",
       "reason": "no milestone"
     }
   ]
