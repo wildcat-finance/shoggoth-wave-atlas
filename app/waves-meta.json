@@ -1,6 +1,6 @@
 {
-  "generated_at": "2026-09-29T12:46:22.420Z",
-  "source_revision": "25e1e74cdf312cc4c2603b420f901fa0bd4f2a3d",
+  "generated_at": "2026-09-29T18:38:52.755Z",
+  "source_revision": "685158cdc5407ca5559bf9ef4a021d664e764ece",
   "dropped": [
     {
       "number": 1812,
@@ -213,12 +213,6 @@
       "reason": "no milestone"
     },
     {
-      "number": 1983,
-      "title": "lemma-wish: validate pinned compiler ASTs that omit usedEvents",
-      "url": "https://github.com/wildcat-finance/skills/issues/1983",
-      "reason": "no milestone"
-    },
-    {
       "number": 1990,
       "title": "alexandria-wish: collect fails a shard when the node caps eth_getLogs results instead of splitting the range",
       "url": "https://github.com/wildcat-finance/skills/issues/1990",
@@ -240,6 +234,30 @@
       "number": 1998,
       "title": "x-ray-wish: bind the #1963 checker's producer argv and name its inventory refusals",
       "url": "https://github.com/wildcat-finance/skills/issues/1998",
+      "reason": "no milestone"
+    },
+    {
+      "number": 2004,
+      "title": "alexandria-wish: capture Euler V2 Ethereum with the Wildcat interval method",
+      "url": "https://github.com/wildcat-finance/skills/issues/2004",
+      "reason": "no milestone"
+    },
+    {
+      "number": 2005,
+      "title": "alexandria-wish: capture Morpho Ethereum with the Wildcat interval method",
+      "url": "https://github.com/wildcat-finance/skills/issues/2005",
+      "reason": "no milestone"
+    },
+    {
+      "number": 2006,
+      "title": "alexandria-wish: capture Maple Ethereum with the Wildcat interval method",
+      "url": "https://github.com/wildcat-finance/skills/issues/2006",
+      "reason": "no milestone"
+    },
+    {
+      "number": 2007,
+      "title": "alexandria-wish: capture Centrifuge V3 Ethereum with the Wildcat interval method",
+      "url": "https://github.com/wildcat-finance/skills/issues/2007",
       "reason": "no milestone"
     }
   ]
