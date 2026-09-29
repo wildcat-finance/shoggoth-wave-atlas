@@ -1,6 +1,6 @@
 {
-  "generated_at": "2026-09-28T18:38:52.795Z",
-  "source_revision": "182bf2c8de5ebf0573e9bfaf13c9af30542fbd6c",
+  "generated_at": "2026-09-29T01:09:42.847Z",
+  "source_revision": "cb05ee6c5602e4b56f150db00c939e6365c83379",
   "dropped": [
     {
       "number": 1812,
@@ -228,6 +228,30 @@
       "number": 1990,
       "title": "alexandria-wish: collect fails a shard when the node caps eth_getLogs results instead of splitting the range",
       "url": "https://github.com/wildcat-finance/skills/issues/1990",
+      "reason": "no milestone"
+    },
+    {
+      "number": 1993,
+      "title": "x-ray-wish: draw a row-skipping architecture edge with one arrowhead",
+      "url": "https://github.com/wildcat-finance/skills/issues/1993",
+      "reason": "no milestone"
+    },
+    {
+      "number": 1996,
+      "title": "protasis-wish: recover Morpho deployment epochs and build inputs on Ethereum mainnet",
+      "url": "https://github.com/wildcat-finance/skills/issues/1996",
+      "reason": "no milestone"
+    },
+    {
+      "number": 1997,
+      "title": "tabularium-wish: Wildcat archive records carry no block timestamp",
+      "url": "https://github.com/wildcat-finance/skills/issues/1997",
+      "reason": "no milestone"
+    },
+    {
+      "number": 1998,
+      "title": "x-ray-wish: bind the #1963 checker's producer argv and name its inventory refusals",
+      "url": "https://github.com/wildcat-finance/skills/issues/1998",
       "reason": "no milestone"
     }
   ]
