@@ -1,6 +1,6 @@
 {
-  "generated_at": "2026-09-29T06:49:54.284Z",
-  "source_revision": "643be0a7660a766e52413809a57701b587125f59",
+  "generated_at": "2026-09-29T12:46:22.420Z",
+  "source_revision": "25e1e74cdf312cc4c2603b420f901fa0bd4f2a3d",
   "dropped": [
     {
       "number": 1812,
@@ -171,12 +171,6 @@
       "reason": "no milestone"
     },
     {
-      "number": 1963,
-      "title": "x-ray-wish: map Wildcat V1 entry points and event linkage",
-      "url": "https://github.com/wildcat-finance/skills/issues/1963",
-      "reason": "no milestone"
-    },
-    {
       "number": 1967,
       "title": "fiat-wish: run-exit refuses every locally registered runner, so no declared criterion can use one",
       "url": "https://github.com/wildcat-finance/skills/issues/1967",
@@ -234,12 +228,6 @@
       "number": 1993,
       "title": "x-ray-wish: draw a row-skipping architecture edge with one arrowhead",
       "url": "https://github.com/wildcat-finance/skills/issues/1993",
-      "reason": "no milestone"
-    },
-    {
-      "number": 1996,
-      "title": "protasis-wish: recover Morpho deployment epochs and build inputs on Ethereum mainnet",
-      "url": "https://github.com/wildcat-finance/skills/issues/1996",
       "reason": "no milestone"
     },
     {
