@@ -1,6 +1,6 @@
 {
-  "generated_at": "2026-09-29T18:38:52.755Z",
-  "source_revision": "685158cdc5407ca5559bf9ef4a021d664e764ece",
+  "generated_at": "2026-09-30T01:11:04.310Z",
+  "source_revision": "3b014ebce279e8eb573eb927915e9a591546b24e",
   "dropped": [
     {
       "number": 1812,
@@ -18,12 +18,6 @@
       "number": 1854,
       "title": "framework-171: a random scratch directory name can contain a redacted metadata key",
       "url": "https://github.com/wildcat-finance/skills/issues/1854",
-      "reason": "no milestone"
-    },
-    {
-      "number": 1861,
-      "title": "framework-39: root Elenchus runners report a missing surface as a guard failure",
-      "url": "https://github.com/wildcat-finance/skills/issues/1861",
       "reason": "no milestone"
     },
     {
@@ -258,6 +252,12 @@
       "number": 2007,
       "title": "alexandria-wish: capture Centrifuge V3 Ethereum with the Wildcat interval method",
       "url": "https://github.com/wildcat-finance/skills/issues/2007",
+      "reason": "no milestone"
+    },
+    {
+      "number": 2014,
+      "title": "fiat-wish: supersede a receipted commit GitHub will not verify",
+      "url": "https://github.com/wildcat-finance/skills/issues/2014",
       "reason": "no milestone"
     }
   ]
