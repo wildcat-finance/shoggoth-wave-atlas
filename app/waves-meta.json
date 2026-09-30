@@ -1,6 +1,6 @@
 {
-  "generated_at": "2026-09-30T01:11:04.310Z",
-  "source_revision": "3b014ebce279e8eb573eb927915e9a591546b24e",
+  "generated_at": "2026-09-30T06:50:14.612Z",
+  "source_revision": "56d199c10dc61483de9cbc8ba1ddeb02cfb08b11",
   "dropped": [
     {
       "number": 1812,
@@ -90,18 +90,6 @@
       "number": 1899,
       "title": "framework-173: track four upstream memory and retrieval candidates",
       "url": "https://github.com/wildcat-finance/skills/issues/1899",
-      "reason": "no milestone"
-    },
-    {
-      "number": 1902,
-      "title": "alexandria-wish: bind every check read to the verified release",
-      "url": "https://github.com/wildcat-finance/skills/issues/1902",
-      "reason": "no milestone"
-    },
-    {
-      "number": 1906,
-      "title": "fiat-wish: accept a closing reference followed by sentence punctuation",
-      "url": "https://github.com/wildcat-finance/skills/issues/1906",
       "reason": "no milestone"
     },
     {
@@ -198,18 +186,6 @@
       "number": 1972,
       "title": "framework-177: the root suite writes a design report into a Fiat run's live report directory",
       "url": "https://github.com/wildcat-finance/skills/issues/1972",
-      "reason": "no milestone"
-    },
-    {
-      "number": 1979,
-      "title": "elenchus-wish: a user-site Lazarus lock makes every guard verdict inconclusive",
-      "url": "https://github.com/wildcat-finance/skills/issues/1979",
-      "reason": "no milestone"
-    },
-    {
-      "number": 1990,
-      "title": "alexandria-wish: collect fails a shard when the node caps eth_getLogs results instead of splitting the range",
-      "url": "https://github.com/wildcat-finance/skills/issues/1990",
       "reason": "no milestone"
     },
     {
