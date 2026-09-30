@@ -1,6 +1,6 @@
 {
-  "generated_at": "2026-09-30T06:50:14.612Z",
-  "source_revision": "56d199c10dc61483de9cbc8ba1ddeb02cfb08b11",
+  "generated_at": "2026-09-30T12:48:52.809Z",
+  "source_revision": "dd2e6939ed460dcd987457a398a2765822349588",
   "dropped": [
     {
       "number": 1812,
@@ -231,9 +231,9 @@
       "reason": "no milestone"
     },
     {
-      "number": 2014,
-      "title": "fiat-wish: supersede a receipted commit GitHub will not verify",
-      "url": "https://github.com/wildcat-finance/skills/issues/2014",
+      "number": 2042,
+      "title": "fiat-wish: supersede-commit refuses a run initialised under an older controller",
+      "url": "https://github.com/wildcat-finance/skills/issues/2042",
       "reason": "no milestone"
     }
   ]
