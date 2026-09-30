@@ -3038,8 +3038,8 @@
     "title": "Wave 19: credit evidence and releases",
     "description": "Full open-issue census: 2026-09-13T02:22:01.415Z; `skills@97b74e5d1adda5d86f59c8936e32d5af6840e0d0`. Scores are impact/40 + evidenced urgency/25 + readiness/20 + work unblocked/15; dependency and bundle order may override numeric order.\n\n#1444 (66) [32/12/18/4]: A refusal receipt status should carry a status, not a block number; it stays in the credit releases and reconciliation bundle because its alexandria implementation surface and review evidence are shared.\n#1329 (66) [32/16/14/4]: The credit-history example README describes coverage its own demonstration contradicts; it stays in the credit releases and reconciliation bundle because its alexandria implementation surface and review evidence are shared.\n#1489 (67) [32/13/12/10]: Declare the durable store and capture migration inputs; it stays in the credit evidence and releases bundle because its alexandria implementation surface and review evidence are shared.\n#1498 (67) [32/13/12/10]: Land the pinned-map prerequisite before further adapters; it stays in the credit evidence and releases bundle because its tabularium implementation surface and review evidence are shared.\n#1486 (65) [32/13/12/8]: Declare the finite two-chain fixture pilot; it stays in the credit evidence and releases bundle because its lazarus implementation surface and review evidence are shared.\n#1494 (65) [32/13/12/8]: Identify conflicting venue sources and record the selection; it stays in the credit evidence and releases bundle because its probitas implementation surface and review evidence are shared.\n#422 (75) [37/18/12/8]: Build labelled-prose-v2 with fresh blind annotations; the current imprimatur ledger holds this frontier, so it precedes optional work on the same contract.",
     "state": "open",
-    "open": 8,
-    "closed": 0,
+    "open": 7,
+    "closed": 1,
     "url": "https://github.com/wildcat-finance/skills/milestone/104",
     "members": [
       {
@@ -3081,7 +3081,7 @@
       {
         "number": 1486,
         "title": "lazarus-wish: declare the finite two-chain fixture pilot",
-        "state": "open",
+        "state": "closed",
         "url": "https://github.com/wildcat-finance/skills/issues/1486",
         "score": 65,
         "execution_mode": "pull_request",
