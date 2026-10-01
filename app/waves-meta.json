@@ -1,5 +1,5 @@
 {
-  "generated_at": "2026-10-01T01:18:19.560Z",
+  "generated_at": "2026-10-01T06:51:15.271Z",
   "source_revision": "c06cf22d4a9e07de6c950b3fdb185c56e205c7c4",
   "dropped": [
     {
@@ -240,6 +240,12 @@
       "number": 2047,
       "title": "alexandria-wish: keep a DSSE-enveloped single statement within the default read",
       "url": "https://github.com/wildcat-finance/skills/issues/2047",
+      "reason": "no milestone"
+    },
+    {
+      "number": 2050,
+      "title": "alexandria-wish: rename the interval collector off its USDC name",
+      "url": "https://github.com/wildcat-finance/skills/issues/2050",
       "reason": "no milestone"
     }
   ]
