@@ -1,6 +1,6 @@
 {
-  "generated_at": "2026-09-30T18:38:15.919Z",
-  "source_revision": "b1d2de4f368a1e3f2f2c2fcbd8fbe5019c95ddb2",
+  "generated_at": "2026-10-01T01:18:19.560Z",
+  "source_revision": "c06cf22d4a9e07de6c950b3fdb185c56e205c7c4",
   "dropped": [
     {
       "number": 1812,
@@ -60,12 +60,6 @@
       "number": 1891,
       "title": "alexandria-wish: build and check an interval release one component at a time",
       "url": "https://github.com/wildcat-finance/skills/issues/1891",
-      "reason": "no milestone"
-    },
-    {
-      "number": 1892,
-      "title": "alexandria-wish: emit a statement for a release past the 8 MiB statement limit",
-      "url": "https://github.com/wildcat-finance/skills/issues/1892",
       "reason": "no milestone"
     },
     {
@@ -234,6 +228,18 @@
       "number": 2042,
       "title": "fiat-wish: supersede-commit refuses a run initialised under an older controller",
       "url": "https://github.com/wildcat-finance/skills/issues/2042",
+      "reason": "no milestone"
+    },
+    {
+      "number": 2046,
+      "title": "alexandria-wish: remove or refuse a leftover part-set temporary directory",
+      "url": "https://github.com/wildcat-finance/skills/issues/2046",
+      "reason": "no milestone"
+    },
+    {
+      "number": 2047,
+      "title": "alexandria-wish: keep a DSSE-enveloped single statement within the default read",
+      "url": "https://github.com/wildcat-finance/skills/issues/2047",
       "reason": "no milestone"
     }
   ]
