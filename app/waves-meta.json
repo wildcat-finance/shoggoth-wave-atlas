@@ -1,6 +1,6 @@
 {
-  "generated_at": "2026-10-01T06:51:15.271Z",
-  "source_revision": "c06cf22d4a9e07de6c950b3fdb185c56e205c7c4",
+  "generated_at": "2026-10-02T18:38:08.892Z",
+  "source_revision": "35340bc8a3565fbd08969aaf58e0e48c3d0da602",
   "dropped": [
     {
       "number": 1812,
@@ -126,12 +126,6 @@
       "number": 1926,
       "title": "probitas-wish: restore unpaid Wildcat withdrawal batches from preserved evidence",
       "url": "https://github.com/wildcat-finance/skills/issues/1926",
-      "reason": "no milestone"
-    },
-    {
-      "number": 1927,
-      "title": "fiat-wish: let the final-green suite gate pass on a macOS host with Homebrew tools",
-      "url": "https://github.com/wildcat-finance/skills/issues/1927",
       "reason": "no milestone"
     },
     {
