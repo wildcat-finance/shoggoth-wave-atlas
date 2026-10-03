@@ -1,6 +1,6 @@
 {
-  "generated_at": "2026-10-03T14:04:06.515Z",
-  "source_revision": "dc8fa4f787cb977ce0bfb893a83dd7b3d4b7d603",
+  "generated_at": "2026-10-03T19:06:24.248Z",
+  "source_revision": "b4af9c748a764287ccb9978937021e45cc81fc2d",
   "dropped": [
     {
       "number": 1812,
@@ -240,12 +240,6 @@
       "number": 2054,
       "title": "fiat-wish: starting-commit gate bindings never reach a run whose pins all agree, nor run-exit admission",
       "url": "https://github.com/wildcat-finance/skills/issues/2054",
-      "reason": "no milestone"
-    },
-    {
-      "number": 2057,
-      "title": "fiat-wish: supersede-commit refuses an implement receipt holding a short commit SHA",
-      "url": "https://github.com/wildcat-finance/skills/issues/2057",
       "reason": "no milestone"
     }
   ]
