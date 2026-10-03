@@ -1,6 +1,6 @@
 {
-  "generated_at": "2026-10-03T01:05:35.582Z",
-  "source_revision": "35340bc8a3565fbd08969aaf58e0e48c3d0da602",
+  "generated_at": "2026-10-03T14:04:06.515Z",
+  "source_revision": "dc8fa4f787cb977ce0bfb893a83dd7b3d4b7d603",
   "dropped": [
     {
       "number": 1812,
@@ -219,12 +219,6 @@
       "reason": "no milestone"
     },
     {
-      "number": 2042,
-      "title": "fiat-wish: supersede-commit refuses a run initialised under an older controller",
-      "url": "https://github.com/wildcat-finance/skills/issues/2042",
-      "reason": "no milestone"
-    },
-    {
       "number": 2046,
       "title": "alexandria-wish: remove or refuse a leftover part-set temporary directory",
       "url": "https://github.com/wildcat-finance/skills/issues/2046",
@@ -246,6 +240,12 @@
       "number": 2054,
       "title": "fiat-wish: starting-commit gate bindings never reach a run whose pins all agree, nor run-exit admission",
       "url": "https://github.com/wildcat-finance/skills/issues/2054",
+      "reason": "no milestone"
+    },
+    {
+      "number": 2057,
+      "title": "fiat-wish: supersede-commit refuses an implement receipt holding a short commit SHA",
+      "url": "https://github.com/wildcat-finance/skills/issues/2057",
       "reason": "no milestone"
     }
   ]
