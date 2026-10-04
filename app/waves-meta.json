@@ -1,6 +1,6 @@
 {
-  "generated_at": "2026-10-04T08:26:25.352Z",
-  "source_revision": "4ca5f0cd6a251ab64767ca5280e5ec3a3451dd69",
+  "generated_at": "2026-10-04T19:31:21.275Z",
+  "source_revision": "5bc935e77f1361e6cfb6415dc0a8a21f2a998443",
   "dropped": [
     {
       "number": 1812,
@@ -24,12 +24,6 @@
       "number": 1867,
       "title": "solidity-auditor-wish: record the emitter table for the unreleased v2.5 candidate",
       "url": "https://github.com/wildcat-finance/skills/issues/1867",
-      "reason": "no milestone"
-    },
-    {
-      "number": 1872,
-      "title": "alexandria-wish: capture Aave V3 Ethereum with the Wildcat interval method",
-      "url": "https://github.com/wildcat-finance/skills/issues/1872",
       "reason": "no milestone"
     },
     {
