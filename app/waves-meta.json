@@ -1,6 +1,6 @@
 {
-  "generated_at": "2026-10-07T12:47:09.484Z",
-  "source_revision": "21c151b7fe0cb80589c2ba8713678dfaee52354d",
+  "generated_at": "2026-10-11T18:37:53.399Z",
+  "source_revision": "50d71a2e8c1777f8eb26db32dd8adeadb34063bd",
   "dropped": [
     {
       "number": 1812,
@@ -174,12 +174,6 @@
       "number": 1993,
       "title": "x-ray-wish: draw a row-skipping architecture edge with one arrowhead",
       "url": "https://github.com/wildcat-finance/skills/issues/1993",
-      "reason": "no milestone"
-    },
-    {
-      "number": 1997,
-      "title": "tabularium-wish: Wildcat archive records carry no block timestamp",
-      "url": "https://github.com/wildcat-finance/skills/issues/1997",
       "reason": "no milestone"
     },
     {
