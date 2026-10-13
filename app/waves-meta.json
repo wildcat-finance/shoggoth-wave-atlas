@@ -1,5 +1,5 @@
 {
-  "generated_at": "2026-10-11T18:37:53.399Z",
+  "generated_at": "2026-10-13T18:41:29.649Z",
   "source_revision": "50d71a2e8c1777f8eb26db32dd8adeadb34063bd",
   "dropped": [
     {
@@ -228,6 +228,54 @@
       "number": 2054,
       "title": "fiat-wish: starting-commit gate bindings never reach a run whose pins all agree, nor run-exit admission",
       "url": "https://github.com/wildcat-finance/skills/issues/2054",
+      "reason": "no milestone"
+    },
+    {
+      "number": 2086,
+      "title": "alexandria-wish: remove the duplicate function definitions in the interval collector",
+      "url": "https://github.com/wildcat-finance/skills/issues/2086",
+      "reason": "no milestone"
+    },
+    {
+      "number": 2087,
+      "title": "tabularium-wish: give the four Wildcat withdrawal-batch events a canonical meaning",
+      "url": "https://github.com/wildcat-finance/skills/issues/2087",
+      "reason": "no milestone"
+    },
+    {
+      "number": 2088,
+      "title": "tabularium-wish: give Wildcat's InterestAndFeesAccrued and StateUpdated events a canonical meaning",
+      "url": "https://github.com/wildcat-finance/skills/issues/2088",
+      "reason": "no milestone"
+    },
+    {
+      "number": 2089,
+      "title": "tabularium-wish: give Wildcat's FeesCollected and ProtocolFeeBipsUpdated events a canonical meaning",
+      "url": "https://github.com/wildcat-finance/skills/issues/2089",
+      "reason": "no milestone"
+    },
+    {
+      "number": 2090,
+      "title": "tabularium-wish: give Wildcat's parameter, access, authorisation and controller events a canonical meaning",
+      "url": "https://github.com/wildcat-finance/skills/issues/2090",
+      "reason": "no milestone"
+    },
+    {
+      "number": 2091,
+      "title": "tabularium-wish: join the two Wildcat sanctioned-account asset events to their request or transfer",
+      "url": "https://github.com/wildcat-finance/skills/issues/2091",
+      "reason": "no milestone"
+    },
+    {
+      "number": 2092,
+      "title": "alexandria-wish: capture Wildcat V2 wrapper instances as subjects with epochs and native journals",
+      "url": "https://github.com/wildcat-finance/skills/issues/2092",
+      "reason": "no milestone"
+    },
+    {
+      "number": 2093,
+      "title": "fiat-wish: let done sync-run read a private HTTPS remote",
+      "url": "https://github.com/wildcat-finance/skills/issues/2093",
       "reason": "no milestone"
     }
   ]
