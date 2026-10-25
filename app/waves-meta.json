@@ -1,6 +1,6 @@
 {
-  "generated_at": "2026-10-13T18:41:29.649Z",
-  "source_revision": "50d71a2e8c1777f8eb26db32dd8adeadb34063bd",
+  "generated_at": "2026-10-25T18:34:12.098Z",
+  "source_revision": "6f5843b427c6747c8342fdd4fbc4161ae85fa5ae",
   "dropped": [
     {
       "number": 1812,
@@ -237,12 +237,6 @@
       "reason": "no milestone"
     },
     {
-      "number": 2087,
-      "title": "tabularium-wish: give the four Wildcat withdrawal-batch events a canonical meaning",
-      "url": "https://github.com/wildcat-finance/skills/issues/2087",
-      "reason": "no milestone"
-    },
-    {
       "number": 2088,
       "title": "tabularium-wish: give Wildcat's InterestAndFeesAccrued and StateUpdated events a canonical meaning",
       "url": "https://github.com/wildcat-finance/skills/issues/2088",
@@ -276,6 +270,12 @@
       "number": 2093,
       "title": "fiat-wish: let done sync-run read a private HTTPS remote",
       "url": "https://github.com/wildcat-finance/skills/issues/2093",
+      "reason": "no milestone"
+    },
+    {
+      "number": 2103,
+      "title": "framework-179: Elenchus runs step runners with PYTHONSAFEPATH, so a bare sibling import makes every fix inconclusive",
+      "url": "https://github.com/wildcat-finance/skills/issues/2103",
       "reason": "no milestone"
     }
   ]
