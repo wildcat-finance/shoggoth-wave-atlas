@@ -1,6 +1,6 @@
 {
-  "generated_at": "2026-10-25T18:34:12.098Z",
-  "source_revision": "6f5843b427c6747c8342fdd4fbc4161ae85fa5ae",
+  "generated_at": "2026-10-30T18:25:40.450Z",
+  "source_revision": "50d78f7d2f5fc8fa6dab3cc2fc2dc1b81346b098",
   "dropped": [
     {
       "number": 1812,
@@ -204,12 +204,6 @@
       "number": 2007,
       "title": "alexandria-wish: capture Centrifuge V3 Ethereum with the Wildcat interval method",
       "url": "https://github.com/wildcat-finance/skills/issues/2007",
-      "reason": "no milestone"
-    },
-    {
-      "number": 2046,
-      "title": "alexandria-wish: remove or refuse a leftover part-set temporary directory",
-      "url": "https://github.com/wildcat-finance/skills/issues/2046",
       "reason": "no milestone"
     },
     {
