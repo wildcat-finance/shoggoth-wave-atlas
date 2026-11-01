@@ -1,6 +1,6 @@
 {
-  "generated_at": "2026-11-01T00:49:24.941Z",
-  "source_revision": "1fc995e72cc61267273abd8339a9c1fb2289b068",
+  "generated_at": "2026-11-01T06:31:29.692Z",
+  "source_revision": "8b4e137917d754a7b7c3d5e74d141c0bedf70aa2",
   "dropped": [
     {
       "number": 1812,
@@ -264,18 +264,6 @@
       "number": 2103,
       "title": "framework-179: Elenchus runs step runners with PYTHONSAFEPATH, so a bare sibling import makes every fix inconclusive",
       "url": "https://github.com/wildcat-finance/skills/issues/2103",
-      "reason": "no milestone"
-    },
-    {
-      "number": 2116,
-      "title": "tabularium-wish: build Wildcat V2 wrapper contexts from an Alexandria release's wrapper-subjects component",
-      "url": "https://github.com/wildcat-finance/skills/issues/2116",
-      "reason": "no milestone"
-    },
-    {
-      "number": 2117,
-      "title": "fiat-wish: refuse governed ledger rows that sit after a later section, before a run can anchor on them",
-      "url": "https://github.com/wildcat-finance/skills/issues/2117",
       "reason": "no milestone"
     }
   ]
