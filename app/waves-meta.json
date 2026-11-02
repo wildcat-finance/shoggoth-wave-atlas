@@ -1,6 +1,6 @@
 {
-  "generated_at": "2026-11-02T12:30:26.765Z",
-  "source_revision": "8228f0d73ad74f957589051ce4b6563f6f3a8441",
+  "generated_at": "2026-11-02T18:27:15.768Z",
+  "source_revision": "59bef33488ce929ef625bb5fdb3e73b7bca7c5d7",
   "dropped": [
     {
       "number": 1812,
@@ -234,18 +234,6 @@
       "number": 2088,
       "title": "tabularium-wish: give Wildcat's InterestAndFeesAccrued and StateUpdated events a canonical meaning",
       "url": "https://github.com/wildcat-finance/skills/issues/2088",
-      "reason": "no milestone"
-    },
-    {
-      "number": 2090,
-      "title": "tabularium-wish: give Wildcat's parameter, access, authorisation and controller events a canonical meaning",
-      "url": "https://github.com/wildcat-finance/skills/issues/2090",
-      "reason": "no milestone"
-    },
-    {
-      "number": 2091,
-      "title": "tabularium-wish: join the two Wildcat sanctioned-account asset events to their request or transfer",
-      "url": "https://github.com/wildcat-finance/skills/issues/2091",
       "reason": "no milestone"
     },
     {
