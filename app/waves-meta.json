@@ -1,5 +1,5 @@
 {
-  "generated_at": "2026-11-02T06:41:18.045Z",
+  "generated_at": "2026-11-02T12:30:26.765Z",
   "source_revision": "8228f0d73ad74f957589051ce4b6563f6f3a8441",
   "dropped": [
     {
@@ -258,6 +258,12 @@
       "number": 2103,
       "title": "framework-179: Elenchus runs step runners with PYTHONSAFEPATH, so a bare sibling import makes every fix inconclusive",
       "url": "https://github.com/wildcat-finance/skills/issues/2103",
+      "reason": "no milestone"
+    },
+    {
+      "number": 2140,
+      "title": "elenchus-wish: a fix to a helper under tests/ is overlaid onto the parent, so its guard reads passed",
+      "url": "https://github.com/wildcat-finance/skills/issues/2140",
       "reason": "no milestone"
     }
   ]
