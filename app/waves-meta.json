@@ -1,6 +1,6 @@
 {
-  "generated_at": "2026-11-01T06:31:29.692Z",
-  "source_revision": "8b4e137917d754a7b7c3d5e74d141c0bedf70aa2",
+  "generated_at": "2026-11-02T06:41:18.045Z",
+  "source_revision": "8228f0d73ad74f957589051ce4b6563f6f3a8441",
   "dropped": [
     {
       "number": 1812,
@@ -234,12 +234,6 @@
       "number": 2088,
       "title": "tabularium-wish: give Wildcat's InterestAndFeesAccrued and StateUpdated events a canonical meaning",
       "url": "https://github.com/wildcat-finance/skills/issues/2088",
-      "reason": "no milestone"
-    },
-    {
-      "number": 2089,
-      "title": "tabularium-wish: give Wildcat's FeesCollected and ProtocolFeeBipsUpdated events a canonical meaning",
-      "url": "https://github.com/wildcat-finance/skills/issues/2089",
       "reason": "no milestone"
     },
     {
