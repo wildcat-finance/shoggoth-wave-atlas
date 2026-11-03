@@ -1,6 +1,6 @@
 {
-  "generated_at": "2026-11-02T18:27:15.768Z",
-  "source_revision": "59bef33488ce929ef625bb5fdb3e73b7bca7c5d7",
+  "generated_at": "2026-11-03T00:42:23.317Z",
+  "source_revision": "9cce3bb2b65fbd1a0ef40ee19ec191ec3a1c2e11",
   "dropped": [
     {
       "number": 1812,
@@ -159,12 +159,6 @@
       "reason": "no milestone"
     },
     {
-      "number": 1971,
-      "title": "framework-176: the Hexaemeron runner's test manifest has 784 bytes left under its cap",
-      "url": "https://github.com/wildcat-finance/skills/issues/1971",
-      "reason": "no milestone"
-    },
-    {
       "number": 1972,
       "title": "framework-177: the root suite writes a design report into a Fiat run's live report directory",
       "url": "https://github.com/wildcat-finance/skills/issues/1972",
@@ -231,12 +225,6 @@
       "reason": "no milestone"
     },
     {
-      "number": 2088,
-      "title": "tabularium-wish: give Wildcat's InterestAndFeesAccrued and StateUpdated events a canonical meaning",
-      "url": "https://github.com/wildcat-finance/skills/issues/2088",
-      "reason": "no milestone"
-    },
-    {
       "number": 2093,
       "title": "fiat-wish: let done sync-run read a private HTTPS remote",
       "url": "https://github.com/wildcat-finance/skills/issues/2093",
@@ -252,6 +240,18 @@
       "number": 2140,
       "title": "elenchus-wish: a fix to a helper under tests/ is overlaid onto the parent, so its guard reads passed",
       "url": "https://github.com/wildcat-finance/skills/issues/2140",
+      "reason": "no milestone"
+    },
+    {
+      "number": 2144,
+      "title": "tabularium-wish: map the MarketState a Wildcat V2 market passes to its hooks as a checkpoint observation",
+      "url": "https://github.com/wildcat-finance/skills/issues/2144",
+      "reason": "no milestone"
+    },
+    {
+      "number": 2145,
+      "title": "lazarus-wish: publish the decoded value of each proved Wildcat boundary storage word",
+      "url": "https://github.com/wildcat-finance/skills/issues/2145",
       "reason": "no milestone"
     }
   ]
