@@ -1,6 +1,6 @@
 {
-  "generated_at": "2026-11-03T00:42:23.317Z",
-  "source_revision": "9cce3bb2b65fbd1a0ef40ee19ec191ec3a1c2e11",
+  "generated_at": "2026-11-03T06:32:52.012Z",
+  "source_revision": "2bbdd5d94653cdf19a3256f16d495c947ca0f2a9",
   "dropped": [
     {
       "number": 1812,
@@ -243,15 +243,21 @@
       "reason": "no milestone"
     },
     {
-      "number": 2144,
-      "title": "tabularium-wish: map the MarketState a Wildcat V2 market passes to its hooks as a checkpoint observation",
-      "url": "https://github.com/wildcat-finance/skills/issues/2144",
+      "number": 2148,
+      "title": "tabularium-wish: default Wildcat builds to adapter 1.5.0 after a retained V2 build",
+      "url": "https://github.com/wildcat-finance/skills/issues/2148",
       "reason": "no milestone"
     },
     {
-      "number": 2145,
-      "title": "lazarus-wish: publish the decoded value of each proved Wildcat boundary storage word",
-      "url": "https://github.com/wildcat-finance/skills/issues/2145",
+      "number": 2150,
+      "title": "fiat-wish: keep controller tests off the developer's Git credential configuration",
+      "url": "https://github.com/wildcat-finance/skills/issues/2150",
+      "reason": "no milestone"
+    },
+    {
+      "number": 2151,
+      "title": "fiat-wish: the supersession uppercase-prefix cases pass a letterless prefix about 1.5% of runs",
+      "url": "https://github.com/wildcat-finance/skills/issues/2151",
       "reason": "no milestone"
     }
   ]
