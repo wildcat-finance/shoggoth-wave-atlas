@@ -1,6 +1,6 @@
 {
-  "generated_at": "2026-11-03T06:32:52.012Z",
-  "source_revision": "2bbdd5d94653cdf19a3256f16d495c947ca0f2a9",
+  "generated_at": "2026-11-03T12:29:40.806Z",
+  "source_revision": "0e8bc1138b39b0b36736f01c96cfdd7e6e271a30",
   "dropped": [
     {
       "number": 1812,
@@ -240,12 +240,6 @@
       "number": 2140,
       "title": "elenchus-wish: a fix to a helper under tests/ is overlaid onto the parent, so its guard reads passed",
       "url": "https://github.com/wildcat-finance/skills/issues/2140",
-      "reason": "no milestone"
-    },
-    {
-      "number": 2148,
-      "title": "tabularium-wish: default Wildcat builds to adapter 1.5.0 after a retained V2 build",
-      "url": "https://github.com/wildcat-finance/skills/issues/2148",
       "reason": "no milestone"
     },
     {
