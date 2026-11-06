@@ -1,6 +1,6 @@
 {
-  "generated_at": "2026-11-05T00:42:16.393Z",
-  "source_revision": "992cc239611e68ad5f963d4c9f43e44ea063a083",
+  "generated_at": "2026-11-06T00:42:14.344Z",
+  "source_revision": "a6b1f4fdd9c9528f86cbb83beff5ae92f4f5193c",
   "dropped": [
     {
       "number": 1812,
@@ -30,12 +30,6 @@
       "number": 1874,
       "title": "alexandria-wish: read the Wildcat kickoff evidence from a digest-pinned Miskatonic checkout",
       "url": "https://github.com/wildcat-finance/skills/issues/1874",
-      "reason": "no milestone"
-    },
-    {
-      "number": 1877,
-      "title": "lazarus-wish: read the capture endpoint and bearer from the environment",
-      "url": "https://github.com/wildcat-finance/skills/issues/1877",
       "reason": "no milestone"
     },
     {
