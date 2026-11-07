@@ -1,6 +1,6 @@
 {
-  "generated_at": "2026-11-07T06:30:25.578Z",
-  "source_revision": "eab25fcdce2ca4424ab9aa9f778bf29ca6ad9797",
+  "generated_at": "2026-11-07T12:27:40.062Z",
+  "source_revision": "6b6406ecd922c4127bc688e0b5122bbe395be0eb",
   "dropped": [
     {
       "number": 1812,
@@ -252,6 +252,18 @@
       "number": 2168,
       "title": "fiat-wish: report the bound restore's failed fchdir, unify its refusal and pin its relative link",
       "url": "https://github.com/wildcat-finance/skills/issues/2168",
+      "reason": "no milestone"
+    },
+    {
+      "number": 2176,
+      "title": "fiat-wish: tell a restore lock fault apart from a held restore lock",
+      "url": "https://github.com/wildcat-finance/skills/issues/2176",
+      "reason": "no milestone"
+    },
+    {
+      "number": 2177,
+      "title": "protasis-wish: bind each conformance report to the tree its resolver ran on",
+      "url": "https://github.com/wildcat-finance/skills/issues/2177",
       "reason": "no milestone"
     }
   ]
