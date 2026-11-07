@@ -1,6 +1,6 @@
 {
-  "generated_at": "2026-11-06T18:27:37.583Z",
-  "source_revision": "076add19439c163be266374eb671a1c9a234c12c",
+  "generated_at": "2026-11-07T06:30:25.578Z",
+  "source_revision": "eab25fcdce2ca4424ab9aa9f778bf29ca6ad9797",
   "dropped": [
     {
       "number": 1812,
@@ -246,6 +246,12 @@
       "number": 2157,
       "title": "fiat-wish: end every bounded_probe read once its child has exited",
       "url": "https://github.com/wildcat-finance/skills/issues/2157",
+      "reason": "no milestone"
+    },
+    {
+      "number": 2168,
+      "title": "fiat-wish: report the bound restore's failed fchdir, unify its refusal and pin its relative link",
+      "url": "https://github.com/wildcat-finance/skills/issues/2168",
       "reason": "no milestone"
     }
   ]
